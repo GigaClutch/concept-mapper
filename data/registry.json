@@ -3,12 +3,12 @@
     "version": "0.1.0",
     "built": "2026-06-11",
     "domain": "Ethics",
-    "count": 131,
+    "count": 137,
     "qid_sources": {
-      "auto-unverified": 56,
+      "auto-unverified": 61,
       "auto-verified": 49,
       "curated-none": 5,
-      "curated-verified": 21
+      "curated-verified": 22
     }
   },
   "nodes": [
@@ -380,6 +380,38 @@
       "status": "registry"
     },
     {
+      "id": "moral_subjectivism",
+      "label": "Moral Subjectivism",
+      "type": "concept",
+      "aliases": [
+        "ethical subjectivism"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q568188",
+      "qid_source": "auto-unverified",
+      "wd_description": "meta-ethical view",
+      "note": "",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
+      "id": "moral_nihilism",
+      "label": "Moral Nihilism",
+      "type": "concept",
+      "aliases": [
+        "ethical nihilism"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q12835757",
+      "qid_source": "auto-unverified",
+      "wd_description": "meta-ethical view that nothing is intrinsically moral or immoral",
+      "note": "",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
       "id": "moral_naturalism",
       "label": "Moral Naturalism",
       "type": "concept",
@@ -601,6 +633,23 @@
       "status": "registry"
     },
     {
+      "id": "altruism",
+      "label": "Altruism",
+      "type": "concept",
+      "aliases": [
+        "selflessness",
+        "ministration"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q167323",
+      "qid_source": "auto-unverified",
+      "wd_description": "principle or practice of concern for the welfare of others",
+      "note": "ethical sense; NOT the biological/evolutionary sense",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
       "id": "psychological_egoism",
       "label": "Psychological Egoism",
       "type": "concept",
@@ -636,6 +685,7 @@
       "type": "concept",
       "aliases": [
         "eudaemonia",
+        "eudaimonism",
         "flourishing",
         "human flourishing",
         "eudaimonic life",
@@ -809,6 +859,56 @@
       "qid_source": "auto-unverified",
       "wd_description": "philosophical concept",
       "note": "",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
+      "id": "moral_dilemma",
+      "label": "Moral Dilemma",
+      "type": "concept",
+      "aliases": [
+        "ethical dilemma",
+        "moral issue"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q192568",
+      "qid_source": "auto-unverified",
+      "wd_description": "decision-making problem between two conflicting moral imperatives, neither of which is unambiguously acceptable or preferable",
+      "note": "",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
+      "id": "moral_agency",
+      "label": "Moral Agency",
+      "type": "concept",
+      "aliases": [
+        "moral agent"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q11883221",
+      "qid_source": "auto-unverified",
+      "wd_description": "ability to make ethical judgements",
+      "note": "",
+      "author_id": "",
+      "status": "registry"
+    },
+    {
+      "id": "moral_status",
+      "label": "Moral Status",
+      "type": "concept",
+      "aliases": [
+        "moral standing",
+        "moral patient"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "Q58620410",
+      "qid_source": "curated-verified",
+      "wd_description": "description of intrinsic self-worth and dignity",
+      "note": "auto-resolution picked 'insects in ethics' — corrected by review 2026-06-11",
       "author_id": "",
       "status": "registry"
     },

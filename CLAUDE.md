@@ -2,11 +2,11 @@
 
 Interactive concept map of philosophy: search a concept, see it situated in a typed, evidence-backed network of related concepts, philosophers, schools, and works. Goals: insight by association, relational context, disambiguation.
 
-Full plan lives in the Obsidian vault: `Concept Mapper - Master Plan.md` (operative roadmap) and `Concept Mapper - Ultimate Build.md` (end-state vision). This file is the distilled, binding version for coding sessions.
+Full plan lives in the Obsidian vault at `C:\Users\gigac\My Drive\Comp-Sci Vault\Concept Mapper\`: `Concept Mapper - Master Plan.md` (operative roadmap) and `Concept Mapper - Ultimate Build.md` (end-state vision). This file is the distilled, binding version for coding sessions.
 
 ## Current state
 - **Phase 1 complete:** hand-built Kant cluster (`data/graph.json`, 14 nodes / 17 edges) + static ego-view viewer (`viewer/index.html`, Cytoscape.js, no build step). Viewer reads `graph.data.js` — regenerate with `pipeline/build_viewer_data.py` after any graph.json change.
-- **Phase 2 complete (2026-06-11):** `data/registry.json` (131 rows: 65 concepts / 37 persons / 6 schools / 23 works; 70 QIDs hand- or claims-verified, 56 auto-resolved + human-reviewed, 5 reviewed-no-QID) built by `seeds.json → wikidata_bootstrap.py → merge.py`; `data/corpus.json` (30 SEP Ethics entries, ids verified against scraped contents); gold sets in `data/gold/` (32 canonical edges, 25 adversarial traps); `validate.py` green incl. verbatim-quote check against cached `kant-moral`. Note: Q221373 is *deontology*, not the categorical imperative (Q209681) — early plan docs had this wrong.
+- **Phase 2 complete (2026-06-11):** `data/registry.json` (137 rows: 71 concepts / 37 persons / 6 schools / 23 works, cross-checked against the vault seed lists; QIDs hand- or claims-verified, auto-resolved rows human-reviewed, 5 reviewed-no-QID) built by `seeds.json → wikidata_bootstrap.py → merge.py`; `data/corpus.json` (30 SEP Ethics entries, ids verified against scraped contents); gold sets in `data/gold/` (32 canonical edges, 25 adversarial traps); `validate.py` green incl. verbatim-quote check against cached `kant-moral`. Note: Q221373 is *deontology*, not the categorical imperative (Q209681) — early plan docs had this wrong.
 - **Now doing Phase 3:** backbone generation (see Roadmap).
 
 ## Architecture decisions (do not silently revisit)

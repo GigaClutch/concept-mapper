@@ -808,6 +808,28 @@
       ]
     },
     {
+      "id": "moral_subjectivism",
+      "type": "concept",
+      "label": "Moral Subjectivism",
+      "wikidata_qid": "Q568188",
+      "qid_source": "auto-unverified",
+      "wd_label": "ethical subjectivism",
+      "wd_description": "meta-ethical view",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_nihilism",
+      "type": "concept",
+      "label": "Moral Nihilism",
+      "wikidata_qid": "Q12835757",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral nihilism",
+      "wd_description": "meta-ethical view that nothing is intrinsically moral or immoral",
+      "wd_aliases": [
+        "ethical nihilism"
+      ]
+    },
+    {
       "id": "moral_naturalism",
       "type": "concept",
       "label": "Moral Naturalism",
@@ -960,6 +982,19 @@
       "wd_aliases": []
     },
     {
+      "id": "altruism",
+      "type": "concept",
+      "label": "Altruism",
+      "wikidata_qid": "Q167323",
+      "qid_source": "auto-unverified",
+      "wd_label": "altruism",
+      "wd_description": "principle or practice of concern for the welfare of others",
+      "wd_aliases": [
+        "selflessness",
+        "ministration"
+      ]
+    },
+    {
       "id": "psychological_egoism",
       "type": "concept",
       "label": "Psychological Egoism",
@@ -1103,6 +1138,39 @@
       "qid_source": "auto-unverified",
       "wd_label": "moral luck",
       "wd_description": "philosophical concept",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_dilemma",
+      "type": "concept",
+      "label": "Moral Dilemma",
+      "wikidata_qid": "Q192568",
+      "qid_source": "auto-unverified",
+      "wd_label": "ethical dilemma",
+      "wd_description": "decision-making problem between two conflicting moral imperatives, neither of which is unambiguously acceptable or preferable",
+      "wd_aliases": [
+        "moral dilemma",
+        "moral issue"
+      ]
+    },
+    {
+      "id": "moral_agency",
+      "type": "concept",
+      "label": "Moral Agency",
+      "wikidata_qid": "Q11883221",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral agency",
+      "wd_description": "ability to make ethical judgements",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_status",
+      "type": "concept",
+      "label": "Moral Status",
+      "wikidata_qid": "Q58620410",
+      "qid_source": "curated-verified",
+      "wd_label": "moral status",
+      "wd_description": "description of intrinsic self-worth and dignity",
       "wd_aliases": []
     },
     {
