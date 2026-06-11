@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "built": "2026-06-11",
+    "count": 30
+  },
+  "articles": [
+    {
+      "id": "kant-moral",
+      "title": "moral philosophy",
+      "url": "https://plato.stanford.edu/entries/kant-moral/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "ethics-deontological",
+      "title": "ethics: deontological",
+      "url": "https://plato.stanford.edu/entries/ethics-deontological/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "consequentialism",
+      "title": "consequentialism",
+      "url": "https://plato.stanford.edu/entries/consequentialism/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "utilitarianism-history",
+      "title": "history of",
+      "url": "https://plato.stanford.edu/entries/utilitarianism-history/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "ethics-virtue",
+      "title": "virtue",
+      "url": "https://plato.stanford.edu/entries/ethics-virtue/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "aristotle-ethics",
+      "title": "ethics",
+      "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "hume-moral",
+      "title": "moral philosophy",
+      "url": "https://plato.stanford.edu/entries/hume-moral/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "mill-moral-political",
+      "title": "moral and political philosophy",
+      "url": "https://plato.stanford.edu/entries/mill-moral-political/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "bentham",
+      "title": "Bentham, Jeremy",
+      "url": "https://plato.stanford.edu/entries/bentham/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "metaethics",
+      "title": "metaethics",
+      "url": "https://plato.stanford.edu/entries/metaethics/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-realism",
+      "title": "moral realism",
+      "url": "https://plato.stanford.edu/entries/moral-realism/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-anti-realism",
+      "title": "moral anti-realism",
+      "url": "https://plato.stanford.edu/entries/moral-anti-realism/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-relativism",
+      "title": "moral relativism",
+      "url": "https://plato.stanford.edu/entries/moral-relativism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-cognitivism",
+      "title": "cognitivism vs. non-cognitivism, moral",
+      "url": "https://plato.stanford.edu/entries/moral-cognitivism/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "naturalism-moral",
+      "title": "naturalism: moral",
+      "url": "https://plato.stanford.edu/entries/naturalism-moral/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-non-naturalism",
+      "title": "moral non-naturalism",
+      "url": "https://plato.stanford.edu/entries/moral-non-naturalism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "contractualism",
+      "title": "contractualism",
+      "url": "https://plato.stanford.edu/entries/contractualism/",
+      "priority": 1,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "contractarianism",
+      "title": "contractarianism",
+      "url": "https://plato.stanford.edu/entries/contractarianism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "egoism",
+      "title": "egoism",
+      "url": "https://plato.stanford.edu/entries/egoism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "hedonism",
+      "title": "hedonism",
+      "url": "https://plato.stanford.edu/entries/hedonism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-luck",
+      "title": "moral",
+      "url": "https://plato.stanford.edu/entries/moral-luck/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "supererogation",
+      "title": "supererogation",
+      "url": "https://plato.stanford.edu/entries/supererogation/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "double-effect",
+      "title": "double effect, doctrine of",
+      "url": "https://plato.stanford.edu/entries/double-effect/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "practical-reason",
+      "title": "practical reason",
+      "url": "https://plato.stanford.edu/entries/practical-reason/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-responsibility",
+      "title": "moral responsibility",
+      "url": "https://plato.stanford.edu/entries/moral-responsibility/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "intuitionism-ethics",
+      "title": "moral intuitionism",
+      "url": "https://plato.stanford.edu/entries/intuitionism-ethics/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "natural-law-ethics",
+      "title": "natural law tradition",
+      "url": "https://plato.stanford.edu/entries/natural-law-ethics/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "feminism-ethics",
+      "title": "feminist philosophy, interventions: ethics",
+      "url": "https://plato.stanford.edu/entries/feminism-ethics/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "kant-hume-morality",
+      "title": "Kant, Immanuel: and Hume on morality",
+      "url": "https://plato.stanford.edu/entries/kant-hume-morality/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-sentimentalism",
+      "title": "moral sentimentalism",
+      "url": "https://plato.stanford.edu/entries/moral-sentimentalism/",
+      "priority": 2,
+      "retrieved": "",
+      "grounded_edges": 0,
+      "proposed_edges": 0
+    }
+  ]
+}

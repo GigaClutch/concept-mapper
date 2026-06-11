@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "created": "2026-06-11",
+    "description": "Gold adversarial set: superficially plausible edges that a correct pipeline must NOT assert. A pipeline run is scored by how many of these it (wrongly) produces — each hit is a precision failure. verdict is always 'reject'. trap_type in {direction_error, polysemy, plausible_but_false}.",
+    "trap_count": 25
+  },
+  "traps": [
+    { "source": "immanuel_kant", "type": "DEVELOPED_BY", "target": "categorical_imperative", "trap_type": "direction_error", "reason": "reversed: concepts are developed by persons, not vice versa" },
+    { "source": "immanuel_kant", "type": "AUTHORED_BY", "target": "groundwork_metaphysics_of_morals", "trap_type": "direction_error", "reason": "reversed: AUTHORED_BY goes work -> person" },
+    { "source": "normative_ethics", "type": "SUBCATEGORY_OF", "target": "deontology", "trap_type": "direction_error", "reason": "reversed: deontology is the subcategory of normative ethics" },
+    { "source": "consequentialism", "type": "SUBCATEGORY_OF", "target": "utilitarianism", "trap_type": "direction_error", "reason": "reversed: utilitarianism is a species of consequentialism" },
+    { "source": "david_hume", "type": "INFLUENCED_BY", "target": "immanuel_kant", "trap_type": "direction_error", "reason": "reversed and anachronistic: Kant was influenced by Hume; Hume died before the critical philosophy appeared" },
+    { "source": "jeremy_bentham", "type": "INFLUENCED_BY", "target": "john_stuart_mill", "trap_type": "direction_error", "reason": "reversed: Mill (b. 1806) was Bentham's pupil, not his influence" },
+    { "source": "utilitarianism", "type": "DEVELOPED_BY", "target": "immanuel_kant", "trap_type": "plausible_but_false", "reason": "famous moral philosopher of the right era, but Kant's ethics is the standard rival of utilitarianism" },
+    { "source": "virtue_ethics", "type": "DEVELOPED_BY", "target": "john_stuart_mill", "trap_type": "plausible_but_false", "reason": "Mill is a utilitarian; virtue ethics is Aristotelian" },
+    { "source": "categorical_imperative", "type": "DEVELOPED_BY", "target": "g_e_moore", "trap_type": "plausible_but_false", "reason": "Moore is a metaethicist three centuries later" },
+    { "source": "trolley_problem", "type": "DEVELOPED_BY", "target": "peter_singer", "trap_type": "plausible_but_false", "reason": "famous applied ethicist, but the case is Philippa Foot's (1967)" },
+    { "source": "error_theory", "type": "DEVELOPED_BY", "target": "r_m_hare", "trap_type": "plausible_but_false", "reason": "Hare is a non-cognitivist (prescriptivism); error theory is Mackie's" },
+    { "source": "care_ethics", "type": "DEVELOPED_BY", "target": "philippa_foot", "trap_type": "plausible_but_false", "reason": "prominent woman moral philosopher, but care ethics stems from Gilligan and Noddings" },
+    { "source": "naturalistic_fallacy", "type": "INTRODUCED_IN", "target": "methods_of_ethics", "trap_type": "plausible_but_false", "reason": "right tradition, wrong book: introduced in Moore's Principia Ethica, not Sidgwick's Methods" },
+    { "source": "categorical_imperative", "type": "INTRODUCED_IN", "target": "critique_of_pure_reason", "trap_type": "plausible_but_false", "reason": "famous Kant work, but the first Critique is theoretical philosophy; the CI appears in the Groundwork" },
+    { "source": "kingdom_of_ends", "type": "INTRODUCED_IN", "target": "critique_of_practical_reason", "trap_type": "plausible_but_false", "reason": "wrong Kant work: the kingdom of ends formulation is in the Groundwork" },
+    { "source": "is_ought_problem", "type": "INTRODUCED_IN", "target": "enquiry_principles_of_morals", "trap_type": "plausible_but_false", "reason": "wrong Hume work: the is/ought passage is in the Treatise" },
+    { "source": "utilitarianism_mill", "type": "AUTHORED_BY", "target": "jeremy_bentham", "trap_type": "plausible_but_false", "reason": "the founder of utilitarianism did not write the book 'Utilitarianism' — Mill did" },
+    { "source": "on_the_genealogy_of_morality", "type": "AUTHORED_BY", "target": "arthur_schopenhauer", "trap_type": "plausible_but_false", "reason": "closely associated German pessimist, but the Genealogy is Nietzsche's" },
+    { "source": "aristotle", "type": "INFLUENCED_BY", "target": "thomas_aquinas", "trap_type": "plausible_but_false", "reason": "anachronism: the influence runs Aristotle -> Aquinas, 15 centuries apart" },
+    { "source": "good_will", "type": "DEVELOPED_BY", "target": "david_hume", "trap_type": "polysemy", "reason": "confuses Kant's good will (der gute Wille) with Humean benevolence / fellow-feeling" },
+    { "source": "emotivism", "type": "DEVELOPED_BY", "target": "david_hume", "trap_type": "polysemy", "reason": "conflates 18th-c. moral sentimentalism with 20th-c. emotivism (Ayer, Stevenson); 'morality founded on sentiment' reads deceptively like emotivism" },
+    { "source": "republic_plato", "type": "AUTHORED_BY", "target": "aristotle", "trap_type": "polysemy", "reason": "conflates Plato's Republic with Aristotle's Politics; both canonical ancient political works" },
+    { "source": "moral_intuitionism", "type": "CONTRASTS_WITH", "target": "moral_realism", "trap_type": "polysemy", "reason": "reads 'intuitionism' as anti-realist (as in mathematics); ethical intuitionists (Moore, Ross, Prichard) are realists — intuitionism is a species of realism, not its opposite" },
+    { "source": "natural_law", "type": "DEVELOPED_BY", "target": "david_hume", "trap_type": "polysemy", "reason": "confuses natural law ethics (Aquinas) with Hume's discussions of the laws of nature / causation" },
+    { "source": "prescriptivism", "type": "DEVELOPED_BY", "target": "a_j_ayer", "trap_type": "polysemy", "reason": "conflates the two classic non-cognitivisms: Ayer's emotivism vs Hare's prescriptivism" }
+  ]
+}

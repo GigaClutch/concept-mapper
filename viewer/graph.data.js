@@ -22,6 +22,10 @@ window.GRAPH = {
     "CONTRASTS_WITH",
     "CRITIQUES",
     "RESPONDS_TO"
+   ],
+   "bibliographic": [
+    "AUTHORED_BY",
+    "INTRODUCED_IN"
    ]
   }
  },
@@ -280,12 +284,12 @@ window.GRAPH = {
    "source": "categorical_imperative",
    "target": "immanuel_kant",
    "type": "DEVELOPED_BY",
-   "weight": 1.0,
+   "weight": 0.75,
    "origin": "backbone",
    "evidence": [
     {
      "article_id": "kant-moral",
-     "quote": "Kant's most influential positions in moral philosophy are found in The Groundwork of the Metaphysics of Morals, where he argues that the fundamental principle of morality is the Categorical Imperative."
+     "quote": "Immanuel Kant (1724–1804) argued that the supreme principle of morality is a principle of rationality that he dubbed the “Categorical Imperative” (CI)."
     }
    ],
    "status": "confirmed"

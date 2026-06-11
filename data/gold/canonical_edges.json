@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "created": "2026-06-11",
+    "description": "Gold canonical seed: hand-written, uncontroversially correct edges over registry ids. A backbone/grounding pipeline run is scored by how many of these it recovers (recall) and must never contradict them. verdict is always 'accept'.",
+    "edge_count": 32
+  },
+  "edges": [
+    { "source": "categorical_imperative", "type": "DEVELOPED_BY", "target": "immanuel_kant", "note": "core Kant attribution" },
+    { "source": "categorical_imperative", "type": "INTRODUCED_IN", "target": "groundwork_metaphysics_of_morals", "note": "Groundwork 1785" },
+    { "source": "categorical_imperative", "type": "CONTRASTS_WITH", "target": "hypothetical_imperative", "note": "Kant's own contrast; symmetric" },
+    { "source": "autonomy", "type": "DEVELOPED_BY", "target": "immanuel_kant", "note": "autonomy as self-legislation of the will" },
+    { "source": "autonomy", "type": "CONTRASTS_WITH", "target": "heteronomy", "note": "Kant's pair; symmetric" },
+    { "source": "good_will", "type": "INTRODUCED_IN", "target": "groundwork_metaphysics_of_morals", "note": "Groundwork I opening claim" },
+    { "source": "groundwork_metaphysics_of_morals", "type": "AUTHORED_BY", "target": "immanuel_kant", "note": "" },
+    { "source": "critique_of_practical_reason", "type": "AUTHORED_BY", "target": "immanuel_kant", "note": "" },
+    { "source": "immanuel_kant", "type": "INFLUENCED_BY", "target": "david_hume", "note": "dogmatic slumber" },
+    { "source": "german_idealism", "type": "DERIVED_FROM", "target": "immanuel_kant", "note": "movement emerging from the critical philosophy" },
+    { "source": "deontology", "type": "SUBCATEGORY_OF", "target": "normative_ethics", "note": "" },
+    { "source": "consequentialism", "type": "SUBCATEGORY_OF", "target": "normative_ethics", "note": "" },
+    { "source": "virtue_ethics", "type": "SUBCATEGORY_OF", "target": "normative_ethics", "note": "" },
+    { "source": "deontology", "type": "CONTRASTS_WITH", "target": "consequentialism", "note": "standard opposition; symmetric" },
+    { "source": "utilitarianism", "type": "SUBCATEGORY_OF", "target": "consequentialism", "note": "" },
+    { "source": "act_utilitarianism", "type": "SUBCATEGORY_OF", "target": "utilitarianism", "note": "" },
+    { "source": "rule_utilitarianism", "type": "SUBCATEGORY_OF", "target": "utilitarianism", "note": "" },
+    { "source": "utilitarianism", "type": "DEVELOPED_BY", "target": "jeremy_bentham", "note": "classical formulation" },
+    { "source": "utilitarianism", "type": "EXTENDED_BY", "target": "john_stuart_mill", "note": "qualitative pleasures refinement" },
+    { "source": "john_stuart_mill", "type": "INFLUENCED_BY", "target": "jeremy_bentham", "note": "" },
+    { "source": "greatest_happiness_principle", "type": "INTRODUCED_IN", "target": "principles_of_morals_and_legislation", "note": "Bentham 1789 statement of the principle of utility" },
+    { "source": "utilitarianism_mill", "type": "AUTHORED_BY", "target": "john_stuart_mill", "note": "" },
+    { "source": "virtue_ethics", "type": "DEVELOPED_BY", "target": "aristotle", "note": "Nicomachean Ethics tradition" },
+    { "source": "virtue_ethics", "type": "EXTENDED_BY", "target": "rosalind_hursthouse", "note": "contemporary neo-Aristotelian revival" },
+    { "source": "nicomachean_ethics", "type": "AUTHORED_BY", "target": "aristotle", "note": "" },
+    { "source": "golden_mean", "type": "INTRODUCED_IN", "target": "nicomachean_ethics", "note": "virtue as mean between extremes" },
+    { "source": "emotivism", "type": "SUBCATEGORY_OF", "target": "non_cognitivism", "note": "" },
+    { "source": "prescriptivism", "type": "DEVELOPED_BY", "target": "r_m_hare", "note": "universal prescriptivism" },
+    { "source": "error_theory", "type": "DEVELOPED_BY", "target": "j_l_mackie", "note": "Ethics: Inventing Right and Wrong, ch. 1" },
+    { "source": "open_question_argument", "type": "INTRODUCED_IN", "target": "principia_ethica", "note": "Moore 1903" },
+    { "source": "prima_facie_duty", "type": "DEVELOPED_BY", "target": "w_d_ross", "note": "The Right and the Good, 1930" },
+    { "source": "is_ought_problem", "type": "INTRODUCED_IN", "target": "treatise_of_human_nature", "note": "Treatise III.i.1" }
+  ]
+}

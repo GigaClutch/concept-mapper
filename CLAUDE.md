@@ -5,8 +5,9 @@ Interactive concept map of philosophy: search a concept, see it situated in a ty
 Full plan lives in the Obsidian vault: `Concept Mapper - Master Plan.md` (operative roadmap) and `Concept Mapper - Ultimate Build.md` (end-state vision). This file is the distilled, binding version for coding sessions.
 
 ## Current state
-- **Phase 1 complete:** hand-built Kant cluster (`data/graph.json`, 14 nodes / 17 edges) + static ego-view viewer (`viewer/index.html`, Cytoscape.js, no build step). Viewer reads `graph.data.js` (generated copy of graph.json for file:// loading).
-- **Now doing Phase 2:** registry bootstrap + gold seed (see Roadmap).
+- **Phase 1 complete:** hand-built Kant cluster (`data/graph.json`, 14 nodes / 17 edges) + static ego-view viewer (`viewer/index.html`, Cytoscape.js, no build step). Viewer reads `graph.data.js` — regenerate with `pipeline/build_viewer_data.py` after any graph.json change.
+- **Phase 2 complete (2026-06-11):** `data/registry.json` (131 rows: 65 concepts / 37 persons / 6 schools / 23 works; 70 QIDs hand- or claims-verified, 56 auto-resolved + human-reviewed, 5 reviewed-no-QID) built by `seeds.json → wikidata_bootstrap.py → merge.py`; `data/corpus.json` (30 SEP Ethics entries, ids verified against scraped contents); gold sets in `data/gold/` (32 canonical edges, 25 adversarial traps); `validate.py` green incl. verbatim-quote check against cached `kant-moral`. Note: Q221373 is *deontology*, not the categorical imperative (Q209681) — early plan docs had this wrong.
+- **Now doing Phase 3:** backbone generation (see Roadmap).
 
 ## Architecture decisions (do not silently revisit)
 - **D1 — Demo-first:** bounded corpus (Ethics domain, ~20 SEP articles). JSON file storage. No Neo4j, no backend API, no frontend framework until the demo proves valuable. Schema stays migration-ready.
@@ -22,7 +23,7 @@ Full plan lives in the Obsidian vault: `Concept Mapper - Master Plan.md` (operat
 { "id": "categorical_imperative", "label": "Categorical Imperative",
   "type": "concept", "definition": "...", "aliases": ["CI"],
   "domain": "Ethics", "tradition": "", "time_period": "18th century",
-  "wikidata_qid": "Q221373", "status": "curated",
+  "wikidata_qid": "Q209681", "status": "curated",
   "metrics": { "degree": 0, "betweenness": 0.0, "community": 0 } }
 // Edge
 { "source": "categorical_imperative", "target": "immanuel_kant",

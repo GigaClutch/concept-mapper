@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-ChildItem data, viewer | Select-Object Name, Length; \\(Get-Content viewer\\\\graph.data.js -TotalCount 2\\))",
-      "PowerShell(python -m venv venv)"
+      "PowerShell(python -m venv venv)",
+      "PowerShell($txt = Get-Content cache\\\\sep\\\\articles\\\\kant-moral.txt -Raw; $q = \"Kant's most influential positions in moral philosophy are found in The Groundwork of the Metaphysics of Morals\"; $txt.Contains\\($q\\); $txt.Contains\\(\"most influential positions in moral philosophy\"\\); $i = $txt.IndexOf\\(\"most influential positions\"\\); if \\($i -ge 0\\) { $txt.Substring\\($i - 60, 300\\) })"
     ]
   }
 }

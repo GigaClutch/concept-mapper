@@ -10,8 +10,8 @@
   :root {
     --bg: #f7f6f3; --panel: #ffffff; --ink: #2b2a27; --muted: #8a8780;
     --line: #e3e1db; --accent: #4a6fa5;
-    --concept: #4a6fa5; --person: #b07d2b; --school: #7b5ea7;
-    --hier: #5b8dd9; --dev: #43a06f; --opp: #cf5f56;
+    --concept: #4a6fa5; --person: #b07d2b; --school: #7b5ea7; --work: #5e8d87;
+    --hier: #5b8dd9; --dev: #43a06f; --opp: #cf5f56; --bib: #9a8a6f;
   }
   * { box-sizing: border-box; margin: 0; }
   body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
@@ -63,9 +63,11 @@
     <span class="key"><span class="swatch" style="background:var(--concept)"></span>concept</span>
     <span class="key"><span class="swatch" style="background:var(--person)"></span>person</span>
     <span class="key"><span class="swatch" style="background:var(--school)"></span>school</span>
+    <span class="key"><span class="swatch" style="background:var(--work)"></span>work</span>
     <span class="key"><span class="swatch" style="background:var(--hier)"></span>hierarchical</span>
     <span class="key"><span class="swatch" style="background:var(--dev)"></span>developmental</span>
     <span class="key"><span class="swatch" style="background:var(--opp)"></span>oppositional</span>
+    <span class="key"><span class="swatch" style="background:var(--bib)"></span>bibliographic</span>
   </div>
 </header>
 <main>
@@ -80,9 +82,9 @@ const G = window.GRAPH;
 const FAMILY = {};
 for (const [fam, types] of Object.entries(G.meta.edge_families))
   for (const t of types) FAMILY[t] = fam;
-const FAM_COLOR = { hierarchical: "#5b8dd9", developmental: "#43a06f", oppositional: "#cf5f56" };
+const FAM_COLOR = { hierarchical: "#5b8dd9", developmental: "#43a06f", oppositional: "#cf5f56", bibliographic: "#9a8a6f" };
 const SYM = new Set(G.meta.symmetric_types || []);
-const TYPE_COLOR = { concept: "#4a6fa5", person: "#b07d2b", school: "#7b5ea7" };
+const TYPE_COLOR = { concept: "#4a6fa5", person: "#b07d2b", school: "#7b5ea7", work: "#5e8d87" };
 const ARTICLES = Object.fromEntries((G.articles || []).map(a => [a.id, a]));
 
 // ---- lookup structures ----

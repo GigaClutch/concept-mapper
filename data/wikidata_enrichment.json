@@ -1,0 +1,1630 @@
+{
+  "retrieved": "2026-06-11",
+  "entries": [
+    {
+      "id": "immanuel_kant",
+      "type": "person",
+      "label": "Immanuel Kant",
+      "wikidata_qid": "Q9312",
+      "qid_source": "curated-verified",
+      "wd_label": "Immanuel Kant",
+      "wd_description": "German philosopher (1724-1804)",
+      "wd_aliases": [],
+      "birth_year": 1724,
+      "death_year": 1804
+    },
+    {
+      "id": "david_hume",
+      "type": "person",
+      "label": "David Hume",
+      "wikidata_qid": "Q37160",
+      "qid_source": "curated-verified",
+      "wd_label": "David Hume",
+      "wd_description": "Scottish philosopher, economist, and historian (1711-1776)",
+      "wd_aliases": [
+        "David Home",
+        "Hume"
+      ],
+      "birth_year": 1711,
+      "death_year": 1776
+    },
+    {
+      "id": "aristotle",
+      "type": "person",
+      "label": "Aristotle",
+      "wikidata_qid": "Q868",
+      "qid_source": "curated-verified",
+      "wd_label": "Aristotle",
+      "wd_description": "4th-century BCE Classical Greek philosopher and polymath",
+      "wd_aliases": [
+        "the Stagirite"
+      ],
+      "birth_year": -384,
+      "death_year": -322
+    },
+    {
+      "id": "plato",
+      "type": "person",
+      "label": "Plato",
+      "wikidata_qid": "Q859",
+      "qid_source": "curated-verified",
+      "wd_label": "Plato",
+      "wd_description": "4th-century BCE Greek philosopher",
+      "wd_aliases": [],
+      "birth_year": -427,
+      "death_year": -347
+    },
+    {
+      "id": "socrates",
+      "type": "person",
+      "label": "Socrates",
+      "wikidata_qid": "Q913",
+      "qid_source": "curated-verified",
+      "wd_label": "Socrates",
+      "wd_description": "5th-century BCE Greek philosopher",
+      "wd_aliases": [],
+      "birth_year": -470,
+      "death_year": -399
+    },
+    {
+      "id": "jeremy_bentham",
+      "type": "person",
+      "label": "Jeremy Bentham",
+      "wikidata_qid": "Q60887",
+      "qid_source": "auto-verified",
+      "wd_label": "Jeremy Bentham",
+      "wd_description": "British philosopher, jurist, and social reformer (1748–1832)",
+      "wd_aliases": [
+        "Gamaliel Smith",
+        "Philip Beauchamp"
+      ],
+      "birth_year": 1749,
+      "death_year": 1832
+    },
+    {
+      "id": "john_stuart_mill",
+      "type": "person",
+      "label": "John Stuart Mill",
+      "wikidata_qid": "Q50020",
+      "qid_source": "auto-verified",
+      "wd_label": "John Stuart Mill",
+      "wd_description": "British philosopher and political economist (1806–1873)",
+      "wd_aliases": [
+        "J. S. Mill"
+      ],
+      "birth_year": 1806,
+      "death_year": 1873
+    },
+    {
+      "id": "henry_sidgwick",
+      "type": "person",
+      "label": "Henry Sidgwick",
+      "wikidata_qid": "Q433076",
+      "qid_source": "auto-verified",
+      "wd_label": "Henry Sidgwick",
+      "wd_description": "English philosopher (1838–1900)",
+      "wd_aliases": [],
+      "birth_year": 1838,
+      "death_year": 1900
+    },
+    {
+      "id": "g_e_moore",
+      "type": "person",
+      "label": "G. E. Moore",
+      "wikidata_qid": "Q295386",
+      "qid_source": "auto-verified",
+      "wd_label": "G. E. Moore",
+      "wd_description": "English philosopher (1873–1958)",
+      "wd_aliases": [
+        "George Moore",
+        "George Edward Moore",
+        "GE Moore"
+      ],
+      "birth_year": 1873,
+      "death_year": 1958
+    },
+    {
+      "id": "w_d_ross",
+      "type": "person",
+      "label": "W. D. Ross",
+      "wikidata_qid": "Q1364954",
+      "qid_source": "auto-verified",
+      "wd_label": "William David Ross",
+      "wd_description": "Scottish philosopher and translator (1877–1971)",
+      "wd_aliases": [
+        "W. D. Ross",
+        "Sir William David Ross",
+        "William Ross",
+        "Sir William Ross",
+        "David Ross"
+      ],
+      "birth_year": 1877,
+      "death_year": 1971
+    },
+    {
+      "id": "r_m_hare",
+      "type": "person",
+      "label": "R. M. Hare",
+      "wikidata_qid": "Q471923",
+      "qid_source": "auto-verified",
+      "wd_label": "R. M. Hare",
+      "wd_description": "British moral philosopher (1919–2002)",
+      "wd_aliases": [
+        "Richard Mervyn Hare"
+      ],
+      "birth_year": 1919,
+      "death_year": 2002
+    },
+    {
+      "id": "j_l_mackie",
+      "type": "person",
+      "label": "J. L. Mackie",
+      "wikidata_qid": "Q713642",
+      "qid_source": "auto-verified",
+      "wd_label": "J. L. Mackie",
+      "wd_description": "Australian philosopher (1917-1981)",
+      "wd_aliases": [
+        "John Leslie Mackie",
+        "John L. Mackie",
+        "JL Mackie",
+        "J.L. Mackie"
+      ],
+      "birth_year": 1917,
+      "death_year": 1981
+    },
+    {
+      "id": "bernard_williams",
+      "type": "person",
+      "label": "Bernard Williams",
+      "wikidata_qid": "Q345641",
+      "qid_source": "auto-verified",
+      "wd_label": "Bernard Williams",
+      "wd_description": "English moral philosopher (1929–2003)",
+      "wd_aliases": [
+        "Sir Bernard Arthur Owen Williams",
+        "Bernard Arthur Owen Williams"
+      ],
+      "birth_year": 1929,
+      "death_year": 2003
+    },
+    {
+      "id": "philippa_foot",
+      "type": "person",
+      "label": "Philippa Foot",
+      "wikidata_qid": "Q297493",
+      "qid_source": "auto-verified",
+      "wd_label": "Philippa Foot",
+      "wd_description": "English philosopher (1920–2010)",
+      "wd_aliases": [
+        "Philippa Ruth Bosanquet Foot",
+        "Philippa Ruth Bosanquet",
+        "Philippa Ruth Foot",
+        "Philippa Bosanquet"
+      ],
+      "birth_year": 1920,
+      "death_year": 2010
+    },
+    {
+      "id": "elizabeth_anscombe",
+      "type": "person",
+      "label": "Elizabeth Anscombe",
+      "wikidata_qid": "Q229646",
+      "qid_source": "auto-verified",
+      "wd_label": "G. E. M. Anscombe",
+      "wd_description": "British analytic philosopher",
+      "wd_aliases": [
+        "Elizabeth Anscombe",
+        "(Gertrude) Elizabeth (Margaret) Anscombe",
+        "Elisabeth Anscombe"
+      ],
+      "birth_year": 1919,
+      "death_year": 2001
+    },
+    {
+      "id": "john_rawls",
+      "type": "person",
+      "label": "John Rawls",
+      "wikidata_qid": "Q172544",
+      "qid_source": "auto-verified",
+      "wd_label": "John Rawls",
+      "wd_description": "American political philosopher (1921–2002)",
+      "wd_aliases": [],
+      "birth_year": 1921,
+      "death_year": 2002
+    },
+    {
+      "id": "t_m_scanlon",
+      "type": "person",
+      "label": "T. M. Scanlon",
+      "wikidata_qid": "Q1773977",
+      "qid_source": "auto-verified",
+      "wd_label": "T. M. Scanlon",
+      "wd_description": "American philosopher",
+      "wd_aliases": [
+        "Thomas Michael Scanlon",
+        "Thomas M. Scanlon, Jr.",
+        "TM Scanlon",
+        "T M Scanlon",
+        "Thomas M. Scanlon",
+        "Tim Scanlon",
+        "Thomas Michael"
+      ],
+      "birth_year": 1940,
+      "death_year": null
+    },
+    {
+      "id": "christine_korsgaard",
+      "type": "person",
+      "label": "Christine Korsgaard",
+      "wikidata_qid": "Q467518",
+      "qid_source": "auto-verified",
+      "wd_label": "Christine Korsgaard",
+      "wd_description": "American philosopher",
+      "wd_aliases": [
+        "Christine Marion Korsgaard",
+        "Christine M. Korsgaard",
+        "C. M. Korsgaard",
+        "C.M. Korsgaard",
+        "C M Korsgaard",
+        "Christine M Korsgaard"
+      ],
+      "birth_year": 1952,
+      "death_year": null
+    },
+    {
+      "id": "derek_parfit",
+      "type": "person",
+      "label": "Derek Parfit",
+      "wikidata_qid": "Q962160",
+      "qid_source": "auto-verified",
+      "wd_label": "Derek Parfit",
+      "wd_description": "British philosopher (1942–2017)",
+      "wd_aliases": [],
+      "birth_year": 1942,
+      "death_year": 2017
+    },
+    {
+      "id": "peter_singer",
+      "type": "person",
+      "label": "Peter Singer",
+      "wikidata_qid": "Q211539",
+      "qid_source": "auto-verified",
+      "wd_label": "Peter Singer",
+      "wd_description": "Australian moral philosopher (born 1946)",
+      "wd_aliases": [],
+      "birth_year": 1946,
+      "death_year": null
+    },
+    {
+      "id": "alasdair_macintyre",
+      "type": "person",
+      "label": "Alasdair MacIntyre",
+      "wikidata_qid": "Q310178",
+      "qid_source": "auto-verified",
+      "wd_label": "Alasdair MacIntyre",
+      "wd_description": "Scottish-American philosopher (1929–2025)",
+      "wd_aliases": [
+        "Alasdair Chalmers MacIntyre"
+      ],
+      "birth_year": 1929,
+      "death_year": 2025
+    },
+    {
+      "id": "rosalind_hursthouse",
+      "type": "person",
+      "label": "Rosalind Hursthouse",
+      "wikidata_qid": "Q3480230",
+      "qid_source": "auto-verified",
+      "wd_label": "Rosalind Hursthouse",
+      "wd_description": "New Zealand philosopher",
+      "wd_aliases": [
+        "Mary Rosalind Hursthouse"
+      ],
+      "birth_year": 1943,
+      "death_year": null
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "type": "person",
+      "label": "Friedrich Nietzsche",
+      "wikidata_qid": "Q9358",
+      "qid_source": "curated-verified",
+      "wd_label": "Friedrich Nietzsche",
+      "wd_description": "German philosopher (1844-1900)",
+      "wd_aliases": [],
+      "birth_year": 1844,
+      "death_year": 1900
+    },
+    {
+      "id": "thomas_hobbes",
+      "type": "person",
+      "label": "Thomas Hobbes",
+      "wikidata_qid": "Q37621",
+      "qid_source": "curated-verified",
+      "wd_label": "Thomas Hobbes",
+      "wd_description": "English philosopher (1588–1679)",
+      "wd_aliases": [
+        "Hobbes",
+        "Thomas Hobbsted",
+        "Thomas Hobbes of Malflutry"
+      ],
+      "birth_year": 1588,
+      "death_year": 1679
+    },
+    {
+      "id": "thomas_aquinas",
+      "type": "person",
+      "label": "Thomas Aquinas",
+      "wikidata_qid": "Q9438",
+      "qid_source": "curated-verified",
+      "wd_label": "Thomas Aquinas",
+      "wd_description": "Italian Dominican friar, philosopher, Catholic priest, and Doctor of the Church (1225–1274)",
+      "wd_aliases": [
+        "Saint Thomas Aquinas",
+        "Saint Thomas",
+        "Tommaso d'Aquino",
+        "Thomas of Aquino",
+        "St Thomas Aquinas",
+        "St. Thomas Aquinas",
+        "Aquinas",
+        "Angelic Doctor"
+      ],
+      "birth_year": 1225,
+      "death_year": 1274
+    },
+    {
+      "id": "epicurus",
+      "type": "person",
+      "label": "Epicurus",
+      "wikidata_qid": "Q43216",
+      "qid_source": "curated-verified",
+      "wd_label": "Epicurus",
+      "wd_description": "ancient Greek philosopher",
+      "wd_aliases": [
+        "Epíkouros",
+        "Epikouros"
+      ],
+      "birth_year": -342,
+      "death_year": -270
+    },
+    {
+      "id": "zeno_of_citium",
+      "type": "person",
+      "label": "Zeno of Citium",
+      "wikidata_qid": "Q171303",
+      "qid_source": "auto-verified",
+      "wd_label": "Zeno of Citium",
+      "wd_description": "Greek philosopher, founder of Stoicism",
+      "wd_aliases": [
+        "Zenon of Citium",
+        "Zeno",
+        "Zeno the Stoic",
+        "Zeno of Kition"
+      ],
+      "birth_year": -334,
+      "death_year": -263
+    },
+    {
+      "id": "francis_hutcheson",
+      "type": "person",
+      "label": "Francis Hutcheson",
+      "wikidata_qid": "Q316367",
+      "qid_source": "auto-verified",
+      "wd_label": "Francis Hutcheson",
+      "wd_description": "Scottish philosopher (1694–1746)",
+      "wd_aliases": [
+        "Franciscus Hutchinson",
+        "Franciscus Hutcheson",
+        "Frances Hutcheson",
+        "Franciscus Hutchesonius",
+        "Franz Hutcheson"
+      ],
+      "birth_year": 1694,
+      "death_year": 1746
+    },
+    {
+      "id": "joseph_butler",
+      "type": "person",
+      "label": "Joseph Butler",
+      "wikidata_qid": "Q218322",
+      "qid_source": "auto-verified",
+      "wd_label": "Joseph Butler",
+      "wd_description": "English bishop and philosopher (1692–1752)",
+      "wd_aliases": [
+        "A Gentleman in Gloucestershire"
+      ],
+      "birth_year": 1692,
+      "death_year": 1752
+    },
+    {
+      "id": "arthur_schopenhauer",
+      "type": "person",
+      "label": "Arthur Schopenhauer",
+      "wikidata_qid": "Q38193",
+      "qid_source": "auto-verified",
+      "wd_label": "Arthur Schopenhauer",
+      "wd_description": "German philosopher (1788-1860)",
+      "wd_aliases": [],
+      "birth_year": 1788,
+      "death_year": 1860
+    },
+    {
+      "id": "a_j_ayer",
+      "type": "person",
+      "label": "A. J. Ayer",
+      "wikidata_qid": "Q243757",
+      "qid_source": "auto-verified",
+      "wd_label": "A. J. Ayer",
+      "wd_description": "English philosopher",
+      "wd_aliases": [
+        "Alfred Jules Ayer",
+        "Alfred J. Ayer",
+        "Sir Alfred Jules Ayer",
+        "Freddie"
+      ],
+      "birth_year": 1910,
+      "death_year": 1989
+    },
+    {
+      "id": "charles_stevenson",
+      "type": "person",
+      "label": "Charles Stevenson",
+      "wikidata_qid": "Q264334",
+      "qid_source": "auto-verified",
+      "wd_label": "Charles L. Stevenson",
+      "wd_description": "American analytic philosopher (1908-1979)",
+      "wd_aliases": [
+        "Charles Leslie Stevenson"
+      ],
+      "birth_year": 1908,
+      "death_year": 1979
+    },
+    {
+      "id": "h_a_prichard",
+      "type": "person",
+      "label": "H. A. Prichard",
+      "wikidata_qid": "Q3498726",
+      "qid_source": "auto-verified",
+      "wd_label": "Harold Arthur Prichard",
+      "wd_description": "British philosopher (1871–1947)",
+      "wd_aliases": [
+        "H. A. Prichard",
+        "Harold A. Prichard"
+      ],
+      "birth_year": 1871,
+      "death_year": 1947
+    },
+    {
+      "id": "carol_gilligan",
+      "type": "person",
+      "label": "Carol Gilligan",
+      "wikidata_qid": "Q284025",
+      "qid_source": "auto-verified",
+      "wd_label": "Carol Gilligan",
+      "wd_description": "American feminist, ethicist, and psychologist",
+      "wd_aliases": [],
+      "birth_year": 1936,
+      "death_year": null
+    },
+    {
+      "id": "nel_noddings",
+      "type": "person",
+      "label": "Nel Noddings",
+      "wikidata_qid": "Q467525",
+      "qid_source": "auto-verified",
+      "wd_label": "Nel Noddings",
+      "wd_description": "American philosopher (1929–2022)",
+      "wd_aliases": [],
+      "birth_year": 1929,
+      "death_year": 2022
+    },
+    {
+      "id": "simon_blackburn",
+      "type": "person",
+      "label": "Simon Blackburn",
+      "wikidata_qid": "Q287357",
+      "qid_source": "auto-verified",
+      "wd_label": "Simon Blackburn",
+      "wd_description": "English academic philosopher (born 1944)",
+      "wd_aliases": [
+        "Simon Walter Blackburn"
+      ],
+      "birth_year": 1944,
+      "death_year": null
+    },
+    {
+      "id": "allan_gibbard",
+      "type": "person",
+      "label": "Allan Gibbard",
+      "wikidata_qid": "Q4730627",
+      "qid_source": "auto-verified",
+      "wd_label": "Allan Gibbard",
+      "wd_description": "American philosopher and social choice theorist",
+      "wd_aliases": [
+        "Allan F. Gibbard",
+        "Allan Fletcher Gibbard"
+      ],
+      "birth_year": 1942,
+      "death_year": null
+    },
+    {
+      "id": "normative_ethics",
+      "type": "concept",
+      "label": "Normative Ethics",
+      "wikidata_qid": "Q1321845",
+      "qid_source": "auto-unverified",
+      "wd_label": "normative ethics",
+      "wd_description": "study of ethical action; branch of philosophical ethics that investigates questions about how one morally ought to act and examines standards for the rightness and wrongness of actions",
+      "wd_aliases": []
+    },
+    {
+      "id": "metaethics",
+      "type": "concept",
+      "label": "Metaethics",
+      "wikidata_qid": "Q56003",
+      "qid_source": "auto-unverified",
+      "wd_label": "metaethics",
+      "wd_description": "branch of ethics seeking to understand ethical properties",
+      "wd_aliases": [
+        "meta-ethics"
+      ]
+    },
+    {
+      "id": "applied_ethics",
+      "type": "concept",
+      "label": "Applied Ethics",
+      "wikidata_qid": "Q538733",
+      "qid_source": "auto-unverified",
+      "wd_label": "applied ethics",
+      "wd_description": "branch of philosophy",
+      "wd_aliases": [
+        "practical ethics",
+        "conduct of life",
+        "personal conduct"
+      ]
+    },
+    {
+      "id": "deontology",
+      "type": "concept",
+      "label": "Deontology",
+      "wikidata_qid": "Q221373",
+      "qid_source": "auto-unverified",
+      "wd_label": "deontology",
+      "wd_description": "class of ethical theories",
+      "wd_aliases": [
+        "deontological ethics"
+      ]
+    },
+    {
+      "id": "consequentialism",
+      "type": "concept",
+      "label": "Consequentialism",
+      "wikidata_qid": "Q646102",
+      "qid_source": "auto-unverified",
+      "wd_label": "consequentialism",
+      "wd_description": "class of ethical theory basing standards of right & wrong on the consequences of actions",
+      "wd_aliases": [
+        "teleological ethics"
+      ]
+    },
+    {
+      "id": "utilitarianism",
+      "type": "concept",
+      "label": "Utilitarianism",
+      "wikidata_qid": "Q160590",
+      "qid_source": "auto-unverified",
+      "wd_label": "utilitarianism",
+      "wd_description": "ethical theory which holds that the right action is the one that maximizes aggregate well-being",
+      "wd_aliases": [
+        "utilitarian ethics"
+      ]
+    },
+    {
+      "id": "act_utilitarianism",
+      "type": "concept",
+      "label": "Act Utilitarianism",
+      "wikidata_qid": "Q3738092",
+      "qid_source": "auto-unverified",
+      "wd_label": "act utilitarianism",
+      "wd_description": "flavour of utilitarianism",
+      "wd_aliases": []
+    },
+    {
+      "id": "rule_utilitarianism",
+      "type": "concept",
+      "label": "Rule Utilitarianism",
+      "wikidata_qid": "Q651440",
+      "qid_source": "auto-unverified",
+      "wd_label": "rule utilitarianism",
+      "wd_description": "form of utilitarianism that says an action is right as it conforms to a rule that leads to the greatest good",
+      "wd_aliases": [
+        "strong rule utilitarianism",
+        "weak rule utilitarianism"
+      ]
+    },
+    {
+      "id": "virtue_ethics",
+      "type": "concept",
+      "label": "Virtue Ethics",
+      "wikidata_qid": "Q1086395",
+      "qid_source": "auto-unverified",
+      "wd_label": "virtue ethics",
+      "wd_description": "normative ethical theories",
+      "wd_aliases": [
+        "aretaic ethics"
+      ]
+    },
+    {
+      "id": "care_ethics",
+      "type": "concept",
+      "label": "Ethics of Care",
+      "wikidata_qid": "Q1035845",
+      "qid_source": "auto-unverified",
+      "wd_label": "Ethics of care",
+      "wd_description": "Ethical theory",
+      "wd_aliases": [
+        "care ethics",
+        "EoC"
+      ]
+    },
+    {
+      "id": "feminist_ethics",
+      "type": "concept",
+      "label": "Feminist Ethics",
+      "wikidata_qid": "Q10494601",
+      "qid_source": "auto-unverified",
+      "wd_label": "feminist ethics",
+      "wd_description": "approach to ethics",
+      "wd_aliases": []
+    },
+    {
+      "id": "categorical_imperative",
+      "type": "concept",
+      "label": "Categorical Imperative",
+      "wikidata_qid": "Q209681",
+      "qid_source": "curated-verified",
+      "wd_label": "categorical imperative",
+      "wd_description": "central concept in Kantian moral philosophy",
+      "wd_aliases": [
+        "the categorical imperative"
+      ]
+    },
+    {
+      "id": "hypothetical_imperative",
+      "type": "concept",
+      "label": "Hypothetical Imperative",
+      "wikidata_qid": "Q1353460",
+      "qid_source": "auto-unverified",
+      "wd_label": "hypothetical imperative",
+      "wd_description": "Kantian philosophical concept; antonym of categorical imperative",
+      "wd_aliases": []
+    },
+    {
+      "id": "maxim",
+      "type": "concept",
+      "label": "Maxim",
+      "wikidata_qid": "",
+      "qid_source": "curated-none",
+      "wd_label": "",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "good_will",
+      "type": "concept",
+      "label": "Good Will",
+      "wikidata_qid": "",
+      "qid_source": "curated-none",
+      "wd_label": "",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "duty",
+      "type": "concept",
+      "label": "Duty",
+      "wikidata_qid": "Q2648051",
+      "qid_source": "auto-unverified",
+      "wd_label": "obligation",
+      "wd_description": "legal or moral requirement to take a certain course of action",
+      "wd_aliases": [
+        "binding",
+        "requirement",
+        "mandatory",
+        "duty",
+        "commitment"
+      ]
+    },
+    {
+      "id": "kingdom_of_ends",
+      "type": "concept",
+      "label": "Kingdom of Ends",
+      "wikidata_qid": "Q6412569",
+      "qid_source": "auto-unverified",
+      "wd_label": "Kingdom of Ends",
+      "wd_description": "Kant’s thought experiment about a world in which all humans are treated as ends, not as means",
+      "wd_aliases": []
+    },
+    {
+      "id": "universalizability",
+      "type": "concept",
+      "label": "Universalizability",
+      "wikidata_qid": "Q7894189",
+      "qid_source": "auto-unverified",
+      "wd_label": "Universalizability",
+      "wd_description": "concept in Kantian ethics",
+      "wd_aliases": []
+    },
+    {
+      "id": "autonomy",
+      "type": "concept",
+      "label": "Autonomy",
+      "wikidata_qid": "Q484105",
+      "qid_source": "auto-unverified",
+      "wd_label": "autonomy",
+      "wd_description": "concept found in moral, political, and bioethical philosophy",
+      "wd_aliases": []
+    },
+    {
+      "id": "heteronomy",
+      "type": "concept",
+      "label": "Heteronomy",
+      "wikidata_qid": "Q1571420",
+      "qid_source": "auto-unverified",
+      "wd_label": "heteronomy",
+      "wd_description": "philosophical concept",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_realism",
+      "type": "concept",
+      "label": "Moral Realism",
+      "wikidata_qid": "Q3100314",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral realism",
+      "wd_description": "philosophical position",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_anti_realism",
+      "type": "concept",
+      "label": "Moral Anti-Realism",
+      "wikidata_qid": "",
+      "qid_source": "curated-none",
+      "wd_label": "",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_relativism",
+      "type": "concept",
+      "label": "Moral Relativism",
+      "wikidata_qid": "Q1778848",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral relativism",
+      "wd_description": "philosophical positions about the differences in moral judgments across peoples and cultures",
+      "wd_aliases": [
+        "ethical relativism"
+      ]
+    },
+    {
+      "id": "moral_naturalism",
+      "type": "concept",
+      "label": "Moral Naturalism",
+      "wikidata_qid": "Q3495350",
+      "qid_source": "curated-verified",
+      "wd_label": "ethical naturalism",
+      "wd_description": "metaethical position",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_non_naturalism",
+      "type": "concept",
+      "label": "Moral Non-Naturalism",
+      "wikidata_qid": "Q5403415",
+      "qid_source": "auto-unverified",
+      "wd_label": "ethical non-naturalism",
+      "wd_description": "meta-ethical view",
+      "wd_aliases": [
+        "moral non-naturalism"
+      ]
+    },
+    {
+      "id": "moral_cognitivism",
+      "type": "concept",
+      "label": "Moral Cognitivism",
+      "wikidata_qid": "Q15055389",
+      "qid_source": "curated-verified",
+      "wd_label": "cognitivism",
+      "wd_description": "the meta-ethical view that ethical sentences express propositions and can therefore be true or false",
+      "wd_aliases": [
+        "ethical cognitivism"
+      ]
+    },
+    {
+      "id": "non_cognitivism",
+      "type": "concept",
+      "label": "Non-Cognitivism",
+      "wikidata_qid": "Q17156560",
+      "qid_source": "auto-unverified",
+      "wd_label": "non-cognitivism",
+      "wd_description": "the meta-ethical view that ethical sentences do not express propositions and thus cannot be true or false",
+      "wd_aliases": []
+    },
+    {
+      "id": "emotivism",
+      "type": "concept",
+      "label": "Emotivism",
+      "wikidata_qid": "Q1058270",
+      "qid_source": "auto-unverified",
+      "wd_label": "emotivism",
+      "wd_description": "metaethical view that moral statements are expressions of emotional attitudes rather than objective truths",
+      "wd_aliases": [
+        "hurrah/boo theory"
+      ]
+    },
+    {
+      "id": "expressivism",
+      "type": "concept",
+      "label": "Expressivism",
+      "wikidata_qid": "Q5421730",
+      "qid_source": "auto-unverified",
+      "wd_label": "expressivism",
+      "wd_description": "metaethical theory that moral sentences are not descriptive, but express an evaluative attitude toward an object",
+      "wd_aliases": []
+    },
+    {
+      "id": "prescriptivism",
+      "type": "concept",
+      "label": "Prescriptivism",
+      "wikidata_qid": "Q2980795",
+      "qid_source": "auto-unverified",
+      "wd_label": "universal prescriptivism",
+      "wd_description": "metaethical view that ethical sentences function similarly to imperatives which are universalizable—whoever makes a moral judgment is committed to the same judgment in any situation where the same relevant facts obtain",
+      "wd_aliases": [
+        "prescriptivism"
+      ]
+    },
+    {
+      "id": "error_theory",
+      "type": "concept",
+      "label": "Error Theory",
+      "wikidata_qid": "Q10586383",
+      "qid_source": "curated-verified",
+      "wd_label": "moral error theory",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "quasi_realism",
+      "type": "concept",
+      "label": "Quasi-Realism",
+      "wikidata_qid": "Q7269470",
+      "qid_source": "auto-unverified",
+      "wd_label": "Quasi-realism",
+      "wd_description": "meta-ethical view",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_intuitionism",
+      "type": "concept",
+      "label": "Moral Intuitionism",
+      "wikidata_qid": "Q2632427",
+      "qid_source": "auto-unverified",
+      "wd_label": "ethical intuitionism",
+      "wd_description": "family of views in moral epistemology",
+      "wd_aliases": []
+    },
+    {
+      "id": "contractualism",
+      "type": "concept",
+      "label": "Contractualism",
+      "wikidata_qid": "Q3782613",
+      "qid_source": "auto-unverified",
+      "wd_label": "contractualism",
+      "wd_description": "moral theory",
+      "wd_aliases": [
+        "social contract theory"
+      ]
+    },
+    {
+      "id": "contractarianism",
+      "type": "concept",
+      "label": "Contractarianism",
+      "wikidata_qid": "",
+      "qid_source": "curated-none",
+      "wd_label": "",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "social_contract",
+      "type": "concept",
+      "label": "Social Contract",
+      "wikidata_qid": "Q1326430",
+      "qid_source": "auto-unverified",
+      "wd_label": "social contract",
+      "wd_description": "concept in political philosophy",
+      "wd_aliases": [
+        "political contract"
+      ]
+    },
+    {
+      "id": "ethical_egoism",
+      "type": "concept",
+      "label": "Ethical Egoism",
+      "wikidata_qid": "Q616772",
+      "qid_source": "auto-unverified",
+      "wd_label": "Ethical egoism",
+      "wd_description": "ethical position that moral agents should act in their own self-interest",
+      "wd_aliases": []
+    },
+    {
+      "id": "psychological_egoism",
+      "type": "concept",
+      "label": "Psychological Egoism",
+      "wikidata_qid": "Q1362786",
+      "qid_source": "auto-unverified",
+      "wd_label": "Psychological egoism",
+      "wd_description": "The view that true altruism in humans is impossible",
+      "wd_aliases": []
+    },
+    {
+      "id": "hedonism",
+      "type": "concept",
+      "label": "Hedonism",
+      "wikidata_qid": "Q7064",
+      "qid_source": "auto-unverified",
+      "wd_label": "hedonism",
+      "wd_description": "philosophy of pleasure as the highest value",
+      "wd_aliases": []
+    },
+    {
+      "id": "eudaimonia",
+      "type": "concept",
+      "label": "Eudaimonia",
+      "wikidata_qid": "Q1771260",
+      "qid_source": "auto-unverified",
+      "wd_label": "eudaimonia",
+      "wd_description": "Aristotelian term for happiness or welfare",
+      "wd_aliases": [
+        "eudaemonia",
+        "eudaimonic life",
+        "eu zên (\"living well\")",
+        "eu zen (\"living well\")"
+      ]
+    },
+    {
+      "id": "virtue",
+      "type": "concept",
+      "label": "Virtue",
+      "wikidata_qid": "Q157811",
+      "qid_source": "auto-unverified",
+      "wd_label": "virtue",
+      "wd_description": "morally positive trait or quality deemed to be morally good",
+      "wd_aliases": [
+        "moral value",
+        "virtuousness"
+      ]
+    },
+    {
+      "id": "practical_wisdom",
+      "type": "concept",
+      "label": "Practical Wisdom",
+      "wikidata_qid": "Q2316040",
+      "qid_source": "curated-verified",
+      "wd_label": "phronesis",
+      "wd_description": "ancient Greek word for a type of wisdom or intelligence",
+      "wd_aliases": []
+    },
+    {
+      "id": "golden_mean",
+      "type": "concept",
+      "label": "Golden Mean",
+      "wikidata_qid": "Q1054131",
+      "qid_source": "curated-verified",
+      "wd_label": "golden mean",
+      "wd_description": "perfect moderation",
+      "wd_aliases": [
+        "aura mediocritas"
+      ]
+    },
+    {
+      "id": "akrasia",
+      "type": "concept",
+      "label": "Akrasia",
+      "wikidata_qid": "Q420749",
+      "qid_source": "auto-unverified",
+      "wd_label": "akrasia",
+      "wd_description": "lack of self-control or state of acting against one's better judgment",
+      "wd_aliases": [
+        "acrasia",
+        "weakness of will"
+      ]
+    },
+    {
+      "id": "practical_reason",
+      "type": "concept",
+      "label": "Practical Reason",
+      "wikidata_qid": "Q3376512",
+      "qid_source": "auto-unverified",
+      "wd_label": "practical reason",
+      "wd_description": "the use of reason to decide how to act",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_responsibility",
+      "type": "concept",
+      "label": "Moral Responsibility",
+      "wikidata_qid": "Q5190255",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral responsibility",
+      "wd_description": "status of morally deserving praise, blame, reward, or punishment for an act or omission, in accordance with one's moral obligations",
+      "wd_aliases": []
+    },
+    {
+      "id": "free_will",
+      "type": "concept",
+      "label": "Free Will",
+      "wikidata_qid": "Q9476",
+      "qid_source": "auto-unverified",
+      "wd_label": "free will",
+      "wd_description": "ability of agents to be the ultimate source or originator of their choices, free from external determination",
+      "wd_aliases": [
+        "freedom of the will",
+        "freedom of the Will"
+      ]
+    },
+    {
+      "id": "determinism",
+      "type": "concept",
+      "label": "Determinism",
+      "wikidata_qid": "Q131133",
+      "qid_source": "auto-unverified",
+      "wd_label": "determinism",
+      "wd_description": "philosophical belief that all events are determined completely by previously existing causes",
+      "wd_aliases": []
+    },
+    {
+      "id": "compatibilism",
+      "type": "concept",
+      "label": "Compatibilism",
+      "wikidata_qid": "Q1551125",
+      "qid_source": "auto-unverified",
+      "wd_label": "compatibilism",
+      "wd_description": "belief that free will and determinism are mutually compatible to one another",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_luck",
+      "type": "concept",
+      "label": "Moral Luck",
+      "wikidata_qid": "Q8095296",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral luck",
+      "wd_description": "philosophical concept",
+      "wd_aliases": []
+    },
+    {
+      "id": "supererogation",
+      "type": "concept",
+      "label": "Supererogation",
+      "wikidata_qid": "Q2367476",
+      "qid_source": "auto-unverified",
+      "wd_label": "supererogation",
+      "wd_description": "acts which are good but not morally required to be done",
+      "wd_aliases": [
+        "supererogatory act",
+        "works of supererogation",
+        "supererogatory"
+      ]
+    },
+    {
+      "id": "doctrine_of_double_effect",
+      "type": "concept",
+      "label": "Doctrine of Double Effect",
+      "wikidata_qid": "Q1423147",
+      "qid_source": "auto-unverified",
+      "wd_label": "principle of double effect",
+      "wd_description": "set of ethical criteria permitting certain actions when one's otherwise legitimate act may also cause harm",
+      "wd_aliases": [
+        "rule of double effect",
+        "double-effect reasoning",
+        "double effect",
+        "PDE",
+        "doctrine of double effect",
+        "DDE"
+      ]
+    },
+    {
+      "id": "trolley_problem",
+      "type": "concept",
+      "label": "Trolley Problem",
+      "wikidata_qid": "Q1753199",
+      "qid_source": "auto-unverified",
+      "wd_label": "trolley problem",
+      "wd_description": "thought experiment in ethics",
+      "wd_aliases": [
+        "trolley dilemma"
+      ]
+    },
+    {
+      "id": "divine_command_theory",
+      "type": "concept",
+      "label": "Divine Command Theory",
+      "wikidata_qid": "Q430585",
+      "qid_source": "auto-unverified",
+      "wd_label": "divine command theory",
+      "wd_description": "theory that morality is commanded by, and originates only from, the divine",
+      "wd_aliases": [
+        "theological voluntarism"
+      ]
+    },
+    {
+      "id": "natural_law",
+      "type": "concept",
+      "label": "Natural Law",
+      "wikidata_qid": "Q29524",
+      "qid_source": "curated-verified",
+      "wd_label": "natural law",
+      "wd_description": "system of law that is purportedly determined by nature, and is thus universal",
+      "wd_aliases": [
+        "law of nature"
+      ]
+    },
+    {
+      "id": "moral_sentimentalism",
+      "type": "concept",
+      "label": "Moral Sentimentalism",
+      "wikidata_qid": "Q677649",
+      "qid_source": "curated-verified",
+      "wd_label": "moral sense theory",
+      "wd_description": "",
+      "wd_aliases": [
+        "moral sense school"
+      ]
+    },
+    {
+      "id": "is_ought_problem",
+      "type": "concept",
+      "label": "Is-Ought Problem",
+      "wikidata_qid": "Q1328762",
+      "qid_source": "auto-unverified",
+      "wd_label": "is–ought problem",
+      "wd_description": "philosophical problem articulated by David Hume in 1739 about how one can deduce prescriptive statements (what ought to be) from descriptive statements (what is)",
+      "wd_aliases": [
+        "Hume's law",
+        "Hume's guillotine",
+        "fact–value gap",
+        "is–ought distinction"
+      ]
+    },
+    {
+      "id": "naturalistic_fallacy",
+      "type": "concept",
+      "label": "Naturalistic Fallacy",
+      "wikidata_qid": "Q376789",
+      "qid_source": "auto-unverified",
+      "wd_label": "naturalistic fallacy",
+      "wd_description": "ethical argument asserting that it is fallacious to explain something good reductively",
+      "wd_aliases": []
+    },
+    {
+      "id": "open_question_argument",
+      "type": "concept",
+      "label": "Open Question Argument",
+      "wikidata_qid": "Q7095717",
+      "qid_source": "auto-unverified",
+      "wd_label": "open-question argument",
+      "wd_description": "philosophical argument put forward by British philosopher G. E. Moore, to refute the equating of the property of goodness with some non-moral property, X, whether naturalistic (e.g. pleasure) or supernatural",
+      "wd_aliases": []
+    },
+    {
+      "id": "moral_particularism",
+      "type": "concept",
+      "label": "Moral Particularism",
+      "wikidata_qid": "Q3296948",
+      "qid_source": "auto-unverified",
+      "wd_label": "moral particularism",
+      "wd_description": "theory in meta-ethics",
+      "wd_aliases": []
+    },
+    {
+      "id": "greatest_happiness_principle",
+      "type": "concept",
+      "label": "Greatest Happiness Principle",
+      "wikidata_qid": "Q135402913",
+      "qid_source": "auto-unverified",
+      "wd_label": "Greatest happiness principle",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "prima_facie_duty",
+      "type": "concept",
+      "label": "Prima Facie Duty",
+      "wikidata_qid": "",
+      "qid_source": "curated-none",
+      "wd_label": "",
+      "wd_description": "",
+      "wd_aliases": []
+    },
+    {
+      "id": "well_being",
+      "type": "concept",
+      "label": "Well-Being",
+      "wikidata_qid": "Q7981051",
+      "qid_source": "curated-verified",
+      "wd_label": "well-being",
+      "wd_description": "measure of how well life is to someone or a group with factors such as health, happiness and satisfaction",
+      "wd_aliases": [
+        "wellbeing",
+        "human well-being",
+        "human wellbeing"
+      ]
+    },
+    {
+      "id": "justice",
+      "type": "concept",
+      "label": "Justice",
+      "wikidata_qid": "Q13189320",
+      "qid_source": "curated-verified",
+      "wd_label": "justice",
+      "wd_description": "broad idea of a situation where people receive that which they deserve",
+      "wd_aliases": []
+    },
+    {
+      "id": "rights",
+      "type": "concept",
+      "label": "Rights",
+      "wikidata_qid": "Q780687",
+      "qid_source": "auto-unverified",
+      "wd_label": "rights",
+      "wd_description": "fundamental legal, social, or ethical principles of freedom or entitlement according to some legal system, social convention, or ethical theory",
+      "wd_aliases": [
+        "right"
+      ]
+    },
+    {
+      "id": "stoicism",
+      "type": "school",
+      "label": "Stoicism",
+      "wikidata_qid": "Q48235",
+      "qid_source": "auto-unverified",
+      "wd_label": "stoicism",
+      "wd_description": "school of Hellenistic philosophy who held that the practice of virtue suffices to attain eudaimonia",
+      "wd_aliases": [
+        "the porch",
+        "stoics",
+        "Stoa"
+      ]
+    },
+    {
+      "id": "epicureanism",
+      "type": "school",
+      "label": "Epicureanism",
+      "wikidata_qid": "Q179541",
+      "qid_source": "auto-unverified",
+      "wd_label": "Epicureanism",
+      "wd_description": "philosophical movement developed by Epicurus",
+      "wd_aliases": []
+    },
+    {
+      "id": "german_idealism",
+      "type": "school",
+      "label": "German Idealism",
+      "wikidata_qid": "Q679842",
+      "qid_source": "auto-unverified",
+      "wd_label": "German idealism",
+      "wd_description": "predominant philosophical movement in Germany around 1800",
+      "wd_aliases": []
+    },
+    {
+      "id": "empiricism",
+      "type": "school",
+      "label": "Empiricism",
+      "wikidata_qid": "Q83368",
+      "qid_source": "auto-unverified",
+      "wd_label": "empiricism",
+      "wd_description": "theory that states that knowledge comes only or primarily from sensory experience",
+      "wd_aliases": []
+    },
+    {
+      "id": "rationalism",
+      "type": "school",
+      "label": "Rationalism",
+      "wikidata_qid": "Q483024",
+      "qid_source": "auto-unverified",
+      "wd_label": "rationalism",
+      "wd_description": "philosophical view that reason should be the chief source of knowledge",
+      "wd_aliases": []
+    },
+    {
+      "id": "scholasticism",
+      "type": "school",
+      "label": "Scholasticism",
+      "wikidata_qid": "Q41679",
+      "qid_source": "auto-unverified",
+      "wd_label": "scholasticism",
+      "wd_description": "method of critical thought which dominated teaching by the academics (\"scholastics\", or \"schoolmen\") of medieval universities in Europe from about 1100 to 1700",
+      "wd_aliases": [
+        "high scholasticism"
+      ]
+    },
+    {
+      "id": "groundwork_metaphysics_of_morals",
+      "type": "work",
+      "label": "Groundwork of the Metaphysics of Morals",
+      "wikidata_qid": "Q113015922",
+      "qid_source": "auto-verified",
+      "wd_label": "Groundwork of the metaphysics of morals",
+      "wd_description": "Translation of Kant's Groundwork published in 1997",
+      "wd_aliases": [],
+      "pub_year": 1997
+    },
+    {
+      "id": "critique_of_practical_reason",
+      "type": "work",
+      "label": "Critique of Practical Reason",
+      "wikidata_qid": "Q870851",
+      "qid_source": "auto-verified",
+      "wd_label": "Critique of Practical Reason",
+      "wd_description": "1788 work by Immanuel Kant",
+      "wd_aliases": [],
+      "pub_year": 1788
+    },
+    {
+      "id": "critique_of_pure_reason",
+      "type": "work",
+      "label": "Critique of Pure Reason",
+      "wikidata_qid": "Q220002",
+      "qid_source": "auto-verified",
+      "wd_label": "Critique of Pure Reason",
+      "wd_description": "1781 philosophical work by Immanuel Kant",
+      "wd_aliases": [],
+      "pub_year": 1781
+    },
+    {
+      "id": "metaphysics_of_morals",
+      "type": "work",
+      "label": "The Metaphysics of Morals",
+      "wikidata_qid": "Q1214817",
+      "qid_source": "auto-verified",
+      "wd_label": "The Metaphysics of Morals",
+      "wd_description": "work of political and moral philosophy by Immanuel Kant",
+      "wd_aliases": [],
+      "pub_year": 1797
+    },
+    {
+      "id": "nicomachean_ethics",
+      "type": "work",
+      "label": "Nicomachean Ethics",
+      "wikidata_qid": "Q474537",
+      "qid_source": "auto-verified",
+      "wd_label": "Nicomachean Ethics",
+      "wd_description": "literary work by Aristotle",
+      "wd_aliases": [
+        "Nichomachean Ethics",
+        "Aristot. Nic. Eth.",
+        "Ethica Nicomachea"
+      ],
+      "pub_year": null
+    },
+    {
+      "id": "republic_plato",
+      "type": "work",
+      "label": "Republic",
+      "wikidata_qid": "Q123397",
+      "qid_source": "curated-verified",
+      "wd_label": "The Republic",
+      "wd_description": "philosophical work written by Plato",
+      "wd_aliases": [
+        "Republic",
+        "Plato's Republic",
+        "Plat. Rep."
+      ],
+      "pub_year": 1963
+    },
+    {
+      "id": "treatise_of_human_nature",
+      "type": "work",
+      "label": "A Treatise of Human Nature",
+      "wikidata_qid": "Q2451675",
+      "qid_source": "auto-verified",
+      "wd_label": "A Treatise of Human Nature",
+      "wd_description": "work by David Hume",
+      "wd_aliases": [],
+      "pub_year": 1739
+    },
+    {
+      "id": "enquiry_principles_of_morals",
+      "type": "work",
+      "label": "An Enquiry Concerning the Principles of Morals",
+      "wikidata_qid": "Q1306663",
+      "qid_source": "auto-verified",
+      "wd_label": "An Enquiry Concerning the Principles of Morals",
+      "wd_description": "philosophical book by David Hume",
+      "wd_aliases": [],
+      "pub_year": null
+    },
+    {
+      "id": "principles_of_morals_and_legislation",
+      "type": "work",
+      "label": "An Introduction to the Principles of Morals and Legislation",
+      "wikidata_qid": "Q19041209",
+      "qid_source": "auto-verified",
+      "wd_label": "An Introduction to the Principles of Morals and Legislation",
+      "wd_description": "intro to the Principles of Morals and Legislation",
+      "wd_aliases": [],
+      "pub_year": 1789
+    },
+    {
+      "id": "utilitarianism_mill",
+      "type": "work",
+      "label": "Utilitarianism",
+      "wikidata_qid": "Q1197767",
+      "qid_source": "auto-verified",
+      "wd_label": "Utilitarianism",
+      "wd_description": "1861 essay by John Stuart Mill",
+      "wd_aliases": [],
+      "pub_year": 1861
+    },
+    {
+      "id": "on_liberty",
+      "type": "work",
+      "label": "On Liberty",
+      "wikidata_qid": "Q1055881",
+      "qid_source": "auto-verified",
+      "wd_label": "On Liberty",
+      "wd_description": "non-fiction work by John Stuart Mill",
+      "wd_aliases": [],
+      "pub_year": 1859
+    },
+    {
+      "id": "methods_of_ethics",
+      "type": "work",
+      "label": "The Methods of Ethics",
+      "wikidata_qid": "Q7751187",
+      "qid_source": "auto-verified",
+      "wd_label": "The Methods of Ethics",
+      "wd_description": "book by Henry Sidgwick",
+      "wd_aliases": [],
+      "pub_year": 1874
+    },
+    {
+      "id": "principia_ethica",
+      "type": "work",
+      "label": "Principia Ethica",
+      "wikidata_qid": "Q2344885",
+      "qid_source": "auto-verified",
+      "wd_label": "Principia Ethica",
+      "wd_description": "philosophical book",
+      "wd_aliases": [],
+      "pub_year": 1903
+    },
+    {
+      "id": "the_right_and_the_good",
+      "type": "work",
+      "label": "The Right and the Good",
+      "wikidata_qid": "Q105061759",
+      "qid_source": "auto-verified",
+      "wd_label": "The Right and the Good",
+      "wd_description": "1930 book by the Scottish philosopher David Ross",
+      "wd_aliases": [],
+      "pub_year": 1930
+    },
+    {
+      "id": "language_truth_and_logic",
+      "type": "work",
+      "label": "Language, Truth and Logic",
+      "wikidata_qid": "Q1431691",
+      "qid_source": "auto-verified",
+      "wd_label": "Language, Truth, and Logic",
+      "wd_description": "philosophical book by A. J. Ayer",
+      "wd_aliases": [],
+      "pub_year": 1936
+    },
+    {
+      "id": "ethics_inventing_right_and_wrong",
+      "type": "work",
+      "label": "Ethics: Inventing Right and Wrong",
+      "wikidata_qid": "Q31271796",
+      "qid_source": "auto-verified",
+      "wd_label": "Ethics: Inventing Right and Wrong",
+      "wd_description": "work by John Mackie",
+      "wd_aliases": [],
+      "pub_year": 1977
+    },
+    {
+      "id": "a_theory_of_justice",
+      "type": "work",
+      "label": "A Theory of Justice",
+      "wikidata_qid": "Q300588",
+      "qid_source": "auto-verified",
+      "wd_label": "A Theory of Justice",
+      "wd_description": "work of political philosophy and ethics by John Rawls",
+      "wd_aliases": [
+        "Theory of Justice",
+        "Rawlsian Justice",
+        "A theory of justice",
+        "A theory of social justice",
+        "A Theory Of Justice",
+        "theory of justice"
+      ],
+      "pub_year": 1971
+    },
+    {
+      "id": "after_virtue",
+      "type": "work",
+      "label": "After Virtue",
+      "wikidata_qid": "Q4690583",
+      "qid_source": "auto-verified",
+      "wd_label": "After Virtue",
+      "wd_description": "book by Alasdair MacIntyre",
+      "wd_aliases": [],
+      "pub_year": 1981
+    },
+    {
+      "id": "reasons_and_persons",
+      "type": "work",
+      "label": "Reasons and Persons",
+      "wikidata_qid": "Q7301514",
+      "qid_source": "auto-verified",
+      "wd_label": "Reasons and Persons",
+      "wd_description": "book by Derek Parfit",
+      "wd_aliases": [],
+      "pub_year": 1984
+    },
+    {
+      "id": "on_the_genealogy_of_morality",
+      "type": "work",
+      "label": "On the Genealogy of Morality",
+      "wikidata_qid": "Q230302",
+      "qid_source": "auto-verified",
+      "wd_label": "On the Genealogy of Morality",
+      "wd_description": "essay by Friedrich Nietzsche",
+      "wd_aliases": [
+        "Zur Genealogie der Moral",
+        "Genealogy of Morality",
+        "Genealogy of Morals",
+        "On the Genealogy of Morals"
+      ],
+      "pub_year": 1887
+    },
+    {
+      "id": "modern_moral_philosophy",
+      "type": "work",
+      "label": "Modern Moral Philosophy",
+      "wikidata_qid": "Q3859951",
+      "qid_source": "auto-verified",
+      "wd_label": "Modern Moral Philosophy",
+      "wd_description": "article",
+      "wd_aliases": [],
+      "pub_year": 1958
+    },
+    {
+      "id": "leviathan",
+      "type": "work",
+      "label": "Leviathan",
+      "wikidata_qid": "Q193034",
+      "qid_source": "curated-verified",
+      "wd_label": "Leviathan",
+      "wd_description": "book by Thomas Hobbes",
+      "wd_aliases": [
+        "Leviathan or The Matter, Forme and Power of a Commonwealth Ecclesiasticall and Civil"
+      ],
+      "pub_year": 1651
+    },
+    {
+      "id": "what_we_owe_to_each_other",
+      "type": "work",
+      "label": "What We Owe to Each Other",
+      "wikidata_qid": "Q107191343",
+      "qid_source": "auto-verified",
+      "wd_label": "What We Owe to Each Other",
+      "wd_description": "book by T.M. Scanlon",
+      "wd_aliases": [],
+      "pub_year": 1999
+    }
+  ]
+}
