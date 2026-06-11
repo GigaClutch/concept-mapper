@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem data, viewer | Select-Object Name, Length; \\(Get-Content viewer\\\\graph.data.js -TotalCount 2\\))",
+      "PowerShell(python -m venv venv)"
+    ]
+  }
+}

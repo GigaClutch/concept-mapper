@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept Mapper — Phase 1</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<script src="graph.data.js"></script>
+<style>
+  :root {
+    --bg: #f7f6f3; --panel: #ffffff; --ink: #2b2a27; --muted: #8a8780;
+    --line: #e3e1db; --accent: #4a6fa5;
+    --concept: #4a6fa5; --person: #b07d2b; --school: #7b5ea7;
+    --hier: #5b8dd9; --dev: #43a06f; --opp: #cf5f56;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+  header { display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  header h1 { font-size: 15px; font-weight: 600; margin-right: 6px; }
+  header h1 span { color: var(--muted); font-weight: 400; }
+  #search { padding: 7px 12px; border: 1px solid var(--line); border-radius: 8px; width: 260px; font-size: 13px; background: var(--bg); }
+  #search:focus { outline: 2px solid var(--accent); }
+  .ctl { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); }
+  select, .mode-btn { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); font-size: 12.5px; cursor: pointer; color: var(--ink); }
+  .mode-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  #legend { display: flex; gap: 12px; margin-left: auto; font-size: 11.5px; color: var(--muted); flex-wrap: wrap; }
+  .key { display: flex; align-items: center; gap: 4px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+  main { flex: 1; display: flex; min-height: 0; }
+  #cy { flex: 1; min-width: 0; }
+  aside { width: 320px; background: var(--panel); border-left: 1px solid var(--line); padding: 18px; overflow-y: auto; font-size: 13px; }
+  aside h2 { font-size: 17px; margin-bottom: 2px; }
+  aside .sub { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
+  aside .badge { display: inline-block; font-size: 10.5px; padding: 2px 8px; border-radius: 10px; color: #fff; margin-right: 4px; }
+  aside p.def { line-height: 1.5; margin: 10px 0 14px; }
+  aside dl { font-size: 12.5px; }
+  aside dt { color: var(--muted); margin-top: 8px; }
+  aside dd { margin-top: 1px; }
+  .edge-list { margin-top: 14px; }
+  .edge-list h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 6px; }
+  .edge-item { padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 6px; cursor: pointer; line-height: 1.4; }
+  .edge-item:hover { border-color: var(--accent); }
+  .edge-item .rel { font-size: 10.5px; font-weight: 600; letter-spacing: .03em; }
+  .quote { background: var(--bg); border-left: 3px solid var(--accent); padding: 8px 10px; margin: 8px 0; font-style: italic; line-height: 1.45; font-size: 12.5px; }
+  .quote .src { display: block; font-style: normal; color: var(--muted); font-size: 11px; margin-top: 4px; }
+  .hint { color: var(--muted); line-height: 1.5; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Concept Mapper <span>· Phase 1 demo</span></h1>
+  <input id="search" list="node-list" placeholder="Search a concept, philosopher, school…">
+  <datalist id="node-list"></datalist>
+  <div class="ctl">Hops
+    <select id="hops"><option value="1">1</option><option value="2" selected>2</option></select>
+  </div>
+  <button class="mode-btn active" id="ego-btn">Ego view</button>
+  <button class="mode-btn" id="atlas-btn">Atlas</button>
+  <div id="legend">
+    <span class="key"><span class="swatch" style="background:var(--concept)"></span>concept</span>
+    <span class="key"><span class="swatch" style="background:var(--person)"></span>person</span>
+    <span class="key"><span class="swatch" style="background:var(--school)"></span>school</span>
+    <span class="key"><span class="swatch" style="background:var(--hier)"></span>hierarchical</span>
+    <span class="key"><span class="swatch" style="background:var(--dev)"></span>developmental</span>
+    <span class="key"><span class="swatch" style="background:var(--opp)"></span>oppositional</span>
+  </div>
+</header>
+<main>
+  <div id="cy"></div>
+  <aside id="panel">
+    <p class="hint">Search above or click a node.<br><br>Ego view shows the selected node with its neighbourhood; click any node to re-centre on it. Click an edge (or an entry in the connections list) for the relationship and its evidence.</p>
+  </aside>
+</main>
+
+<script>
+const G = window.GRAPH;
+const FAMILY = {};
+for (const [fam, types] of Object.entries(G.meta.edge_families))
+  for (const t of types) FAMILY[t] = fam;
+const FAM_COLOR = { hierarchical: "#5b8dd9", developmental: "#43a06f", oppositional: "#cf5f56" };
+const SYM = new Set(G.meta.symmetric_types || []);
+const TYPE_COLOR = { concept: "#4a6fa5", person: "#b07d2b", school: "#7b5ea7" };
+const ARTICLES = Object.fromEntries((G.articles || []).map(a => [a.id, a]));
+
+// ---- lookup structures ----
+const nodeById = Object.fromEntries(G.nodes.map(n => [n.id, n]));
+const adj = {};                               // id -> Set of neighbour ids
+G.nodes.forEach(n => adj[n.id] = new Set());
+G.edges.forEach(e => { adj[e.source].add(e.target); adj[e.target].add(e.source); });
+
+const searchIndex = {};                       // lowercase label/alias -> id
+G.nodes.forEach(n => {
+  searchIndex[n.label.toLowerCase()] = n.id;
+  (n.aliases || []).forEach(a => searchIndex[a.toLowerCase()] = n.id);
+});
+
+// ---- cytoscape elements ----
+function nodeEl(n) {
+  return { group: "nodes", data: { id: n.id, label: n.label, ntype: n.type } };
+}
+function edgeEl(e, i) {
+  return { group: "edges", data: {
+    id: "e" + i, source: e.source, target: e.target, etype: e.type,
+    family: FAMILY[e.type] || "hierarchical", weight: e.weight, idx: i
+  }};
+}
+
+const cy = cytoscape({
+  container: document.getElementById("cy"),
+  style: [
+    { selector: "node", style: {
+      "background-color": el => TYPE_COLOR[el.data("ntype")] || "#888",
+      "label": "data(label)", "font-size": 11, "color": "#2b2a27",
+      "text-valign": "bottom", "text-margin-y": 6, "text-wrap": "wrap", "text-max-width": 90,
+      "width": 26, "height": 26, "border-width": 0
+    }},
+    { selector: "node[ntype='person']", style: { "shape": "diamond", "width": 30, "height": 30 } },
+    { selector: "node[ntype='school']", style: { "shape": "hexagon", "width": 30, "height": 30 } },
+    { selector: "node.center", style: { "border-width": 4, "border-color": "#2b2a27", "width": 38, "height": 38, "font-weight": "bold" } },
+    { selector: "edge", style: {
+      "curve-style": "bezier",
+      "target-arrow-shape": el => SYM.has(el.data("etype")) ? "none" : "triangle",
+      "line-color": el => FAM_COLOR[el.data("family")],
+      "target-arrow-color": el => FAM_COLOR[el.data("family")],
+      "width": el => 1.5 + 2.5 * (el.data("weight") || 0.5),
+      "label": "data(etype)", "font-size": 8, "color": "#8a8780",
+      "text-rotation": "autorotate", "text-background-color": "#f7f6f3",
+      "text-background-opacity": 0.85, "text-background-padding": 2
+    }},
+    { selector: "edge:selected", style: { "line-color": "#2b2a27", "target-arrow-color": "#2b2a27" } }
+  ],
+  wheelSensitivity: 0.25
+});
+
+// ---- views ----
+let mode = "ego";
+let centerId = "categorical_imperative";
+
+function neighbourhood(id, hops) {
+  const keep = new Set([id]);
+  let frontier = [id];
+  for (let h = 0; h < hops; h++) {
+    const next = [];
+    for (const f of frontier) for (const nb of adj[f]) if (!keep.has(nb)) { keep.add(nb); next.push(nb); }
+    frontier = next;
+  }
+  return keep;
+}
+
+function render() {
+  cy.elements().remove();
+  let keep;
+  if (mode === "atlas") keep = new Set(G.nodes.map(n => n.id));
+  else keep = neighbourhood(centerId, +document.getElementById("hops").value);
+
+  cy.add(G.nodes.filter(n => keep.has(n.id)).map(nodeEl));
+  cy.add(G.edges.map(edgeEl).filter(el => keep.has(el.data.source) && keep.has(el.data.target)));
+
+  if (mode === "ego") cy.getElementById(centerId).addClass("center");
+  const layout = mode === "atlas"
+    ? { name: "cose", animate: false, padding: 40, nodeRepulsion: 12000 }
+    : { name: "concentric", animate: false, padding: 50, minNodeSpacing: 60,
+        concentric: el => el.id() === centerId ? 3 : (adj[centerId].has(el.id()) ? 2 : 1),
+        levelWidth: () => 1 };
+  cy.layout(layout).run();
+}
+
+// ---- panel ----
+const panel = document.getElementById("panel");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function showNode(id) {
+  const n = nodeById[id];
+  const edges = G.edges.map((e, i) => ({ ...e, idx: i })).filter(e => e.source === id || e.target === id);
+  panel.innerHTML = `
+    <span class="badge" style="background:${TYPE_COLOR[n.type]}">${n.type}</span>
+    ${n.domain ? `<span class="badge" style="background:#8a8780">${esc(n.domain)}</span>` : ""}
+    <h2 style="margin-top:8px">${esc(n.label)}</h2>
+    <div class="sub">${esc(n.time_period || "")}${n.tradition ? " · " + esc(n.tradition) : ""}</div>
+    <p class="def">${esc(n.definition)}</p>
+    ${n.aliases && n.aliases.length ? `<dl><dt>Aliases</dt><dd>${esc(n.aliases.join(", "))}</dd></dl>` : ""}
+    <div class="edge-list"><h3>Connections (${edges.length})</h3>
+      ${edges.map(e => {
+        const out = e.source === id;
+        const other = nodeById[out ? e.target : e.source];
+        return `<div class="edge-item" data-idx="${e.idx}">
+          <span class="rel" style="color:${FAM_COLOR[FAMILY[e.type]]}">${SYM.has(e.type) ? "&harr; " : (out ? "" : "&larr; ")}${e.type}${!SYM.has(e.type) && out ? " &rarr;" : ""}</span>
+          ${esc(other.label)}${e.evidence.length ? " &nbsp;📄" : ""}</div>`;
+      }).join("")}
+    </div>`;
+  panel.querySelectorAll(".edge-item").forEach(el =>
+    el.addEventListener("click", () => showEdge(+el.dataset.idx)));
+}
+
+function showEdge(idx) {
+  const e = G.edges[idx];
+  const s = nodeById[e.source], t = nodeById[e.target];
+  const fam = FAMILY[e.type];
+  panel.innerHTML = `
+    <span class="badge" style="background:${FAM_COLOR[fam]}">${fam}</span>
+    <h2 style="margin-top:8px;font-size:15px">${esc(s.label)} <span style="color:${FAM_COLOR[fam]}">${e.type}</span> ${esc(t.label)}</h2>
+    <div class="sub">weight ${e.weight} · origin: ${e.origin} · ${e.status}</div>
+    ${e.evidence.length
+      ? `<div class="edge-list"><h3>Evidence (${e.evidence.length})</h3>` +
+        e.evidence.map(ev => {
+          const a = ARTICLES[ev.article_id];
+          return `<div class="quote">“${esc(ev.quote)}”
+            <span class="src">${a ? `<a href="${a.url}" target="_blank">${esc(a.title)}</a> (SEP)` : esc(ev.article_id)}</span></div>`;
+        }).join("") + "</div>"
+      : `<p class="hint" style="margin-top:12px">No source evidence yet — backbone assertion awaiting grounding (Phase 4).</p>`}
+    <div class="edge-list" style="margin-top:16px">
+      <div class="edge-item" data-id="${e.source}">&larr; back to ${esc(s.label)}</div>
+      <div class="edge-item" data-id="${e.target}">&larr; back to ${esc(t.label)}</div>
+    </div>`;
+  panel.querySelectorAll(".edge-item").forEach(el =>
+    el.addEventListener("click", () => { recenter(el.dataset.id); }));
+}
+
+// ---- interactions ----
+function recenter(id) {
+  centerId = id;
+  if (mode === "ego") render();
+  showNode(id);
+}
+cy.on("tap", "node", evt => recenter(evt.target.id()));
+cy.on("tap", "edge", evt => showEdge(evt.target.data("idx")));
+
+const dl = document.getElementById("node-list");
+G.nodes.forEach(n => {
+  const o = document.createElement("option"); o.value = n.label; dl.appendChild(o);
+  (n.aliases || []).forEach(a => { const oa = document.createElement("option"); oa.value = a; dl.appendChild(oa); });
+});
+document.getElementById("search").addEventListener("change", e => {
+  const id = searchIndex[e.target.value.trim().toLowerCase()];
+  if (id) { recenter(id); e.target.select(); }
+});
+document.getElementById("hops").addEventListener("change", render);
+document.getElementById("ego-btn").addEventListener("click", () => setMode("ego"));
+document.getElementById("atlas-btn").addEventListener("click", () => setMode("atlas"));
+function setMode(m) {
+  mode = m;
+  document.getElementById("ego-btn").classList.toggle("active", m === "ego");
+  document.getElementById("atlas-btn").classList.toggle("active", m === "atlas");
+  render();
+}
+
+// ---- init ----
+render();
+showNode(centerId);
+</script>
+</body>
+</html>

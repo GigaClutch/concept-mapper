@@ -1,0 +1,448 @@
+window.GRAPH = {
+ "meta": {
+  "version": "0.1.0",
+  "built": "2026-06-11",
+  "description": "Phase 1 hand-built slice: Kant / normative ethics cluster",
+  "symmetric_types": [
+   "CONTRASTS_WITH"
+  ],
+  "edge_families": {
+   "hierarchical": [
+    "IS_A",
+    "PART_OF",
+    "SUBCATEGORY_OF"
+   ],
+   "developmental": [
+    "DEVELOPED_BY",
+    "EXTENDED_BY",
+    "DERIVED_FROM",
+    "INFLUENCED_BY"
+   ],
+   "oppositional": [
+    "CONTRASTS_WITH",
+    "CRITIQUES",
+    "RESPONDS_TO"
+   ]
+  }
+ },
+ "nodes": [
+  {
+   "id": "categorical_imperative",
+   "label": "Categorical Imperative",
+   "type": "concept",
+   "definition": "Kant's supreme principle of morality: act only according to that maxim whereby you can at the same time will that it should become a universal law. Unconditional, applying to all rational agents regardless of their desires.",
+   "aliases": [
+    "moral imperative",
+    "CI"
+   ],
+   "domain": "Ethics",
+   "tradition": "Kantian",
+   "time_period": "18th century",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "hypothetical_imperative",
+   "label": "Hypothetical Imperative",
+   "type": "concept",
+   "definition": "A command of reason that applies only conditionally, given some desired end: 'if you want X, do Y'. Contrasted by Kant with the unconditional categorical imperative.",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "Kantian",
+   "time_period": "18th century",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "autonomy",
+   "label": "Autonomy",
+   "type": "concept",
+   "definition": "Self-legislation of the rational will: the capacity to act according to laws one gives oneself, rather than from external causes or inclination. For Kant, the ground of human dignity.",
+   "aliases": [
+    "moral autonomy",
+    "self-legislation"
+   ],
+   "domain": "Ethics",
+   "tradition": "Kantian",
+   "time_period": "18th century",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "deontology",
+   "label": "Deontology",
+   "type": "concept",
+   "definition": "A normative ethical theory that judges the morality of actions by their conformity to duties or rules, rather than by their consequences.",
+   "aliases": [
+    "duty-based ethics",
+    "deontological ethics"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "18th century–present",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "consequentialism",
+   "label": "Consequentialism",
+   "type": "concept",
+   "definition": "The family of normative ethical theories holding that the moral rightness of an act depends only on the value of its consequences.",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "19th century–present",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "utilitarianism",
+   "label": "Utilitarianism",
+   "type": "concept",
+   "definition": "The consequentialist theory that the right action is the one that maximises overall well-being or utility, classically 'the greatest happiness of the greatest number'.",
+   "aliases": [
+    "utility principle"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "18th–19th century",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "virtue_ethics",
+   "label": "Virtue Ethics",
+   "type": "concept",
+   "definition": "A normative approach centring on character and the virtues — stable excellences of the person — rather than on rules or consequences. Rooted in Aristotle's eudaimonism.",
+   "aliases": [
+    "aretaic ethics"
+   ],
+   "domain": "Ethics",
+   "tradition": "Aristotelian",
+   "time_period": "Ancient–present",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "normative_ethics",
+   "label": "Normative Ethics",
+   "type": "concept",
+   "definition": "The branch of moral philosophy that studies what makes actions right or wrong and what we ought to do, comprising principally deontology, consequentialism, and virtue ethics.",
+   "aliases": [
+    "moral theory"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "Ancient–present",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "immanuel_kant",
+   "label": "Immanuel Kant",
+   "type": "person",
+   "definition": "German philosopher (1724–1804), central figure of modern philosophy. Author of the three Critiques; founder of deontological ethics grounded in the categorical imperative and autonomy of the will.",
+   "aliases": [
+    "Kant"
+   ],
+   "domain": "Ethics",
+   "tradition": "German Idealism",
+   "time_period": "1724–1804",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "david_hume",
+   "label": "David Hume",
+   "type": "person",
+   "definition": "Scottish empiricist philosopher (1711–1776). His scepticism about causation and reason famously woke Kant from his 'dogmatic slumber'.",
+   "aliases": [
+    "Hume"
+   ],
+   "domain": "Epistemology",
+   "tradition": "Empiricism",
+   "time_period": "1711–1776",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "jeremy_bentham",
+   "label": "Jeremy Bentham",
+   "type": "person",
+   "definition": "English philosopher and reformer (1748–1832), founder of classical utilitarianism and the principle of utility.",
+   "aliases": [
+    "Bentham"
+   ],
+   "domain": "Ethics",
+   "tradition": "Utilitarianism",
+   "time_period": "1748–1832",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "john_stuart_mill",
+   "label": "John Stuart Mill",
+   "type": "person",
+   "definition": "English philosopher (1806–1873) who refined utilitarianism with qualitative distinctions among pleasures, and defended liberty and representative government.",
+   "aliases": [
+    "Mill",
+    "J.S. Mill"
+   ],
+   "domain": "Ethics",
+   "tradition": "Utilitarianism",
+   "time_period": "1806–1873",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "aristotle",
+   "label": "Aristotle",
+   "type": "person",
+   "definition": "Greek philosopher (384–322 BC). His Nicomachean Ethics grounds virtue ethics in eudaimonia — flourishing achieved through excellent activity of the soul.",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "Peripatetic",
+   "time_period": "384–322 BC",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "german_idealism",
+   "label": "German Idealism",
+   "type": "school",
+   "definition": "The philosophical movement (c. 1781–1840) emerging from Kant's critical philosophy, developed by Fichte, Schelling, and Hegel.",
+   "aliases": [],
+   "domain": "Metaphysics",
+   "tradition": "Continental",
+   "time_period": "1781–1840",
+   "status": "curated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "categorical_imperative",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 1.0,
+   "origin": "backbone",
+   "evidence": [
+    {
+     "article_id": "kant-moral",
+     "quote": "Kant's most influential positions in moral philosophy are found in The Groundwork of the Metaphysics of Morals, where he argues that the fundamental principle of morality is the Categorical Imperative."
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "source": "autonomy",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "categorical_imperative",
+   "target": "deontology",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "autonomy",
+   "target": "categorical_imperative",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "hypothetical_imperative",
+   "target": "categorical_imperative",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "deontology",
+   "target": "normative_ethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "consequentialism",
+   "target": "normative_ethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "normative_ethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "deontology",
+   "target": "consequentialism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "utilitarianism",
+   "target": "consequentialism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "utilitarianism",
+   "target": "jeremy_bentham",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "utilitarianism",
+   "target": "john_stuart_mill",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "immanuel_kant",
+   "target": "david_hume",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "john_stuart_mill",
+   "target": "jeremy_bentham",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "german_idealism",
+   "target": "immanuel_kant",
+   "type": "DERIVED_FROM",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  },
+  {
+   "source": "john_stuart_mill",
+   "target": "immanuel_kant",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "evidence": [],
+   "status": "confirmed"
+  }
+ ],
+ "articles": [
+  {
+   "id": "kant-moral",
+   "title": "Kant's Moral Philosophy",
+   "url": "https://plato.stanford.edu/entries/kant-moral/",
+   "retrieved": "2026-06-11",
+   "grounded_edges": 1,
+   "proposed_edges": 0
+  }
+ ]
+};
