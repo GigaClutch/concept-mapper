@@ -1,0 +1,39 @@
+{
+  "meta": {"pass_id": "persons_schools", "prompt_version": "bb-v1", "model": "claude-fable-5", "date": "2026-06-11"},
+  "edges": [
+    {"source": "immanuel_kant", "type": "INFLUENCED_BY", "target": "david_hume", "rationale": "Hume interrupted Kant's dogmatic slumber (Prolegomena preface)."},
+    {"source": "immanuel_kant", "type": "INFLUENCED_BY", "target": "rationalism", "rationale": "Kant was trained in the Leibniz-Wolffian rationalist school."},
+    {"source": "german_idealism", "type": "DERIVED_FROM", "target": "immanuel_kant", "rationale": "The movement (Fichte, Schelling, Hegel) grew out of the critical philosophy."},
+    {"source": "arthur_schopenhauer", "type": "INFLUENCED_BY", "target": "immanuel_kant", "rationale": "Schopenhauer built his system on Kant's transcendental idealism."},
+    {"source": "friedrich_nietzsche", "type": "INFLUENCED_BY", "target": "arthur_schopenhauer", "rationale": "Schopenhauer as Educator; Nietzsche's early philosophy is Schopenhauerian."},
+    {"source": "john_stuart_mill", "type": "INFLUENCED_BY", "target": "jeremy_bentham", "rationale": "Mill was raised within Bentham's circle as his intellectual heir."},
+    {"source": "henry_sidgwick", "type": "INFLUENCED_BY", "target": "john_stuart_mill", "rationale": "Sidgwick's utilitarianism develops out of Mill's (Methods preface)."},
+    {"source": "peter_singer", "type": "INFLUENCED_BY", "target": "henry_sidgwick", "rationale": "Singer is explicitly Sidgwickian (The Point of View of the Universe)."},
+    {"source": "derek_parfit", "type": "INFLUENCED_BY", "target": "henry_sidgwick", "rationale": "Parfit regarded Sidgwick's Methods as the best book on ethics."},
+    {"source": "g_e_moore", "type": "INFLUENCED_BY", "target": "henry_sidgwick", "rationale": "Moore attended Sidgwick's Cambridge lectures; Principia engages him throughout."},
+    {"source": "w_d_ross", "type": "INFLUENCED_BY", "target": "h_a_prichard", "rationale": "Ross acknowledges Prichard's influence; both Oxford intuitionists."},
+    {"source": "plato", "type": "INFLUENCED_BY", "target": "socrates", "rationale": "Socrates is Plato's teacher and dialogical protagonist."},
+    {"source": "aristotle", "type": "INFLUENCED_BY", "target": "plato", "rationale": "Twenty years in Plato's Academy."},
+    {"source": "thomas_aquinas", "type": "INFLUENCED_BY", "target": "aristotle", "rationale": "Aquinas synthesised Aristotle ('the Philosopher') with Christian theology."},
+    {"source": "david_hume", "type": "INFLUENCED_BY", "target": "francis_hutcheson", "rationale": "Hume's moral sentimentalism develops Hutcheson's moral sense theory."},
+    {"source": "a_j_ayer", "type": "INFLUENCED_BY", "target": "david_hume", "rationale": "Ayer presented logical positivism as the heir of Hume's empiricism."},
+    {"source": "simon_blackburn", "type": "INFLUENCED_BY", "target": "david_hume", "rationale": "Blackburn's projectivism is self-described neo-Humeanism."},
+    {"source": "christine_korsgaard", "type": "INFLUENCED_BY", "target": "immanuel_kant", "rationale": "Korsgaard is the leading contemporary Kantian constructivist."},
+    {"source": "john_rawls", "type": "INFLUENCED_BY", "target": "immanuel_kant", "rationale": "Justice as fairness is presented as Kantian constructivism."},
+    {"source": "t_m_scanlon", "type": "INFLUENCED_BY", "target": "john_rawls", "rationale": "Scanlon's contractualism develops within the Rawlsian contract tradition."},
+    {"source": "alasdair_macintyre", "type": "INFLUENCED_BY", "target": "aristotle", "rationale": "After Virtue defends an Aristotelian tradition-based ethics."},
+    {"source": "rosalind_hursthouse", "type": "INFLUENCED_BY", "target": "aristotle", "rationale": "Her virtue ethics is explicitly neo-Aristotelian."},
+    {"source": "stoicism", "type": "DEVELOPED_BY", "target": "zeno_of_citium", "rationale": "Zeno founded the Stoa around 300 BCE."},
+    {"source": "epicureanism", "type": "DEVELOPED_BY", "target": "epicurus", "rationale": "Epicurus founded the Garden and its school."},
+    {"source": "stoicism", "type": "CONTRASTS_WITH", "target": "epicureanism", "rationale": "The rival Hellenistic schools: virtue as sole good vs pleasure as the good."},
+    {"source": "empiricism", "type": "CONTRASTS_WITH", "target": "rationalism", "rationale": "The classic early modern opposition over the sources of knowledge."},
+    {"source": "scholasticism", "type": "DERIVED_FROM", "target": "aristotle", "rationale": "High scholasticism built its method and ethics on recovered Aristotle."},
+    {"source": "bernard_williams", "type": "CRITIQUES", "target": "utilitarianism", "rationale": "Williams's integrity objection (Smart & Williams 1973)."},
+    {"source": "joseph_butler", "type": "CRITIQUES", "target": "psychological_egoism", "rationale": "Butler's Fifteen Sermons contain the classic refutation of psychological egoism."},
+    {"source": "philippa_foot", "type": "CRITIQUES", "target": "prescriptivism", "rationale": "Foot's 'Moral Beliefs' and related papers attack Hare's prescriptivism."}
+  ],
+  "proposed_nodes": [
+    {"label": "G. W. F. Hegel", "type": "person", "reason": "Central German idealist; needed to flesh out the post-Kantian lineage."},
+    {"label": "Fifteen Sermons", "type": "work", "reason": "Butler 1726; carries his refutation of psychological egoism."}
+  ]
+}

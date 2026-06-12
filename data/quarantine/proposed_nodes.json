@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "built": "2026-06-11",
+    "source": "backbone bb-v1",
+    "count": 11
+  },
+  "proposed_nodes": [
+    {
+      "label": "Ethics and Language",
+      "type": "work",
+      "reason": "Stevenson 1944; the developed statement of emotivism.",
+      "pass_id": "works_bibliography",
+      "edges": []
+    },
+    {
+      "label": "Fifteen Sermons",
+      "type": "work",
+      "reason": "Butler 1726; carries his refutation of psychological egoism.",
+      "pass_id": "persons_schools",
+      "edges": []
+    },
+    {
+      "label": "G. W. F. Hegel",
+      "type": "person",
+      "reason": "Central German idealist; needed to flesh out the post-Kantian lineage.",
+      "pass_id": "persons_schools",
+      "edges": []
+    },
+    {
+      "label": "In a Different Voice",
+      "type": "work",
+      "reason": "Gilligan 1982, the founding work of care ethics; would carry the INTRODUCED_IN edge.",
+      "pass_id": "normative_theories",
+      "edges": []
+    },
+    {
+      "label": "Jean-Jacques Rousseau",
+      "type": "person",
+      "reason": "Canonical social contract theorist; The Social Contract (1762).",
+      "pass_id": "normative_theories",
+      "edges": []
+    },
+    {
+      "label": "John Locke",
+      "type": "person",
+      "reason": "Canonical social contract theorist between Hobbes and Rousseau; needed for the contract lineage.",
+      "pass_id": "normative_theories",
+      "edges": []
+    },
+    {
+      "label": "Jonathan Dancy",
+      "type": "person",
+      "reason": "The principal developer of moral particularism (Ethics Without Principles); needed for its DEVELOPED_BY edge.",
+      "pass_id": "metaethics",
+      "edges": []
+    },
+    {
+      "label": "Judith Jarvis Thomson",
+      "type": "person",
+      "reason": "Coined 'trolley problem' and produced its canonical variants (bystander, footbridge).",
+      "pass_id": "agency_value",
+      "edges": []
+    },
+    {
+      "label": "Practical Ethics",
+      "type": "work",
+      "reason": "Singer 1979; the standard applied-ethics text, anchor for Singer's positions.",
+      "pass_id": "works_bibliography",
+      "edges": []
+    },
+    {
+      "label": "The Language of Morals",
+      "type": "work",
+      "reason": "Hare 1952; the work that introduced universal prescriptivism.",
+      "pass_id": "metaethics",
+      "edges": []
+    },
+    {
+      "label": "Thomas Nagel",
+      "type": "person",
+      "reason": "Co-developer of the moral luck debate and major figure in ethics; his reply paper named the problem.",
+      "pass_id": "agency_value",
+      "edges": []
+    }
+  ]
+}

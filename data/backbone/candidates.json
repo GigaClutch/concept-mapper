@@ -1,0 +1,1772 @@
+{
+  "meta": {
+    "built": "2026-06-11",
+    "prompt_version": "bb-v1",
+    "passes": {
+      "agency_value": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 23
+      },
+      "cross_boundary": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 5
+      },
+      "metaethics": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 40
+      },
+      "normative_theories": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 58
+      },
+      "persons_schools": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 30
+      },
+      "works_bibliography": {
+        "model": "claude-fable-5",
+        "date": "2026-06-11",
+        "raw_edges": 36
+      }
+    },
+    "candidate_count": 192,
+    "reject_count": 0,
+    "rejects": [],
+    "warnings": []
+  },
+  "edges": [
+    {
+      "source": "free_will",
+      "type": "CONTRASTS_WITH",
+      "target": "determinism",
+      "rationale": "The classical problem: open alternatives vs causal fixity of action.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "compatibilism",
+      "type": "RESPONDS_TO",
+      "target": "determinism",
+      "rationale": "Compatibilism answers the threat determinism poses to freedom.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "compatibilism",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "rationale": "Hobbes is the canonical early classical compatibilist (liberty as absence of impediment).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "compatibilism",
+      "type": "EXTENDED_BY",
+      "target": "david_hume",
+      "rationale": "Hume's reconciling project on liberty and necessity (Enquiry VIII).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "free_will",
+      "type": "PART_OF",
+      "target": "moral_responsibility",
+      "rationale": "Free will is standardly the control condition on responsible agency.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_luck",
+      "type": "DEVELOPED_BY",
+      "target": "bernard_williams",
+      "rationale": "Williams coined 'moral luck' in his 1976 paper (with Nagel's reply).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_luck",
+      "type": "CRITIQUES",
+      "target": "immanuel_kant",
+      "rationale": "The moral luck literature targets Kant's thesis that moral worth is immune to luck.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_status",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_agency",
+      "rationale": "The moral patient vs moral agent distinction.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_status",
+      "type": "PART_OF",
+      "target": "applied_ethics",
+      "rationale": "Moral status is a central organising concept of applied ethics (animals, embryos).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "trolley_problem",
+      "type": "IS_A",
+      "target": "moral_dilemma",
+      "rationale": "The trolley case is a constructed moral dilemma.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "trolley_problem",
+      "type": "DEVELOPED_BY",
+      "target": "philippa_foot",
+      "rationale": "Foot introduced the runaway tram case in 1967.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "trolley_problem",
+      "type": "RESPONDS_TO",
+      "target": "doctrine_of_double_effect",
+      "rationale": "Foot's case was built to probe the doctrine of double effect.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "rationale": "Locus classicus: Summa Theologiae II-II q.64 a.7 on self-defence.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "PART_OF",
+      "target": "natural_law",
+      "rationale": "Double effect is a principle of natural law casuistry.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "supererogation",
+      "type": "CONTRASTS_WITH",
+      "target": "duty",
+      "rationale": "Supererogatory acts are good beyond what duty requires.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "practical_reason",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Aristotle's account of deliberation and the practical syllogism.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "practical_reason",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant made pure practical reason the source of the moral law.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "eudaimonia",
+      "type": "IS_A",
+      "target": "well_being",
+      "rationale": "Eudaimonia is the ancient conception of human well-being or flourishing.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "justice",
+      "type": "IS_A",
+      "target": "virtue",
+      "rationale": "Justice is classically one of the cardinal virtues (Republic IV, NE V).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "rights",
+      "type": "PART_OF",
+      "target": "deontology",
+      "rationale": "Rights function as deontological constraints on action.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "applied_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "peter_singer",
+      "rationale": "Singer was central to establishing modern applied ethics (Practical Ethics).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "psychological_egoism",
+      "type": "CONTRASTS_WITH",
+      "target": "altruism",
+      "rationale": "Psychological egoism denies that genuinely altruistic motivation exists.",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "socrates",
+      "type": "CRITIQUES",
+      "target": "akrasia",
+      "rationale": "Socrates denied akrasia is possible: no one errs willingly (Protagoras 358d).",
+      "pass_id": "agency_value",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "metaethics",
+      "type": "CONTRASTS_WITH",
+      "target": "normative_ethics",
+      "rationale": "The standard branch distinction: the status of morality vs its first-order content.",
+      "pass_id": "cross_boundary",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "contractualism",
+      "type": "CONTRASTS_WITH",
+      "target": "utilitarianism",
+      "rationale": "Scanlon's 'Contractualism and Utilitarianism' (1982) frames them as rivals.",
+      "pass_id": "cross_boundary",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "natural_law",
+      "type": "PART_OF",
+      "target": "scholasticism",
+      "rationale": "Natural law ethics is the moral theory of the scholastic tradition.",
+      "pass_id": "cross_boundary",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "hedonism",
+      "type": "PART_OF",
+      "target": "utilitarianism",
+      "rationale": "Classical utilitarianism's theory of the good is hedonistic (Bentham, Mill).",
+      "pass_id": "cross_boundary",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "universalizability",
+      "type": "PART_OF",
+      "target": "prescriptivism",
+      "rationale": "Hare's universal prescriptivism makes universalizability a condition on moral judgments.",
+      "pass_id": "cross_boundary",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "rationale": "Realism is a position within metaethics about the status of moral facts.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_anti_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "rationale": "Anti-realism is the metaethical denial of stance-independent moral facts.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_anti_realism",
+      "rationale": "The definitional opposition over whether moral facts exist mind-independently.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "rationale": "Cognitivism is a metaethical thesis about moral judgment and truth-aptness.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "rationale": "Whether moral judgments express truth-apt beliefs or non-cognitive attitudes.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "non_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "rationale": "Non-cognitivism is the classic expression-based form of anti-realism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "emotivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "rationale": "Emotivism treats moral utterances as expressions of feeling, not beliefs.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "prescriptivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "rationale": "Prescriptivism treats moral judgments as universal prescriptions, not descriptions.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "expressivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "rationale": "Expressivism is the contemporary refinement of non-cognitivism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "emotivism",
+      "type": "DEVELOPED_BY",
+      "target": "a_j_ayer",
+      "rationale": "Language, Truth and Logic ch. 6 gives the classic emotivist account.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "emotivism",
+      "type": "EXTENDED_BY",
+      "target": "charles_stevenson",
+      "rationale": "Stevenson's Ethics and Language (1944) is the developed emotivism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "prescriptivism",
+      "type": "DEVELOPED_BY",
+      "target": "r_m_hare",
+      "rationale": "Hare's universal prescriptivism (The Language of Morals, 1952).",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "expressivism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "rationale": "Blackburn's projectivist expressivism is one of its two canonical statements.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "expressivism",
+      "type": "EXTENDED_BY",
+      "target": "allan_gibbard",
+      "rationale": "Gibbard's norm-expressivism (Wise Choices, Apt Feelings) extends the program.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "rationale": "Quasi-realism is Blackburn's own coinage and program.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DERIVED_FROM",
+      "target": "expressivism",
+      "rationale": "Quasi-realism builds on an expressivist base to earn realist-sounding talk.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "quasi_realism",
+      "type": "RESPONDS_TO",
+      "target": "moral_realism",
+      "rationale": "It aims to recover realist discourse without realist metaphysics.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "error_theory",
+      "type": "DEVELOPED_BY",
+      "target": "j_l_mackie",
+      "rationale": "Mackie: moral judgments are beliefs, and all systematically false.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "error_theory",
+      "type": "INTRODUCED_IN",
+      "target": "ethics_inventing_right_and_wrong",
+      "rationale": "Chapter 1 ('The Subjectivity of Values') states the error theory.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "error_theory",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "rationale": "Error theory is the cognitivist form of anti-realism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_nihilism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "rationale": "Nihilism denies that anything is morally right or wrong.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_subjectivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "rationale": "Subjectivism makes moral truth depend on attitudes of subjects.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_relativism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "rationale": "Metaethical relativism relativises moral truth to cultures or frameworks.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_naturalism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_realism",
+      "rationale": "Naturalist realism: moral facts are natural facts.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_realism",
+      "rationale": "Non-naturalist realism: moral facts are sui generis, not natural.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_naturalism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_non_naturalism",
+      "rationale": "The intra-realist dispute over the nature of moral properties.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "rationale": "Principia Ethica: good is a simple, non-natural, indefinable property.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_intuitionism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_non_naturalism",
+      "rationale": "Classical intuitionism (Moore, Prichard, Ross) is non-naturalist realism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_intuitionism",
+      "type": "DEVELOPED_BY",
+      "target": "h_a_prichard",
+      "rationale": "Prichard's 1912 paper is the arch-statement of Oxford intuitionism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_intuitionism",
+      "type": "EXTENDED_BY",
+      "target": "w_d_ross",
+      "rationale": "Ross systematised intuitionism with the prima facie duty framework.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "rationale": "Moore's charge that defining good in natural terms is fallacious.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "rationale": "The fallacy charge is aimed at naturalist definitions of good.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "rationale": "Moore's argument that any naturalist definition leaves an open question.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "rationale": "Its target is the identification of goodness with any natural property.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "prima_facie_duty",
+      "type": "DEVELOPED_BY",
+      "target": "w_d_ross",
+      "rationale": "Ross's framework of conditional duties in The Right and the Good (1930).",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "francis_hutcheson",
+      "rationale": "Hutcheson's moral sense theory founded 18th-century sentimentalism.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "rationale": "Hume grounded moral distinctions in sentiment, not reason.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "CONTRASTS_WITH",
+      "target": "rationalism",
+      "rationale": "The 18th-century debate: moral sense vs reason as the source of morals.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "is_ought_problem",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "rationale": "Hume's observation that ought cannot be derived from is ('Hume's Law').",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "moral_particularism",
+      "type": "RESPONDS_TO",
+      "target": "prima_facie_duty",
+      "rationale": "Particularist holism developed through critical engagement with Ross's framework.",
+      "pass_id": "metaethics",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "deontology",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "rationale": "Duty-based theory is one of the three main families of normative ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "rationale": "Outcome-based theory is one of the three main families of normative ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "rationale": "Character-based theory is one of the three main families of normative ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "deontology",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "rationale": "The standard opposition in normative ethics: right-making by duty vs by outcomes.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "CONTRASTS_WITH",
+      "target": "deontology",
+      "rationale": "Virtue ethics defines itself against duty-based theories (Anscombe 1958 framing).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "rationale": "Virtue ethics rejects outcome-maximisation as the criterion of right action.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "rationale": "Utilitarianism is the welfare-maximising species of consequentialism.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "act_utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "utilitarianism",
+      "rationale": "Applies the utility criterion directly to individual acts.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "rule_utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "utilitarianism",
+      "rationale": "Applies the utility criterion to rules rather than individual acts.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "act_utilitarianism",
+      "type": "CONTRASTS_WITH",
+      "target": "rule_utilitarianism",
+      "rationale": "The classic intra-utilitarian dispute: acts vs rules as the locus of assessment.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "rationale": "Bentham gave the classical formulation (Introduction to the Principles, 1789).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "rationale": "Mill refined the doctrine with qualitative distinctions among pleasures.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "henry_sidgwick",
+      "rationale": "Sidgwick's Methods of Ethics is the third classical statement of utilitarianism.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "peter_singer",
+      "rationale": "Singer carried utilitarianism into contemporary applied ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "rationale": "Bentham's principle of utility: greatest happiness of the greatest number.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "PART_OF",
+      "target": "utilitarianism",
+      "rationale": "The principle is the criterion of right action in classical utilitarianism.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "deontology",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant's ethics is the paradigm deontological theory.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "deontology",
+      "type": "EXTENDED_BY",
+      "target": "w_d_ross",
+      "rationale": "Ross's pluralism of prima facie duties is the classic non-Kantian deontology.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "duty",
+      "type": "PART_OF",
+      "target": "deontology",
+      "rationale": "Deontology (Greek deon) takes duty as its central normative notion.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "categorical_imperative",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant's supreme principle of morality.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "categorical_imperative",
+      "type": "CONTRASTS_WITH",
+      "target": "hypothetical_imperative",
+      "rationale": "Kant's own distinction: unconditional vs desire-dependent commands of reason.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "hypothetical_imperative",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "The contrast class Kant defines in the Groundwork for conditional imperatives.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "autonomy",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Autonomy as the will's self-legislation of the moral law is Kant's doctrine.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "autonomy",
+      "type": "CONTRASTS_WITH",
+      "target": "heteronomy",
+      "rationale": "Kant's pair: self-legislation vs determination of the will from outside.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "heteronomy",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant coined the contrast term for wills governed by external incentives.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "good_will",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Groundwork I: the only thing good without qualification is a good will.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "maxim",
+      "type": "PART_OF",
+      "target": "categorical_imperative",
+      "rationale": "The CI is a test applied to the agent's maxims (subjective principles of action).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "kingdom_of_ends",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant's ideal of a systematic union of rational agents under common laws.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "kingdom_of_ends",
+      "type": "PART_OF",
+      "target": "categorical_imperative",
+      "rationale": "The kingdom of ends is one of Kant's formulations of the CI.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "universalizability",
+      "type": "PART_OF",
+      "target": "categorical_imperative",
+      "rationale": "The universal-law formulation tests whether a maxim can be willed universally.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "The Nicomachean Ethics is the founding text of the virtue tradition.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "rosalind_hursthouse",
+      "rationale": "Hursthouse's On Virtue Ethics is the leading contemporary neo-Aristotelian statement.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "philippa_foot",
+      "rationale": "Foot's work on virtues and natural goodness revived Aristotelian ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "alasdair_macintyre",
+      "rationale": "After Virtue re-founded virtue ethics on tradition and practices.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "elizabeth_anscombe",
+      "rationale": "Modern Moral Philosophy (1958) sparked the 20th-century revival of virtue ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "virtue",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "rationale": "Excellences of character are the theory's basic evaluative notion.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "eudaimonia",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Aristotle made flourishing the final end of human life (NE I).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "eudaimonia",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "rationale": "Mainstream virtue ethics is eudaimonist: virtues are constitutive of flourishing.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "golden_mean",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Aristotle's doctrine that virtue lies in a mean between excess and deficiency.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "golden_mean",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "rationale": "The doctrine of the mean is Aristotle's account of the structure of virtue.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "practical_wisdom",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Phronesis, the intellectual virtue governing right action (NE VI).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "practical_wisdom",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "rationale": "Practical wisdom unifies the character virtues in Aristotelian theory.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "akrasia",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "NE VII contains the canonical analysis of weakness of will.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "contractarianism",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "rationale": "Hobbesian mutual-advantage contract theory is the root of contractarianism.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "contractarianism",
+      "type": "DERIVED_FROM",
+      "target": "social_contract",
+      "rationale": "Contractarian moral theory generalises the social contract tradition.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "contractualism",
+      "type": "DEVELOPED_BY",
+      "target": "t_m_scanlon",
+      "rationale": "Scanlon's principles no one could reasonably reject define contractualism.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "contractualism",
+      "type": "CONTRASTS_WITH",
+      "target": "contractarianism",
+      "rationale": "Standard distinction: Kantian reasonable rejection vs Hobbesian mutual advantage.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "social_contract",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "rationale": "Leviathan gives the founding modern statement of the social contract.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "social_contract",
+      "type": "EXTENDED_BY",
+      "target": "john_rawls",
+      "rationale": "Rawls revived the contract device at a higher level of abstraction (justice as fairness).",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "ethical_egoism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "rationale": "Standard classification: maximising the good for the agent alone.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "ethical_egoism",
+      "type": "CONTRASTS_WITH",
+      "target": "altruism",
+      "rationale": "Self-interest vs other-regard as the basis of right action.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "psychological_egoism",
+      "type": "CONTRASTS_WITH",
+      "target": "ethical_egoism",
+      "rationale": "Standard distinction: descriptive thesis about motives vs normative thesis about duty.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "hedonism",
+      "type": "DEVELOPED_BY",
+      "target": "epicurus",
+      "rationale": "Epicurus is the canonical ancient proponent of pleasure as the good.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "divine_command_theory",
+      "type": "CONTRASTS_WITH",
+      "target": "natural_law",
+      "rationale": "Voluntarist grounding of morality in God's will vs grounding in rational nature.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "natural_law",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "rationale": "Aquinas's Summa account is the canonical natural law ethics.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "care_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "carol_gilligan",
+      "rationale": "In a Different Voice (1982) originated the ethics of care.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "care_ethics",
+      "type": "EXTENDED_BY",
+      "target": "nel_noddings",
+      "rationale": "Noddings's Caring (1984) gave care ethics its systematic statement.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "care_ethics",
+      "type": "SUBCATEGORY_OF",
+      "target": "feminist_ethics",
+      "rationale": "Care ethics is the best-known strand of feminist moral theory.",
+      "pass_id": "normative_theories",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "immanuel_kant",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "rationale": "Hume interrupted Kant's dogmatic slumber (Prolegomena preface).",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "immanuel_kant",
+      "type": "INFLUENCED_BY",
+      "target": "rationalism",
+      "rationale": "Kant was trained in the Leibniz-Wolffian rationalist school.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "german_idealism",
+      "type": "DERIVED_FROM",
+      "target": "immanuel_kant",
+      "rationale": "The movement (Fichte, Schelling, Hegel) grew out of the critical philosophy.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "arthur_schopenhauer",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Schopenhauer built his system on Kant's transcendental idealism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "friedrich_nietzsche",
+      "type": "INFLUENCED_BY",
+      "target": "arthur_schopenhauer",
+      "rationale": "Schopenhauer as Educator; Nietzsche's early philosophy is Schopenhauerian.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "john_stuart_mill",
+      "type": "INFLUENCED_BY",
+      "target": "jeremy_bentham",
+      "rationale": "Mill was raised within Bentham's circle as his intellectual heir.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "henry_sidgwick",
+      "type": "INFLUENCED_BY",
+      "target": "john_stuart_mill",
+      "rationale": "Sidgwick's utilitarianism develops out of Mill's (Methods preface).",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "peter_singer",
+      "type": "INFLUENCED_BY",
+      "target": "henry_sidgwick",
+      "rationale": "Singer is explicitly Sidgwickian (The Point of View of the Universe).",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "derek_parfit",
+      "type": "INFLUENCED_BY",
+      "target": "henry_sidgwick",
+      "rationale": "Parfit regarded Sidgwick's Methods as the best book on ethics.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "g_e_moore",
+      "type": "INFLUENCED_BY",
+      "target": "henry_sidgwick",
+      "rationale": "Moore attended Sidgwick's Cambridge lectures; Principia engages him throughout.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "w_d_ross",
+      "type": "INFLUENCED_BY",
+      "target": "h_a_prichard",
+      "rationale": "Ross acknowledges Prichard's influence; both Oxford intuitionists.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "plato",
+      "type": "INFLUENCED_BY",
+      "target": "socrates",
+      "rationale": "Socrates is Plato's teacher and dialogical protagonist.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "aristotle",
+      "type": "INFLUENCED_BY",
+      "target": "plato",
+      "rationale": "Twenty years in Plato's Academy.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "thomas_aquinas",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "rationale": "Aquinas synthesised Aristotle ('the Philosopher') with Christian theology.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "rationale": "Hume's moral sentimentalism develops Hutcheson's moral sense theory.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "a_j_ayer",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "rationale": "Ayer presented logical positivism as the heir of Hume's empiricism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "simon_blackburn",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "rationale": "Blackburn's projectivism is self-described neo-Humeanism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "christine_korsgaard",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Korsgaard is the leading contemporary Kantian constructivist.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "john_rawls",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Justice as fairness is presented as Kantian constructivism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "t_m_scanlon",
+      "type": "INFLUENCED_BY",
+      "target": "john_rawls",
+      "rationale": "Scanlon's contractualism develops within the Rawlsian contract tradition.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "alasdair_macintyre",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "rationale": "After Virtue defends an Aristotelian tradition-based ethics.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "rosalind_hursthouse",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "rationale": "Her virtue ethics is explicitly neo-Aristotelian.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "stoicism",
+      "type": "DEVELOPED_BY",
+      "target": "zeno_of_citium",
+      "rationale": "Zeno founded the Stoa around 300 BCE.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "epicureanism",
+      "type": "DEVELOPED_BY",
+      "target": "epicurus",
+      "rationale": "Epicurus founded the Garden and its school.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "stoicism",
+      "type": "CONTRASTS_WITH",
+      "target": "epicureanism",
+      "rationale": "The rival Hellenistic schools: virtue as sole good vs pleasure as the good.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "empiricism",
+      "type": "CONTRASTS_WITH",
+      "target": "rationalism",
+      "rationale": "The classic early modern opposition over the sources of knowledge.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "scholasticism",
+      "type": "DERIVED_FROM",
+      "target": "aristotle",
+      "rationale": "High scholasticism built its method and ethics on recovered Aristotle.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "bernard_williams",
+      "type": "CRITIQUES",
+      "target": "utilitarianism",
+      "rationale": "Williams's integrity objection (Smart & Williams 1973).",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "joseph_butler",
+      "type": "CRITIQUES",
+      "target": "psychological_egoism",
+      "rationale": "Butler's Fifteen Sermons contain the classic refutation of psychological egoism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "philippa_foot",
+      "type": "CRITIQUES",
+      "target": "prescriptivism",
+      "rationale": "Foot's 'Moral Beliefs' and related papers attack Hare's prescriptivism.",
+      "pass_id": "persons_schools",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "groundwork_metaphysics_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant, 1785.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "critique_of_practical_reason",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant, 1788 (the second Critique).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "critique_of_pure_reason",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant, 1781/1787 (the first Critique).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "metaphysics_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Kant, 1797 — distinct from the 1785 Groundwork.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "nicomachean_ethics",
+      "type": "AUTHORED_BY",
+      "target": "aristotle",
+      "rationale": "Aristotle's principal ethical treatise.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "republic_plato",
+      "type": "AUTHORED_BY",
+      "target": "plato",
+      "rationale": "Plato's dialogue on justice; not to be confused with Aristotle's Politics.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "leviathan",
+      "type": "AUTHORED_BY",
+      "target": "thomas_hobbes",
+      "rationale": "Hobbes, 1651.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "treatise_of_human_nature",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "rationale": "Hume, 1739-40.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "enquiry_principles_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "rationale": "Hume, 1751 (the second Enquiry).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "principles_of_morals_and_legislation",
+      "type": "AUTHORED_BY",
+      "target": "jeremy_bentham",
+      "rationale": "Bentham, 1789.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "utilitarianism_mill",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "rationale": "Mill, 1861/1863 — Mill, not Bentham, wrote the book titled Utilitarianism.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "on_liberty",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "rationale": "Mill, 1859.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "rationale": "Sidgwick, 1874.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "rationale": "Moore, 1903.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "language_truth_and_logic",
+      "type": "AUTHORED_BY",
+      "target": "a_j_ayer",
+      "rationale": "Ayer, 1936.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "ethics_inventing_right_and_wrong",
+      "type": "AUTHORED_BY",
+      "target": "j_l_mackie",
+      "rationale": "Mackie, 1977.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "the_right_and_the_good",
+      "type": "AUTHORED_BY",
+      "target": "w_d_ross",
+      "rationale": "Ross, 1930.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "rationale": "Rawls, 1971.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "after_virtue",
+      "type": "AUTHORED_BY",
+      "target": "alasdair_macintyre",
+      "rationale": "MacIntyre, 1981.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "reasons_and_persons",
+      "type": "AUTHORED_BY",
+      "target": "derek_parfit",
+      "rationale": "Parfit, 1984.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "rationale": "Scanlon, 1998.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "on_the_genealogy_of_morality",
+      "type": "AUTHORED_BY",
+      "target": "friedrich_nietzsche",
+      "rationale": "Nietzsche, 1887 — not Schopenhauer.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "AUTHORED_BY",
+      "target": "elizabeth_anscombe",
+      "rationale": "Anscombe's 1958 paper in Philosophy.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "categorical_imperative",
+      "type": "INTRODUCED_IN",
+      "target": "groundwork_metaphysics_of_morals",
+      "rationale": "First formulated in the Groundwork (1785), not in either Critique.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "good_will",
+      "type": "INTRODUCED_IN",
+      "target": "groundwork_metaphysics_of_morals",
+      "rationale": "Groundwork I opens with the good will claim.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "kingdom_of_ends",
+      "type": "INTRODUCED_IN",
+      "target": "groundwork_metaphysics_of_morals",
+      "rationale": "The kingdom of ends formulation appears in Groundwork II.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "INTRODUCED_IN",
+      "target": "principles_of_morals_and_legislation",
+      "rationale": "Bentham states the principle of utility in ch. 1 (1789).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "golden_mean",
+      "type": "INTRODUCED_IN",
+      "target": "nicomachean_ethics",
+      "rationale": "The doctrine of the mean is set out in NE II.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "rationale": "Principia Ethica ch. 1 (1903).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "rationale": "The term is Moore's, coined in Principia Ethica — not in Sidgwick's Methods.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "is_ought_problem",
+      "type": "INTRODUCED_IN",
+      "target": "treatise_of_human_nature",
+      "rationale": "The is/ought passage is Treatise III.i.1 — not in the second Enquiry.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "prima_facie_duty",
+      "type": "INTRODUCED_IN",
+      "target": "the_right_and_the_good",
+      "rationale": "Ross introduces prima facie duties in ch. 2 (1930).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "consequentialism",
+      "type": "INTRODUCED_IN",
+      "target": "modern_moral_philosophy",
+      "rationale": "Anscombe coined the term 'consequentialism' in this 1958 paper.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "after_virtue",
+      "type": "CRITIQUES",
+      "target": "emotivism",
+      "rationale": "After Virtue's opening chapters attack emotivism as the culture's de facto ethics.",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "CRITIQUES",
+      "target": "consequentialism",
+      "rationale": "Anscombe's paper attacks consequentialism (her coinage, used pejoratively).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "RESPONDS_TO",
+      "target": "utilitarianism",
+      "rationale": "Rawls frames justice as fairness explicitly against utilitarianism (TJ sec. 5-6).",
+      "pass_id": "works_bibliography",
+      "model": "claude-fable-5",
+      "date": "2026-06-11"
+    }
+  ]
+}

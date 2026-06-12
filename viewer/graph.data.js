@@ -2,7 +2,7 @@ window.GRAPH = {
  "meta": {
   "version": "0.1.0",
   "built": "2026-06-11",
-  "description": "Phase 1 hand-built slice: Kant / normative ethics cluster",
+  "description": "Phase 1 hand-built Kant cluster + Phase 3 backbone (bb-v1) over the full Ethics registry",
   "symmetric_types": [
    "CONTRASTS_WITH"
   ],
@@ -277,6 +277,2399 @@ window.GRAPH = {
     "betweenness": 0.0,
     "community": 0
    }
+  },
+  {
+   "id": "free_will",
+   "label": "Free Will",
+   "type": "concept",
+   "definition": "ability of agents to be the ultimate source or originator of their choices, free from external determination",
+   "aliases": [
+    "freedom of the will"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q9476",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "determinism",
+   "label": "Determinism",
+   "type": "concept",
+   "definition": "philosophical belief that all events are determined completely by previously existing causes",
+   "aliases": [
+    "causal determinism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q131133",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "compatibilism",
+   "label": "Compatibilism",
+   "type": "concept",
+   "definition": "belief that free will and determinism are mutually compatible to one another",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1551125",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "thomas_hobbes",
+   "label": "Thomas Hobbes",
+   "type": "person",
+   "definition": "English philosopher (1588–1679)",
+   "aliases": [
+    "Hobbes",
+    "Thomas Hobbsted",
+    "Thomas Hobbes of Malflutry"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1588–1679",
+   "wikidata_qid": "Q37621",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_responsibility",
+   "label": "Moral Responsibility",
+   "type": "concept",
+   "definition": "status of morally deserving praise, blame, reward, or punishment for an act or omission, in accordance with one's moral obligations",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q5190255",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_luck",
+   "label": "Moral Luck",
+   "type": "concept",
+   "definition": "philosophical concept",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q8095296",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "bernard_williams",
+   "label": "Bernard Williams",
+   "type": "person",
+   "definition": "English moral philosopher (1929–2003)",
+   "aliases": [
+    "Sir Bernard Arthur Owen Williams",
+    "Bernard Arthur Owen Williams"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1929–2003",
+   "wikidata_qid": "Q345641",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_status",
+   "label": "Moral Status",
+   "type": "concept",
+   "definition": "description of intrinsic self-worth and dignity",
+   "aliases": [
+    "moral standing",
+    "moral patient"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q58620410",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_agency",
+   "label": "Moral Agency",
+   "type": "concept",
+   "definition": "ability to make ethical judgements",
+   "aliases": [
+    "moral agent"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q11883221",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "applied_ethics",
+   "label": "Applied Ethics",
+   "type": "concept",
+   "definition": "branch of philosophy",
+   "aliases": [
+    "practical ethics",
+    "conduct of life",
+    "personal conduct"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q538733",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "trolley_problem",
+   "label": "Trolley Problem",
+   "type": "concept",
+   "definition": "thought experiment in ethics",
+   "aliases": [
+    "trolley dilemma"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1753199",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_dilemma",
+   "label": "Moral Dilemma",
+   "type": "concept",
+   "definition": "decision-making problem between two conflicting moral imperatives, neither of which is unambiguously acceptable or preferable",
+   "aliases": [
+    "ethical dilemma",
+    "moral issue"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q192568",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "philippa_foot",
+   "label": "Philippa Foot",
+   "type": "person",
+   "definition": "English philosopher (1920–2010)",
+   "aliases": [
+    "Philippa Ruth Bosanquet Foot",
+    "Philippa Ruth Bosanquet",
+    "Philippa Ruth Foot",
+    "Philippa Bosanquet"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1920–2010",
+   "wikidata_qid": "Q297493",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "doctrine_of_double_effect",
+   "label": "Doctrine of Double Effect",
+   "type": "concept",
+   "definition": "set of ethical criteria permitting certain actions when one's otherwise legitimate act may also cause harm",
+   "aliases": [
+    "double effect",
+    "DDE",
+    "rule of double effect",
+    "double-effect reasoning",
+    "PDE"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1423147",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "thomas_aquinas",
+   "label": "Thomas Aquinas",
+   "type": "person",
+   "definition": "Italian Dominican friar, philosopher, Catholic priest, and Doctor of the Church (1225–1274)",
+   "aliases": [
+    "Aquinas",
+    "St. Thomas Aquinas",
+    "Saint Thomas Aquinas",
+    "Saint Thomas",
+    "Tommaso d'Aquino",
+    "Thomas of Aquino",
+    "St Thomas Aquinas",
+    "Angelic Doctor"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1225–1274",
+   "wikidata_qid": "Q9438",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "natural_law",
+   "label": "Natural Law",
+   "type": "concept",
+   "definition": "system of law that is purportedly determined by nature, and is thus universal",
+   "aliases": [
+    "natural law theory",
+    "natural law ethics",
+    "law of nature"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q29524",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "supererogation",
+   "label": "Supererogation",
+   "type": "concept",
+   "definition": "acts which are good but not morally required to be done",
+   "aliases": [
+    "supererogatory acts",
+    "supererogatory act",
+    "works of supererogation",
+    "supererogatory"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q2367476",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "duty",
+   "label": "Duty",
+   "type": "concept",
+   "definition": "legal or moral requirement to take a certain course of action",
+   "aliases": [
+    "obligation",
+    "binding",
+    "requirement",
+    "mandatory",
+    "commitment"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q2648051",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "practical_reason",
+   "label": "Practical Reason",
+   "type": "concept",
+   "definition": "the use of reason to decide how to act",
+   "aliases": [
+    "practical rationality"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3376512",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "eudaimonia",
+   "label": "Eudaimonia",
+   "type": "concept",
+   "definition": "Aristotelian term for happiness or welfare",
+   "aliases": [
+    "eudaemonia",
+    "eudaimonism",
+    "flourishing",
+    "human flourishing",
+    "eudaimonic life",
+    "eu zên (\"living well\")",
+    "eu zen (\"living well\")"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1771260",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "well_being",
+   "label": "Well-Being",
+   "type": "concept",
+   "definition": "measure of how well life is to someone or a group with factors such as health, happiness and satisfaction",
+   "aliases": [
+    "wellbeing",
+    "welfare",
+    "human well-being",
+    "human wellbeing"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q7981051",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "justice",
+   "label": "Justice",
+   "type": "concept",
+   "definition": "broad idea of a situation where people receive that which they deserve",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q13189320",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "virtue",
+   "label": "Virtue",
+   "type": "concept",
+   "definition": "morally positive trait or quality deemed to be morally good",
+   "aliases": [
+    "arete",
+    "moral virtue",
+    "moral value",
+    "virtuousness"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q157811",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "rights",
+   "label": "Rights",
+   "type": "concept",
+   "definition": "fundamental legal, social, or ethical principles of freedom or entitlement according to some legal system, social convention, or ethical theory",
+   "aliases": [
+    "moral rights",
+    "right"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q780687",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "peter_singer",
+   "label": "Peter Singer",
+   "type": "person",
+   "definition": "Australian moral philosopher (born 1946)",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1946",
+   "wikidata_qid": "Q211539",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "psychological_egoism",
+   "label": "Psychological Egoism",
+   "type": "concept",
+   "definition": "The view that true altruism in humans is impossible",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1362786",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "altruism",
+   "label": "Altruism",
+   "type": "concept",
+   "definition": "principle or practice of concern for the welfare of others",
+   "aliases": [
+    "selflessness",
+    "ministration"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q167323",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "socrates",
+   "label": "Socrates",
+   "type": "person",
+   "definition": "5th-century BCE Greek philosopher",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "470 BCE–399 BCE",
+   "wikidata_qid": "Q913",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "akrasia",
+   "label": "Akrasia",
+   "type": "concept",
+   "definition": "lack of self-control or state of acting against one's better judgment",
+   "aliases": [
+    "weakness of will",
+    "incontinence",
+    "acrasia"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q420749",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "metaethics",
+   "label": "Metaethics",
+   "type": "concept",
+   "definition": "branch of ethics seeking to understand ethical properties",
+   "aliases": [
+    "meta-ethics"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q56003",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "contractualism",
+   "label": "Contractualism",
+   "type": "concept",
+   "definition": "moral theory",
+   "aliases": [
+    "social contract theory"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3782613",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "scholasticism",
+   "label": "Scholasticism",
+   "type": "school",
+   "definition": "method of critical thought which dominated teaching by the academics (\"scholastics\", or \"schoolmen\") of medieval universities in Europe from about 1100 to 1700",
+   "aliases": [
+    "high scholasticism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q41679",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "hedonism",
+   "label": "Hedonism",
+   "type": "concept",
+   "definition": "philosophy of pleasure as the highest value",
+   "aliases": [
+    "ethical hedonism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q7064",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "universalizability",
+   "label": "Universalizability",
+   "type": "concept",
+   "definition": "concept in Kantian ethics",
+   "aliases": [
+    "universalisability"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q7894189",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "prescriptivism",
+   "label": "Prescriptivism",
+   "type": "concept",
+   "definition": "metaethical view that ethical sentences function similarly to imperatives which are universalizable—whoever makes a moral judgment is committed to the same judgment in any situation where the same relevant facts obtain",
+   "aliases": [
+    "universal prescriptivism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q2980795",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_realism",
+   "label": "Moral Realism",
+   "type": "concept",
+   "definition": "philosophical position",
+   "aliases": [
+    "ethical realism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3100314",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_anti_realism",
+   "label": "Moral Anti-Realism",
+   "type": "concept",
+   "definition": "",
+   "aliases": [
+    "moral antirealism",
+    "ethical anti-realism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_cognitivism",
+   "label": "Moral Cognitivism",
+   "type": "concept",
+   "definition": "the meta-ethical view that ethical sentences express propositions and can therefore be true or false",
+   "aliases": [
+    "cognitivism",
+    "ethical cognitivism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q15055389",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "non_cognitivism",
+   "label": "Non-Cognitivism",
+   "type": "concept",
+   "definition": "the meta-ethical view that ethical sentences do not express propositions and thus cannot be true or false",
+   "aliases": [
+    "noncognitivism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q17156560",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "emotivism",
+   "label": "Emotivism",
+   "type": "concept",
+   "definition": "metaethical view that moral statements are expressions of emotional attitudes rather than objective truths",
+   "aliases": [
+    "hurrah/boo theory"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1058270",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "expressivism",
+   "label": "Expressivism",
+   "type": "concept",
+   "definition": "metaethical theory that moral sentences are not descriptive, but express an evaluative attitude toward an object",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q5421730",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "a_j_ayer",
+   "label": "A. J. Ayer",
+   "type": "person",
+   "definition": "English philosopher",
+   "aliases": [
+    "Alfred Jules Ayer",
+    "Ayer",
+    "Alfred J. Ayer",
+    "Sir Alfred Jules Ayer",
+    "Freddie"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1910–1989",
+   "wikidata_qid": "Q243757",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "charles_stevenson",
+   "label": "Charles Stevenson",
+   "type": "person",
+   "definition": "American analytic philosopher (1908-1979)",
+   "aliases": [
+    "Charles Leslie Stevenson",
+    "C. L. Stevenson"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1908–1979",
+   "wikidata_qid": "Q264334",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "r_m_hare",
+   "label": "R. M. Hare",
+   "type": "person",
+   "definition": "British moral philosopher (1919–2002)",
+   "aliases": [
+    "Richard Mervyn Hare",
+    "Hare"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1919–2002",
+   "wikidata_qid": "Q471923",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "simon_blackburn",
+   "label": "Simon Blackburn",
+   "type": "person",
+   "definition": "English academic philosopher (born 1944)",
+   "aliases": [
+    "Blackburn",
+    "Simon Walter Blackburn"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1944",
+   "wikidata_qid": "Q287357",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "allan_gibbard",
+   "label": "Allan Gibbard",
+   "type": "person",
+   "definition": "American philosopher and social choice theorist",
+   "aliases": [
+    "Gibbard",
+    "Allan F. Gibbard",
+    "Allan Fletcher Gibbard"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1942",
+   "wikidata_qid": "Q4730627",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "quasi_realism",
+   "label": "Quasi-Realism",
+   "type": "concept",
+   "definition": "meta-ethical view",
+   "aliases": [
+    "quasirealism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q7269470",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "error_theory",
+   "label": "Error Theory",
+   "type": "concept",
+   "definition": "",
+   "aliases": [
+    "moral error theory"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q10586383",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "j_l_mackie",
+   "label": "J. L. Mackie",
+   "type": "person",
+   "definition": "Australian philosopher (1917-1981)",
+   "aliases": [
+    "John Leslie Mackie",
+    "Mackie",
+    "John L. Mackie",
+    "JL Mackie",
+    "J.L. Mackie"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1917–1981",
+   "wikidata_qid": "Q713642",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "ethics_inventing_right_and_wrong",
+   "label": "Ethics: Inventing Right and Wrong",
+   "type": "work",
+   "definition": "work by John Mackie",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1977",
+   "wikidata_qid": "Q31271796",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_nihilism",
+   "label": "Moral Nihilism",
+   "type": "concept",
+   "definition": "meta-ethical view that nothing is intrinsically moral or immoral",
+   "aliases": [
+    "ethical nihilism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q12835757",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_subjectivism",
+   "label": "Moral Subjectivism",
+   "type": "concept",
+   "definition": "meta-ethical view",
+   "aliases": [
+    "ethical subjectivism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q568188",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_relativism",
+   "label": "Moral Relativism",
+   "type": "concept",
+   "definition": "philosophical positions about the differences in moral judgments across peoples and cultures",
+   "aliases": [
+    "ethical relativism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1778848",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_naturalism",
+   "label": "Moral Naturalism",
+   "type": "concept",
+   "definition": "metaethical position",
+   "aliases": [
+    "ethical naturalism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3495350",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_non_naturalism",
+   "label": "Moral Non-Naturalism",
+   "type": "concept",
+   "definition": "meta-ethical view",
+   "aliases": [
+    "ethical non-naturalism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q5403415",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "g_e_moore",
+   "label": "G. E. Moore",
+   "type": "person",
+   "definition": "English philosopher (1873–1958)",
+   "aliases": [
+    "George Edward Moore",
+    "Moore",
+    "George Moore",
+    "GE Moore"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1873–1958",
+   "wikidata_qid": "Q295386",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_intuitionism",
+   "label": "Moral Intuitionism",
+   "type": "concept",
+   "definition": "family of views in moral epistemology",
+   "aliases": [
+    "ethical intuitionism",
+    "intuitionism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q2632427",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "h_a_prichard",
+   "label": "H. A. Prichard",
+   "type": "person",
+   "definition": "British philosopher (1871–1947)",
+   "aliases": [
+    "Harold Arthur Prichard",
+    "Prichard",
+    "Harold A. Prichard"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1871–1947",
+   "wikidata_qid": "Q3498726",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "w_d_ross",
+   "label": "W. D. Ross",
+   "type": "person",
+   "definition": "Scottish philosopher and translator (1877–1971)",
+   "aliases": [
+    "William David Ross",
+    "David Ross",
+    "Sir William David Ross",
+    "William Ross",
+    "Sir William Ross"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1877–1971",
+   "wikidata_qid": "Q1364954",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "naturalistic_fallacy",
+   "label": "Naturalistic Fallacy",
+   "type": "concept",
+   "definition": "ethical argument asserting that it is fallacious to explain something good reductively",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q376789",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "open_question_argument",
+   "label": "Open Question Argument",
+   "type": "concept",
+   "definition": "philosophical argument put forward by British philosopher G. E. Moore, to refute the equating of the property of goodness with some non-moral property, X, whether naturalistic (e.g. pleasure) or supernatural",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q7095717",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "prima_facie_duty",
+   "label": "Prima Facie Duty",
+   "type": "concept",
+   "definition": "",
+   "aliases": [
+    "pro tanto duty"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_sentimentalism",
+   "label": "Moral Sentimentalism",
+   "type": "concept",
+   "definition": "",
+   "aliases": [
+    "sentimentalism",
+    "moral sense school"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q677649",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "francis_hutcheson",
+   "label": "Francis Hutcheson",
+   "type": "person",
+   "definition": "Scottish philosopher (1694–1746)",
+   "aliases": [
+    "Hutcheson",
+    "Franciscus Hutchinson",
+    "Franciscus Hutcheson",
+    "Frances Hutcheson",
+    "Franciscus Hutchesonius",
+    "Franz Hutcheson"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1694–1746",
+   "wikidata_qid": "Q316367",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "rationalism",
+   "label": "Rationalism",
+   "type": "school",
+   "definition": "philosophical view that reason should be the chief source of knowledge",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q483024",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "is_ought_problem",
+   "label": "Is-Ought Problem",
+   "type": "concept",
+   "definition": "philosophical problem articulated by David Hume in 1739 about how one can deduce prescriptive statements (what ought to be) from descriptive statements (what is)",
+   "aliases": [
+    "is-ought gap",
+    "Hume's guillotine",
+    "Hume's law",
+    "fact–value gap",
+    "is–ought distinction"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1328762",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "moral_particularism",
+   "label": "Moral Particularism",
+   "type": "concept",
+   "definition": "theory in meta-ethics",
+   "aliases": [
+    "particularism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3296948",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "act_utilitarianism",
+   "label": "Act Utilitarianism",
+   "type": "concept",
+   "definition": "flavour of utilitarianism",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q3738092",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "rule_utilitarianism",
+   "label": "Rule Utilitarianism",
+   "type": "concept",
+   "definition": "form of utilitarianism that says an action is right as it conforms to a rule that leads to the greatest good",
+   "aliases": [
+    "strong rule utilitarianism",
+    "weak rule utilitarianism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q651440",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "henry_sidgwick",
+   "label": "Henry Sidgwick",
+   "type": "person",
+   "definition": "English philosopher (1838–1900)",
+   "aliases": [
+    "Sidgwick"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1838–1900",
+   "wikidata_qid": "Q433076",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "greatest_happiness_principle",
+   "label": "Greatest Happiness Principle",
+   "type": "concept",
+   "definition": "",
+   "aliases": [
+    "principle of utility"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q135402913",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "heteronomy",
+   "label": "Heteronomy",
+   "type": "concept",
+   "definition": "philosophical concept",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1571420",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "good_will",
+   "label": "Good Will",
+   "type": "concept",
+   "definition": "",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "maxim",
+   "label": "Maxim",
+   "type": "concept",
+   "definition": "",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "kingdom_of_ends",
+   "label": "Kingdom of Ends",
+   "type": "concept",
+   "definition": "Kant’s thought experiment about a world in which all humans are treated as ends, not as means",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q6412569",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "rosalind_hursthouse",
+   "label": "Rosalind Hursthouse",
+   "type": "person",
+   "definition": "New Zealand philosopher",
+   "aliases": [
+    "Hursthouse",
+    "Mary Rosalind Hursthouse"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1943",
+   "wikidata_qid": "Q3480230",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "alasdair_macintyre",
+   "label": "Alasdair MacIntyre",
+   "type": "person",
+   "definition": "Scottish-American philosopher (1929–2025)",
+   "aliases": [
+    "MacIntyre",
+    "Alasdair Chalmers MacIntyre"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1929–2025",
+   "wikidata_qid": "Q310178",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "elizabeth_anscombe",
+   "label": "Elizabeth Anscombe",
+   "type": "person",
+   "definition": "British analytic philosopher",
+   "aliases": [
+    "G. E. M. Anscombe",
+    "Anscombe",
+    "(Gertrude) Elizabeth (Margaret) Anscombe",
+    "Elisabeth Anscombe"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1919–2001",
+   "wikidata_qid": "Q229646",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "golden_mean",
+   "label": "Golden Mean",
+   "type": "concept",
+   "definition": "perfect moderation",
+   "aliases": [
+    "doctrine of the mean",
+    "aura mediocritas"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1054131",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "practical_wisdom",
+   "label": "Practical Wisdom",
+   "type": "concept",
+   "definition": "ancient Greek word for a type of wisdom or intelligence",
+   "aliases": [
+    "phronesis",
+    "prudence"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q2316040",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "contractarianism",
+   "label": "Contractarianism",
+   "type": "concept",
+   "definition": "",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "social_contract",
+   "label": "Social Contract",
+   "type": "concept",
+   "definition": "concept in political philosophy",
+   "aliases": [
+    "social contract theory",
+    "political contract"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1326430",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "t_m_scanlon",
+   "label": "T. M. Scanlon",
+   "type": "person",
+   "definition": "American philosopher",
+   "aliases": [
+    "Thomas Michael Scanlon",
+    "Tim Scanlon",
+    "Thomas M. Scanlon, Jr.",
+    "TM Scanlon",
+    "T M Scanlon",
+    "Thomas M. Scanlon",
+    "Thomas Michael"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1940",
+   "wikidata_qid": "Q1773977",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "john_rawls",
+   "label": "John Rawls",
+   "type": "person",
+   "definition": "American political philosopher (1921–2002)",
+   "aliases": [
+    "Rawls"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1921–2002",
+   "wikidata_qid": "Q172544",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "ethical_egoism",
+   "label": "Ethical Egoism",
+   "type": "concept",
+   "definition": "ethical position that moral agents should act in their own self-interest",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q616772",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "epicurus",
+   "label": "Epicurus",
+   "type": "person",
+   "definition": "ancient Greek philosopher",
+   "aliases": [
+    "Epíkouros",
+    "Epikouros"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "342 BCE–270 BCE",
+   "wikidata_qid": "Q43216",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "divine_command_theory",
+   "label": "Divine Command Theory",
+   "type": "concept",
+   "definition": "theory that morality is commanded by, and originates only from, the divine",
+   "aliases": [
+    "theological voluntarism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q430585",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "care_ethics",
+   "label": "Ethics of Care",
+   "type": "concept",
+   "definition": "Ethical theory",
+   "aliases": [
+    "care ethics",
+    "EoC"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q1035845",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "carol_gilligan",
+   "label": "Carol Gilligan",
+   "type": "person",
+   "definition": "American feminist, ethicist, and psychologist",
+   "aliases": [
+    "Gilligan"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1936",
+   "wikidata_qid": "Q284025",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "nel_noddings",
+   "label": "Nel Noddings",
+   "type": "person",
+   "definition": "American philosopher (1929–2022)",
+   "aliases": [
+    "Noddings"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1929–2022",
+   "wikidata_qid": "Q467525",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "feminist_ethics",
+   "label": "Feminist Ethics",
+   "type": "concept",
+   "definition": "approach to ethics",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q10494601",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "arthur_schopenhauer",
+   "label": "Arthur Schopenhauer",
+   "type": "person",
+   "definition": "German philosopher (1788-1860)",
+   "aliases": [
+    "Schopenhauer"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1788–1860",
+   "wikidata_qid": "Q38193",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "friedrich_nietzsche",
+   "label": "Friedrich Nietzsche",
+   "type": "person",
+   "definition": "German philosopher (1844-1900)",
+   "aliases": [
+    "Nietzsche"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1844–1900",
+   "wikidata_qid": "Q9358",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "derek_parfit",
+   "label": "Derek Parfit",
+   "type": "person",
+   "definition": "British philosopher (1942–2017)",
+   "aliases": [
+    "Parfit"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1942–2017",
+   "wikidata_qid": "Q962160",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "plato",
+   "label": "Plato",
+   "type": "person",
+   "definition": "4th-century BCE Greek philosopher",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "427 BCE–347 BCE",
+   "wikidata_qid": "Q859",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "christine_korsgaard",
+   "label": "Christine Korsgaard",
+   "type": "person",
+   "definition": "American philosopher",
+   "aliases": [
+    "Korsgaard",
+    "Christine Marion Korsgaard",
+    "Christine M. Korsgaard",
+    "C. M. Korsgaard",
+    "C.M. Korsgaard",
+    "C M Korsgaard",
+    "Christine M Korsgaard"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1952",
+   "wikidata_qid": "Q467518",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "stoicism",
+   "label": "Stoicism",
+   "type": "school",
+   "definition": "school of Hellenistic philosophy who held that the practice of virtue suffices to attain eudaimonia",
+   "aliases": [
+    "Stoic philosophy",
+    "the porch",
+    "stoics",
+    "Stoa"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q48235",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "zeno_of_citium",
+   "label": "Zeno of Citium",
+   "type": "person",
+   "definition": "Greek philosopher, founder of Stoicism",
+   "aliases": [
+    "Zenon of Citium",
+    "Zeno",
+    "Zeno the Stoic",
+    "Zeno of Kition"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "334 BCE–263 BCE",
+   "wikidata_qid": "Q171303",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "epicureanism",
+   "label": "Epicureanism",
+   "type": "school",
+   "definition": "philosophical movement developed by Epicurus",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q179541",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "empiricism",
+   "label": "Empiricism",
+   "type": "school",
+   "definition": "theory that states that knowledge comes only or primarily from sensory experience",
+   "aliases": [
+    "British Empiricism"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "Q83368",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "joseph_butler",
+   "label": "Joseph Butler",
+   "type": "person",
+   "definition": "English bishop and philosopher (1692–1752)",
+   "aliases": [
+    "Bishop Butler",
+    "A Gentleman in Gloucestershire"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1692–1752",
+   "wikidata_qid": "Q218322",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "groundwork_metaphysics_of_morals",
+   "label": "Groundwork of the Metaphysics of Morals",
+   "type": "work",
+   "definition": "Translation of Kant's Groundwork published in 1997",
+   "aliases": [
+    "Groundwork",
+    "Grundlegung zur Metaphysik der Sitten"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1997",
+   "wikidata_qid": "Q113015922",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "critique_of_practical_reason",
+   "label": "Critique of Practical Reason",
+   "type": "work",
+   "definition": "1788 work by Immanuel Kant",
+   "aliases": [
+    "second Critique"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1788",
+   "wikidata_qid": "Q870851",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "critique_of_pure_reason",
+   "label": "Critique of Pure Reason",
+   "type": "work",
+   "definition": "1781 philosophical work by Immanuel Kant",
+   "aliases": [
+    "first Critique"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1781",
+   "wikidata_qid": "Q220002",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "metaphysics_of_morals",
+   "label": "The Metaphysics of Morals",
+   "type": "work",
+   "definition": "work of political and moral philosophy by Immanuel Kant",
+   "aliases": [
+    "Metaphysik der Sitten"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1797",
+   "wikidata_qid": "Q1214817",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "nicomachean_ethics",
+   "label": "Nicomachean Ethics",
+   "type": "work",
+   "definition": "literary work by Aristotle",
+   "aliases": [
+    "Nichomachean Ethics",
+    "Aristot. Nic. Eth.",
+    "Ethica Nicomachea"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "340 BCE",
+   "wikidata_qid": "Q474537",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "republic_plato",
+   "label": "Republic",
+   "type": "work",
+   "definition": "philosophical work written by Plato",
+   "aliases": [
+    "The Republic",
+    "Politeia",
+    "Plato's Republic",
+    "Plat. Rep."
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1963",
+   "wikidata_qid": "Q123397",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "leviathan",
+   "label": "Leviathan",
+   "type": "work",
+   "definition": "book by Thomas Hobbes",
+   "aliases": [
+    "Leviathan or The Matter, Forme and Power of a Commonwealth Ecclesiasticall and Civil"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1651",
+   "wikidata_qid": "Q193034",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "treatise_of_human_nature",
+   "label": "A Treatise of Human Nature",
+   "type": "work",
+   "definition": "work by David Hume",
+   "aliases": [
+    "Treatise"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1739",
+   "wikidata_qid": "Q2451675",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "enquiry_principles_of_morals",
+   "label": "An Enquiry Concerning the Principles of Morals",
+   "type": "work",
+   "definition": "philosophical book by David Hume",
+   "aliases": [
+    "second Enquiry"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1751",
+   "wikidata_qid": "Q1306663",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "principles_of_morals_and_legislation",
+   "label": "An Introduction to the Principles of Morals and Legislation",
+   "type": "work",
+   "definition": "intro to the Principles of Morals and Legislation",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1789",
+   "wikidata_qid": "Q19041209",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "utilitarianism_mill",
+   "label": "Utilitarianism",
+   "type": "work",
+   "definition": "1861 essay by John Stuart Mill",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1861",
+   "wikidata_qid": "Q1197767",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "on_liberty",
+   "label": "On Liberty",
+   "type": "work",
+   "definition": "non-fiction work by John Stuart Mill",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1859",
+   "wikidata_qid": "Q1055881",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "methods_of_ethics",
+   "label": "The Methods of Ethics",
+   "type": "work",
+   "definition": "book by Henry Sidgwick",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1874",
+   "wikidata_qid": "Q7751187",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "principia_ethica",
+   "label": "Principia Ethica",
+   "type": "work",
+   "definition": "philosophical book",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1903",
+   "wikidata_qid": "Q2344885",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "language_truth_and_logic",
+   "label": "Language, Truth and Logic",
+   "type": "work",
+   "definition": "philosophical book by A. J. Ayer",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1936",
+   "wikidata_qid": "Q1431691",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "the_right_and_the_good",
+   "label": "The Right and the Good",
+   "type": "work",
+   "definition": "1930 book by the Scottish philosopher David Ross",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1930",
+   "wikidata_qid": "Q105061759",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "a_theory_of_justice",
+   "label": "A Theory of Justice",
+   "type": "work",
+   "definition": "work of political philosophy and ethics by John Rawls",
+   "aliases": [
+    "Theory of Justice",
+    "Rawlsian Justice",
+    "A theory of social justice"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1971",
+   "wikidata_qid": "Q300588",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "after_virtue",
+   "label": "After Virtue",
+   "type": "work",
+   "definition": "book by Alasdair MacIntyre",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1981",
+   "wikidata_qid": "Q4690583",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "reasons_and_persons",
+   "label": "Reasons and Persons",
+   "type": "work",
+   "definition": "book by Derek Parfit",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1984",
+   "wikidata_qid": "Q7301514",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "what_we_owe_to_each_other",
+   "label": "What We Owe to Each Other",
+   "type": "work",
+   "definition": "book by T.M. Scanlon",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1999",
+   "wikidata_qid": "Q107191343",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "on_the_genealogy_of_morality",
+   "label": "On the Genealogy of Morality",
+   "type": "work",
+   "definition": "essay by Friedrich Nietzsche",
+   "aliases": [
+    "On the Genealogy of Morals",
+    "Zur Genealogie der Moral",
+    "Genealogy of Morality",
+    "Genealogy of Morals"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1887",
+   "wikidata_qid": "Q230302",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
+  },
+  {
+   "id": "modern_moral_philosophy",
+   "label": "Modern Moral Philosophy",
+   "type": "work",
+   "definition": "article",
+   "aliases": [],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "1958",
+   "wikidata_qid": "Q3859951",
+   "status": "generated",
+   "metrics": {
+    "degree": 0,
+    "betweenness": 0.0,
+    "community": 0
+   }
   }
  ],
  "edges": [
@@ -437,6 +2830,2498 @@ window.GRAPH = {
    "origin": "backbone",
    "evidence": [],
    "status": "confirmed"
+  },
+  {
+   "source": "free_will",
+   "target": "determinism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "compatibilism",
+   "target": "determinism",
+   "type": "RESPONDS_TO",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "compatibilism",
+   "target": "thomas_hobbes",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "compatibilism",
+   "target": "david_hume",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "free_will",
+   "target": "moral_responsibility",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_luck",
+   "target": "bernard_williams",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_luck",
+   "target": "immanuel_kant",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_status",
+   "target": "moral_agency",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_status",
+   "target": "applied_ethics",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "trolley_problem",
+   "target": "moral_dilemma",
+   "type": "IS_A",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "trolley_problem",
+   "target": "philippa_foot",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "trolley_problem",
+   "target": "doctrine_of_double_effect",
+   "type": "RESPONDS_TO",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "doctrine_of_double_effect",
+   "target": "thomas_aquinas",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "doctrine_of_double_effect",
+   "target": "natural_law",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "supererogation",
+   "target": "duty",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "practical_reason",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "practical_reason",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "eudaimonia",
+   "target": "well_being",
+   "type": "IS_A",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "justice",
+   "target": "virtue",
+   "type": "IS_A",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "rights",
+   "target": "deontology",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "applied_ethics",
+   "target": "peter_singer",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "psychological_egoism",
+   "target": "altruism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "socrates",
+   "target": "akrasia",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "metaethics",
+   "target": "normative_ethics",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "contractualism",
+   "target": "utilitarianism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "natural_law",
+   "target": "scholasticism",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "hedonism",
+   "target": "utilitarianism",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "universalizability",
+   "target": "prescriptivism",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_realism",
+   "target": "metaethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_anti_realism",
+   "target": "metaethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_realism",
+   "target": "moral_anti_realism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_cognitivism",
+   "target": "metaethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_cognitivism",
+   "target": "non_cognitivism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "non_cognitivism",
+   "target": "moral_anti_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "emotivism",
+   "target": "non_cognitivism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "prescriptivism",
+   "target": "non_cognitivism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "expressivism",
+   "target": "non_cognitivism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "emotivism",
+   "target": "a_j_ayer",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "emotivism",
+   "target": "charles_stevenson",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "prescriptivism",
+   "target": "r_m_hare",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "expressivism",
+   "target": "simon_blackburn",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "expressivism",
+   "target": "allan_gibbard",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "quasi_realism",
+   "target": "simon_blackburn",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "quasi_realism",
+   "target": "expressivism",
+   "type": "DERIVED_FROM",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "quasi_realism",
+   "target": "moral_realism",
+   "type": "RESPONDS_TO",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "error_theory",
+   "target": "j_l_mackie",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "error_theory",
+   "target": "ethics_inventing_right_and_wrong",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "error_theory",
+   "target": "moral_anti_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_nihilism",
+   "target": "moral_anti_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_subjectivism",
+   "target": "moral_anti_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_relativism",
+   "target": "metaethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_naturalism",
+   "target": "moral_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_non_naturalism",
+   "target": "moral_realism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_naturalism",
+   "target": "moral_non_naturalism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_non_naturalism",
+   "target": "g_e_moore",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_intuitionism",
+   "target": "moral_non_naturalism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_intuitionism",
+   "target": "h_a_prichard",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_intuitionism",
+   "target": "w_d_ross",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "naturalistic_fallacy",
+   "target": "g_e_moore",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "naturalistic_fallacy",
+   "target": "moral_naturalism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "open_question_argument",
+   "target": "g_e_moore",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "open_question_argument",
+   "target": "moral_naturalism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "prima_facie_duty",
+   "target": "w_d_ross",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_sentimentalism",
+   "target": "francis_hutcheson",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_sentimentalism",
+   "target": "david_hume",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_sentimentalism",
+   "target": "rationalism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "is_ought_problem",
+   "target": "david_hume",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "moral_particularism",
+   "target": "prima_facie_duty",
+   "type": "RESPONDS_TO",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "deontology",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "consequentialism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "act_utilitarianism",
+   "target": "utilitarianism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "rule_utilitarianism",
+   "target": "utilitarianism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "act_utilitarianism",
+   "target": "rule_utilitarianism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "utilitarianism",
+   "target": "henry_sidgwick",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "utilitarianism",
+   "target": "peter_singer",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "greatest_happiness_principle",
+   "target": "jeremy_bentham",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "greatest_happiness_principle",
+   "target": "utilitarianism",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "deontology",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "deontology",
+   "target": "w_d_ross",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "duty",
+   "target": "deontology",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "hypothetical_imperative",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "autonomy",
+   "target": "heteronomy",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "heteronomy",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "good_will",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "maxim",
+   "target": "categorical_imperative",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "kingdom_of_ends",
+   "target": "immanuel_kant",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "kingdom_of_ends",
+   "target": "categorical_imperative",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "universalizability",
+   "target": "categorical_imperative",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "rosalind_hursthouse",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "philippa_foot",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "alasdair_macintyre",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue_ethics",
+   "target": "elizabeth_anscombe",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "virtue",
+   "target": "virtue_ethics",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "eudaimonia",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "eudaimonia",
+   "target": "virtue_ethics",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "golden_mean",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "golden_mean",
+   "target": "virtue_ethics",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "practical_wisdom",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "practical_wisdom",
+   "target": "virtue_ethics",
+   "type": "PART_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "akrasia",
+   "target": "aristotle",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "contractarianism",
+   "target": "thomas_hobbes",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "contractarianism",
+   "target": "social_contract",
+   "type": "DERIVED_FROM",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "contractualism",
+   "target": "t_m_scanlon",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "contractualism",
+   "target": "contractarianism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "social_contract",
+   "target": "thomas_hobbes",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "social_contract",
+   "target": "john_rawls",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "ethical_egoism",
+   "target": "consequentialism",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "ethical_egoism",
+   "target": "altruism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "psychological_egoism",
+   "target": "ethical_egoism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "hedonism",
+   "target": "epicurus",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "divine_command_theory",
+   "target": "natural_law",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "natural_law",
+   "target": "thomas_aquinas",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "care_ethics",
+   "target": "carol_gilligan",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "care_ethics",
+   "target": "nel_noddings",
+   "type": "EXTENDED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "care_ethics",
+   "target": "feminist_ethics",
+   "type": "SUBCATEGORY_OF",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "immanuel_kant",
+   "target": "rationalism",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "arthur_schopenhauer",
+   "target": "immanuel_kant",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "friedrich_nietzsche",
+   "target": "arthur_schopenhauer",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "henry_sidgwick",
+   "target": "john_stuart_mill",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "peter_singer",
+   "target": "henry_sidgwick",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "derek_parfit",
+   "target": "henry_sidgwick",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "g_e_moore",
+   "target": "henry_sidgwick",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "w_d_ross",
+   "target": "h_a_prichard",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "plato",
+   "target": "socrates",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "aristotle",
+   "target": "plato",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "thomas_aquinas",
+   "target": "aristotle",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "david_hume",
+   "target": "francis_hutcheson",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "a_j_ayer",
+   "target": "david_hume",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "simon_blackburn",
+   "target": "david_hume",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "christine_korsgaard",
+   "target": "immanuel_kant",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "john_rawls",
+   "target": "immanuel_kant",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "t_m_scanlon",
+   "target": "john_rawls",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "alasdair_macintyre",
+   "target": "aristotle",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "rosalind_hursthouse",
+   "target": "aristotle",
+   "type": "INFLUENCED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "stoicism",
+   "target": "zeno_of_citium",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "epicureanism",
+   "target": "epicurus",
+   "type": "DEVELOPED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "stoicism",
+   "target": "epicureanism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "empiricism",
+   "target": "rationalism",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "scholasticism",
+   "target": "aristotle",
+   "type": "DERIVED_FROM",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "bernard_williams",
+   "target": "utilitarianism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "joseph_butler",
+   "target": "psychological_egoism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "philippa_foot",
+   "target": "prescriptivism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "groundwork_metaphysics_of_morals",
+   "target": "immanuel_kant",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "critique_of_practical_reason",
+   "target": "immanuel_kant",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "critique_of_pure_reason",
+   "target": "immanuel_kant",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "metaphysics_of_morals",
+   "target": "immanuel_kant",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "nicomachean_ethics",
+   "target": "aristotle",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "republic_plato",
+   "target": "plato",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "leviathan",
+   "target": "thomas_hobbes",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "treatise_of_human_nature",
+   "target": "david_hume",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "enquiry_principles_of_morals",
+   "target": "david_hume",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "principles_of_morals_and_legislation",
+   "target": "jeremy_bentham",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "utilitarianism_mill",
+   "target": "john_stuart_mill",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "on_liberty",
+   "target": "john_stuart_mill",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "methods_of_ethics",
+   "target": "henry_sidgwick",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "principia_ethica",
+   "target": "g_e_moore",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "language_truth_and_logic",
+   "target": "a_j_ayer",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "ethics_inventing_right_and_wrong",
+   "target": "j_l_mackie",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "the_right_and_the_good",
+   "target": "w_d_ross",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "a_theory_of_justice",
+   "target": "john_rawls",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "after_virtue",
+   "target": "alasdair_macintyre",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "reasons_and_persons",
+   "target": "derek_parfit",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "what_we_owe_to_each_other",
+   "target": "t_m_scanlon",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "on_the_genealogy_of_morality",
+   "target": "friedrich_nietzsche",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "modern_moral_philosophy",
+   "target": "elizabeth_anscombe",
+   "type": "AUTHORED_BY",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "categorical_imperative",
+   "target": "groundwork_metaphysics_of_morals",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "good_will",
+   "target": "groundwork_metaphysics_of_morals",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "kingdom_of_ends",
+   "target": "groundwork_metaphysics_of_morals",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "greatest_happiness_principle",
+   "target": "principles_of_morals_and_legislation",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "golden_mean",
+   "target": "nicomachean_ethics",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "open_question_argument",
+   "target": "principia_ethica",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "naturalistic_fallacy",
+   "target": "principia_ethica",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "is_ought_problem",
+   "target": "treatise_of_human_nature",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "prima_facie_duty",
+   "target": "the_right_and_the_good",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "consequentialism",
+   "target": "modern_moral_philosophy",
+   "type": "INTRODUCED_IN",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "after_virtue",
+   "target": "emotivism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "modern_moral_philosophy",
+   "target": "consequentialism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
+  },
+  {
+   "source": "a_theory_of_justice",
+   "target": "utilitarianism",
+   "type": "RESPONDS_TO",
+   "weight": 0.5,
+   "origin": "backbone",
+   "extractor": {
+    "model": "claude-fable-5",
+    "prompt_version": "bb-v1",
+    "date": "2026-06-11"
+   },
+   "evidence": [],
+   "status": "unverified"
   }
  ],
  "articles": [

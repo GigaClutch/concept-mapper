@@ -7,7 +7,8 @@ Full plan lives in the Obsidian vault at `C:\Users\gigac\My Drive\Comp-Sci Vault
 ## Current state
 - **Phase 1 complete:** hand-built Kant cluster (`data/graph.json`, 14 nodes / 17 edges) + static ego-view viewer (`viewer/index.html`, Cytoscape.js, no build step). Viewer reads `graph.data.js` — regenerate with `pipeline/build_viewer_data.py` after any graph.json change.
 - **Phase 2 complete (2026-06-11):** `data/registry.json` (137 rows: 71 concepts / 37 persons / 6 schools / 23 works, cross-checked against the vault seed lists; QIDs hand- or claims-verified, auto-resolved rows human-reviewed, 5 reviewed-no-QID) built by `seeds.json → wikidata_bootstrap.py → merge.py`; `data/corpus.json` (30 SEP Ethics entries, ids verified against scraped contents); gold sets in `data/gold/` (32 canonical edges, 25 adversarial traps); `validate.py` green incl. verbatim-quote check against cached `kant-moral`. Note: Q221373 is *deontology*, not the categorical imperative (Q209681) — early plan docs had this wrong.
-- **Now doing Phase 3:** backbone generation (see Roadmap).
+- **Phase 3 complete (2026-06-11):** backbone generated over the full registry by `pipeline/backbone.py` — six `bb-v1` passes (normative, metaethics, agency/value, works, persons/schools, cross-boundary) answered by `claude-fable-5`; prompts regenerable to `cache/backbone/prompts/`, raw responses committed under `data/backbone/responses/`. Ingest enforces closed world + per-edge-type domain/range (e.g. persons can never source DEVELOPED_BY/AUTHORED_BY — kills direction traps mechanically); unmappable mentions → `data/quarantine/proposed_nodes.json` (11 proposals, incl. Dancy, Thomson, Rousseau). `pipeline/evaluate.py` gates on gold BEFORE merge: 32/32 canonical recall, 0/25 traps, 0 reversed canonicals. Graph: 137 nodes / 195 edges (all registry rows connected, no orphans; Phase 1 hand-built edges kept; generated edges weight 0.5, status `unverified`, extractor-stamped). Human verification sample (25 edges, seed 20260611) awaiting verdicts in `data/verification_sample.json`. Viewer verified against the full graph; `.claude/launch.json` serves it for preview.
+- **Now doing Phase 4:** evidence grounding (see Roadmap).
 
 ## Architecture decisions (do not silently revisit)
 - **D1 — Demo-first:** bounded corpus (Ethics domain, ~20 SEP articles). JSON file storage. No Neo4j, no backend API, no frontend framework until the demo proves valuable. Schema stays migration-ready.
@@ -48,8 +49,8 @@ Evidence quotes must be verbatim substrings of the cached source text — verify
 ```
 concept-mapper/
   CLAUDE.md
-  data/            registry.json, graph.json, gold/, quarantine/
-  pipeline/        scrape_sep.py, wikidata_bootstrap.py, backbone.py, ground.py, merge.py, metrics.py, validate.py
+  data/            registry.json, graph.json, gold/, quarantine/, backbone/ (responses + candidates)
+  pipeline/        scrape_sep.py, wikidata_bootstrap.py, backbone.py, evaluate.py, ground.py, merge.py, metrics.py, validate.py
   viewer/          index.html, graph.data.js (generated), review.html (Phase 5)
   cache/           raw scraped HTML/text (gitignored)
   tests/

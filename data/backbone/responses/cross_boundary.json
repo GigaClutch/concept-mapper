@@ -1,0 +1,11 @@
+{
+  "meta": {"pass_id": "cross_boundary", "prompt_version": "bb-v1", "model": "claude-fable-5", "date": "2026-06-11"},
+  "edges": [
+    {"source": "metaethics", "type": "CONTRASTS_WITH", "target": "normative_ethics", "rationale": "The standard branch distinction: the status of morality vs its first-order content."},
+    {"source": "contractualism", "type": "CONTRASTS_WITH", "target": "utilitarianism", "rationale": "Scanlon's 'Contractualism and Utilitarianism' (1982) frames them as rivals."},
+    {"source": "natural_law", "type": "PART_OF", "target": "scholasticism", "rationale": "Natural law ethics is the moral theory of the scholastic tradition."},
+    {"source": "hedonism", "type": "PART_OF", "target": "utilitarianism", "rationale": "Classical utilitarianism's theory of the good is hedonistic (Bentham, Mill)."},
+    {"source": "universalizability", "type": "PART_OF", "target": "prescriptivism", "rationale": "Hare's universal prescriptivism makes universalizability a condition on moral judgments."}
+  ],
+  "proposed_nodes": []
+}

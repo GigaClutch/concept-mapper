@@ -1,0 +1,32 @@
+{
+  "meta": {"pass_id": "agency_value", "prompt_version": "bb-v1", "model": "claude-fable-5", "date": "2026-06-11"},
+  "edges": [
+    {"source": "free_will", "type": "CONTRASTS_WITH", "target": "determinism", "rationale": "The classical problem: open alternatives vs causal fixity of action."},
+    {"source": "compatibilism", "type": "RESPONDS_TO", "target": "determinism", "rationale": "Compatibilism answers the threat determinism poses to freedom."},
+    {"source": "compatibilism", "type": "DEVELOPED_BY", "target": "thomas_hobbes", "rationale": "Hobbes is the canonical early classical compatibilist (liberty as absence of impediment)."},
+    {"source": "compatibilism", "type": "EXTENDED_BY", "target": "david_hume", "rationale": "Hume's reconciling project on liberty and necessity (Enquiry VIII)."},
+    {"source": "free_will", "type": "PART_OF", "target": "moral_responsibility", "rationale": "Free will is standardly the control condition on responsible agency."},
+    {"source": "moral_luck", "type": "DEVELOPED_BY", "target": "bernard_williams", "rationale": "Williams coined 'moral luck' in his 1976 paper (with Nagel's reply)."},
+    {"source": "moral_luck", "type": "CRITIQUES", "target": "immanuel_kant", "rationale": "The moral luck literature targets Kant's thesis that moral worth is immune to luck."},
+    {"source": "moral_status", "type": "CONTRASTS_WITH", "target": "moral_agency", "rationale": "The moral patient vs moral agent distinction."},
+    {"source": "moral_status", "type": "PART_OF", "target": "applied_ethics", "rationale": "Moral status is a central organising concept of applied ethics (animals, embryos)."},
+    {"source": "trolley_problem", "type": "IS_A", "target": "moral_dilemma", "rationale": "The trolley case is a constructed moral dilemma."},
+    {"source": "trolley_problem", "type": "DEVELOPED_BY", "target": "philippa_foot", "rationale": "Foot introduced the runaway tram case in 1967."},
+    {"source": "trolley_problem", "type": "RESPONDS_TO", "target": "doctrine_of_double_effect", "rationale": "Foot's case was built to probe the doctrine of double effect."},
+    {"source": "doctrine_of_double_effect", "type": "DEVELOPED_BY", "target": "thomas_aquinas", "rationale": "Locus classicus: Summa Theologiae II-II q.64 a.7 on self-defence."},
+    {"source": "doctrine_of_double_effect", "type": "PART_OF", "target": "natural_law", "rationale": "Double effect is a principle of natural law casuistry."},
+    {"source": "supererogation", "type": "CONTRASTS_WITH", "target": "duty", "rationale": "Supererogatory acts are good beyond what duty requires."},
+    {"source": "practical_reason", "type": "DEVELOPED_BY", "target": "aristotle", "rationale": "Aristotle's account of deliberation and the practical syllogism."},
+    {"source": "practical_reason", "type": "DEVELOPED_BY", "target": "immanuel_kant", "rationale": "Kant made pure practical reason the source of the moral law."},
+    {"source": "eudaimonia", "type": "IS_A", "target": "well_being", "rationale": "Eudaimonia is the ancient conception of human well-being or flourishing."},
+    {"source": "justice", "type": "IS_A", "target": "virtue", "rationale": "Justice is classically one of the cardinal virtues (Republic IV, NE V)."},
+    {"source": "rights", "type": "PART_OF", "target": "deontology", "rationale": "Rights function as deontological constraints on action."},
+    {"source": "applied_ethics", "type": "DEVELOPED_BY", "target": "peter_singer", "rationale": "Singer was central to establishing modern applied ethics (Practical Ethics)."},
+    {"source": "psychological_egoism", "type": "CONTRASTS_WITH", "target": "altruism", "rationale": "Psychological egoism denies that genuinely altruistic motivation exists."},
+    {"source": "socrates", "type": "CRITIQUES", "target": "akrasia", "rationale": "Socrates denied akrasia is possible: no one errs willingly (Protagoras 358d)."}
+  ],
+  "proposed_nodes": [
+    {"label": "Thomas Nagel", "type": "person", "reason": "Co-developer of the moral luck debate and major figure in ethics; his reply paper named the problem."},
+    {"label": "Judith Jarvis Thomson", "type": "person", "reason": "Coined 'trolley problem' and produced its canonical variants (bystander, footbridge)."}
+  ]
+}

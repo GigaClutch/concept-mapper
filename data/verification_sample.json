@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "built": "2026-06-11",
+    "seed": 20260611,
+    "drawn": 25,
+    "pool": 178,
+    "instructions": "human review: set verdict to accept|reject and add notes; feeds the Phase 5 review loop"
+  },
+  "sample": [
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "rationale": "Moore, 1903.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "rosalind_hursthouse",
+      "rationale": "Hursthouse's On Virtue Ethics is the leading contemporary neo-Aristotelian statement.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "henry_sidgwick",
+      "type": "INFLUENCED_BY",
+      "target": "john_stuart_mill",
+      "rationale": "Sidgwick's utilitarianism develops out of Mill's (Methods preface).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "moral_status",
+      "type": "PART_OF",
+      "target": "applied_ethics",
+      "rationale": "Moral status is a central organising concept of applied ethics (animals, embryos).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "practical_reason",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Aristotle's account of deliberation and the practical syllogism.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "rationale": "Scanlon, 1998.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "rights",
+      "type": "PART_OF",
+      "target": "deontology",
+      "rationale": "Rights function as deontological constraints on action.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "free_will",
+      "type": "PART_OF",
+      "target": "moral_responsibility",
+      "rationale": "Free will is standardly the control condition on responsible agency.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "deontology",
+      "type": "EXTENDED_BY",
+      "target": "w_d_ross",
+      "rationale": "Ross's pluralism of prima facie duties is the classic non-Kantian deontology.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "social_contract",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "rationale": "Leviathan gives the founding modern statement of the social contract.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "supererogation",
+      "type": "CONTRASTS_WITH",
+      "target": "duty",
+      "rationale": "Supererogatory acts are good beyond what duty requires.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "emotivism",
+      "type": "DEVELOPED_BY",
+      "target": "a_j_ayer",
+      "rationale": "Language, Truth and Logic ch. 6 gives the classic emotivist account.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "RESPONDS_TO",
+      "target": "utilitarianism",
+      "rationale": "Rawls frames justice as fairness explicitly against utilitarianism (TJ sec. 5-6).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "applied_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "peter_singer",
+      "rationale": "Singer was central to establishing modern applied ethics (Practical Ethics).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "bernard_williams",
+      "type": "CRITIQUES",
+      "target": "utilitarianism",
+      "rationale": "Williams's integrity objection (Smart & Williams 1973).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "rationale": "The fallacy charge is aimed at naturalist definitions of good.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "after_virtue",
+      "type": "AUTHORED_BY",
+      "target": "alasdair_macintyre",
+      "rationale": "MacIntyre, 1981.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "expressivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "rationale": "Expressivism is the contemporary refinement of non-cognitivism.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "open_question_argument",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "rationale": "Principia Ethica ch. 1 (1903).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "natural_law",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "rationale": "Aquinas's Summa account is the canonical natural law ethics.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "practical_wisdom",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "rationale": "Phronesis, the intellectual virtue governing right action (NE VI).",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "is_ought_problem",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "rationale": "Hume's observation that ought cannot be derived from is ('Hume's Law').",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "metaethics",
+      "type": "CONTRASTS_WITH",
+      "target": "normative_ethics",
+      "rationale": "The standard branch distinction: the status of morality vs its first-order content.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "rationale": "Quasi-realism is Blackburn's own coinage and program.",
+      "verdict": "",
+      "notes": ""
+    },
+    {
+      "source": "john_rawls",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "rationale": "Justice as fairness is presented as Kantian constructivism.",
+      "verdict": "",
+      "notes": ""
+    }
+  ]
+}
