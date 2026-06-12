@@ -101,8 +101,12 @@ G.nodes.forEach(n => {
 
 // ---- cytoscape elements ----
 function nodeEl(n) {
-  return { group: "nodes", data: { id: n.id, label: n.label, ntype: n.type } };
+  return { group: "nodes", data: { id: n.id, label: n.label, ntype: n.type,
+    btw: (n.metrics && n.metrics.betweenness) || 0 } };
 }
+const btwRank = {};
+[...G.nodes].sort((a, b) => (b.metrics?.betweenness || 0) - (a.metrics?.betweenness || 0))
+  .forEach((n, i) => btwRank[n.id] = i + 1);
 function edgeEl(e, i) {
   return { group: "edges", data: {
     id: "e" + i, source: e.source, target: e.target, etype: e.type,
@@ -117,11 +121,13 @@ const cy = cytoscape({
       "background-color": el => TYPE_COLOR[el.data("ntype")] || "#888",
       "label": "data(label)", "font-size": 11, "color": "#2b2a27",
       "text-valign": "bottom", "text-margin-y": 6, "text-wrap": "wrap", "text-max-width": 90,
-      "width": 26, "height": 26, "border-width": 0
+      "width": el => 24 + 30 * Math.sqrt(el.data("btw") || 0),
+      "height": el => 24 + 30 * Math.sqrt(el.data("btw") || 0),
+      "border-width": 0
     }},
-    { selector: "node[ntype='person']", style: { "shape": "diamond", "width": 30, "height": 30 } },
-    { selector: "node[ntype='school']", style: { "shape": "hexagon", "width": 30, "height": 30 } },
-    { selector: "node.center", style: { "border-width": 4, "border-color": "#2b2a27", "width": 38, "height": 38, "font-weight": "bold" } },
+    { selector: "node[ntype='person']", style: { "shape": "diamond" } },
+    { selector: "node[ntype='school']", style: { "shape": "hexagon" } },
+    { selector: "node.center", style: { "border-width": 4, "border-color": "#2b2a27", "font-weight": "bold" } },
     { selector: "edge", style: {
       "curve-style": "bezier",
       "target-arrow-shape": el => SYM.has(el.data("etype")) ? "none" : "triangle",
@@ -184,6 +190,7 @@ function showNode(id) {
     <div class="sub">${esc(n.time_period || "")}${n.tradition ? " · " + esc(n.tradition) : ""}</div>
     <p class="def">${esc(n.definition)}</p>
     ${n.aliases && n.aliases.length ? `<dl><dt>Aliases</dt><dd>${esc(n.aliases.join(", "))}</dd></dl>` : ""}
+    ${n.metrics ? `<dl><dt>Importance</dt><dd>#${btwRank[id]} of ${G.nodes.length} as a bridge between topics · cluster ${n.metrics.community + 1}</dd></dl>` : ""}
     <div class="edge-list"><h3>Connections (${edges.length})</h3>
       ${edges.map(e => {
         const out = e.source === id;

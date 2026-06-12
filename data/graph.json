@@ -44,9 +44,9 @@
       "time_period": "18th century",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 8,
+        "betweenness": 0.044061,
+        "community": 1
       }
     },
     {
@@ -60,9 +60,9 @@
       "time_period": "18th century",
       "status": "curated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -79,9 +79,9 @@
       "time_period": "18th century",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.0003,
+        "community": 1
       }
     },
     {
@@ -98,9 +98,9 @@
       "time_period": "18th century–present",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 8,
+        "betweenness": 0.212157,
+        "community": 1
       }
     },
     {
@@ -114,9 +114,9 @@
       "time_period": "19th century–present",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 6,
+        "betweenness": 0.187974,
+        "community": 7
       }
     },
     {
@@ -132,9 +132,9 @@
       "time_period": "18th–19th century",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 12,
+        "betweenness": 0.228783,
+        "community": 2
       }
     },
     {
@@ -150,8 +150,8 @@
       "time_period": "Ancient–present",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 12,
+        "betweenness": 0.211142,
         "community": 0
       }
     },
@@ -168,9 +168,9 @@
       "time_period": "Ancient–present",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.095519,
+        "community": 3
       }
     },
     {
@@ -186,9 +186,9 @@
       "time_period": "1724–1804",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 20,
+        "betweenness": 0.397407,
+        "community": 1
       }
     },
     {
@@ -204,9 +204,9 @@
       "time_period": "1711–1776",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 9,
+        "betweenness": 0.183393,
+        "community": 4
       }
     },
     {
@@ -222,9 +222,9 @@
       "time_period": "1748–1832",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.012126,
+        "community": 2
       }
     },
     {
@@ -241,9 +241,9 @@
       "time_period": "1806–1873",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 6,
+        "betweenness": 0.128813,
+        "community": 2
       }
     },
     {
@@ -257,8 +257,8 @@
       "time_period": "384–322 BC",
       "status": "curated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 12,
+        "betweenness": 0.141152,
         "community": 0
       }
     },
@@ -273,9 +273,9 @@
       "time_period": "1781–1840",
       "status": "curated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -292,9 +292,9 @@
       "wikidata_qid": "Q9476",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 4
       }
     },
     {
@@ -311,9 +311,9 @@
       "wikidata_qid": "Q131133",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.028322,
+        "community": 4
       }
     },
     {
@@ -328,9 +328,9 @@
       "wikidata_qid": "Q1551125",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.057385,
+        "community": 4
       }
     },
     {
@@ -349,9 +349,9 @@
       "wikidata_qid": "Q37621",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.022109,
+        "community": 6
       }
     },
     {
@@ -366,9 +366,9 @@
       "wikidata_qid": "Q5190255",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -383,9 +383,9 @@
       "wikidata_qid": "Q8095296",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.005592,
+        "community": 2
       }
     },
     {
@@ -403,9 +403,9 @@
       "wikidata_qid": "Q345641",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.002596,
+        "community": 2
       }
     },
     {
@@ -423,9 +423,9 @@
       "wikidata_qid": "Q58620410",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 2
       }
     },
     {
@@ -442,9 +442,9 @@
       "wikidata_qid": "Q11883221",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -463,9 +463,9 @@
       "wikidata_qid": "Q538733",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.028322,
+        "community": 2
       }
     },
     {
@@ -482,8 +482,8 @@
       "wikidata_qid": "Q1753199",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.021349,
         "community": 0
       }
     },
@@ -502,7 +502,7 @@
       "wikidata_qid": "Q192568",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
         "community": 0
       }
@@ -524,8 +524,8 @@
       "wikidata_qid": "Q297493",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.049875,
         "community": 0
       }
     },
@@ -547,8 +547,8 @@
       "wikidata_qid": "Q1423147",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.003956,
         "community": 0
       }
     },
@@ -573,8 +573,8 @@
       "wikidata_qid": "Q9438",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.022418,
         "community": 0
       }
     },
@@ -594,8 +594,8 @@
       "wikidata_qid": "Q29524",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 4,
+        "betweenness": 0.014651,
         "community": 0
       }
     },
@@ -616,9 +616,9 @@
       "wikidata_qid": "Q2367476",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -639,9 +639,9 @@
       "wikidata_qid": "Q2648051",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 1
       }
     },
     {
@@ -658,8 +658,8 @@
       "wikidata_qid": "Q3376512",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.067959,
         "community": 0
       }
     },
@@ -683,8 +683,8 @@
       "wikidata_qid": "Q1771260",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.01427,
         "community": 0
       }
     },
@@ -705,7 +705,7 @@
       "wikidata_qid": "Q7981051",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
         "community": 0
       }
@@ -722,7 +722,7 @@
       "wikidata_qid": "Q13189320",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
         "community": 0
       }
@@ -744,8 +744,8 @@
       "wikidata_qid": "Q157811",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.01427,
         "community": 0
       }
     },
@@ -764,9 +764,9 @@
       "wikidata_qid": "Q780687",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -781,9 +781,9 @@
       "wikidata_qid": "Q211539",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.042157,
+        "community": 2
       }
     },
     {
@@ -798,9 +798,9 @@
       "wikidata_qid": "Q1362786",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.01427,
+        "community": 7
       }
     },
     {
@@ -818,9 +818,9 @@
       "wikidata_qid": "Q167323",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 7
       }
     },
     {
@@ -835,8 +835,8 @@
       "wikidata_qid": "Q913",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.000109,
         "community": 0
       }
     },
@@ -856,8 +856,8 @@
       "wikidata_qid": "Q420749",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.007026,
         "community": 0
       }
     },
@@ -875,9 +875,9 @@
       "wikidata_qid": "Q56003",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 5,
+        "betweenness": 0.092732,
+        "community": 3
       }
     },
     {
@@ -894,9 +894,9 @@
       "wikidata_qid": "Q3782613",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.030071,
+        "community": 6
       }
     },
     {
@@ -913,8 +913,8 @@
       "wikidata_qid": "Q41679",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.012687,
         "community": 0
       }
     },
@@ -932,9 +932,9 @@
       "wikidata_qid": "Q7064",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.055773,
+        "community": 9
       }
     },
     {
@@ -951,9 +951,9 @@
       "wikidata_qid": "Q7894189",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.013694,
+        "community": 3
       }
     },
     {
@@ -970,9 +970,9 @@
       "wikidata_qid": "Q2980795",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.036739,
+        "community": 3
       }
     },
     {
@@ -989,9 +989,9 @@
       "wikidata_qid": "Q3100314",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 5,
+        "betweenness": 0.047781,
+        "community": 5
       }
     },
     {
@@ -1009,9 +1009,9 @@
       "wikidata_qid": "",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 6,
+        "betweenness": 0.079741,
+        "community": 3
       }
     },
     {
@@ -1029,9 +1029,9 @@
       "wikidata_qid": "Q15055389",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.002462,
+        "community": 3
       }
     },
     {
@@ -1048,9 +1048,9 @@
       "wikidata_qid": "Q17156560",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 5,
+        "betweenness": 0.042731,
+        "community": 3
       }
     },
     {
@@ -1067,9 +1067,9 @@
       "wikidata_qid": "Q1058270",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.033505,
+        "community": 3
       }
     },
     {
@@ -1084,9 +1084,9 @@
       "wikidata_qid": "Q5421730",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.022657,
+        "community": 5
       }
     },
     {
@@ -1107,9 +1107,9 @@
       "wikidata_qid": "Q243757",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.035789,
+        "community": 3
       }
     },
     {
@@ -1127,9 +1127,9 @@
       "wikidata_qid": "Q264334",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1147,9 +1147,9 @@
       "wikidata_qid": "Q471923",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1167,9 +1167,9 @@
       "wikidata_qid": "Q287357",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.037691,
+        "community": 5
       }
     },
     {
@@ -1188,9 +1188,9 @@
       "wikidata_qid": "Q4730627",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 5
       }
     },
     {
@@ -1207,9 +1207,9 @@
       "wikidata_qid": "Q7269470",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.015805,
+        "community": 5
       }
     },
     {
@@ -1226,9 +1226,9 @@
       "wikidata_qid": "Q10586383",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.028322,
+        "community": 3
       }
     },
     {
@@ -1249,9 +1249,9 @@
       "wikidata_qid": "Q713642",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1266,9 +1266,9 @@
       "wikidata_qid": "Q31271796",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1285,9 +1285,9 @@
       "wikidata_qid": "Q12835757",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1304,9 +1304,9 @@
       "wikidata_qid": "Q568188",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1323,9 +1323,9 @@
       "wikidata_qid": "Q1778848",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -1342,9 +1342,9 @@
       "wikidata_qid": "Q3495350",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.011002,
+        "community": 5
       }
     },
     {
@@ -1361,9 +1361,9 @@
       "wikidata_qid": "Q5403415",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.02791,
+        "community": 5
       }
     },
     {
@@ -1383,9 +1383,9 @@
       "wikidata_qid": "Q295386",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 5,
+        "betweenness": 0.052409,
+        "community": 5
       }
     },
     {
@@ -1403,9 +1403,9 @@
       "wikidata_qid": "Q2632427",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.013367,
+        "community": 8
       }
     },
     {
@@ -1424,9 +1424,9 @@
       "wikidata_qid": "Q3498726",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 8
       }
     },
     {
@@ -1447,9 +1447,9 @@
       "wikidata_qid": "Q1364954",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 5,
+        "betweenness": 0.067329,
+        "community": 8
       }
     },
     {
@@ -1464,9 +1464,9 @@
       "wikidata_qid": "Q376789",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.002226,
+        "community": 5
       }
     },
     {
@@ -1481,9 +1481,9 @@
       "wikidata_qid": "Q7095717",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.002226,
+        "community": 5
       }
     },
     {
@@ -1500,9 +1500,9 @@
       "wikidata_qid": "",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.01427,
+        "community": 8
       }
     },
     {
@@ -1520,9 +1520,9 @@
       "wikidata_qid": "Q677649",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.002351,
+        "community": 4
       }
     },
     {
@@ -1544,9 +1544,9 @@
       "wikidata_qid": "Q316367",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -1561,9 +1561,9 @@
       "wikidata_qid": "Q483024",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.019441,
+        "community": 4
       }
     },
     {
@@ -1584,9 +1584,9 @@
       "wikidata_qid": "Q1328762",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -1603,9 +1603,9 @@
       "wikidata_qid": "Q3296948",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 8
       }
     },
     {
@@ -1620,9 +1620,9 @@
       "wikidata_qid": "Q3738092",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -1640,9 +1640,9 @@
       "wikidata_qid": "Q651440",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -1659,9 +1659,9 @@
       "wikidata_qid": "Q433076",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 6,
+        "betweenness": 0.102071,
+        "community": 2
       }
     },
     {
@@ -1678,9 +1678,9 @@
       "wikidata_qid": "Q135402913",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.004132,
+        "community": 2
       }
     },
     {
@@ -1695,9 +1695,9 @@
       "wikidata_qid": "Q1571420",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -1712,9 +1712,9 @@
       "wikidata_qid": "",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -1729,9 +1729,9 @@
       "wikidata_qid": "",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -1746,9 +1746,9 @@
       "wikidata_qid": "Q6412569",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 3,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -1766,7 +1766,7 @@
       "wikidata_qid": "Q3480230",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
         "community": 0
       }
@@ -1786,8 +1786,8 @@
       "wikidata_qid": "Q310178",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.020211,
         "community": 0
       }
     },
@@ -1808,9 +1808,9 @@
       "wikidata_qid": "Q229646",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.001625,
+        "community": 7
       }
     },
     {
@@ -1828,8 +1828,8 @@
       "wikidata_qid": "Q1054131",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.003533,
         "community": 0
       }
     },
@@ -1848,7 +1848,7 @@
       "wikidata_qid": "Q2316040",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
         "community": 0
       }
@@ -1865,9 +1865,9 @@
       "wikidata_qid": "",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.013429,
+        "community": 6
       }
     },
     {
@@ -1885,9 +1885,9 @@
       "wikidata_qid": "Q1326430",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.011202,
+        "community": 6
       }
     },
     {
@@ -1910,9 +1910,9 @@
       "wikidata_qid": "Q1773977",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.015951,
+        "community": 6
       }
     },
     {
@@ -1929,9 +1929,9 @@
       "wikidata_qid": "Q172544",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.045587,
+        "community": 6
       }
     },
     {
@@ -1946,9 +1946,9 @@
       "wikidata_qid": "Q616772",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.042157,
+        "community": 7
       }
     },
     {
@@ -1966,9 +1966,9 @@
       "wikidata_qid": "Q43216",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.042157,
+        "community": 9
       }
     },
     {
@@ -1985,7 +1985,7 @@
       "wikidata_qid": "Q430585",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
         "community": 0
       }
@@ -2005,9 +2005,9 @@
       "wikidata_qid": "Q1035845",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 0.000327,
+        "community": 10
       }
     },
     {
@@ -2024,9 +2024,9 @@
       "wikidata_qid": "Q284025",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 10
       }
     },
     {
@@ -2043,9 +2043,9 @@
       "wikidata_qid": "Q467525",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 10
       }
     },
     {
@@ -2060,9 +2060,9 @@
       "wikidata_qid": "Q10494601",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 10
       }
     },
     {
@@ -2079,9 +2079,9 @@
       "wikidata_qid": "Q38193",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.028322,
+        "community": 1
       }
     },
     {
@@ -2098,9 +2098,9 @@
       "wikidata_qid": "Q9358",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 1
       }
     },
     {
@@ -2117,9 +2117,9 @@
       "wikidata_qid": "Q962160",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 2
       }
     },
     {
@@ -2134,8 +2134,8 @@
       "wikidata_qid": "Q859",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 3,
+        "betweenness": 0.021296,
         "community": 0
       }
     },
@@ -2159,9 +2159,9 @@
       "wikidata_qid": "Q467518",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -2181,9 +2181,9 @@
       "wikidata_qid": "Q48235",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.01427,
+        "community": 9
       }
     },
     {
@@ -2203,9 +2203,9 @@
       "wikidata_qid": "Q171303",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 9
       }
     },
     {
@@ -2220,9 +2220,9 @@
       "wikidata_qid": "Q179541",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.028322,
+        "community": 9
       }
     },
     {
@@ -2239,9 +2239,9 @@
       "wikidata_qid": "Q83368",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -2259,9 +2259,9 @@
       "wikidata_qid": "Q218322",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 7
       }
     },
     {
@@ -2279,9 +2279,9 @@
       "wikidata_qid": "Q113015922",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 4,
+        "betweenness": 0.000354,
+        "community": 1
       }
     },
     {
@@ -2298,9 +2298,9 @@
       "wikidata_qid": "Q870851",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -2317,9 +2317,9 @@
       "wikidata_qid": "Q220002",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -2336,9 +2336,9 @@
       "wikidata_qid": "Q1214817",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -2357,7 +2357,7 @@
       "wikidata_qid": "Q474537",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
         "community": 0
       }
@@ -2379,7 +2379,7 @@
       "wikidata_qid": "Q123397",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
         "community": 0
       }
@@ -2398,9 +2398,9 @@
       "wikidata_qid": "Q193034",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 6
       }
     },
     {
@@ -2417,9 +2417,9 @@
       "wikidata_qid": "Q2451675",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -2436,9 +2436,9 @@
       "wikidata_qid": "Q1306663",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 4
       }
     },
     {
@@ -2453,9 +2453,9 @@
       "wikidata_qid": "Q19041209",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -2470,9 +2470,9 @@
       "wikidata_qid": "Q1197767",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -2487,9 +2487,9 @@
       "wikidata_qid": "Q1055881",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -2504,9 +2504,9 @@
       "wikidata_qid": "Q7751187",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -2521,9 +2521,9 @@
       "wikidata_qid": "Q2344885",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 3,
+        "betweenness": 3.6e-05,
+        "community": 5
       }
     },
     {
@@ -2538,9 +2538,9 @@
       "wikidata_qid": "Q1431691",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 3
       }
     },
     {
@@ -2555,9 +2555,9 @@
       "wikidata_qid": "Q105061759",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 2,
         "betweenness": 0.0,
-        "community": 0
+        "community": 8
       }
     },
     {
@@ -2576,9 +2576,9 @@
       "wikidata_qid": "Q300588",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.003818,
+        "community": 6
       }
     },
     {
@@ -2593,8 +2593,8 @@
       "wikidata_qid": "Q4690583",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
+        "degree": 2,
+        "betweenness": 0.012716,
         "community": 0
       }
     },
@@ -2610,9 +2610,9 @@
       "wikidata_qid": "Q7301514",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 2
       }
     },
     {
@@ -2627,9 +2627,9 @@
       "wikidata_qid": "Q107191343",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 6
       }
     },
     {
@@ -2649,9 +2649,9 @@
       "wikidata_qid": "Q230302",
       "status": "generated",
       "metrics": {
-        "degree": 0,
+        "degree": 1,
         "betweenness": 0.0,
-        "community": 0
+        "community": 1
       }
     },
     {
@@ -2666,9 +2666,9 @@
       "wikidata_qid": "Q3859951",
       "status": "generated",
       "metrics": {
-        "degree": 0,
-        "betweenness": 0.0,
-        "community": 0
+        "degree": 2,
+        "betweenness": 0.001943,
+        "community": 7
       }
     }
   ],
