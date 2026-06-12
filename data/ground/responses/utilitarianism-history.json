@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "article_id": "utilitarianism-history",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 35,
+    "input_tokens": 17745,
+    "output_tokens": 1579,
+    "cost_usd": 0.02564,
+    "dropped_unverifiable": 7
+  },
+  "groundings": [
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "The approach is a species of consequentialism, which holds that the moral quality of an action or policy is entirely a function of its consequences, or the value produced by the action or policy."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "quote": "What distinguishes utilitarianism from other forms of consequentialism are specific commitments regarding the nature of the value to be produced as well as the approach to that value."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Though the first systematic account of utilitarianism was developed by Jeremy Bentham (1748–1832), the core insight motivating the theory occurred much earlier."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "quote": "Because Bentham, quite famously, had an enormous impact on the development of John Stuart Mill’s thought, it seemed natural to view the development of Classical Utilitarianism as proceeding from Bentham through Mill."
+    },
+    {
+      "source": "john_stuart_mill",
+      "type": "INFLUENCED_BY",
+      "target": "jeremy_bentham",
+      "quote": "John Stuart Mill (1806–1873) was a follower of Bentham, and, through most of his life, greatly admired Bentham’s work even though he disagreed with some of Bentham’s claims"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Sidgwick was also a British philosopher, and his views developed out of and in response to those of Bentham and Mill."
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "PART_OF",
+      "target": "utilitarianism",
+      "quote": "Classical Utilitarianism emerged in the nineteenth-century and is distinguished from earlier forms of utilitarianism by it’s clear structure and committment to hedonism as a theory of value."
+    },
+    {
+      "source": "henry_sidgwick",
+      "type": "INFLUENCED_BY",
+      "target": "john_stuart_mill",
+      "quote": "Sidgwick was also a British philosopher, and his views developed out of and in response to those of Bentham and Mill."
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Hume was heavily influenced by Hutcheson, who was one of his teachers."
+    },
+    {
+      "source": "bernard_williams",
+      "type": "CRITIQUES",
+      "target": "utilitarianism",
+      "quote": "In The Methods Sidgwick is concerned with developing an account of “…the different methods of Ethics that I find implicit in our common moral reasoning…” These methods are egoism, intuition based morality, and utilitarianism."
+    },
+    {
+      "source": "treatise_of_human_nature",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "Hume, David, 1738. A Treatise of Human Nature, edited by L. A. Selby-Bigge, Oxford: Oxford University Press, 1978."
+    },
+    {
+      "source": "principles_of_morals_and_legislation",
+      "type": "AUTHORED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Bentham, Jeremy, 1789 [PML]. An Introduction to the Principles of Morals and Legislation, Oxford: Clarendon Press, 1907."
+    },
+    {
+      "source": "on_liberty",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "quote": "–––, 1859. On Liberty, London: Longman, Roberts & Green."
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Henry Sidgwick’s (1838–1900) The Methods of Ethics (1874) is one of the most well known works in utilitarian moral philosophy, and deservedly so."
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore, G. E., 1903 [PE]. Principia Ethica, Amherst, New York: Prometheus Books, 1988."
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "G. E. Moore (1873–1958) criticized this as fallacious. He argued that it rested on an obvious ambiguity: Mill has made as naïve and artless a use of the naturalistic fallacy as anybody could desire."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "john_stuart_mill",
+      "type": "EXTENDED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Sidgwick was also a British philosopher, and his views developed out of and in response to those of Bentham and Mill. His Methods offer an engagement with the theory as it had been presented before him, and was an exploration of it and the main alternatives as well as a defense."
+    },
+    {
+      "source": "hedonism",
+      "type": "PART_OF",
+      "target": "utilitarianism",
+      "quote": "Classical Utilitarianism emerged in the nineteenth-century and is distinguished from earlier forms of utilitarianism by it’s clear structure and committment to hedonism as a theory of value."
+    }
+  ]
+}

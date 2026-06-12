@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "article_id": "moral-responsibility",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 17,
+    "input_tokens": 35708,
+    "output_tokens": 630,
+    "cost_usd": 0.038858,
+    "dropped_unverifiable": 4
+  },
+  "groundings": [
+    {
+      "source": "compatibilism",
+      "type": "RESPONDS_TO",
+      "target": "determinism",
+      "quote": "Compatibilists maintain that free will and moral responsibility are compatible with determinism."
+    },
+    {
+      "source": "compatibilism",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "quote": "philosophers in the Modern period (such as Hobbes and Hume) distinguished the general way in which our actions are necessitated if determinism is true from the specific instances of necessity sometimes imposed on us by everyday constraints on behavior"
+    },
+    {
+      "source": "compatibilism",
+      "type": "EXTENDED_BY",
+      "target": "david_hume",
+      "quote": "This compatibilist tradition was carried into the 20th century by logical positivists such as Ayer (1954) and Schlick ([1930]1966). Here is how Schlick expressed a central compatibilist insight in 1930 (drawing, in particular, on Hume)"
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "quote": "Scanlon (1998, 2008)"
+    },
+    {
+      "source": "nicomachean_ethics",
+      "type": "AUTHORED_BY",
+      "target": "aristotle",
+      "quote": "A picture along these lines can be found in Aristotle’s suggestion (in Book III of the Nicomachean Ethics) that one can be responsible for being a careless person"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "determinism",
+      "type": "CONTRASTS_WITH",
+      "target": "free_will",
+      "quote": "one of the central issues in debates about free will has been about whether possession of it (free will, in the ability-to-do-otherwise sense) is compatible with causal determinism"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "article_id": "feminism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 42,
+    "input_tokens": 38064,
+    "output_tokens": 488,
+    "cost_usd": 0.040504,
+    "dropped_unverifiable": 5
+  },
+  "groundings": [
+    {
+      "source": "care_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "carol_gilligan",
+      "quote": "Psychologist Carol Gilligan’s landmark work, In a Different Voice: Psychological Theory and Women’s Development (1982), disputes accounts of moral development that do not take into account girls’ moral experiences"
+    },
+    {
+      "source": "care_ethics",
+      "type": "SUBCATEGORY_OF",
+      "target": "feminist_ethics",
+      "quote": "The ethic of care has its roots in projects that aim to correct for the exclusion of women from traditional theorizations of moral reasoning."
+    },
+    {
+      "source": "care_ethics",
+      "type": "EXTENDED_BY",
+      "target": "nel_noddings",
+      "quote": "Nel Noddings’s influential work, Caring: A Feminine Approach to Ethics and Moral Education (1984), argues for the moral preferability of a care perspective"
+    }
+  ],
+  "proposed_edges": []
+}

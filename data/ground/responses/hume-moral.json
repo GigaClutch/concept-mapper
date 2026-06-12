@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "article_id": "hume-moral",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 19,
+    "input_tokens": 24552,
+    "output_tokens": 634,
+    "cost_usd": 0.027722,
+    "dropped_unverifiable": 4
+  },
+  "groundings": [
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "quote": "Hume sides with the moral sense theorists: we gain awareness of moral good and evil by experiencing the pleasure of approval and the uneasiness of disapproval when we contemplate a character trait or action from an imaginatively sensitive and unbiased point of view."
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Hume roundly criticizes Hobbes for his insistence on psychological egoism or something close to it"
+    },
+    {
+      "source": "treatise_of_human_nature",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "Hume’s main ethical writings are Book 3 of his Treatise of Human Nature, “Of Morals” (which builds on Book 2, “Of the Passions”)"
+    },
+    {
+      "source": "enquiry_principles_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "Hume’s main ethical writings are Book 3 of his Treatise of Human Nature, “Of Morals” (which builds on Book 2, “Of the Passions”), his Enquiry concerning the Principles of Morals"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "david_hume",
+      "type": "DEVELOPED_BY",
+      "target": "moral_sentimentalism",
+      "quote": "Hume sides with the moral sense theorists: we gain awareness of moral good and evil by experiencing the pleasure of approval and the uneasiness of disapproval when we contemplate a character trait or action"
+    }
+  ]
+}

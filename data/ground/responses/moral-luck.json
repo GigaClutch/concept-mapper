@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "article_id": "moral-luck",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 16,
+    "input_tokens": 25516,
+    "output_tokens": 639,
+    "cost_usd": 0.028711,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "moral_luck",
+      "type": "DEVELOPED_BY",
+      "target": "bernard_williams",
+      "quote": "Bernard Williams writes, “when I first introduced the expression moral luck, I expected to suggest an oxymoron”"
+    },
+    {
+      "source": "groundwork_metaphysics_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant: A good will is not good because of what it effects or accomplishes, because of its fitness to attain some proposed end, but only because of its volition, that is, it is good in itself"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "quote": "Rawls writes that The existing distribution of income and wealth, say, is the cumulative effect of prior distributions of natural assets—that is, natural talents and abilities"
+    },
+    {
+      "source": "good_will",
+      "type": "INTRODUCED_IN",
+      "target": "groundwork_metaphysics_of_morals",
+      "quote": "Inspired by the work of John Rawls, some egalitarians have invoked the idea that our constitution and circumstances are out of our control"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "virtue",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "Aristotle is concerned with the nature of the good life in the broadest sense—in what he calls “eudaimonia,” often translated as “happiness”. Aristotle defends the idea that happiness consists in being a virtuous person over a complete life"
+    },
+    {
+      "source": "determinism",
+      "type": "CONTRASTS_WITH",
+      "target": "free_will",
+      "quote": "The truth of determinism, or the thesis that all events, including human actions, are the inevitable result of past events in accordance with the laws of nature, has been thought by many to be incompatible with the existence of free agency, precisely because determinism undermines control."
+    }
+  ]
+}

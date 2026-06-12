@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "article_id": "mill-moral-political",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 28,
+    "input_tokens": 46136,
+    "output_tokens": 1031,
+    "cost_usd": 0.051291,
+    "dropped_unverifiable": 11
+  },
+  "groundings": [
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Utilitarianism assesses actions and institutions in terms of their effects on human happiness and enjoins us to perform actions and design institutions so that they promote—in one formulation, maximize—human happiness."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Mill was raised in the tradition of Philosophical Radicalism, made famous by Jeremy Bentham (1748–1832)"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "quote": "Though Mill accepts the utilitarian legacy of the Radicals, he transforms that legacy in important ways."
+    },
+    {
+      "source": "act_utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "utilitarianism",
+      "quote": "Act Utilitarianism: An act is right insofar as its consequences for the general happiness are at least as good as any alternative available to the agent."
+    },
+    {
+      "source": "rule_utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "utilitarianism",
+      "quote": "Rule Utilitarianism: An act is right insofar as it conforms to a rule whose acceptance value for the general happiness is at least as great as any alternative rule available to the agent."
+    },
+    {
+      "source": "utilitarianism_mill",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "quote": "Utilitarianism (1861, cited as U)"
+    },
+    {
+      "source": "on_liberty",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "quote": "On Liberty (1859, cited as OL)"
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Henry Sidgwick (1838–1900), for one, read Mill as a psychological egoist (The Methods of Ethics 42–44)."
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Bernard Williams (1973) has argued that the demandingness of utilitarianism threatens the sort of personal projects and partial relationships that help give our lives meaning."
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "quote": "Rawls (1971) has argued that the sort of interpersonal sacrifice that utilitarianism requires violates the strains of commitment in a well-ordered society."
+    }
+  ],
+  "proposed_edges": []
+}

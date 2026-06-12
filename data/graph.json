@@ -2677,12 +2677,16 @@
       "source": "categorical_imperative",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.75,
+      "weight": 0.875,
       "origin": "backbone",
       "evidence": [
         {
           "article_id": "kant-moral",
           "quote": "Immanuel Kant (1724–1804) argued that the supreme principle of morality is a principle of rationality that he dubbed the “Categorical Imperative” (CI)."
+        },
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant believes that our moral concerns are dominated by the question of what duties are imposed on us by a law that commands with a uniquely moral necessity."
         }
       ],
       "status": "confirmed"
@@ -2691,9 +2695,14 @@
       "source": "autonomy",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "kant-moral",
+          "quote": "At the heart of Kant’s moral theory is the idea of autonomy."
+        }
+      ],
       "status": "confirmed"
     },
     {
@@ -2718,99 +2727,242 @@
       "source": "hypothetical_imperative",
       "target": "categorical_imperative",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "kant-moral",
+          "quote": "A hypothetical imperative is a command that also applies to us in virtue of our having a rational will, but not simply in virtue of this. It requires us to exercise our wills in a certain way given we have antecedently willed an end. A hypothetical imperative is thus a command in a conditional form."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "deontology",
       "target": "normative_ethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "deontology is one of those kinds of normative theories regarding which choices are morally required, forbidden, or permitted"
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+        },
+        {
+          "article_id": "kant-moral",
+          "quote": "Although Kant gives several examples in the Groundwork that illustrate the CI, he goes on to describe in later writings, especially in The Metaphysics of Morals, a complicated normative ethical theory for interpreting and applying the CI to human persons in ordinary contexts."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "consequentialism",
       "target": "normative_ethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Consequentialism, as its name suggests, is simply the view that normative properties depend only on consequences."
+        },
+        {
+          "article_id": "ethics-deontological",
+          "quote": "within the domain of moral theories that assess our choices, deontologists—those who subscribe to deontological theories of morality—stand in opposition to consequentialists"
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Utilitarianism assesses actions and institutions in terms of their effects on human happiness and enjoins us to perform actions and design institutions so that they promote—in one formulation, maximize—human happiness."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "The approach is a species of consequentialism, which holds that the moral quality of an action or policy is entirely a function of its consequences, or the value produced by the action or policy."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "virtue_ethics",
       "target": "normative_ethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "deontology",
       "target": "consequentialism",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "within the domain of moral theories that assess our choices, deontologists—those who subscribe to deontological theories of morality—stand in opposition to consequentialists"
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "the one that emphasizes the virtues, or moral character, in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "utilitarianism",
       "target": "consequentialism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "The paradigm case of consequentialism is utilitarianism"
+        },
+        {
+          "article_id": "ethics-deontological",
+          "quote": "Utilitarians, for example, identify the Good with pleasure, happiness, desire satisfaction, or “welfare” in some other sense"
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "A utilitarian will point to the fact that the consequences of doing so will maximize well-being"
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "What distinguishes utilitarianism from other forms of consequentialism are specific commitments regarding the nature of the value to be produced as well as the approach to that value."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "utilitarianism",
       "target": "jeremy_bentham",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "it was Bentham who rendered the theory in its recognisably secular and systematic form"
+        },
+        {
+          "article_id": "consequentialism",
+          "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+        },
+        {
+          "article_id": "hedonism",
+          "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation"
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Mill was raised in the tradition of Philosophical Radicalism, made famous by Jeremy Bentham (1748–1832)"
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Though the first systematic account of utilitarianism was developed by Jeremy Bentham (1748–1832), the core insight motivating the theory occurred much earlier."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "utilitarianism",
       "target": "john_stuart_mill",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "As is well known, while adhering to the basic Benthamic analysis of motives, in Utilitarianism (1861) J. S. Mill introduced the concept of“higher pleasures”"
+        },
+        {
+          "article_id": "consequentialism",
+          "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+        },
+        {
+          "article_id": "hedonism",
+          "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure, and its value is irreducibly a matter of its quality as well as its quantity."
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Though Mill accepts the utilitarian legacy of the Radicals, he transforms that legacy in important ways."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Because Bentham, quite famously, had an enormous impact on the development of John Stuart Mill’s thought, it seemed natural to view the development of Classical Utilitarianism as proceeding from Bentham through Mill."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "virtue_ethics",
       "target": "aristotle",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "aristotle-ethics",
+          "quote": "Aristotle follows Socrates and Plato in taking the virtues to be central to a well-lived life."
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "In the West, virtue ethics’ founding fathers are Plato and Aristotle"
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "immanuel_kant",
       "target": "david_hume",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant credited Hume with waking him from his “dogmatic slumber”, and he describes the Critique of Pure Reason, arguably the most important work of modern philosophy, as the solution to the “Humean problem in its greatest possible amplification”"
+        },
+        {
+          "article_id": "kant-moral",
+          "quote": "Thus, at the heart of Kant’s moral philosophy is a conception of reason whose reach in practical affairs goes well beyond that of a Humean ‘slave’ to the passions."
+        }
+      ],
       "status": "confirmed"
     },
     {
       "source": "john_stuart_mill",
       "target": "jeremy_bentham",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
-      "evidence": [],
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "It was in the flush of his early commitment to utilitarianism that Mill edited the five volumes of Bentham’s writings on evidence"
+        },
+        {
+          "article_id": "consequentialism",
+          "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "John Stuart Mill (1806–1873) was a follower of Bentham, and, through most of his life, greatly admired Bentham’s work even though he disagreed with some of Bentham’s claims"
+        }
+      ],
       "status": "confirmed"
     },
     {
@@ -2849,43 +3001,66 @@
       "source": "compatibilism",
       "target": "determinism",
       "type": "RESPONDS_TO",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-responsibility",
+          "quote": "Compatibilists maintain that free will and moral responsibility are compatible with determinism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "compatibilism",
       "target": "thomas_hobbes",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant sides with Hume and Hutcheson against the psychological egoism associated with Pufendorf, Hobbes, Locke, and Mandeville"
+        },
+        {
+          "article_id": "moral-responsibility",
+          "quote": "philosophers in the Modern period (such as Hobbes and Hume) distinguished the general way in which our actions are necessitated if determinism is true from the specific instances of necessity sometimes imposed on us by everyday constraints on behavior"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "compatibilism",
       "target": "david_hume",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+        },
+        {
+          "article_id": "moral-responsibility",
+          "quote": "This compatibilist tradition was carried into the 20th century by logical positivists such as Ayer (1954) and Schlick ([1930]1966). Here is how Schlick expressed a central compatibilist insight in 1930 (drawing, in particular, on Hume)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "free_will",
@@ -2905,15 +3080,20 @@
       "source": "moral_luck",
       "target": "bernard_williams",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-luck",
+          "quote": "Bernard Williams writes, “when I first introduced the expression moral luck, I expected to suggest an oxymoron”"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_luck",
@@ -3003,15 +3183,24 @@
       "source": "doctrine_of_double_effect",
       "target": "thomas_aquinas",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "double-effect",
+          "quote": "Thomas Aquinas is credited with introducing the principle of double effect in his discussion of the permissibility of self-defense in the Summa Theologica (II-II, Qu. 64, Art.7)."
+        },
+        {
+          "article_id": "ethics-deontological",
+          "quote": "Deontologists of this stripe are committed to something like the doctrine of double effect, a long-established doctrine of Catholic theology (Woodward 2001)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "doctrine_of_double_effect",
@@ -3031,15 +3220,24 @@
       "source": "supererogation",
       "target": "duty",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "deontological morality, in contrast to consequentialism, leaves space for agents to give special concern to their families, friends, and projects"
+        },
+        {
+          "article_id": "supererogation",
+          "quote": "supererogation, the category of actions that are praiseworthy (either in creating good states of affairs or in reflecting a particularly virtuous trait of character) yet at the same time not obligatory"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "practical_reason",
@@ -3087,29 +3285,39 @@
       "source": "justice",
       "target": "virtue",
       "type": "IS_A",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "justice, charity, courage, and generosity are virtues"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "rights",
       "target": "deontology",
       "type": "PART_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "Such norms are to be simply obeyed by each moral agent; such norm-keepings are not to be maximized by each agent. In this sense, for such deontologists, the Right is said to have priority over the Good"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "applied_ethics",
@@ -3157,15 +3365,24 @@
       "source": "metaethics",
       "target": "normative_ethics",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "All three terms are to be defined in opposition to realism, but since there is no consensus on how “realism” is to be understood, “anti-realism” fares no better."
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "Metaethical moral relativist positions are typically contrasted with moral objectivism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "contractualism",
@@ -3227,99 +3444,178 @@
       "source": "moral_realism",
       "target": "metaethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "non-naturalist views that see morality as presupposing, or being committed to, properties over and above those that would be countenanced by natural science"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Traditionally, to hold a realist position with respect to X is to hold that X exists objectively."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "non-naturalism is a form of moral realism"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Moral realism is not a particular substantive moral view nor does it carry a distinctive metaphysical commitment over and above the commitment that comes with thinking moral claims can be true or false and some are true."
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_anti_realism",
       "target": "metaethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "non-naturalist views that see morality as presupposing, or being committed to, properties over and above those that would be countenanced by natural science"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "So understood, moral anti-realism is the disjunction of three theses: moral noncognitivism moral error theory moral non-objectivism"
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_realism",
       "target": "moral_anti_realism",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "moral anti-realism is the denial of the thesis that moral properties—or facts, objects, relations, events, etc. (whatever categories one is willing to countenance)—exist objectively."
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "Metaethical moral relativist positions are typically contrasted with moral objectivism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_cognitivism",
       "target": "metaethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "These are all examples of naturalist accounts of morality that identify various moral properties with non-problematic natural features of the world."
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Moral realists are those who think that, in these respects, things should be taken at face value—moral claims do purport to report facts and are true if they get the facts right."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_cognitivism",
       "target": "non_cognitivism",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "non-cognitivists argue that Moore’s mistake was in thinking that moral claims attribute any sort of property to things, and so he was also wrong in thinking that moral claims have propositional content and express genuine beliefs"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Moral noncognitivism holds that our moral judgments are not in the business of aiming at truth."
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc.—contend that moral judgments lack truth-value"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "non_cognitivism",
       "target": "moral_anti_realism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "There are broadly two ways of endorsing (1): moral noncognitivism and moral error theory."
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "those who reject moral realism are usefully divided into (i) those who think moral claims do not purport to report facts in light of which they are true or false (noncognitivists)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "emotivism",
       "target": "non_cognitivism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "Emotivists think moral terms in grammatically assertive utterances function primarily to express emotion and perhaps also to elicit similar emotions in others"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "prescriptivism",
@@ -3339,113 +3635,177 @@
       "source": "expressivism",
       "target": "non_cognitivism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "recent versions of expressivism, flying the banner of “quasi-realism”, have taken as a central project explaining, on non-cognitivist foundations, how and why moral language has all the trappings of being cognitivist and realist"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Another influential kind of noncognitivism called “prescriptivism” claims that moral judgments are really veiled commands"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Noncognitivists often appeal to this apparent contrast to argue that moral claims have this necessary connection to motivation precisely because they do not express beliefs (that might be true or false) but instead express motivational states of desire, approval, or commitment"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "emotivism",
       "target": "a_j_ayer",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "Emotivists think moral terms in grammatically assertive utterances function primarily to express emotion and perhaps also to elicit similar emotions in others (Barnes 1933; Stevenson 1946; Ayer 1952, Chapter 6)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "emotivism",
       "target": "charles_stevenson",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "Some theorists who view themselves as emotivists suggest that even the most general terms of moral evaluation have a descriptive meaning rather than just an emotive or non-cognitive meaning (Stevenson 1944, 22; Hare 1952, suggests the same sort of idea within a prescriptivist theory at 118)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "prescriptivism",
       "target": "r_m_hare",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "R.M. Hare (1952, 1963) restricted this to commands that one is willing to universalize."
+        },
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "By contrast current versions of prescriptivism, most developed in the works of R. M. Hare, have attempted to vindicate moral thinking as a rational enterprise."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "expressivism",
       "target": "simon_blackburn",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "Simon Blackburn, whose quasi-realist project was briefly described above, has contributed various ideas not only for the states expressed by indicative sentences but also for complex embeddings of moral claims."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "expressivism",
       "target": "allan_gibbard",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "But the proponent who has developed the program in the most systematic way is Allan Gibbard."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "quasi_realism",
       "target": "simon_blackburn",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Simon Blackburn, for example, has pursued what he calls a “quasi-realist” program (Blackburn 1984, 1993, 1998)."
+        },
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "‘Quasi-Realism’ is Simon Blackburn’s name for this sort of non-cognitivism, and especially his own version of expressivism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "quasi_realism",
       "target": "expressivism",
       "type": "DERIVED_FROM",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "recent versions of expressivism, flying the banner of “quasi-realism”, have taken as a central project explaining, on non-cognitivist foundations, how and why moral language has all the trappings of being cognitivist and realist"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "The quasi-realist is someone who endorses an anti-realist metaphysical stance but who seeks, through philosophical maneuvering, to earn the right for moral discourse to enjoy all the trappings of realist talk."
+        },
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "What especially distinguishes the quasi-realist project is an emphasis on explaining why we are entitled to act as if moral judgments are genuinely truth-apt even while strictly speaking they are neither true nor false in any robust sense."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "quasi_realism",
@@ -3465,29 +3825,51 @@
       "source": "error_theory",
       "target": "j_l_mackie",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Defenders of moral error theory include Mackie 1977, Hinckfuss 1987, Joyce 2001, and Olson 2014."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "John Mackie (see Mackie 1977 and Joyce 2001)"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Some error theorists do argue that combining cognitivism with motivational internalism results in an untenable position (Mackie 1977)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "error_theory",
       "target": "ethics_inventing_right_and_wrong",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "John Mackie (who coined the term “error theory” in 1977) argues that when we participate in moral discourse we commit ourselves to the existence of objective values and objective prescriptions"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Mackie, J. L., 1977. Ethics: Inventing Right and Wrong, London: Penguin Books."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "error_theory",
@@ -3563,15 +3945,20 @@
       "source": "moral_non_naturalism",
       "target": "moral_realism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "non-naturalism is a form of moral realism and is opposed to non-cognitivist positions"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_naturalism",
@@ -3591,15 +3978,24 @@
       "source": "moral_non_naturalism",
       "target": "g_e_moore",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "there is widespread agreement that G.E. Moore’s account of goodness in Principia Ethica is a paradigmatically non-naturalist account"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "This standard view can be traced to a powerful and influential argument offered by G.E. Moore (1903)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_intuitionism",
@@ -3619,127 +4015,212 @@
       "source": "moral_intuitionism",
       "target": "h_a_prichard",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "W. D. Ross, for example, uses the notion of apprehension, but he tends to base his moral theory largely on our considered moral convictions."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_intuitionism",
       "target": "w_d_ross",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Ross is arguably an exception"
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Moore held that it was true by definition that right actions maximize goodness, though he later came to the conclusion that this definition of rightness was also vulnerable to an Open Question Argument"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "naturalistic_fallacy",
       "target": "g_e_moore",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "Moore offered a simple test. Take whichever account you will—say, one according to which to be good is to be pleasant—and then consider whether a person who understands the terms involved might nonetheless intelligibly ask whether something she acknowledges to be pleasant is good."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Moore famously claimed that naturalists were guilty of what he called the “naturalistic fallacy.”"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "This standard view can be traced to a powerful and influential argument offered by G.E. Moore (1903)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "naturalistic_fallacy",
       "target": "moral_naturalism",
       "type": "CRITIQUES",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "open_question_argument",
       "target": "g_e_moore",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Moore’s open question argument can be regarded as giving form to this intuition."
+        },
+        {
+          "article_id": "metaethics",
+          "quote": "Moore offered a simple test. Take whichever account you will—say, one according to which to be good is to be pleasant—and then consider whether a person who understands the terms involved might nonetheless intelligibly ask whether something she acknowledges to be pleasant is good."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Moore’s “Open Question Argument” for the conclusion that goodness is a non-natural property"
+        },
+        {
+          "article_id": "naturalism-moral",
+          "quote": "Moore’s Open Question Argument"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "open_question_argument",
       "target": "moral_naturalism",
       "type": "CRITIQUES",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Moore’s argument can be captured as follows: If some property F could be defined in terms of some other property G, then the question “is something which is G, F?” would be closed."
+        },
+        {
+          "article_id": "metaethics",
+          "quote": "no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "prima_facie_duty",
       "target": "w_d_ross",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Ross writes, a self-evident proposition is “evident without any need of proof, or of evidence beyond itself” (1930/2002, 29)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_sentimentalism",
       "target": "francis_hutcheson",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Hume locates the foundation of morality in human nature, primarily in our emotional responses to the behavior of our fellow human beings."
+        },
+        {
+          "article_id": "moral-sentimentalism",
+          "quote": "the roots of the modern sentimentalist tradition in ethics go back to early 18th century debates in Britain. Anthony Ashley Cooper, better known by his title as the Earl of Shaftesbury, introduced the notion of a moral sense"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_sentimentalism",
       "target": "david_hume",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "hume-moral",
+          "quote": "Hume sides with the moral sense theorists: we gain awareness of moral good and evil by experiencing the pleasure of approval and the uneasiness of disapproval when we contemplate a character trait or action from an imaginatively sensitive and unbiased point of view."
+        },
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+        },
+        {
+          "article_id": "moral-sentimentalism",
+          "quote": "Following Hutcheson, Hume rejects reason or reasoning as the source of moral distinctions"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "moral_sentimentalism",
@@ -3787,57 +4268,81 @@
       "source": "virtue_ethics",
       "target": "deontology",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "virtue_ethics",
       "target": "consequentialism",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "act_utilitarianism",
       "target": "utilitarianism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Act consequentialism is the claim that an act is morally right if and only if that act maximizes the good"
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Act Utilitarianism: An act is right insofar as its consequences for the general happiness are at least as good as any alternative available to the agent."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "rule_utilitarianism",
       "target": "utilitarianism",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Rule Utilitarianism: An act is right insofar as it conforms to a rule whose acceptance value for the general happiness is at least as great as any alternative rule available to the agent."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "act_utilitarianism",
@@ -3857,71 +4362,112 @@
       "source": "utilitarianism",
       "target": "henry_sidgwick",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+        },
+        {
+          "article_id": "egoism",
+          "quote": "Sidgwick usually does"
+        },
+        {
+          "article_id": "hedonism",
+          "quote": "Other key contributors to debate over hedonism include Plato, Aristotle, Epicurus, Aquinas, Butler, Hume, Mill, Nietzsche, Brentano, Sidgwick, Moore, Ross, Broad, Ryle and Chisholm."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Sidgwick was also a British philosopher, and his views developed out of and in response to those of Bentham and Mill."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "utilitarianism",
       "target": "peter_singer",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Advocates of these theories often call them consequentialism rather than utilitarianism so that their theories will not be subject to refutation by association with the classic utilitarian theory."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "greatest_happiness_principle",
       "target": "jeremy_bentham",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "In the Fragment Bentham stated the “fundamental axiom” that “it is the greatest happiness of the greatest number that is the measure of right and wrong”"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "greatest_happiness_principle",
       "target": "utilitarianism",
       "type": "PART_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Classical Utilitarianism emerged in the nineteenth-century and is distinguished from earlier forms of utilitarianism by it’s clear structure and committment to hedonism as a theory of value."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "deontology",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "If any philosopher is regarded as central to deontological moral theories, it is surely Immanuel Kant"
+        },
+        {
+          "article_id": "kant-moral",
+          "quote": "At the heart of Kant’s moral theory is the idea of autonomy. Understanding the idea of autonomy was, in Kant’s view, key to understanding and justifying the authority that moral requirements have over us."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "deontology",
@@ -3955,15 +4501,20 @@
       "source": "hypothetical_imperative",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-moral",
+          "quote": "Kant holds that the fundamental principle of our moral duties is a categorical imperative."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "autonomy",
@@ -3997,15 +4548,24 @@
       "source": "good_will",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "For Kant, the only thing unqualifiedly good is a good will (Kant 1785)"
+        },
+        {
+          "article_id": "kant-moral",
+          "quote": "Kant’s analysis of commonsense ideas begins with the thought that the only thing good without qualification is a “good will”."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "maxim",
@@ -4025,15 +4585,24 @@
       "source": "kingdom_of_ends",
       "target": "immanuel_kant",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant’s notion of autonomy is one of the more central, distinctive, and influential aspects of his ethics."
+        },
+        {
+          "article_id": "kant-moral",
+          "quote": "Kant states that the above concept of every rational will as a will that must regard itself as enacting laws binding all rational wills is closely connected to another concept, that of a “systematic union of different rational beings under common laws”, or a “Kingdom of Ends” (G 4:433)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "kingdom_of_ends",
@@ -4067,15 +4636,20 @@
       "source": "virtue_ethics",
       "target": "rosalind_hursthouse",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy”"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "virtue_ethics",
@@ -4109,71 +4683,96 @@
       "source": "virtue_ethics",
       "target": "elizabeth_anscombe",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "virtue",
       "target": "virtue_ethics",
       "type": "PART_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "We begin by discussing two concepts that are central to all forms of virtue ethics, namely, virtue and practical wisdom."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "eudaimonia",
       "target": "aristotle",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "These are arête (excellence or virtue), phronesis (practical or moral wisdom) and eudaimonia"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "eudaimonia",
       "target": "virtue_ethics",
       "type": "PART_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "These are arête (excellence or virtue), phronesis (practical or moral wisdom) and eudaimonia (usually translated as happiness or flourishing)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "golden_mean",
       "target": "aristotle",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "aristotle-ethics",
+          "quote": "every ethical virtue is a condition intermediate (a “golden mean” as it is popularly known) between two other states, one involving excess, and the other deficiency"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "golden_mean",
@@ -4193,57 +4792,77 @@
       "source": "practical_wisdom",
       "target": "aristotle",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Following (and adapting) Aristotle, virtue ethicists draw a distinction between full or perfect virtue and “continence”"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "practical_wisdom",
       "target": "virtue_ethics",
       "type": "PART_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Another way in which one can easily fall short of full virtue is through lacking phronesis—moral or practical wisdom."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "akrasia",
       "target": "aristotle",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "aristotle-ethics",
+          "quote": "In VII.1–10 Aristotle investigates character traits—continence and incontinence—that are not as blameworthy as the vices but not as praiseworthy as the virtues."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "contractarianism",
       "target": "thomas_hobbes",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "contractarianism",
+          "quote": "Contractarianism, which stems from the Hobbesian line of social contract thought, holds that persons are primarily self-interested"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "contractarianism",
@@ -4263,29 +4882,39 @@
       "source": "contractualism",
       "target": "t_m_scanlon",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "contractarianism",
+          "quote": "Contractualism, which stems from the Kantian line of social contract thought, holds that rationality requires that we respect persons"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "contractualism",
       "target": "contractarianism",
       "type": "CONTRASTS_WITH",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "contractarianism",
+          "quote": "It has been more recently recognized that there are two distinct strains of social contract thought, which now typically go by the names contractarianism and contractualism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "social_contract",
@@ -4361,15 +4990,20 @@
       "source": "hedonism",
       "target": "epicurus",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "hedonism",
+          "quote": "Other key contributors to debate over hedonism include Plato, Aristotle, Epicurus, Aquinas, Butler, Hume, Mill, Nietzsche, Brentano, Sidgwick, Moore, Ross, Broad, Ryle and Chisholm."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "divine_command_theory",
@@ -4389,57 +5023,77 @@
       "source": "natural_law",
       "target": "thomas_aquinas",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "natural-law-ethics",
+          "quote": "Aquinas says that the fundamental principle of the natural law is that good is to be done and evil avoided (ST IaIIae 94, 2)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "care_ethics",
       "target": "carol_gilligan",
       "type": "DEVELOPED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "feminism-ethics",
+          "quote": "Psychologist Carol Gilligan’s landmark work, In a Different Voice: Psychological Theory and Women’s Development (1982), disputes accounts of moral development that do not take into account girls’ moral experiences"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "care_ethics",
       "target": "nel_noddings",
       "type": "EXTENDED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "feminism-ethics",
+          "quote": "Nel Noddings’s influential work, Caring: A Feminine Approach to Ethics and Moral Education (1984), argues for the moral preferability of a care perspective"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "care_ethics",
       "target": "feminist_ethics",
       "type": "SUBCATEGORY_OF",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "feminism-ethics",
+          "quote": "The ethic of care has its roots in projects that aim to correct for the exclusion of women from traditional theorizations of moral reasoning."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "immanuel_kant",
@@ -4487,15 +5141,20 @@
       "source": "henry_sidgwick",
       "target": "john_stuart_mill",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Sidgwick was also a British philosopher, and his views developed out of and in response to those of Bentham and Mill."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "peter_singer",
@@ -4571,43 +5230,70 @@
       "source": "aristotle",
       "target": "plato",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "In the West, virtue ethics’ founding fathers are Plato and Aristotle"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "thomas_aquinas",
       "target": "aristotle",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "natural-law-ethics",
+          "quote": "These writers, not surprisingly, trace their views to Aquinas as the major influence, though they do not claim to reproduce his views in detail. (See, for example, Grisez 1983, Finnis 1980, MacIntyre 1999, and Murphy 2001.)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "david_hume",
       "target": "francis_hutcheson",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It has also generated virtue ethical readings of philosophers other than Plato and Aristotle, such as Martineau, Hume and Nietzsche"
+        },
+        {
+          "article_id": "hume-moral",
+          "quote": "Hume roundly criticizes Hobbes for his insistence on psychological egoism or something close to it"
+        },
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Hume was heavily influenced by Hutcheson, who was one of his teachers."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "a_j_ayer",
@@ -4655,15 +5341,20 @@
       "source": "john_rawls",
       "target": "immanuel_kant",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "Theorists have turned to philosophers like Hutcheson, Hume, Nietzsche, Martineau, and Heidegger for resources"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "t_m_scanlon",
@@ -4683,29 +5374,39 @@
       "source": "alasdair_macintyre",
       "target": "aristotle",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "modern virtue ethics does not have to take a “neo-Aristotelian” or eudaimonist form"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "rosalind_hursthouse",
       "target": "aristotle",
       "type": "INFLUENCED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It has also generated virtue ethical readings of philosophers other than Plato and Aristotle, such as Martineau, Hume and Nietzsche, and thereby different forms of virtue ethics have developed"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "stoicism",
@@ -4781,29 +5482,47 @@
       "source": "bernard_williams",
       "target": "utilitarianism",
       "type": "CRITIQUES",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "metaethics",
+          "quote": "Glaucon follows up, in Book II, with an alternative, and less cynical, proposal. While he too sees morality as a human creation"
+        },
+        {
+          "article_id": "practical-reason",
+          "quote": "Such views ascribe to us very demanding requirements of impartial benevolence, which leave little scope for the independent significance of the agent’s own projects and interests (Williams 1973)."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "In The Methods Sidgwick is concerned with developing an account of “…the different methods of Ethics that I find implicit in our common moral reasoning…” These methods are egoism, intuition based morality, and utilitarianism."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "joseph_butler",
       "target": "psychological_egoism",
       "type": "CRITIQUES",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "egoism",
+          "quote": "A common objection to psychological egoism, made famously by Joseph Butler, is that I must desire things other than my own welfare in order to get welfare."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "philippa_foot",
@@ -4823,15 +5542,24 @@
       "source": "groundwork_metaphysics_of_morals",
       "target": "immanuel_kant",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-deontological",
+          "quote": "For Kant, the only thing unqualifiedly good is a good will (Kant 1785)"
+        },
+        {
+          "article_id": "moral-luck",
+          "quote": "Kant: A good will is not good because of what it effects or accomplishes, because of its fitness to attain some proposed end, but only because of its volition, that is, it is good in itself"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "critique_of_practical_reason",
@@ -4851,43 +5579,66 @@
       "source": "critique_of_pure_reason",
       "target": "immanuel_kant",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "Kant reports that his “labor” in the Critique of Pure Reason was fundamentally a response to “that Humean skeptical teaching” (CPrR 5:32)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "metaphysics_of_morals",
       "target": "immanuel_kant",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "kant-hume-morality",
+          "quote": "In the Metaphysics of Morals, Kant argues that additional feelings also play a role in motivating virtuous conduct."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "nicomachean_ethics",
       "target": "aristotle",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "aristotle-ethics",
+          "quote": "Aristotle wrote two ethical treatises: the Nicomachean Ethics and the Eudemian Ethics."
+        },
+        {
+          "article_id": "moral-responsibility",
+          "quote": "A picture along these lines can be found in Aristotle’s suggestion (in Book III of the Nicomachean Ethics) that one can be responsible for being a careless person"
+        },
+        {
+          "article_id": "natural-law-ethics",
+          "quote": "Aristotle, Nicomachean Ethics, Cited by book and chapter number."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "republic_plato",
@@ -4907,239 +5658,480 @@
       "source": "leviathan",
       "target": "thomas_hobbes",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "natural-law-ethics",
+          "quote": "He held that the laws of nature are divine law (Leviathan, xv, ¶41), that all humans are bound by them (Leviathan, xv, ¶¶36), and that it is easy to know at least the basics of the natural law (Leviathan, xv, ¶35)."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "treatise_of_human_nature",
       "target": "david_hume",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "hume-moral",
+          "quote": "Hume’s main ethical writings are Book 3 of his Treatise of Human Nature, “Of Morals” (which builds on Book 2, “Of the Passions”)"
+        },
+        {
+          "article_id": "moral-sentimentalism",
+          "quote": "See David Hume’s Treatise of Human Nature (T), 456"
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Hume, David, 1738. A Treatise of Human Nature, edited by L. A. Selby-Bigge, Oxford: Oxford University Press, 1978."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "enquiry_principles_of_morals",
       "target": "david_hume",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "hume-moral",
+          "quote": "Hume’s main ethical writings are Book 3 of his Treatise of Human Nature, “Of Morals” (which builds on Book 2, “Of the Passions”), his Enquiry concerning the Principles of Morals"
+        },
+        {
+          "article_id": "moral-relativism",
+          "quote": "There were certainly occasional discussions of moral disagreement—for example in Michel de Montaigne’s Essays or in the dialogue David Hume attached to An Enquiry Concerning the Principles of Morals."
+        },
+        {
+          "article_id": "moral-sentimentalism",
+          "quote": "An Enquiry Concerning the Principles of Morals. Ed. J. B. Schneewind. Indianapolis, Hackett, 1983"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "principles_of_morals_and_legislation",
       "target": "jeremy_bentham",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "In An Introduction to the Principles of Morals and Legislation (printed 1780, published with additions 1789), as a preliminary to developing a theory of penal law he detailed the basic elements of classical utilitarian theory."
+        },
+        {
+          "article_id": "consequentialism",
+          "quote": "Bentham wrote, “It is not to be expected that this process [his hedonic calculus] should be strictly pursued previously to every moral judgment.” (1789, Chap. IV, Sec. VI)"
+        },
+        {
+          "article_id": "hedonism",
+          "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation: “Nature has placed mankind under the governance of two sovereign masters, pain, and pleasure."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Bentham, Jeremy, 1789 [PML]. An Introduction to the Principles of Morals and Legislation, Oxford: Clarendon Press, 1907."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "utilitarianism_mill",
       "target": "john_stuart_mill",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "hedonism",
+          "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure"
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Utilitarianism (1861, cited as U)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "on_liberty",
       "target": "john_stuart_mill",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "mill-moral-political",
+          "quote": "On Liberty (1859, cited as OL)"
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "–––, 1859. On Liberty, London: Longman, Roberts & Green."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "methods_of_ethics",
       "target": "henry_sidgwick",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.998046875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "James Fitzjames Stephen, Henry Sidgwick, and A.V. Dicey all advocated versions of utilitarian individualism, although Sidgwick occasionally gave voice to “socialist” sentiments in developing his intuitional utilitarian theory in The Methods of Ethics (1874)."
+        },
+        {
+          "article_id": "consequentialism",
+          "quote": "Sidgwick added, “It is not necessary that the end which gives the criterion of rightness should always be the end at which we consciously aim.” (1907, 413)"
+        },
+        {
+          "article_id": "egoism",
+          "quote": "Sidgwick usually does"
+        },
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Sidgwick thought that good could be analysed as what ought to be desired"
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Henry Sidgwick (1838–1900), for one, read Mill as a psychological egoist (The Methods of Ethics 42–44)."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "A very similar argument was used by Sidgwick to establish that certain moral notions are irreducible (see Sidgwick 1907: Book I, Chapter 3)"
+        },
+        {
+          "article_id": "practical-reason",
+          "quote": "Sidgwick, Henry, 1907, The Methods of Ethics, New York: Macmillan, 7th edition."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Henry Sidgwick’s (1838–1900) The Methods of Ethics (1874) is one of the most well known works in utilitarian moral philosophy, and deservedly so."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "principia_ethica",
       "target": "g_e_moore",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.998046875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "egoism",
+          "quote": "G. E. Moore argued that ethical egoism is self-contradictory."
+        },
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Moore is the intuitionist who laid most stress on the non-natural nature of moral properties, though his focus was on goodness rather than rightness. In Principia Ethica"
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Bernard Williams (1973) has argued that the demandingness of utilitarianism threatens the sort of personal projects and partial relationships that help give our lives meaning."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Moore’s account in Principia is important"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Moore, G. E., 1903. Principia Ethica, Cambridge: Cambridge University Press."
+        },
+        {
+          "article_id": "naturalism-moral",
+          "quote": "Moore’s Principia Ethica"
+        },
+        {
+          "article_id": "practical-reason",
+          "quote": "Moore, George E., 1903, Principia Ethica, Mineola, NY: Dover; reprinted in 2004."
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "Moore, G. E., 1903 [PE]. Principia Ethica, Amherst, New York: Prometheus Books, 1988."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "language_truth_and_logic",
       "target": "a_j_ayer",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "Early prescriptivists thought that this had radical implications for moral reasoning and argument. Carnap suggested that moral judgments are equivalent to relatively simple imperatives."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Ayer 1952"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "ethics_inventing_right_and_wrong",
       "target": "j_l_mackie",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Mackie, J.L., 1977. Ethics: Inventing Right and Wrong, Harmondsworth: Penguin."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Mackie, J.L., 1977. Ethics: Inventing Right and Wrong"
+        },
+        {
+          "article_id": "moral-realism",
+          "quote": "Mackie, J. L., 1977. Ethics: Inventing Right and Wrong, London: Penguin Books."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "the_right_and_the_good",
       "target": "w_d_ross",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Ross writes, a self-evident proposition is “evident without any need of proof, or of evidence beyond itself” (1930/2002, 29), and Broad describes"
+        },
+        {
+          "article_id": "metaethics",
+          "quote": "Socrates, in contrast, rejects the idea that justice is a human invention and argues instead that justice provides independent and eternal standards"
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Ross, W.D., 1930. The Right and The Good"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "a_theory_of_justice",
       "target": "john_rawls",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Rawls 1971"
+        },
+        {
+          "article_id": "contractualism",
+          "quote": "Derek Parfit argues that, despite their differences, contractualism does coincide with the best interpretation of Kant’s moral theory."
+        },
+        {
+          "article_id": "mill-moral-political",
+          "quote": "Rawls (1971) has argued that the sort of interpersonal sacrifice that utilitarianism requires violates the strains of commitment in a well-ordered society."
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Rawls, J., 1971. A Theory of Justice, Cambridge, MA.: Belknap Press."
+        },
+        {
+          "article_id": "moral-luck",
+          "quote": "Rawls writes that The existing distribution of income and wealth, say, is the cumulative effect of prior distributions of natural assets—that is, natural talents and abilities"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "after_virtue",
       "target": "alasdair_macintyre",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "MacIntyre, A., 1984. After Virtue, Indiana: University of Notre Dame Press."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "reasons_and_persons",
       "target": "derek_parfit",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Parfit 1984"
+        },
+        {
+          "article_id": "egoism",
+          "quote": "Parfit 1984 pts. II-III"
+        },
+        {
+          "article_id": "practical-reason",
+          "quote": "Parfit, Derek, 1984, Reasons and Persons, Oxford: Clarendon Press."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "what_we_owe_to_each_other",
       "target": "t_m_scanlon",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.96875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "contractualism",
+          "quote": "Scanlon introduces contractualism as a distinctive account of moral reasoning."
+        },
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "T. M. Scanlon has argued that goodness is to be understood as something’s having properties that give us reason to have a pro-attitude towards it (1998, 95)"
+        },
+        {
+          "article_id": "moral-responsibility",
+          "quote": "Scanlon (1998, 2008)"
+        },
+        {
+          "article_id": "practical-reason",
+          "quote": "Scanlon, Thomas M., 1998, What We Owe to Each Other, Cambridge, Mass.: Harvard University Press."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "on_the_genealogy_of_morality",
       "target": "friedrich_nietzsche",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "On the Genealogy of Morality"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "modern_moral_philosophy",
       "target": "elizabeth_anscombe",
       "type": "AUTHORED_BY",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958)"
+        },
+        {
+          "article_id": "moral-anti-realism",
+          "quote": "Anscombe, G.E.M., 1958. “Modern moral philosophy,” Philosophy, 33: 1–19."
+        },
+        {
+          "article_id": "natural-law-ethics",
+          "quote": "Anscombe, G. E. M., 1958, “Modern Moral Philosophy,” Philosophy, 33: 1–19."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "categorical_imperative",
@@ -5159,15 +6151,20 @@
       "source": "good_will",
       "target": "groundwork_metaphysics_of_morals",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-luck",
+          "quote": "Inspired by the work of John Rawls, some egalitarians have invoked the idea that our constitution and circumstances are out of our control"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "kingdom_of_ends",
@@ -5187,15 +6184,20 @@
       "source": "greatest_happiness_principle",
       "target": "principles_of_morals_and_legislation",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "bentham",
+          "quote": "In the Fragment Bentham stated the “fundamental axiom” that “it is the greatest happiness of the greatest number that is the measure of right and wrong”, and “the obligation to minister to general happiness, was an obligation paramount to and inclusive of every other” (1776 [1977, 393, 440n])."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "golden_mean",
@@ -5215,29 +6217,59 @@
       "source": "open_question_argument",
       "target": "principia_ethica",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "At the beginning of the 20th Century, G. E. Moore’s open question argument convinced many philosophers that moral statements were not equivalent to statements made using non-moral or descriptive terms."
+        },
+        {
+          "article_id": "naturalism-moral",
+          "quote": "with G.E. Moore’s Principia Ethica"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "naturalistic_fallacy",
       "target": "principia_ethica",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.984375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "Moore is the intuitionist who laid most stress on the non-natural nature of moral properties, though his focus was on goodness rather than rightness. In Principia Ethica Moore defines a natural property"
+        },
+        {
+          "article_id": "moral-cognitivism",
+          "quote": "At the beginning of the 20th Century, G. E. Moore’s open question argument convinced many philosophers that moral statements were not equivalent to statements made using non-moral or descriptive terms."
+        },
+        {
+          "article_id": "moral-non-naturalism",
+          "quote": "Moore famously claimed that naturalists were guilty of what he called the “naturalistic fallacy.”"
+        },
+        {
+          "article_id": "naturalism-moral",
+          "quote": "with G.E. Moore’s Principia Ethica"
+        },
+        {
+          "article_id": "utilitarianism-history",
+          "quote": "G. E. Moore (1873–1958) criticized this as fallacious. He argued that it rested on an obvious ambiguity: Mill has made as naïve and artless a use of the naturalistic fallacy as anybody could desire."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "is_ought_problem",
@@ -5257,29 +6289,39 @@
       "source": "prima_facie_duty",
       "target": "the_right_and_the_good",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "intuitionism-ethics",
+          "quote": "“[T]he moral convictions of thoughtful and well-educated people are the data of ethics, just as sense-perceptions are the data of natural science” (1930/2002, 41)"
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "consequentialism",
       "target": "modern_moral_philosophy",
       "type": "INTRODUCED_IN",
-      "weight": 0.5,
+      "weight": 0.75,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958) which crystallized an increasing dissatisfaction with the forms of deontology and utilitarianism then prevailing."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "after_virtue",
@@ -5299,39 +6341,293 @@
       "source": "modern_moral_philosophy",
       "target": "consequentialism",
       "type": "CRITIQUES",
-      "weight": 0.5,
+      "weight": 0.9375,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Mill 1861"
+        },
+        {
+          "article_id": "ethics-deontological",
+          "quote": "consequentialists generally agree that the Good is “agent-neutral” (Parfit 1984; Nagel 1986)"
+        },
+        {
+          "article_id": "ethics-virtue",
+          "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958) which crystallized an increasing dissatisfaction with the forms of deontology and utilitarianism then prevailing."
+        }
+      ],
+      "status": "grounded"
     },
     {
       "source": "a_theory_of_justice",
       "target": "utilitarianism",
       "type": "RESPONDS_TO",
-      "weight": 0.5,
+      "weight": 0.875,
       "origin": "backbone",
       "extractor": {
         "model": "claude-fable-5",
         "prompt_version": "bb-v1",
         "date": "2026-06-11"
       },
-      "evidence": [],
-      "status": "unverified"
+      "evidence": [
+        {
+          "article_id": "consequentialism",
+          "quote": "Sidgwick 1907"
+        },
+        {
+          "article_id": "ethics-deontological",
+          "quote": "Rawls 1971"
+        }
+      ],
+      "status": "grounded"
     }
   ],
   "articles": [
     {
+      "id": "aristotle-ethics",
+      "title": "ethics",
+      "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 4,
+      "proposed_edges": 1
+    },
+    {
+      "id": "bentham",
+      "title": "Bentham, Jeremy",
+      "url": "https://plato.stanford.edu/entries/bentham/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 7,
+      "proposed_edges": 1
+    },
+    {
+      "id": "consequentialism",
+      "title": "consequentialism",
+      "url": "https://plato.stanford.edu/entries/consequentialism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 14,
+      "proposed_edges": 0
+    },
+    {
+      "id": "contractarianism",
+      "title": "contractarianism",
+      "url": "https://plato.stanford.edu/entries/contractarianism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 3,
+      "proposed_edges": 3
+    },
+    {
+      "id": "contractualism",
+      "title": "contractualism",
+      "url": "https://plato.stanford.edu/entries/contractualism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 2,
+      "proposed_edges": 1
+    },
+    {
+      "id": "double-effect",
+      "title": "double effect, doctrine of",
+      "url": "https://plato.stanford.edu/entries/double-effect/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 1,
+      "proposed_edges": 4
+    },
+    {
+      "id": "egoism",
+      "title": "egoism",
+      "url": "https://plato.stanford.edu/entries/egoism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 5,
+      "proposed_edges": 1
+    },
+    {
+      "id": "ethics-deontological",
+      "title": "ethics: deontological",
+      "url": "https://plato.stanford.edu/entries/ethics-deontological/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 12,
+      "proposed_edges": 2
+    },
+    {
+      "id": "ethics-virtue",
+      "title": "virtue",
+      "url": "https://plato.stanford.edu/entries/ethics-virtue/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 25,
+      "proposed_edges": 1
+    },
+    {
+      "id": "feminism-ethics",
+      "title": "feminist philosophy, interventions: ethics",
+      "url": "https://plato.stanford.edu/entries/feminism-ethics/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 3,
+      "proposed_edges": 0
+    },
+    {
+      "id": "hedonism",
+      "title": "hedonism",
+      "url": "https://plato.stanford.edu/entries/hedonism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 6,
+      "proposed_edges": 3
+    },
+    {
+      "id": "hume-moral",
+      "title": "moral philosophy",
+      "url": "https://plato.stanford.edu/entries/hume-moral/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 4,
+      "proposed_edges": 1
+    },
+    {
+      "id": "intuitionism-ethics",
+      "title": "moral intuitionism",
+      "url": "https://plato.stanford.edu/entries/intuitionism-ethics/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 11,
+      "proposed_edges": 1
+    },
+    {
+      "id": "kant-hume-morality",
+      "title": "Kant, Immanuel: and Hume on morality",
+      "url": "https://plato.stanford.edu/entries/kant-hume-morality/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 10,
+      "proposed_edges": 4
+    },
+    {
       "id": "kant-moral",
-      "title": "Kant's Moral Philosophy",
+      "title": "moral philosophy",
       "url": "https://plato.stanford.edu/entries/kant-moral/",
-      "retrieved": "2026-06-11",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 8,
+      "proposed_edges": 2
+    },
+    {
+      "id": "metaethics",
+      "title": "metaethics",
+      "url": "https://plato.stanford.edu/entries/metaethics/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 12,
+      "proposed_edges": 2
+    },
+    {
+      "id": "mill-moral-political",
+      "title": "moral and political philosophy",
+      "url": "https://plato.stanford.edu/entries/mill-moral-political/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 10,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-anti-realism",
+      "title": "moral anti-realism",
+      "url": "https://plato.stanford.edu/entries/moral-anti-realism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 16,
+      "proposed_edges": 3
+    },
+    {
+      "id": "moral-cognitivism",
+      "title": "cognitivism vs. non-cognitivism, moral",
+      "url": "https://plato.stanford.edu/entries/moral-cognitivism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 11,
+      "proposed_edges": 2
+    },
+    {
+      "id": "moral-luck",
+      "title": "moral",
+      "url": "https://plato.stanford.edu/entries/moral-luck/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 4,
+      "proposed_edges": 1
+    },
+    {
+      "id": "moral-non-naturalism",
+      "title": "moral non-naturalism",
+      "url": "https://plato.stanford.edu/entries/moral-non-naturalism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 13,
+      "proposed_edges": 1
+    },
+    {
+      "id": "moral-realism",
+      "title": "moral realism",
+      "url": "https://plato.stanford.edu/entries/moral-realism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 10,
+      "proposed_edges": 3
+    },
+    {
+      "id": "moral-relativism",
+      "title": "moral relativism",
+      "url": "https://plato.stanford.edu/entries/moral-relativism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 6,
+      "proposed_edges": 2
+    },
+    {
+      "id": "moral-responsibility",
+      "title": "moral responsibility",
+      "url": "https://plato.stanford.edu/entries/moral-responsibility/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 5,
+      "proposed_edges": 0
+    },
+    {
+      "id": "moral-sentimentalism",
+      "title": "moral sentimentalism",
+      "url": "https://plato.stanford.edu/entries/moral-sentimentalism/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 4,
+      "proposed_edges": 0
+    },
+    {
+      "id": "natural-law-ethics",
+      "title": "natural law tradition",
+      "url": "https://plato.stanford.edu/entries/natural-law-ethics/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 5,
+      "proposed_edges": 3
+    },
+    {
+      "id": "naturalism-moral",
+      "title": "naturalism: moral",
+      "url": "https://plato.stanford.edu/entries/naturalism-moral/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 4,
+      "proposed_edges": 1
+    },
+    {
+      "id": "practical-reason",
+      "title": "practical reason",
+      "url": "https://plato.stanford.edu/entries/practical-reason/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 5,
+      "proposed_edges": 0
+    },
+    {
+      "id": "supererogation",
+      "title": "supererogation",
+      "url": "https://plato.stanford.edu/entries/supererogation/",
+      "retrieved": "2026-06-12",
       "grounded_edges": 1,
       "proposed_edges": 0
+    },
+    {
+      "id": "utilitarianism-history",
+      "title": "history of",
+      "url": "https://plato.stanford.edu/entries/utilitarianism-history/",
+      "retrieved": "2026-06-12",
+      "grounded_edges": 16,
+      "proposed_edges": 1
     }
   ]
 }

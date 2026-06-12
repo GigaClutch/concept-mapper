@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "article_id": "metaethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 56,
+    "input_tokens": 17670,
+    "output_tokens": 1062,
+    "cost_usd": 0.02298,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "non-naturalist views that see morality as presupposing, or being committed to, properties over and above those that would be countenanced by natural science"
+    },
+    {
+      "source": "moral_anti_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "non-naturalist views that see morality as presupposing, or being committed to, properties over and above those that would be countenanced by natural science"
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "These are all examples of naturalist accounts of morality that identify various moral properties with non-problematic natural features of the world."
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "quote": "non-cognitivists argue that Moore’s mistake was in thinking that moral claims attribute any sort of property to things, and so he was also wrong in thinking that moral claims have propositional content and express genuine beliefs"
+    },
+    {
+      "source": "expressivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "quote": "recent versions of expressivism, flying the banner of “quasi-realism”, have taken as a central project explaining, on non-cognitivist foundations, how and why moral language has all the trappings of being cognitivist and realist"
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DERIVED_FROM",
+      "target": "expressivism",
+      "quote": "recent versions of expressivism, flying the banner of “quasi-realism”, have taken as a central project explaining, on non-cognitivist foundations, how and why moral language has all the trappings of being cognitivist and realist"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore offered a simple test. Take whichever account you will—say, one according to which to be good is to be pleasant—and then consider whether a person who understands the terms involved might nonetheless intelligibly ask whether something she acknowledges to be pleasant is good."
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "quote": "no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore offered a simple test. Take whichever account you will—say, one according to which to be good is to be pleasant—and then consider whether a person who understands the terms involved might nonetheless intelligibly ask whether something she acknowledges to be pleasant is good."
+    },
+    {
+      "source": "open_question_argument",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "quote": "no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments"
+    },
+    {
+      "source": "bernard_williams",
+      "type": "CRITIQUES",
+      "target": "utilitarianism",
+      "quote": "Glaucon follows up, in Book II, with an alternative, and less cynical, proposal. While he too sees morality as a human creation"
+    },
+    {
+      "source": "the_right_and_the_good",
+      "type": "AUTHORED_BY",
+      "target": "w_d_ross",
+      "quote": "Socrates, in contrast, rejects the idea that justice is a human invention and argues instead that justice provides independent and eternal standards"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_anti_realism",
+      "quote": "non-naturalist views that see morality as presupposing, or being committed to, properties over and above those that would be countenanced by natural science"
+    },
+    {
+      "source": "expressivism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_cognitivism",
+      "quote": "non-cognitivists argue that Moore’s mistake was in thinking that moral claims attribute any sort of property to things"
+    },
+    {
+      "source": "g_e_moore",
+      "type": "DEVELOPED_BY",
+      "target": "open_question_argument",
+      "quote": "G. E. Moore argued (at the beginning of the twentieth century) that no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments"
+    }
+  ]
+}

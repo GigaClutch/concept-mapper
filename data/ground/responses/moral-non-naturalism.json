@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "article_id": "moral-non-naturalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 33,
+    "input_tokens": 21376,
+    "output_tokens": 1294,
+    "cost_usd": 0.027846,
+    "dropped_unverifiable": 7
+  },
+  "groundings": [
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "non-naturalism is a form of moral realism"
+    },
+    {
+      "source": "error_theory",
+      "type": "DEVELOPED_BY",
+      "target": "j_l_mackie",
+      "quote": "John Mackie (see Mackie 1977 and Joyce 2001)"
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_realism",
+      "quote": "non-naturalism is a form of moral realism and is opposed to non-cognitivist positions"
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "there is widespread agreement that G.E. Moore’s account of goodness in Principia Ethica is a paradigmatically non-naturalist account"
+    },
+    {
+      "source": "moral_intuitionism",
+      "type": "EXTENDED_BY",
+      "target": "w_d_ross",
+      "quote": "Moore held that it was true by definition that right actions maximize goodness, though he later came to the conclusion that this definition of rightness was also vulnerable to an Open Question Argument"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore famously claimed that naturalists were guilty of what he called the “naturalistic fallacy.”"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore’s “Open Question Argument” for the conclusion that goodness is a non-natural property"
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "A very similar argument was used by Sidgwick to establish that certain moral notions are irreducible (see Sidgwick 1907: Book I, Chapter 3)"
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore’s account in Principia is important"
+    },
+    {
+      "source": "language_truth_and_logic",
+      "type": "AUTHORED_BY",
+      "target": "a_j_ayer",
+      "quote": "Ayer 1952"
+    },
+    {
+      "source": "ethics_inventing_right_and_wrong",
+      "type": "AUTHORED_BY",
+      "target": "j_l_mackie",
+      "quote": "Mackie, J.L., 1977. Ethics: Inventing Right and Wrong"
+    },
+    {
+      "source": "the_right_and_the_good",
+      "type": "AUTHORED_BY",
+      "target": "w_d_ross",
+      "quote": "Ross, W.D., 1930. The Right and The Good"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "Moore famously claimed that naturalists were guilty of what he called the “naturalistic fallacy.”"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_non_naturalism",
+      "quote": "non-naturalism is a form of moral realism and is opposed to non-cognitivist positions according to which moral utterances serve to express non-cognitive attitudes"
+    }
+  ]
+}

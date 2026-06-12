@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "article_id": "contractarianism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 11,
+    "input_tokens": 10976,
+    "output_tokens": 555,
+    "cost_usd": 0.013751,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "contractarianism",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "quote": "Contractarianism, which stems from the Hobbesian line of social contract thought, holds that persons are primarily self-interested"
+    },
+    {
+      "source": "contractualism",
+      "type": "DEVELOPED_BY",
+      "target": "t_m_scanlon",
+      "quote": "Contractualism, which stems from the Kantian line of social contract thought, holds that rationality requires that we respect persons"
+    },
+    {
+      "source": "contractualism",
+      "type": "CONTRASTS_WITH",
+      "target": "contractarianism",
+      "quote": "It has been more recently recognized that there are two distinct strains of social contract thought, which now typically go by the names contractarianism and contractualism."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "contractarianism",
+      "type": "DERIVED_FROM",
+      "target": "contractualism",
+      "quote": "It has been more recently recognized that there are two distinct strains of social contract thought, which now typically go by the names contractarianism and contractualism."
+    },
+    {
+      "source": "john_rawls",
+      "type": "DEVELOPED_BY",
+      "target": "social_contract",
+      "quote": "The most important contemporary political social contract theorist is John Rawls, who effectively resurrected social contract theory in the second half of the 20th century"
+    },
+    {
+      "source": "t_m_scanlon",
+      "type": "DEVELOPED_BY",
+      "target": "contractualism",
+      "quote": "Where Gauthier, Narveson, or economist James Buchanan are the paradigm Hobbesian contractarians, Rawls or Thomas Scanlon would be the paradigm Kantian contractualists."
+    }
+  ]
+}

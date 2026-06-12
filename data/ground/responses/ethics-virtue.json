@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 47,
+    "input_tokens": 24962,
+    "output_tokens": 1442,
+    "cost_usd": 0.032172,
+    "dropped_unverifiable": 8
+  },
+  "groundings": [
+    {
+      "source": "deontology",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+    },
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Virtue ethics is currently one of three major approaches in normative ethics."
+    },
+    {
+      "source": "deontology",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "quote": "the one that emphasizes the virtues, or moral character, in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "quote": "A utilitarian will point to the fact that the consequences of doing so will maximize well-being"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "In the West, virtue ethics’ founding fathers are Plato and Aristotle"
+    },
+    {
+      "source": "justice",
+      "type": "IS_A",
+      "target": "virtue",
+      "quote": "justice, charity, courage, and generosity are virtues"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "CONTRASTS_WITH",
+      "target": "deontology",
+      "quote": "in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "quote": "in contrast to the approach that emphasizes duties or rules (deontology) or that emphasizes the consequences of actions (consequentialism)."
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "rosalind_hursthouse",
+      "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy”"
+    },
+    {
+      "source": "virtue_ethics",
+      "type": "EXTENDED_BY",
+      "target": "elizabeth_anscombe",
+      "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958)"
+    },
+    {
+      "source": "virtue",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "quote": "We begin by discussing two concepts that are central to all forms of virtue ethics, namely, virtue and practical wisdom."
+    },
+    {
+      "source": "eudaimonia",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "These are arête (excellence or virtue), phronesis (practical or moral wisdom) and eudaimonia"
+    },
+    {
+      "source": "eudaimonia",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "quote": "These are arête (excellence or virtue), phronesis (practical or moral wisdom) and eudaimonia (usually translated as happiness or flourishing)."
+    },
+    {
+      "source": "practical_wisdom",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "Following (and adapting) Aristotle, virtue ethicists draw a distinction between full or perfect virtue and “continence”"
+    },
+    {
+      "source": "practical_wisdom",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "quote": "Another way in which one can easily fall short of full virtue is through lacking phronesis—moral or practical wisdom."
+    },
+    {
+      "source": "rosalind_hursthouse",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "quote": "It has also generated virtue ethical readings of philosophers other than Plato and Aristotle, such as Martineau, Hume and Nietzsche, and thereby different forms of virtue ethics have developed"
+    },
+    {
+      "source": "consequentialism",
+      "type": "INTRODUCED_IN",
+      "target": "modern_moral_philosophy",
+      "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958) which crystallized an increasing dissatisfaction with the forms of deontology and utilitarianism then prevailing."
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "CRITIQUES",
+      "target": "consequentialism",
+      "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958) which crystallized an increasing dissatisfaction with the forms of deontology and utilitarianism then prevailing."
+    },
+    {
+      "source": "aristotle",
+      "type": "INFLUENCED_BY",
+      "target": "plato",
+      "quote": "In the West, virtue ethics’ founding fathers are Plato and Aristotle"
+    },
+    {
+      "source": "alasdair_macintyre",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "quote": "modern virtue ethics does not have to take a “neo-Aristotelian” or eudaimonist form"
+    },
+    {
+      "source": "john_rawls",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "quote": "Theorists have turned to philosophers like Hutcheson, Hume, Nietzsche, Martineau, and Heidegger for resources"
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "It has also generated virtue ethical readings of philosophers other than Plato and Aristotle, such as Martineau, Hume and Nietzsche"
+    },
+    {
+      "source": "on_the_genealogy_of_morality",
+      "type": "AUTHORED_BY",
+      "target": "friedrich_nietzsche",
+      "quote": "On the Genealogy of Morality"
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "AUTHORED_BY",
+      "target": "elizabeth_anscombe",
+      "quote": "It was heralded by Anscombe’s famous article “Modern Moral Philosophy” (Anscombe 1958)"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "justice",
+      "type": "PART_OF",
+      "target": "virtue",
+      "quote": "justice, charity, courage, and generosity are virtues"
+    }
+  ]
+}

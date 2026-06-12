@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "article_id": "hedonism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 27,
+    "input_tokens": 19122,
+    "output_tokens": 712,
+    "cost_usd": 0.022682,
+    "dropped_unverifiable": 2
+  },
+  "groundings": [
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure, and its value is irreducibly a matter of its quality as well as its quantity."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Other key contributors to debate over hedonism include Plato, Aristotle, Epicurus, Aquinas, Butler, Hume, Mill, Nietzsche, Brentano, Sidgwick, Moore, Ross, Broad, Ryle and Chisholm."
+    },
+    {
+      "source": "hedonism",
+      "type": "DEVELOPED_BY",
+      "target": "epicurus",
+      "quote": "Other key contributors to debate over hedonism include Plato, Aristotle, Epicurus, Aquinas, Butler, Hume, Mill, Nietzsche, Brentano, Sidgwick, Moore, Ross, Broad, Ryle and Chisholm."
+    },
+    {
+      "source": "principles_of_morals_and_legislation",
+      "type": "AUTHORED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation: “Nature has placed mankind under the governance of two sovereign masters, pain, and pleasure."
+    },
+    {
+      "source": "utilitarianism_mill",
+      "type": "AUTHORED_BY",
+      "target": "john_stuart_mill",
+      "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "jeremy_bentham",
+      "type": "AUTHORED_BY",
+      "target": "principles_of_morals_and_legislation",
+      "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation"
+    },
+    {
+      "source": "john_stuart_mill",
+      "type": "AUTHORED_BY",
+      "target": "utilitarianism_mill",
+      "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure, and its value is irreducibly a matter of its quality as well as its quantity."
+    },
+    {
+      "source": "hedonism",
+      "type": "PART_OF",
+      "target": "consequentialism",
+      "quote": "Each also has broader philosophical significance, especially but not only in utilitarian and egoist traditions of ethical thought"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "article_id": "naturalism-moral",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 49,
+    "input_tokens": 32614,
+    "output_tokens": 515,
+    "cost_usd": 0.035189,
+    "dropped_unverifiable": 4
+  },
+  "groundings": [
+    {
+      "source": "open_question_argument",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore’s Open Question Argument"
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore’s Principia Ethica"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "with G.E. Moore’s Principia Ethica"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "with G.E. Moore’s Principia Ethica"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_naturalism",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "But moral naturalism wasn’t articulated as a distinctive metaethical doctrine until 1903, with G.E. Moore’s Principia Ethica."
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_realism",
+      "quote": "And as a version of moral realism, moral naturalism is opposed to all varieties of anti-realist views in metaethics"
+    },
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Principia established metaethics as a branch of moral theory distinct from first-order ethics"
+    },
+    {
+      "source": "moral_naturalism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_non_naturalism",
+      "quote": "It is also opposed to moral non-naturalism, which holds that moral facts are neither natural nor supernatural, but are rather their own, third kind of thing."
+    }
+  ]
+}

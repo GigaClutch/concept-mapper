@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "article_id": "moral-relativism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 42,
+    "input_tokens": 31010,
+    "output_tokens": 586,
+    "cost_usd": 0.03394,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "metaethics",
+      "type": "CONTRASTS_WITH",
+      "target": "normative_ethics",
+      "quote": "Metaethical moral relativist positions are typically contrasted with moral objectivism."
+    },
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc."
+    },
+    {
+      "source": "moral_anti_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc."
+    },
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_anti_realism",
+      "quote": "Metaethical moral relativist positions are typically contrasted with moral objectivism."
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "quote": "Other views—variously called moral non-cognitivism, expressivism, anti-realism, nihilism, etc.—contend that moral judgments lack truth-value"
+    },
+    {
+      "source": "enquiry_principles_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "There were certainly occasional discussions of moral disagreement—for example in Michel de Montaigne’s Essays or in the dialogue David Hume attached to An Enquiry Concerning the Principles of Morals."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_relativism",
+      "type": "PART_OF",
+      "target": "metaethics",
+      "quote": "Moral relativism is an important topic in metaethics."
+    },
+    {
+      "source": "david_hume",
+      "type": "AUTHORED_BY",
+      "target": "enquiry_principles_of_morals",
+      "quote": "in the dialogue David Hume attached to An Enquiry Concerning the Principles of Morals"
+    },
+    {
+      "source": "error_theory",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "quote": "a related view, the error theory, claims that moral judgments are always false"
+    }
+  ]
+}

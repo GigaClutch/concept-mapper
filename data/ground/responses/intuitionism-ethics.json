@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "article_id": "intuitionism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 37,
+    "input_tokens": 19975,
+    "output_tokens": 977,
+    "cost_usd": 0.02486,
+    "dropped_unverifiable": 6
+  },
+  "groundings": [
+    {
+      "source": "moral_intuitionism",
+      "type": "DEVELOPED_BY",
+      "target": "h_a_prichard",
+      "quote": "W. D. Ross, for example, uses the notion of apprehension, but he tends to base his moral theory largely on our considered moral convictions."
+    },
+    {
+      "source": "moral_intuitionism",
+      "type": "EXTENDED_BY",
+      "target": "w_d_ross",
+      "quote": "Ross is arguably an exception"
+    },
+    {
+      "source": "open_question_argument",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore’s open question argument can be regarded as giving form to this intuition."
+    },
+    {
+      "source": "open_question_argument",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "quote": "Moore’s argument can be captured as follows: If some property F could be defined in terms of some other property G, then the question “is something which is G, F?” would be closed."
+    },
+    {
+      "source": "prima_facie_duty",
+      "type": "DEVELOPED_BY",
+      "target": "w_d_ross",
+      "quote": "Ross writes, a self-evident proposition is “evident without any need of proof, or of evidence beyond itself” (1930/2002, 29)"
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Sidgwick thought that good could be analysed as what ought to be desired"
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore is the intuitionist who laid most stress on the non-natural nature of moral properties, though his focus was on goodness rather than rightness. In Principia Ethica"
+    },
+    {
+      "source": "the_right_and_the_good",
+      "type": "AUTHORED_BY",
+      "target": "w_d_ross",
+      "quote": "Ross writes, a self-evident proposition is “evident without any need of proof, or of evidence beyond itself” (1930/2002, 29), and Broad describes"
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "quote": "T. M. Scanlon has argued that goodness is to be understood as something’s having properties that give us reason to have a pro-attitude towards it (1998, 95)"
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "Moore is the intuitionist who laid most stress on the non-natural nature of moral properties, though his focus was on goodness rather than rightness. In Principia Ethica Moore defines a natural property"
+    },
+    {
+      "source": "prima_facie_duty",
+      "type": "INTRODUCED_IN",
+      "target": "the_right_and_the_good",
+      "quote": "“[T]he moral convictions of thoughtful and well-educated people are the data of ethics, just as sense-perceptions are the data of natural science” (1930/2002, 41)"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_intuitionism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_realism",
+      "quote": "Along with its moral epistemology, a distinctive feature of intuitionist thought is its non-naturalist realism."
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_naturalism",
+      "quote": "If the moral property of being good, for instance, could be defined in wholly psychological, biological, or sociological terms, then moral truths would turn out to be either psychological, biological or sociological truths, which could then be discovered by empirical research"
+    }
+  ]
+}

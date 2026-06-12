@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "article_id": "natural-law-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 16,
+    "input_tokens": 17776,
+    "output_tokens": 913,
+    "cost_usd": 0.022341,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "natural_law",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "quote": "Aquinas says that the fundamental principle of the natural law is that good is to be done and evil avoided (ST IaIIae 94, 2)."
+    },
+    {
+      "source": "thomas_aquinas",
+      "type": "INFLUENCED_BY",
+      "target": "aristotle",
+      "quote": "These writers, not surprisingly, trace their views to Aquinas as the major influence, though they do not claim to reproduce his views in detail. (See, for example, Grisez 1983, Finnis 1980, MacIntyre 1999, and Murphy 2001.)"
+    },
+    {
+      "source": "nicomachean_ethics",
+      "type": "AUTHORED_BY",
+      "target": "aristotle",
+      "quote": "Aristotle, Nicomachean Ethics, Cited by book and chapter number."
+    },
+    {
+      "source": "leviathan",
+      "type": "AUTHORED_BY",
+      "target": "thomas_hobbes",
+      "quote": "He held that the laws of nature are divine law (Leviathan, xv, ¶41), that all humans are bound by them (Leviathan, xv, ¶¶36), and that it is easy to know at least the basics of the natural law (Leviathan, xv, ¶35)."
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "AUTHORED_BY",
+      "target": "elizabeth_anscombe",
+      "quote": "Anscombe, G. E. M., 1958, “Modern Moral Philosophy,” Philosophy, 33: 1–19."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "thomas_aquinas",
+      "type": "DEVELOPED_BY",
+      "target": "natural_law",
+      "quote": "If any moral theory is a theory of natural law, it is Aquinas’s. (Every introductory ethics anthology that includes material on natural law theory includes material by or about Aquinas; every encyclopedia article on natural law thought refers to Aquinas.)"
+    },
+    {
+      "source": "alasdair_macintyre",
+      "type": "INFLUENCED_BY",
+      "target": "thomas_aquinas",
+      "quote": "These writers, not surprisingly, trace their views to Aquinas as the major influence, though they do not claim to reproduce his views in detail. (See, for example, Grisez 1983, Finnis 1980, MacIntyre 1999, and Murphy 2001.)"
+    },
+    {
+      "source": "virtue",
+      "type": "IS_A",
+      "target": "practical_wisdom",
+      "quote": "one will always need the moral and intellectual virtues in order to act well (Commentary on NE, II, 2, 259)"
+    }
+  ]
+}

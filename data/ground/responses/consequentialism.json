@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "article_id": "consequentialism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 45,
+    "input_tokens": 22452,
+    "output_tokens": 1034,
+    "cost_usd": 0.027622,
+    "dropped_unverifiable": 7
+  },
+  "groundings": [
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Consequentialism, as its name suggests, is simply the view that normative properties depend only on consequences."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "quote": "The paradigm case of consequentialism is utilitarianism"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+    },
+    {
+      "source": "john_stuart_mill",
+      "type": "INFLUENCED_BY",
+      "target": "jeremy_bentham",
+      "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+    },
+    {
+      "source": "act_utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "utilitarianism",
+      "quote": "Act consequentialism is the claim that an act is morally right if and only if that act maximizes the good"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "henry_sidgwick",
+      "quote": "The paradigm case of consequentialism is utilitarianism, whose classic proponents were Jeremy Bentham (1789), John Stuart Mill (1861), and Henry Sidgwick (1907)."
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "peter_singer",
+      "quote": "Advocates of these theories often call them consequentialism rather than utilitarianism so that their theories will not be subject to refutation by association with the classic utilitarian theory."
+    },
+    {
+      "source": "principles_of_morals_and_legislation",
+      "type": "AUTHORED_BY",
+      "target": "jeremy_bentham",
+      "quote": "Bentham wrote, “It is not to be expected that this process [his hedonic calculus] should be strictly pursued previously to every moral judgment.” (1789, Chap. IV, Sec. VI)"
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Sidgwick added, “It is not necessary that the end which gives the criterion of rightness should always be the end at which we consciously aim.” (1907, 413)"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "quote": "Rawls 1971"
+    },
+    {
+      "source": "reasons_and_persons",
+      "type": "AUTHORED_BY",
+      "target": "derek_parfit",
+      "quote": "Parfit 1984"
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "CRITIQUES",
+      "target": "consequentialism",
+      "quote": "Mill 1861"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "RESPONDS_TO",
+      "target": "utilitarianism",
+      "quote": "Sidgwick 1907"
+    }
+  ],
+  "proposed_edges": []
+}

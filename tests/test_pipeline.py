@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 
 import backbone  # noqa: E402
+import ground  # noqa: E402
 import validate  # noqa: E402
 from scrape_sep import ContentsParser, TextExtractor  # noqa: E402
 
@@ -85,6 +86,40 @@ class TestBackboneDomainRange(unittest.TestCase):
         for pass_id, spec in backbone.PASSES.items():
             missing = [i for i in spec["focus"] if i not in ids]
             self.assertEqual(missing, [], f"pass {pass_id}")
+
+
+class TestGroundVerbatim(unittest.TestCase):
+    TEXT = "Kant dubbed it the “Categorical Imperative” (CI). It is unconditional."
+
+    def test_exact_quote_passes(self):
+        self.assertEqual(
+            ground.find_verbatim("dubbed it the “Categorical Imperative”", self.TEXT),
+            "dubbed it the “Categorical Imperative”")
+
+    def test_straight_quote_variant_recovers_article_characters(self):
+        got = ground.find_verbatim('dubbed it the "Categorical Imperative"', self.TEXT)
+        self.assertEqual(got, "dubbed it the “Categorical Imperative”")
+        self.assertIn(validate.norm(got), validate.norm(self.TEXT))
+
+    def test_paraphrase_rejected(self):
+        self.assertIsNone(ground.find_verbatim("Kant called it the CI", self.TEXT))
+
+    def test_overlong_quote_rejected(self):
+        self.assertIsNone(ground.find_verbatim("x" * 301, "irrelevant"))
+
+
+class TestGroundMentions(unittest.TestCase):
+    def test_surname_matches_for_persons(self):
+        node = {"label": "John Stuart Mill", "type": "person", "aliases": []}
+        self.assertTrue(ground.mentions(node, "as Mill argued in Utilitarianism"))
+
+    def test_word_boundary_blocks_substring_hits(self):
+        node = {"label": "John Stuart Mill", "type": "person", "aliases": []}
+        self.assertFalse(ground.mentions(node, "millions of readers"))
+
+    def test_short_aliases_ignored(self):
+        node = {"label": "Categorical Imperative", "type": "concept", "aliases": ["CI"]}
+        self.assertFalse(ground.mentions(node, "the CI is discussed"))
 
 
 class TestContentsParser(unittest.TestCase):

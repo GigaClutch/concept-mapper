@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "article_id": "moral-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 42,
+    "input_tokens": 13323,
+    "output_tokens": 1259,
+    "cost_usd": 0.019618,
+    "dropped_unverifiable": 6
+  },
+  "groundings": [
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Moral realism is not a particular substantive moral view nor does it carry a distinctive metaphysical commitment over and above the commitment that comes with thinking moral claims can be true or false and some are true."
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Moral realists are those who think that, in these respects, things should be taken at face value—moral claims do purport to report facts and are true if they get the facts right."
+    },
+    {
+      "source": "non_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "quote": "those who reject moral realism are usefully divided into (i) those who think moral claims do not purport to report facts in light of which they are true or false (noncognitivists)"
+    },
+    {
+      "source": "expressivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "quote": "Noncognitivists often appeal to this apparent contrast to argue that moral claims have this necessary connection to motivation precisely because they do not express beliefs (that might be true or false) but instead express motivational states of desire, approval, or commitment"
+    },
+    {
+      "source": "error_theory",
+      "type": "DEVELOPED_BY",
+      "target": "j_l_mackie",
+      "quote": "Some error theorists do argue that combining cognitivism with motivational internalism results in an untenable position (Mackie 1977)."
+    },
+    {
+      "source": "error_theory",
+      "type": "INTRODUCED_IN",
+      "target": "ethics_inventing_right_and_wrong",
+      "quote": "Mackie, J. L., 1977. Ethics: Inventing Right and Wrong, London: Penguin Books."
+    },
+    {
+      "source": "moral_non_naturalism",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "This standard view can be traced to a powerful and influential argument offered by G.E. Moore (1903)."
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "DEVELOPED_BY",
+      "target": "g_e_moore",
+      "quote": "This standard view can be traced to a powerful and influential argument offered by G.E. Moore (1903)."
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore, G. E., 1903. Principia Ethica, Cambridge: Cambridge University Press."
+    },
+    {
+      "source": "ethics_inventing_right_and_wrong",
+      "type": "AUTHORED_BY",
+      "target": "j_l_mackie",
+      "quote": "Mackie, J. L., 1977. Ethics: Inventing Right and Wrong, London: Penguin Books."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "error_theory",
+      "quote": "Moral realists answer ‘yes’ to both, non-cognitivists answer ‘no’ to the first (and, by default, ‘no’ to the second) while error theorists answer ‘yes’ to the first and ‘no’ to the second."
+    },
+    {
+      "source": "open_question_argument",
+      "type": "CRITIQUES",
+      "target": "moral_naturalism",
+      "quote": "For in each case, whatever naturalistic definition of moral terms was on offer, it always made sense to ask, of things that had the naturalistic property in question, whether those things were (really) good."
+    },
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "quote": "Moral realists are those who think that, in these respects, things should be taken at face value—moral claims do purport to report facts and are true if they get the facts right."
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "PART_OF",
+      "target": "moral_realism",
+      "quote": "while moral realists are united in their cognitivism and in their rejection of error theories"
+    }
+  ]
+}

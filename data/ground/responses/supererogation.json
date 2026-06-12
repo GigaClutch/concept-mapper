@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "article_id": "supererogation",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 25,
+    "input_tokens": 25872,
+    "output_tokens": 310,
+    "cost_usd": 0.027422,
+    "dropped_unverifiable": 4
+  },
+  "groundings": [
+    {
+      "source": "supererogation",
+      "type": "CONTRASTS_WITH",
+      "target": "duty",
+      "quote": "supererogation, the category of actions that are praiseworthy (either in creating good states of affairs or in reflecting a particularly virtuous trait of character) yet at the same time not obligatory"
+    }
+  ],
+  "proposed_edges": []
+}

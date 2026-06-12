@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "article_id": "practical-reason",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 35,
+    "input_tokens": 20365,
+    "output_tokens": 713,
+    "cost_usd": 0.02393,
+    "dropped_unverifiable": 5
+  },
+  "groundings": [
+    {
+      "source": "bernard_williams",
+      "type": "CRITIQUES",
+      "target": "utilitarianism",
+      "quote": "Such views ascribe to us very demanding requirements of impartial benevolence, which leave little scope for the independent significance of the agent’s own projects and interests (Williams 1973)."
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "Sidgwick, Henry, 1907, The Methods of Ethics, New York: Macmillan, 7th edition."
+    },
+    {
+      "source": "principia_ethica",
+      "type": "AUTHORED_BY",
+      "target": "g_e_moore",
+      "quote": "Moore, George E., 1903, Principia Ethica, Mineola, NY: Dover; reprinted in 2004."
+    },
+    {
+      "source": "reasons_and_persons",
+      "type": "AUTHORED_BY",
+      "target": "derek_parfit",
+      "quote": "Parfit, Derek, 1984, Reasons and Persons, Oxford: Clarendon Press."
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "quote": "Scanlon, Thomas M., 1998, What We Owe to Each Other, Cambridge, Mass.: Harvard University Press."
+    }
+  ],
+  "proposed_edges": []
+}

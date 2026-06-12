@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "article_id": "aristotle-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 30,
+    "input_tokens": 36447,
+    "output_tokens": 690,
+    "cost_usd": 0.039897,
+    "dropped_unverifiable": 6
+  },
+  "groundings": [
+    {
+      "source": "virtue_ethics",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "Aristotle follows Socrates and Plato in taking the virtues to be central to a well-lived life."
+    },
+    {
+      "source": "golden_mean",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "every ethical virtue is a condition intermediate (a “golden mean” as it is popularly known) between two other states, one involving excess, and the other deficiency"
+    },
+    {
+      "source": "akrasia",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "quote": "In VII.1–10 Aristotle investigates character traits—continence and incontinence—that are not as blameworthy as the vices but not as praiseworthy as the virtues."
+    },
+    {
+      "source": "nicomachean_ethics",
+      "type": "AUTHORED_BY",
+      "target": "aristotle",
+      "quote": "Aristotle wrote two ethical treatises: the Nicomachean Ethics and the Eudemian Ethics."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "virtue",
+      "type": "PART_OF",
+      "target": "virtue_ethics",
+      "quote": "Aristotle follows Socrates and Plato in taking the virtues to be central to a well-lived life."
+    },
+    {
+      "source": "nicomachean_ethics",
+      "type": "INTRODUCED_IN",
+      "target": "golden_mean",
+      "quote": "every ethical virtue is a condition intermediate (a “golden mean” as it is popularly known) between two other states, one involving excess, and the other deficiency"
+    }
+  ]
+}

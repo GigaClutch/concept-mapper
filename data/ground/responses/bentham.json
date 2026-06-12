@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "article_id": "bentham",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 24,
+    "input_tokens": 30326,
+    "output_tokens": 829,
+    "cost_usd": 0.034471,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "utilitarianism",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "it was Bentham who rendered the theory in its recognisably secular and systematic form"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "EXTENDED_BY",
+      "target": "john_stuart_mill",
+      "quote": "As is well known, while adhering to the basic Benthamic analysis of motives, in Utilitarianism (1861) J. S. Mill introduced the concept of“higher pleasures”"
+    },
+    {
+      "source": "john_stuart_mill",
+      "type": "INFLUENCED_BY",
+      "target": "jeremy_bentham",
+      "quote": "It was in the flush of his early commitment to utilitarianism that Mill edited the five volumes of Bentham’s writings on evidence"
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "In the Fragment Bentham stated the “fundamental axiom” that “it is the greatest happiness of the greatest number that is the measure of right and wrong”"
+    },
+    {
+      "source": "principles_of_morals_and_legislation",
+      "type": "AUTHORED_BY",
+      "target": "jeremy_bentham",
+      "quote": "In An Introduction to the Principles of Morals and Legislation (printed 1780, published with additions 1789), as a preliminary to developing a theory of penal law he detailed the basic elements of classical utilitarian theory."
+    },
+    {
+      "source": "methods_of_ethics",
+      "type": "AUTHORED_BY",
+      "target": "henry_sidgwick",
+      "quote": "James Fitzjames Stephen, Henry Sidgwick, and A.V. Dicey all advocated versions of utilitarian individualism, although Sidgwick occasionally gave voice to “socialist” sentiments in developing his intuitional utilitarian theory in The Methods of Ethics (1874)."
+    },
+    {
+      "source": "greatest_happiness_principle",
+      "type": "INTRODUCED_IN",
+      "target": "principles_of_morals_and_legislation",
+      "quote": "In the Fragment Bentham stated the “fundamental axiom” that “it is the greatest happiness of the greatest number that is the measure of right and wrong”, and “the obligation to minister to general happiness, was an obligation paramount to and inclusive of every other” (1776 [1977, 393, 440n])."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "greatest_happiness_principle",
+      "type": "DEVELOPED_BY",
+      "target": "jeremy_bentham",
+      "quote": "In the Fragment Bentham stated the “fundamental axiom” that “it is the greatest happiness of the greatest number that is the measure of right and wrong”"
+    },
+    {
+      "source": "jeremy_bentham",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "quote": "In reading Hume’s Treatise of Human Nature (1739–40)—which declared that all social inquiry should be based on the “experimental Method of Reasoning”—Bentham found virtue equated with utility, at which he “felt as if scales had fallen from my eyes”"
+    }
+  ]
+}

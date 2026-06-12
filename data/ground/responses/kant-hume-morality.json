@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "article_id": "kant-hume-morality",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 31,
+    "input_tokens": 29916,
+    "output_tokens": 1202,
+    "cost_usd": 0.035926,
+    "dropped_unverifiable": 9
+  },
+  "groundings": [
+    {
+      "source": "categorical_imperative",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant believes that our moral concerns are dominated by the question of what duties are imposed on us by a law that commands with a uniquely moral necessity."
+    },
+    {
+      "source": "immanuel_kant",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "quote": "Kant credited Hume with waking him from his “dogmatic slumber”, and he describes the Critique of Pure Reason, arguably the most important work of modern philosophy, as the solution to the “Humean problem in its greatest possible amplification”"
+    },
+    {
+      "source": "compatibilism",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_hobbes",
+      "quote": "Kant sides with Hume and Hutcheson against the psychological egoism associated with Pufendorf, Hobbes, Locke, and Mandeville"
+    },
+    {
+      "source": "compatibilism",
+      "type": "EXTENDED_BY",
+      "target": "david_hume",
+      "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Hume locates the foundation of morality in human nature, primarily in our emotional responses to the behavior of our fellow human beings."
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+    },
+    {
+      "source": "kingdom_of_ends",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant’s notion of autonomy is one of the more central, distinctive, and influential aspects of his ethics."
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+    },
+    {
+      "source": "critique_of_pure_reason",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant reports that his “labor” in the Critique of Pure Reason was fundamentally a response to “that Humean skeptical teaching” (CPrR 5:32)."
+    },
+    {
+      "source": "metaphysics_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "quote": "In the Metaphysics of Morals, Kant argues that additional feelings also play a role in motivating virtuous conduct."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "immanuel_kant",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "INFLUENCED_BY",
+      "target": "francis_hutcheson",
+      "quote": "Kant was directly influenced by the sentimentalist tradition to which Hume belongs (especially Francis Hutcheson’s version)."
+    },
+    {
+      "source": "immanuel_kant",
+      "type": "CRITIQUES",
+      "target": "moral_sentimentalism",
+      "quote": "From the Groundwork on, Kant’s objections to sentimentalism concentrate on what he takes to be its fatal flaw. No empirical principles can ground moral laws because such laws bind all rational beings universally, necessarily, and unconditionally."
+    },
+    {
+      "source": "david_hume",
+      "type": "DEVELOPED_BY",
+      "target": "compatibilism",
+      "quote": "Hume defends compatibilism in section eight of Enquiry concerning Human Understanding and Book Two of the Treatise (2.3.1–2)."
+    }
+  ]
+}

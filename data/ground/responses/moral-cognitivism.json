@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "article_id": "moral-cognitivism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 36,
+    "input_tokens": 35931,
+    "output_tokens": 1383,
+    "cost_usd": 0.042846,
+    "dropped_unverifiable": 5
+  },
+  "groundings": [
+    {
+      "source": "emotivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "quote": "Emotivists think moral terms in grammatically assertive utterances function primarily to express emotion and perhaps also to elicit similar emotions in others"
+    },
+    {
+      "source": "emotivism",
+      "type": "DEVELOPED_BY",
+      "target": "a_j_ayer",
+      "quote": "Emotivists think moral terms in grammatically assertive utterances function primarily to express emotion and perhaps also to elicit similar emotions in others (Barnes 1933; Stevenson 1946; Ayer 1952, Chapter 6)."
+    },
+    {
+      "source": "emotivism",
+      "type": "EXTENDED_BY",
+      "target": "charles_stevenson",
+      "quote": "Some theorists who view themselves as emotivists suggest that even the most general terms of moral evaluation have a descriptive meaning rather than just an emotive or non-cognitive meaning (Stevenson 1944, 22; Hare 1952, suggests the same sort of idea within a prescriptivist theory at 118)."
+    },
+    {
+      "source": "prescriptivism",
+      "type": "DEVELOPED_BY",
+      "target": "r_m_hare",
+      "quote": "By contrast current versions of prescriptivism, most developed in the works of R. M. Hare, have attempted to vindicate moral thinking as a rational enterprise."
+    },
+    {
+      "source": "expressivism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "quote": "Simon Blackburn, whose quasi-realist project was briefly described above, has contributed various ideas not only for the states expressed by indicative sentences but also for complex embeddings of moral claims."
+    },
+    {
+      "source": "expressivism",
+      "type": "EXTENDED_BY",
+      "target": "allan_gibbard",
+      "quote": "But the proponent who has developed the program in the most systematic way is Allan Gibbard."
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "quote": "‘Quasi-Realism’ is Simon Blackburn’s name for this sort of non-cognitivism, and especially his own version of expressivism."
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DERIVED_FROM",
+      "target": "expressivism",
+      "quote": "What especially distinguishes the quasi-realist project is an emphasis on explaining why we are entitled to act as if moral judgments are genuinely truth-apt even while strictly speaking they are neither true nor false in any robust sense."
+    },
+    {
+      "source": "language_truth_and_logic",
+      "type": "AUTHORED_BY",
+      "target": "a_j_ayer",
+      "quote": "Early prescriptivists thought that this had radical implications for moral reasoning and argument. Carnap suggested that moral judgments are equivalent to relatively simple imperatives."
+    },
+    {
+      "source": "open_question_argument",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "At the beginning of the 20th Century, G. E. Moore’s open question argument convinced many philosophers that moral statements were not equivalent to statements made using non-moral or descriptive terms."
+    },
+    {
+      "source": "naturalistic_fallacy",
+      "type": "INTRODUCED_IN",
+      "target": "principia_ethica",
+      "quote": "At the beginning of the 20th Century, G. E. Moore’s open question argument convinced many philosophers that moral statements were not equivalent to statements made using non-moral or descriptive terms."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "quote": "Cognitivism is the denial of non-cognitivism."
+    },
+    {
+      "source": "moral_realism",
+      "type": "PART_OF",
+      "target": "moral_cognitivism",
+      "quote": "Still, moral realists are cognitivists insofar as they think moral statements are apt for robust truth and falsity and that many of them are in fact true."
+    },
+    {
+      "source": "expressivism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_realism",
+      "quote": "As a result, they have put more time and energy into explaining, and in a certain sense justifying, the realist-seeming features of moral discourse in the absence of a commitment to realism (Hare 1952; Blackburn 1984, 1998; Gibbard 1990)."
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "quote": "‘Quasi-Realism’ is Simon Blackburn’s name for this sort of non-cognitivism, and especially his own version of expressivism."
+    },
+    {
+      "source": "emotivism",
+      "type": "EXTENDED_BY",
+      "target": "charles_stevenson",
+      "quote": "Emotivists think moral terms in grammatically assertive utterances function primarily to express emotion and perhaps also to elicit similar emotions in others (Barnes 1933; Stevenson 1946; Ayer 1952, Chapter 6)."
+    }
+  ]
+}

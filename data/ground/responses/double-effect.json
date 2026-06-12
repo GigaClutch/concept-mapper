@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "article_id": "double-effect",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 4,
+    "input_tokens": 14216,
+    "output_tokens": 557,
+    "cost_usd": 0.017001,
+    "dropped_unverifiable": 2
+  },
+  "groundings": [
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "quote": "Thomas Aquinas is credited with introducing the principle of double effect in his discussion of the permissibility of self-defense in the Summa Theologica (II-II, Qu. 64, Art.7)."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "trolley_problem",
+      "type": "INTRODUCED_IN",
+      "target": "philippa_foot",
+      "quote": "examples from Thomson, 1985, based on examples in Foot 1967"
+    },
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "quote": "If the permissibility of an action depended only on the consequences of the action, or only on the foreseen or foreseeable consequences of the action, then the distinction that grounds the principle of double effect would not have the moral significance claimed for it"
+    },
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "PART_OF",
+      "target": "thomas_aquinas",
+      "quote": "Thomas Aquinas is credited with introducing the principle of double effect in his discussion of the permissibility of self-defense in the Summa Theologica"
+    },
+    {
+      "source": "trolley_problem",
+      "type": "CONTRASTS_WITH",
+      "target": "doctrine_of_double_effect",
+      "quote": "Does double effect provide an adequate explanation of the trolley cases?"
+    }
+  ]
+}

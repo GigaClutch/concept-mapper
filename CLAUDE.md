@@ -8,7 +8,8 @@ Full plan lives in the Obsidian vault at `C:\Users\gigac\My Drive\Comp-Sci Vault
 - **Phase 1 complete:** hand-built Kant cluster (`data/graph.json`, 14 nodes / 17 edges) + static ego-view viewer (`viewer/index.html`, Cytoscape.js, no build step). Viewer reads `graph.data.js` — regenerate with `pipeline/build_viewer_data.py` after any graph.json change.
 - **Phase 2 complete (2026-06-11):** `data/registry.json` (137 rows: 71 concepts / 37 persons / 6 schools / 23 works, cross-checked against the vault seed lists; QIDs hand- or claims-verified, auto-resolved rows human-reviewed, 5 reviewed-no-QID) built by `seeds.json → wikidata_bootstrap.py → merge.py`; `data/corpus.json` (30 SEP Ethics entries, ids verified against scraped contents); gold sets in `data/gold/` (32 canonical edges, 25 adversarial traps); `validate.py` green incl. verbatim-quote check against cached `kant-moral`. Note: Q221373 is *deontology*, not the categorical imperative (Q209681) — early plan docs had this wrong.
 - **Phase 3 complete (2026-06-11):** backbone generated over the full registry by `pipeline/backbone.py` — six `bb-v1` passes (normative, metaethics, agency/value, works, persons/schools, cross-boundary) answered by `claude-fable-5`; prompts regenerable to `cache/backbone/prompts/`, raw responses committed under `data/backbone/responses/`. Ingest enforces closed world + per-edge-type domain/range (e.g. persons can never source DEVELOPED_BY/AUTHORED_BY — kills direction traps mechanically); unmappable mentions → `data/quarantine/proposed_nodes.json` (11 proposals, incl. Dancy, Thomson, Rousseau). `pipeline/evaluate.py` gates on gold BEFORE merge: 32/32 canonical recall, 0/25 traps, 0 reversed canonicals. Graph: 137 nodes / 195 edges (all registry rows connected, no orphans; Phase 1 hand-built edges kept; generated edges weight 0.5, status `unverified`, extractor-stamped). Human verification sample (25 edges, seed 20260611) awaiting verdicts in `data/verification_sample.json`. Viewer verified against the full graph; `.claude/launch.json` serves it for preview.
-- **Now doing Phase 4:** evidence grounding (see Roadmap).
+- **Phase 4 complete (2026-06-12):** all 30 corpus articles scraped + cached (`pipeline/scrape_corpus.ps1`); `pipeline/ground.py` (`extract` → `apply`) grounds edges via the Anthropic API — `claude-haiku-4-5`, structured outputs, prompt `gr-v2` (v1 attached tangential quotes ~25% of the time; v2 requires the passage to name BOTH endpoints — fixed it), one call per article, responses cached in `data/ground/responses/` (reruns free), cost meter + `--max-cost` hard stop, 55s pacing for the 50K-TPM tier limit. Result: 237 verbatim-verified quotes on 117/195 edges, weights recomputed (n = backbone + distinct grounding articles), 44 evidence-backed proposed edges in `data/quarantine/proposed_edges.json` (await review, D3). Whole phase cost ≈ $0.72 of API credit. `validate.py` green (re-checks all 237 quotes verbatim against cache); gold still 32/32, 0/25 traps. API key lives in gitignored `.env` (C:\Dev copy only — never in OneDrive, never committed).
+- **Now doing Phase 5:** metrics + review loop (see Roadmap).
 
 ## Architecture decisions (do not silently revisit)
 - **D1 — Demo-first:** bounded corpus (Ethics domain, ~20 SEP articles). JSON file storage. No Neo4j, no backend API, no frontend framework until the demo proves valuable. Schema stays migration-ready.
@@ -49,7 +50,7 @@ Evidence quotes must be verbatim substrings of the cached source text — verify
 ```
 concept-mapper/
   CLAUDE.md
-  data/            registry.json, graph.json, gold/, quarantine/, backbone/ (responses + candidates)
+  data/            registry.json, graph.json, gold/, quarantine/, backbone/ (responses + candidates), ground/ (responses)
   pipeline/        scrape_sep.py, wikidata_bootstrap.py, backbone.py, evaluate.py, ground.py, merge.py, metrics.py, validate.py
   viewer/          index.html, graph.data.js (generated), review.html (Phase 5)
   cache/           raw scraped HTML/text (gitignored)
@@ -61,5 +62,6 @@ concept-mapper/
 - Windows machine; venv: `.\venv\Scripts\Activate.ps1`.
 - Every pipeline stage idempotent and re-runnable; cache scrapes, never re-hit SEP unnecessarily. Be polite: rate-limit, identify the client, respect robots.txt.
 - Evidence quotes stay short with attribution + URL (SEP/IEP licensing).
+- API spend is metered: LLM pipeline stages cache every response to disk (reruns free), default to `claude-haiku-4-5`, and take a `--max-cost` hard stop. The key sits in gitignored `.env`; keep it out of OneDrive and out of git.
 - `validate.py` runs on every graph build: edge endpoints exist in registry, types allowed, weights in range, no duplicate (source,target,type), no orphan nodes, evidence quotes verbatim in cached source.
 - When extraction quality is in question, the gold set decides — not vibes.

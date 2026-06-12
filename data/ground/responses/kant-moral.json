@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "article_id": "kant-moral",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 62,
+    "input_tokens": 36391,
+    "output_tokens": 1449,
+    "cost_usd": 0.043636,
+    "dropped_unverifiable": 6
+  },
+  "groundings": [
+    {
+      "source": "categorical_imperative",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Immanuel Kant (1724–1804) argued that the supreme principle of morality is a principle of rationality that he dubbed the “Categorical Imperative” (CI)."
+    },
+    {
+      "source": "autonomy",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "At the heart of Kant’s moral theory is the idea of autonomy."
+    },
+    {
+      "source": "hypothetical_imperative",
+      "type": "CONTRASTS_WITH",
+      "target": "categorical_imperative",
+      "quote": "A hypothetical imperative is a command that also applies to us in virtue of our having a rational will, but not simply in virtue of this. It requires us to exercise our wills in a certain way given we have antecedently willed an end. A hypothetical imperative is thus a command in a conditional form."
+    },
+    {
+      "source": "deontology",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "Although Kant gives several examples in the Groundwork that illustrate the CI, he goes on to describe in later writings, especially in The Metaphysics of Morals, a complicated normative ethical theory for interpreting and applying the CI to human persons in ordinary contexts."
+    },
+    {
+      "source": "immanuel_kant",
+      "type": "INFLUENCED_BY",
+      "target": "david_hume",
+      "quote": "Thus, at the heart of Kant’s moral philosophy is a conception of reason whose reach in practical affairs goes well beyond that of a Humean ‘slave’ to the passions."
+    },
+    {
+      "source": "deontology",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "At the heart of Kant’s moral theory is the idea of autonomy. Understanding the idea of autonomy was, in Kant’s view, key to understanding and justifying the authority that moral requirements have over us."
+    },
+    {
+      "source": "hypothetical_imperative",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant holds that the fundamental principle of our moral duties is a categorical imperative."
+    },
+    {
+      "source": "good_will",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant’s analysis of commonsense ideas begins with the thought that the only thing good without qualification is a “good will”."
+    },
+    {
+      "source": "kingdom_of_ends",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "Kant states that the above concept of every rational will as a will that must regard itself as enacting laws binding all rational wills is closely connected to another concept, that of a “systematic union of different rational beings under common laws”, or a “Kingdom of Ends” (G 4:433)."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "duty",
+      "type": "PART_OF",
+      "target": "categorical_imperative",
+      "quote": "This is the principle which motivates a good will, and which Kant holds to be the fundamental principle of all of morality."
+    },
+    {
+      "source": "good_will",
+      "type": "PART_OF",
+      "target": "categorical_imperative",
+      "quote": "In Kant’s terms, a good will is a fundamental commitment to always do what one’s deepest convictions demand or, as he often refers to this, to do what is required by the Moral Law."
+    },
+    {
+      "source": "autonomy",
+      "type": "CONTRASTS_WITH",
+      "target": "heteronomy",
+      "quote": "if the will seeks the law that is to determine it anywhere else than in the fitness of its maxims for its own giving of universal law…heteronomy always results"
+    }
+  ]
+}

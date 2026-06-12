@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 36,
+    "input_tokens": 19931,
+    "output_tokens": 1111,
+    "cost_usd": 0.025486,
+    "dropped_unverifiable": 3
+  },
+  "groundings": [
+    {
+      "source": "metaethics",
+      "type": "CONTRASTS_WITH",
+      "target": "normative_ethics",
+      "quote": "All three terms are to be defined in opposition to realism, but since there is no consensus on how “realism” is to be understood, “anti-realism” fares no better."
+    },
+    {
+      "source": "moral_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "Traditionally, to hold a realist position with respect to X is to hold that X exists objectively."
+    },
+    {
+      "source": "moral_anti_realism",
+      "type": "SUBCATEGORY_OF",
+      "target": "metaethics",
+      "quote": "So understood, moral anti-realism is the disjunction of three theses: moral noncognitivism moral error theory moral non-objectivism"
+    },
+    {
+      "source": "moral_realism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_anti_realism",
+      "quote": "moral anti-realism is the denial of the thesis that moral properties—or facts, objects, relations, events, etc. (whatever categories one is willing to countenance)—exist objectively."
+    },
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "non_cognitivism",
+      "quote": "Moral noncognitivism holds that our moral judgments are not in the business of aiming at truth."
+    },
+    {
+      "source": "non_cognitivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_anti_realism",
+      "quote": "There are broadly two ways of endorsing (1): moral noncognitivism and moral error theory."
+    },
+    {
+      "source": "expressivism",
+      "type": "SUBCATEGORY_OF",
+      "target": "non_cognitivism",
+      "quote": "Another influential kind of noncognitivism called “prescriptivism” claims that moral judgments are really veiled commands"
+    },
+    {
+      "source": "prescriptivism",
+      "type": "DEVELOPED_BY",
+      "target": "r_m_hare",
+      "quote": "R.M. Hare (1952, 1963) restricted this to commands that one is willing to universalize."
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DEVELOPED_BY",
+      "target": "simon_blackburn",
+      "quote": "Simon Blackburn, for example, has pursued what he calls a “quasi-realist” program (Blackburn 1984, 1993, 1998)."
+    },
+    {
+      "source": "quasi_realism",
+      "type": "DERIVED_FROM",
+      "target": "expressivism",
+      "quote": "The quasi-realist is someone who endorses an anti-realist metaphysical stance but who seeks, through philosophical maneuvering, to earn the right for moral discourse to enjoy all the trappings of realist talk."
+    },
+    {
+      "source": "error_theory",
+      "type": "DEVELOPED_BY",
+      "target": "j_l_mackie",
+      "quote": "Defenders of moral error theory include Mackie 1977, Hinckfuss 1987, Joyce 2001, and Olson 2014."
+    },
+    {
+      "source": "error_theory",
+      "type": "INTRODUCED_IN",
+      "target": "ethics_inventing_right_and_wrong",
+      "quote": "John Mackie (who coined the term “error theory” in 1977) argues that when we participate in moral discourse we commit ourselves to the existence of objective values and objective prescriptions"
+    },
+    {
+      "source": "ethics_inventing_right_and_wrong",
+      "type": "AUTHORED_BY",
+      "target": "j_l_mackie",
+      "quote": "Mackie, J.L., 1977. Ethics: Inventing Right and Wrong, Harmondsworth: Penguin."
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "quote": "Rawls, J., 1971. A Theory of Justice, Cambridge, MA.: Belknap Press."
+    },
+    {
+      "source": "after_virtue",
+      "type": "AUTHORED_BY",
+      "target": "alasdair_macintyre",
+      "quote": "MacIntyre, A., 1984. After Virtue, Indiana: University of Notre Dame Press."
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "AUTHORED_BY",
+      "target": "elizabeth_anscombe",
+      "quote": "Anscombe, G.E.M., 1958. “Modern moral philosophy,” Philosophy, 33: 1–19."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "moral_cognitivism",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_anti_realism",
+      "quote": "If noncognitivism is defined as the negation of cognitivism—as a theory about what moral judgments are not—then the two theories are not just contraries but contradictories."
+    },
+    {
+      "source": "simon_blackburn",
+      "type": "EXTENDED_BY",
+      "target": "quasi_realism",
+      "quote": "Simon Blackburn, for example, has pursued what he calls a “quasi-realist” program (Blackburn 1984, 1993, 1998)."
+    },
+    {
+      "source": "error_theory",
+      "type": "CONTRASTS_WITH",
+      "target": "moral_cognitivism",
+      "quote": "The error theorist is a cognitivist: maintaining that moral judgment consists of beliefs and assertions. However, the error theorist thinks that these beliefs and assertions are never true."
+    }
+  ]
+}

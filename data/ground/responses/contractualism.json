@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "article_id": "contractualism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 35,
+    "input_tokens": 26833,
+    "output_tokens": 1110,
+    "cost_usd": 0.032383,
+    "dropped_unverifiable": 16
+  },
+  "groundings": [
+    {
+      "source": "a_theory_of_justice",
+      "type": "AUTHORED_BY",
+      "target": "john_rawls",
+      "quote": "Derek Parfit argues that, despite their differences, contractualism does coincide with the best interpretation of Kant’s moral theory."
+    },
+    {
+      "source": "what_we_owe_to_each_other",
+      "type": "AUTHORED_BY",
+      "target": "t_m_scanlon",
+      "quote": "Scanlon introduces contractualism as a distinctive account of moral reasoning."
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "contractualism",
+      "type": "RESPONDS_TO",
+      "target": "utilitarianism",
+      "quote": "We begin with a brief summary of Scanlon’s contractualism, and then situate his view in relation both to other social contract theories and to its main rival among impartial accounts of morality—namely, utilitarianism."
+    }
+  ]
+}

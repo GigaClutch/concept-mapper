@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "article_id": "ethics-deontological",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 39,
+    "input_tokens": 24304,
+    "output_tokens": 1104,
+    "cost_usd": 0.029824,
+    "dropped_unverifiable": 6
+  },
+  "groundings": [
+    {
+      "source": "deontology",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "deontology is one of those kinds of normative theories regarding which choices are morally required, forbidden, or permitted"
+    },
+    {
+      "source": "consequentialism",
+      "type": "SUBCATEGORY_OF",
+      "target": "normative_ethics",
+      "quote": "within the domain of moral theories that assess our choices, deontologists—those who subscribe to deontological theories of morality—stand in opposition to consequentialists"
+    },
+    {
+      "source": "deontology",
+      "type": "CONTRASTS_WITH",
+      "target": "consequentialism",
+      "quote": "within the domain of moral theories that assess our choices, deontologists—those who subscribe to deontological theories of morality—stand in opposition to consequentialists"
+    },
+    {
+      "source": "utilitarianism",
+      "type": "SUBCATEGORY_OF",
+      "target": "consequentialism",
+      "quote": "Utilitarians, for example, identify the Good with pleasure, happiness, desire satisfaction, or “welfare” in some other sense"
+    },
+    {
+      "source": "doctrine_of_double_effect",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_aquinas",
+      "quote": "Deontologists of this stripe are committed to something like the doctrine of double effect, a long-established doctrine of Catholic theology (Woodward 2001)"
+    },
+    {
+      "source": "supererogation",
+      "type": "CONTRASTS_WITH",
+      "target": "duty",
+      "quote": "deontological morality, in contrast to consequentialism, leaves space for agents to give special concern to their families, friends, and projects"
+    },
+    {
+      "source": "rights",
+      "type": "PART_OF",
+      "target": "deontology",
+      "quote": "Such norms are to be simply obeyed by each moral agent; such norm-keepings are not to be maximized by each agent. In this sense, for such deontologists, the Right is said to have priority over the Good"
+    },
+    {
+      "source": "deontology",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "If any philosopher is regarded as central to deontological moral theories, it is surely Immanuel Kant"
+    },
+    {
+      "source": "good_will",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "For Kant, the only thing unqualifiedly good is a good will (Kant 1785)"
+    },
+    {
+      "source": "groundwork_metaphysics_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "immanuel_kant",
+      "quote": "For Kant, the only thing unqualifiedly good is a good will (Kant 1785)"
+    },
+    {
+      "source": "modern_moral_philosophy",
+      "type": "CRITIQUES",
+      "target": "consequentialism",
+      "quote": "consequentialists generally agree that the Good is “agent-neutral” (Parfit 1984; Nagel 1986)"
+    },
+    {
+      "source": "a_theory_of_justice",
+      "type": "RESPONDS_TO",
+      "target": "utilitarianism",
+      "quote": "Rawls 1971"
+    }
+  ],
+  "proposed_edges": [
+    {
+      "source": "deontology",
+      "type": "DEVELOPED_BY",
+      "target": "immanuel_kant",
+      "quote": "If any philosopher is regarded as central to deontological moral theories, it is surely Immanuel Kant"
+    },
+    {
+      "source": "supererogation",
+      "type": "PART_OF",
+      "target": "deontology",
+      "quote": "deontological moralities, unlike most views of consequentialism, leave space for the supererogatory"
+    },
+    {
+      "source": "contractualism",
+      "type": "IS_A",
+      "target": "deontology",
+      "quote": "Somewhat orthogonal to the distinction between agent-centered versus patient-centered deontological theories are contractualist deontological theories"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "article_id": "moral-sentimentalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "gr-v2",
+    "date": "2026-06-12",
+    "candidates": 44,
+    "input_tokens": 34493,
+    "output_tokens": 602,
+    "cost_usd": 0.037503,
+    "dropped_unverifiable": 5
+  },
+  "groundings": [
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "francis_hutcheson",
+      "quote": "the roots of the modern sentimentalist tradition in ethics go back to early 18th century debates in Britain. Anthony Ashley Cooper, better known by his title as the Earl of Shaftesbury, introduced the notion of a moral sense"
+    },
+    {
+      "source": "moral_sentimentalism",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "quote": "Following Hutcheson, Hume rejects reason or reasoning as the source of moral distinctions"
+    },
+    {
+      "source": "treatise_of_human_nature",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "See David Hume’s Treatise of Human Nature (T), 456"
+    },
+    {
+      "source": "enquiry_principles_of_morals",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "quote": "An Enquiry Concerning the Principles of Morals. Ed. J. B. Schneewind. Indianapolis, Hackett, 1983"
+    }
+  ],
+  "proposed_edges": []
+}
