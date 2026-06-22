@@ -69,7 +69,9 @@
 <script>
 const R = window.REVIEW;
 const KEY = "cm-review-v1";
-const state = JSON.parse(localStorage.getItem(KEY) || '{"sample":{},"proposed_edges":{},"proposed_nodes":{}}');
+const state = JSON.parse(localStorage.getItem(KEY) || "{}");
+for (const k of ["sample", "proposed_edges", "proposed_nodes", "researched_edges", "researched_nodes"])
+  if (!state[k]) state[k] = {};
 const save = () => localStorage.setItem(KEY, JSON.stringify(state));
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const lab = id => (R.labels[id] || { label: id }).label;
@@ -83,7 +85,15 @@ const SENTENCE = {
   INTRODUCED_IN: "was introduced in",
 };
 
+const RE = R.researched_edges || [], RN = R.researched_nodes || [];
+const NODE_KINDS = new Set(["proposed_nodes", "researched_nodes"]);
 const SECTIONS = [
+  { key: "researched_nodes", title: `Auto-researched entries, live but provisional (${RN.length})`,
+    blurb: "New entries the auto-researcher added to the map while browsing. They show dashed until you decide. Rejecting removes the entry (and any connection that needs it).",
+    items: RN },
+  { key: "researched_edges", title: `Auto-researched connections, live but provisional (${RE.length})`,
+    blurb: "Connections the auto-researcher added while browsing, each with its quote. Accepting confirms it; rejecting removes it from the map.",
+    items: RE },
   { key: "sample", title: `Spot-check: claims already on the map (${R.sample.length})`,
     blurb: "A random sample of the generated map. Rejecting removes the claim from the map.",
     items: R.sample },
@@ -96,9 +106,9 @@ const SECTIONS = [
 ];
 
 function claimHtml(it, kind) {
-  if (kind === "proposed_nodes")
+  if (NODE_KINDS.has(kind))
     return `<div class="claim"><b>${esc(it.label)}</b> <span class="rel">${esc(it.type || "?")}</span></div>
-            <div class="meta">${esc(it.reason || "")}</div>`;
+            <div class="meta">${esc(it.reason || it.definition || "")}</div>`;
   const verb = SENTENCE[it.type] || it.type;
   let html = `<div class="claim"><b>${esc(lab(it.source))}</b> ${esc(verb)} <b>${esc(lab(it.target))}</b>
               &nbsp;<span class="rel">${esc(it.type)}</span></div>`;
@@ -155,8 +165,8 @@ document.getElementById("export").onclick = () => {
   for (const sec of SECTIONS) {
     out.decisions[sec.key] = sec.items.map((it, i) => {
       const d = state[sec.key][i] || {};
-      const id = sec.key === "proposed_nodes"
-        ? { label: it.label }
+      const id = sec.key === "researched_nodes" ? { id: it.id, label: it.label }
+        : sec.key === "proposed_nodes" ? { label: it.label }
         : { source: it.source, type: it.type, target: it.target, article_id: it.article_id };
       return { ...id, verdict: d.verdict || "", note: d.note || "" };
     });

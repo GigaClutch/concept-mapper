@@ -71,6 +71,32 @@ def main() -> None:
             print(f"removed: {d['source']} -{d['type']}-> {d['target']}"
                   f"{' — ' + d['note'] if d.get('note') else ''}")
 
+    # --- auto-researched provisional content, live in the graph (D7) -------
+    drop_node_ids = {d.get("id") for d in dec.get("researched_nodes", [])
+                     if d.get("verdict") == "reject" and d.get("id")}
+    accept_node_ids = {d.get("id") for d in dec.get("researched_nodes", [])
+                       if d.get("verdict") == "accept" and d.get("id")}
+    res_confirmed = res_removed = 0
+    for d in dec.get("researched_edges", []):
+        if d["verdict"] not in ("accept", "reject"):
+            continue
+        e = by_key.get(edge_key(d["source"], d["target"], d["type"]))
+        if e is None:
+            continue
+        if d["verdict"] == "reject":
+            graph["edges"].remove(e)
+            del by_key[edge_key(d["source"], d["target"], d["type"])]
+            res_removed += 1
+        else:
+            e["status"] = "confirmed"
+            res_confirmed += 1
+    # rejecting a provisional node takes any remaining edges that need it
+    for e in list(graph["edges"]):
+        if e["source"] in drop_node_ids or e["target"] in drop_node_ids:
+            graph["edges"].remove(e)
+            by_key.pop(edge_key(e["source"], e["target"], e["type"]), None)
+    graph["nodes"] = [n for n in graph["nodes"] if n["id"] not in drop_node_ids]
+
     # --- proposed edges ----------------------------------------------------
     quar = json.loads(QUAR_EDGES.read_text(encoding="utf-8"))
     prop_by_key = {}
@@ -149,18 +175,37 @@ def main() -> None:
         graph["nodes"].remove(n)
         print(f"removed orphaned node: {n['id']}")
 
+    # promote accepted provisional nodes that survived; prune provisional
+    # registry rows whose graph node is gone (rejected or orphaned out)
+    graph_ids = {n["id"] for n in graph["nodes"]}
+    res_kept = 0
+    for n in graph["nodes"]:
+        if n["id"] in accept_node_ids and n.get("status") == "provisional":
+            n["status"] = "curated"
+            res_kept += 1
+    for r in registry["nodes"]:
+        if r["id"] in accept_node_ids and r.get("status") == "provisional":
+            r["status"] = "curated"
+    registry["nodes"] = [r for r in registry["nodes"]
+                         if r.get("status") != "provisional" or r["id"] in graph_ids]
+    registry["meta"]["count"] = len(registry["nodes"])
+
     graph["meta"]["built"] = TODAY
     (DATA / "graph.json").write_text(
         json.dumps(graph, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (DATA / "registry.json").write_text(
+        json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     SAMPLE.write_text(
         json.dumps(sample_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     QUAR_EDGES.write_text(
         json.dumps(quar, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     QUAR_NODES.write_text(
         json.dumps(qn, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"sample: {confirmed} confirmed, {removed} removed "
-          f"(+{len(orphans)} orphaned nodes dropped); proposals: {merged} merged, "
-          f"{declined} rejected; {flagged} new entries flagged for the registry")
+    print(f"sample: {confirmed} confirmed, {removed} removed; "
+          f"researched: {res_confirmed} confirmed, {res_removed} removed, "
+          f"{res_kept} provisional entries kept; proposals: {merged} merged, "
+          f"{declined} rejected; {flagged} new entries flagged "
+          f"(+{len(orphans)} orphaned nodes dropped)")
     print("now run: metrics.py, validate.py, evaluate.py --graph, "
           "build_viewer_data.py, build_review_data.py")
 

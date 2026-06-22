@@ -45,8 +45,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 8,
-    "betweenness": 0.044061,
-    "community": 1
+    "betweenness": 0.042647,
+    "community": 2
    }
   },
   {
@@ -62,7 +62,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -80,8 +80,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.0003,
-    "community": 1
+    "betweenness": 0.000291,
+    "community": 2
    }
   },
   {
@@ -99,8 +99,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 8,
-    "betweenness": 0.212157,
-    "community": 1
+    "betweenness": 0.199379,
+    "community": 2
    }
   },
   {
@@ -115,8 +115,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 6,
-    "betweenness": 0.187974,
-    "community": 7
+    "betweenness": 0.18227,
+    "community": 8
    }
   },
   {
@@ -132,9 +132,9 @@ window.GRAPH = {
    "time_period": "18th–19th century",
    "status": "curated",
    "metrics": {
-    "degree": 12,
-    "betweenness": 0.228783,
-    "community": 2
+    "degree": 13,
+    "betweenness": 0.244687,
+    "community": 0
    }
   },
   {
@@ -151,8 +151,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 12,
-    "betweenness": 0.211142,
-    "community": 0
+    "betweenness": 0.193561,
+    "community": 3
    }
   },
   {
@@ -169,8 +169,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.095519,
-    "community": 3
+    "betweenness": 0.092406,
+    "community": 1
    }
   },
   {
@@ -187,8 +187,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 20,
-    "betweenness": 0.397407,
-    "community": 1
+    "betweenness": 0.361949,
+    "community": 2
    }
   },
   {
@@ -205,7 +205,7 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 9,
-    "betweenness": 0.183393,
+    "betweenness": 0.177833,
     "community": 4
    }
   },
@@ -223,8 +223,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.012126,
-    "community": 2
+    "betweenness": 0.011416,
+    "community": 0
    }
   },
   {
@@ -242,8 +242,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 6,
-    "betweenness": 0.128813,
-    "community": 2
+    "betweenness": 0.116333,
+    "community": 0
    }
   },
   {
@@ -258,8 +258,8 @@ window.GRAPH = {
    "status": "curated",
    "metrics": {
     "degree": 12,
-    "betweenness": 0.141152,
-    "community": 0
+    "betweenness": 0.115248,
+    "community": 3
    }
   },
   {
@@ -275,7 +275,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -293,7 +293,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
+    "betweenness": 0.013858,
     "community": 4
    }
   },
@@ -312,7 +312,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.028322,
+    "betweenness": 0.027504,
     "community": 4
    }
   },
@@ -329,7 +329,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.057385,
+    "betweenness": 0.055269,
     "community": 4
    }
   },
@@ -350,8 +350,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.022109,
-    "community": 6
+    "betweenness": 0.02147,
+    "community": 7
    }
   },
   {
@@ -384,8 +384,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.005592,
-    "community": 2
+    "betweenness": 0.00499,
+    "community": 0
    }
   },
   {
@@ -404,8 +404,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.002596,
-    "community": 2
+    "betweenness": 0.002706,
+    "community": 0
    }
   },
   {
@@ -424,8 +424,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
-    "community": 2
+    "betweenness": 0.013858,
+    "community": 0
    }
   },
   {
@@ -444,7 +444,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -464,8 +464,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.028322,
-    "community": 2
+    "betweenness": 0.027504,
+    "community": 0
    }
   },
   {
@@ -483,8 +483,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.021349,
-    "community": 0
+    "betweenness": 0.018892,
+    "community": 6
    }
   },
   {
@@ -504,7 +504,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 0
+    "community": 6
    }
   },
   {
@@ -525,8 +525,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.049875,
-    "community": 0
+    "betweenness": 0.046312,
+    "community": 6
    }
   },
   {
@@ -548,8 +548,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.003956,
-    "community": 0
+    "betweenness": 0.003782,
+    "community": 6
    }
   },
   {
@@ -574,8 +574,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.022418,
-    "community": 0
+    "betweenness": 0.011853,
+    "community": 6
    }
   },
   {
@@ -595,8 +595,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.014651,
-    "community": 0
+    "betweenness": 0.010748,
+    "community": 6
    }
   },
   {
@@ -618,7 +618,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -640,8 +640,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
-    "community": 1
+    "betweenness": 0.013858,
+    "community": 2
    }
   },
   {
@@ -659,8 +659,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.067959,
-    "community": 0
+    "betweenness": 0.054621,
+    "community": 3
    }
   },
   {
@@ -684,8 +684,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.01427,
-    "community": 0
+    "betweenness": 0.013858,
+    "community": 3
    }
   },
   {
@@ -707,7 +707,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -724,7 +724,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -745,8 +745,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
-    "community": 0
+    "betweenness": 0.013858,
+    "community": 3
    }
   },
   {
@@ -766,7 +766,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -782,8 +782,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.042157,
-    "community": 2
+    "betweenness": 0.040939,
+    "community": 0
    }
   },
   {
@@ -799,8 +799,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.01427,
-    "community": 7
+    "betweenness": 0.013858,
+    "community": 8
    }
   },
   {
@@ -820,7 +820,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 7
+    "community": 8
    }
   },
   {
@@ -836,8 +836,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.000109,
-    "community": 0
+    "betweenness": 0.000106,
+    "community": 3
    }
   },
   {
@@ -857,8 +857,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.007026,
-    "community": 0
+    "betweenness": 0.006823,
+    "community": 3
    }
   },
   {
@@ -876,8 +876,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 5,
-    "betweenness": 0.092732,
-    "community": 3
+    "betweenness": 0.089699,
+    "community": 1
    }
   },
   {
@@ -895,8 +895,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.030071,
-    "community": 6
+    "betweenness": 0.031639,
+    "community": 7
    }
   },
   {
@@ -914,8 +914,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.012687,
-    "community": 0
+    "betweenness": 0.004678,
+    "community": 6
    }
   },
   {
@@ -933,8 +933,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.055773,
-    "community": 9
+    "betweenness": 0.054163,
+    "community": 10
    }
   },
   {
@@ -952,8 +952,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.013694,
-    "community": 3
+    "betweenness": 0.013052,
+    "community": 1
    }
   },
   {
@@ -971,8 +971,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.036739,
-    "community": 3
+    "betweenness": 0.035051,
+    "community": 1
    }
   },
   {
@@ -990,7 +990,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 5,
-    "betweenness": 0.047781,
+    "betweenness": 0.045702,
     "community": 5
    }
   },
@@ -1010,8 +1010,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 6,
-    "betweenness": 0.079741,
-    "community": 3
+    "betweenness": 0.077435,
+    "community": 1
    }
   },
   {
@@ -1030,8 +1030,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.002462,
-    "community": 3
+    "betweenness": 0.002427,
+    "community": 1
    }
   },
   {
@@ -1049,8 +1049,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 5,
-    "betweenness": 0.042731,
-    "community": 3
+    "betweenness": 0.040975,
+    "community": 1
    }
   },
   {
@@ -1068,8 +1068,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.033505,
-    "community": 3
+    "betweenness": 0.032305,
+    "community": 1
    }
   },
   {
@@ -1085,7 +1085,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.022657,
+    "betweenness": 0.021943,
     "community": 5
    }
   },
@@ -1108,8 +1108,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.035789,
-    "community": 3
+    "betweenness": 0.03472,
+    "community": 1
    }
   },
   {
@@ -1129,7 +1129,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1149,7 +1149,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1168,7 +1168,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.037691,
+    "betweenness": 0.036706,
     "community": 5
    }
   },
@@ -1208,7 +1208,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.015805,
+    "betweenness": 0.015202,
     "community": 5
    }
   },
@@ -1227,8 +1227,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.028322,
-    "community": 3
+    "betweenness": 0.027504,
+    "community": 1
    }
   },
   {
@@ -1251,7 +1251,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1268,7 +1268,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1287,7 +1287,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1306,7 +1306,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1325,7 +1325,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -1343,7 +1343,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.011002,
+    "betweenness": 0.010402,
     "community": 5
    }
   },
@@ -1362,7 +1362,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.02791,
+    "betweenness": 0.027425,
     "community": 5
    }
   },
@@ -1384,7 +1384,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 5,
-    "betweenness": 0.052409,
+    "betweenness": 0.052087,
     "community": 5
    }
   },
@@ -1404,8 +1404,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.013367,
-    "community": 8
+    "betweenness": 0.012704,
+    "community": 9
    }
   },
   {
@@ -1426,7 +1426,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 8
+    "community": 9
    }
   },
   {
@@ -1448,8 +1448,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 5,
-    "betweenness": 0.067329,
-    "community": 8
+    "betweenness": 0.065001,
+    "community": 9
    }
   },
   {
@@ -1465,7 +1465,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.002226,
+    "betweenness": 0.00226,
     "community": 5
    }
   },
@@ -1482,7 +1482,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.002226,
+    "betweenness": 0.00226,
     "community": 5
    }
   },
@@ -1501,8 +1501,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.01427,
-    "community": 8
+    "betweenness": 0.013858,
+    "community": 9
    }
   },
   {
@@ -1521,7 +1521,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.002351,
+    "betweenness": 0.002283,
     "community": 4
    }
   },
@@ -1562,7 +1562,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.019441,
+    "betweenness": 0.018879,
     "community": 4
    }
   },
@@ -1605,7 +1605,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 8
+    "community": 9
    }
   },
   {
@@ -1622,7 +1622,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -1642,7 +1642,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -1660,8 +1660,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 6,
-    "betweenness": 0.102071,
-    "community": 2
+    "betweenness": 0.09968,
+    "community": 0
    }
   },
   {
@@ -1679,8 +1679,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.004132,
-    "community": 2
+    "betweenness": 0.004214,
+    "community": 0
    }
   },
   {
@@ -1697,7 +1697,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -1714,7 +1714,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -1731,7 +1731,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -1748,7 +1748,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 3,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -1768,7 +1768,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -1787,8 +1787,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.020211,
-    "community": 0
+    "betweenness": 0.0195,
+    "community": 3
    }
   },
   {
@@ -1809,8 +1809,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.001625,
-    "community": 7
+    "betweenness": 0.001515,
+    "community": 8
    }
   },
   {
@@ -1829,8 +1829,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.003533,
-    "community": 0
+    "betweenness": 0.003473,
+    "community": 3
    }
   },
   {
@@ -1850,7 +1850,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -1866,8 +1866,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.013429,
-    "community": 6
+    "betweenness": 0.014085,
+    "community": 7
    }
   },
   {
@@ -1886,8 +1886,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.011202,
-    "community": 6
+    "betweenness": 0.009979,
+    "community": 7
    }
   },
   {
@@ -1911,8 +1911,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.015951,
-    "community": 6
+    "betweenness": 0.015332,
+    "community": 7
    }
   },
   {
@@ -1930,8 +1930,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.045587,
-    "community": 6
+    "betweenness": 0.041693,
+    "community": 7
    }
   },
   {
@@ -1947,8 +1947,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.042157,
-    "community": 7
+    "betweenness": 0.040939,
+    "community": 8
    }
   },
   {
@@ -1967,8 +1967,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.042157,
-    "community": 9
+    "betweenness": 0.040939,
+    "community": 10
    }
   },
   {
@@ -1985,9 +1985,9 @@ window.GRAPH = {
    "wikidata_qid": "Q430585",
    "status": "generated",
    "metrics": {
-    "degree": 1,
-    "betweenness": 0.0,
-    "community": 0
+    "degree": 2,
+    "betweenness": 0.013008,
+    "community": 6
    }
   },
   {
@@ -2006,8 +2006,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.000327,
-    "community": 10
+    "betweenness": 0.000317,
+    "community": 11
    }
   },
   {
@@ -2026,7 +2026,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 10
+    "community": 11
    }
   },
   {
@@ -2045,7 +2045,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 10
+    "community": 11
    }
   },
   {
@@ -2062,7 +2062,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 10
+    "community": 11
    }
   },
   {
@@ -2080,8 +2080,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.028322,
-    "community": 1
+    "betweenness": 0.014852,
+    "community": 6
    }
   },
   {
@@ -2098,9 +2098,17 @@ window.GRAPH = {
    "wikidata_qid": "Q9358",
    "status": "generated",
    "metrics": {
-    "degree": 2,
-    "betweenness": 0.01427,
-    "community": 1
+    "degree": 4,
+    "betweenness": 0.038401,
+    "community": 6
+   },
+   "research": {
+    "status": "researched",
+    "date": "2026-06-22",
+    "sources": [
+     "nietzsche"
+    ],
+    "model": "claude-haiku-4-5"
    }
   },
   {
@@ -2118,8 +2126,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
-    "community": 2
+    "betweenness": 0.013858,
+    "community": 0
    }
   },
   {
@@ -2135,8 +2143,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 0.021296,
-    "community": 0
+    "betweenness": 0.020681,
+    "community": 3
    }
   },
   {
@@ -2161,7 +2169,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -2182,8 +2190,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.01427,
-    "community": 9
+    "betweenness": 0.013858,
+    "community": 10
    }
   },
   {
@@ -2205,7 +2213,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 9
+    "community": 10
    }
   },
   {
@@ -2221,8 +2229,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.028322,
-    "community": 9
+    "betweenness": 0.027504,
+    "community": 10
    }
   },
   {
@@ -2261,7 +2269,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 7
+    "community": 8
    }
   },
   {
@@ -2280,8 +2288,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 4,
-    "betweenness": 0.000354,
-    "community": 1
+    "betweenness": 0.000344,
+    "community": 2
    }
   },
   {
@@ -2300,7 +2308,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -2319,7 +2327,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -2338,7 +2346,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 2
    }
   },
   {
@@ -2359,7 +2367,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -2381,7 +2389,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 0
+    "community": 3
    }
   },
   {
@@ -2400,7 +2408,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 6
+    "community": 7
    }
   },
   {
@@ -2455,7 +2463,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -2472,7 +2480,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -2489,7 +2497,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -2506,7 +2514,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -2522,7 +2530,7 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 3,
-    "betweenness": 3.6e-05,
+    "betweenness": 3.5e-05,
     "community": 5
    }
   },
@@ -2540,7 +2548,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 3
+    "community": 1
    }
   },
   {
@@ -2557,7 +2565,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 2,
     "betweenness": 0.0,
-    "community": 8
+    "community": 9
    }
   },
   {
@@ -2577,8 +2585,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.003818,
-    "community": 6
+    "betweenness": 0.00402,
+    "community": 7
    }
   },
   {
@@ -2594,8 +2602,8 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.012716,
-    "community": 0
+    "betweenness": 0.012151,
+    "community": 3
    }
   },
   {
@@ -2612,7 +2620,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 2
+    "community": 0
    }
   },
   {
@@ -2629,7 +2637,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 6
+    "community": 7
    }
   },
   {
@@ -2651,7 +2659,7 @@ window.GRAPH = {
    "metrics": {
     "degree": 1,
     "betweenness": 0.0,
-    "community": 1
+    "community": 6
    }
   },
   {
@@ -2667,8 +2675,48 @@ window.GRAPH = {
    "status": "generated",
    "metrics": {
     "degree": 2,
-    "betweenness": 0.001943,
-    "community": 7
+    "betweenness": 0.002019,
+    "community": 8
+   }
+  },
+  {
+   "id": "slave_revolt_in_morality",
+   "label": "slave_revolt_in_morality",
+   "type": "concept",
+   "definition": "Nietzsche's historical thesis that modern morality originated when the powerless oppressed developed a resentful hatred of their masters and inverted values, labeling the masters' traits (strength, domination) as evil an",
+   "aliases": [
+    "slave morality",
+    "the revaluation of values"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "provisional",
+   "metrics": {
+    "degree": 1,
+    "betweenness": 0.0,
+    "community": 12
+   }
+  },
+  {
+   "id": "master_morality",
+   "label": "master_morality",
+   "type": "concept",
+   "definition": "The original form of moral evaluation based on the good/bad distinction, arising from the self-affirmation and sense of superiority of the strong and noble. Values strength, courage, excellence, and integrity over univer",
+   "aliases": [
+    "noble morality",
+    "aristocratic morality"
+   ],
+   "domain": "Ethics",
+   "tradition": "",
+   "time_period": "",
+   "wikidata_qid": "",
+   "status": "provisional",
+   "metrics": {
+    "degree": 1,
+    "betweenness": 0.0,
+    "community": 12
    }
   }
  ],
@@ -5127,14 +5175,19 @@ window.GRAPH = {
    "source": "friedrich_nietzsche",
    "target": "arthur_schopenhauer",
    "type": "INFLUENCED_BY",
-   "weight": 0.5,
+   "weight": 0.75,
    "origin": "backbone",
    "extractor": {
     "model": "claude-fable-5",
     "prompt_version": "bb-v1",
     "date": "2026-06-11"
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "article_id": "nietzsche",
+     "quote": "he was already interested in philosophy, particularly the work of Arthur Schopenhauer and Friedrich Albert Lange"
+    }
+   ],
    "status": "unverified"
   },
   {
@@ -6386,6 +6439,63 @@ window.GRAPH = {
     }
    ],
    "status": "grounded"
+  },
+  {
+   "source": "friedrich_nietzsche",
+   "target": "utilitarianism",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "research",
+   "extractor": {
+    "model": "claude-haiku-4-5",
+    "prompt_version": "rs-v1",
+    "date": "2026-06-22"
+   },
+   "evidence": [
+    {
+     "article_id": "nietzsche",
+     "quote": "He is famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas and social and political pieties associated with modernity"
+    }
+   ],
+   "status": "unverified"
+  },
+  {
+   "source": "friedrich_nietzsche",
+   "target": "divine_command_theory",
+   "type": "CRITIQUES",
+   "weight": 0.5,
+   "origin": "research",
+   "extractor": {
+    "model": "claude-haiku-4-5",
+    "prompt_version": "rs-v1",
+    "date": "2026-06-22"
+   },
+   "evidence": [
+    {
+     "article_id": "nietzsche",
+     "quote": "famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas"
+    }
+   ],
+   "status": "unverified"
+  },
+  {
+   "source": "master_morality",
+   "target": "slave_revolt_in_morality",
+   "type": "CONTRASTS_WITH",
+   "weight": 0.5,
+   "origin": "research",
+   "extractor": {
+    "model": "claude-haiku-4-5",
+    "prompt_version": "rs-v1",
+    "date": "2026-06-22"
+   },
+   "evidence": [
+    {
+     "article_id": "nietzsche",
+     "quote": "The contrast, together with the prior dominance of good/bad structured moralities, raises a straightforward historical question: what happened? How did we get from the widespread acceptance of good/bad valuation to the near universal dominance of good/evil thinking?"
+    }
+   ],
+   "status": "unverified"
   }
  ],
  "articles": [
@@ -6628,6 +6738,14 @@ window.GRAPH = {
    "retrieved": "2026-06-12",
    "grounded_edges": 16,
    "proposed_edges": 1
+  },
+  {
+   "id": "nietzsche",
+   "title": "Nietzsche, Friedrich",
+   "url": "https://plato.stanford.edu/entries/nietzsche/",
+   "retrieved": "2026-06-22",
+   "grounded_edges": 3,
+   "proposed_edges": 0
   }
  ]
 };

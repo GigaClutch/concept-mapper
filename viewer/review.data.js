@@ -1,5 +1,5 @@
 window.REVIEW = {
- "built": "2026-06-12",
+ "built": "2026-06-22",
  "labels": {
   "normative_ethics": {
    "label": "Normative Ethics",
@@ -548,6 +548,14 @@ window.REVIEW = {
   "what_we_owe_to_each_other": {
    "label": "What We Owe to Each Other",
    "type": "work"
+  },
+  "slave_revolt_in_morality": {
+   "label": "slave_revolt_in_morality",
+   "type": "concept"
+  },
+  "master_morality": {
+   "label": "master_morality",
+   "type": "concept"
   }
  },
  "articles": {
@@ -1305,6 +1313,45 @@ window.REVIEW = {
    "reason": "Co-developer of the moral luck debate and major figure in ethics; his reply paper named the problem.",
    "pass_id": "agency_value",
    "edges": []
+  }
+ ],
+ "researched_edges": [
+  {
+   "source": "friedrich_nietzsche",
+   "type": "CRITIQUES",
+   "target": "utilitarianism",
+   "quote": "He is famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas and social and political pieties associated with modernity",
+   "article_id": "nietzsche"
+  },
+  {
+   "source": "friedrich_nietzsche",
+   "type": "CRITIQUES",
+   "target": "divine_command_theory",
+   "quote": "famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas",
+   "article_id": "nietzsche"
+  },
+  {
+   "source": "master_morality",
+   "type": "CONTRASTS_WITH",
+   "target": "slave_revolt_in_morality",
+   "quote": "The contrast, together with the prior dominance of good/bad structured moralities, raises a straightforward historical question: what happened? How did we get from the widespread acceptance of good/bad valuation to the near universal dominance of good/evil thinking?",
+   "article_id": "nietzsche"
+  }
+ ],
+ "researched_nodes": [
+  {
+   "id": "slave_revolt_in_morality",
+   "label": "slave_revolt_in_morality",
+   "type": "concept",
+   "definition": "Nietzsche's historical thesis that modern morality originated when the powerless oppressed developed a resentful hatred of their masters and inverted values, labeling the masters' traits (strength, domination) as evil an",
+   "reason": "Nietzsche's historical thesis that modern morality originated when the powerless oppressed developed a resentful hatred of their masters and inverted values, labeling the masters' traits (strength, domination) as evil an"
+  },
+  {
+   "id": "master_morality",
+   "label": "master_morality",
+   "type": "concept",
+   "definition": "The original form of moral evaluation based on the good/bad distinction, arising from the self-affirmation and sense of superiority of the strong and noble. Values strength, courage, excellence, and integrity over univer",
+   "reason": "The original form of moral evaluation based on the good/bad distinction, arising from the self-affirmation and sense of superiority of the strong and noble. Values strength, courage, excellence, and integrity over univer"
   }
  ]
 };

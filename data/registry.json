@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "built": "2026-06-11",
     "domain": "Ethics",
-    "count": 137,
+    "count": 139,
     "qid_sources": {
       "auto-unverified": 61,
       "auto-verified": 49,
@@ -2264,6 +2264,40 @@
       "note": "",
       "author_id": "t_m_scanlon",
       "status": "registry"
+    },
+    {
+      "id": "slave_revolt_in_morality",
+      "label": "slave_revolt_in_morality",
+      "type": "concept",
+      "aliases": [
+        "slave morality",
+        "the revaluation of values"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "",
+      "qid_source": "unresolved",
+      "wd_description": "",
+      "note": "auto-research around friedrich_nietzsche (nietzsche)",
+      "author_id": "",
+      "status": "provisional"
+    },
+    {
+      "id": "master_morality",
+      "label": "master_morality",
+      "type": "concept",
+      "aliases": [
+        "noble morality",
+        "aristocratic morality"
+      ],
+      "domain": "Ethics",
+      "time_period": "",
+      "wikidata_qid": "",
+      "qid_source": "unresolved",
+      "wd_description": "",
+      "note": "auto-research around friedrich_nietzsche (nietzsche)",
+      "author_id": "",
+      "status": "provisional"
     }
   ]
 }
