@@ -57,6 +57,10 @@
   <div class="ctl">Hops
     <select id="hops"><option value="1">1</option><option value="2" selected>2</option></select>
   </div>
+  <label class="ctl" id="auto-wrap" style="display:none" title="When you land on an entry that has not been researched yet, look it up in the Stanford Encyclopedia automatically (costs a few cents per entry)">
+    <input type="checkbox" id="auto-research"> auto-research
+    <span id="spend"></span>
+  </label>
   <button class="mode-btn active" id="ego-btn">Ego view</button>
   <button class="mode-btn" id="atlas-btn">Atlas</button>
   <div id="legend">
@@ -102,7 +106,7 @@ G.nodes.forEach(n => {
 // ---- cytoscape elements ----
 function nodeEl(n) {
   return { group: "nodes", data: { id: n.id, label: n.label, ntype: n.type,
-    btw: (n.metrics && n.metrics.betweenness) || 0 } };
+    nstatus: n.status || "", btw: (n.metrics && n.metrics.betweenness) || 0 } };
 }
 const btwRank = {};
 [...G.nodes].sort((a, b) => (b.metrics?.betweenness || 0) - (a.metrics?.betweenness || 0))
@@ -127,6 +131,8 @@ const cy = cytoscape({
     }},
     { selector: "node[ntype='person']", style: { "shape": "diamond" } },
     { selector: "node[ntype='school']", style: { "shape": "hexagon" } },
+    { selector: "node[nstatus='provisional']", style: {
+      "border-width": 2, "border-style": "dashed", "border-color": "#8a8780" } },
     { selector: "node.center", style: { "border-width": 4, "border-color": "#2b2a27", "font-weight": "bold" } },
     { selector: "edge", style: {
       "curve-style": "bezier",
@@ -191,6 +197,7 @@ function showNode(id) {
     <p class="def">${esc(n.definition)}</p>
     ${n.aliases && n.aliases.length ? `<dl><dt>Aliases</dt><dd>${esc(n.aliases.join(", "))}</dd></dl>` : ""}
     ${n.metrics ? `<dl><dt>Importance</dt><dd>#${btwRank[id]} of ${G.nodes.length} as a bridge between topics · cluster ${n.metrics.community + 1}</dd></dl>` : ""}
+    ${researchHtml(n)}
     <div class="edge-list"><h3>Connections (${edges.length})</h3>
       ${edges.map(e => {
         const out = e.source === id;
@@ -202,6 +209,94 @@ function showNode(id) {
     </div>`;
   panel.querySelectorAll(".edge-item").forEach(el =>
     el.addEventListener("click", () => showEdge(+el.dataset.idx)));
+  const rb = panel.querySelector("#research-btn");
+  if (rb) rb.onclick = () => researchNode(id);
+}
+
+function researchHtml(n) {
+  const r = n.research || {};
+  if (researching === n.id)
+    return `<dl><dt>Research</dt><dd>⏳ reading the Stanford Encyclopedia…</dd></dl>`;
+  if (r.status === "researched")
+    return `<dl><dt>Research</dt><dd>✓ researched ${esc(r.date)} (${esc((r.sources || []).join(", "))})</dd></dl>`;
+  if (r.status === "no_source")
+    return `<dl><dt>Research</dt><dd>no encyclopedia entry found (${esc(r.date)})</dd></dl>`;
+  return `<dl><dt>Research</dt><dd>not yet researched ${API_OK
+    ? `&nbsp;<button class="mode-btn" id="research-btn">Research now</button>`
+    : `<span style="color:var(--muted)">(run pipeline/serve.py to enable)</span>`}</dd></dl>`;
+}
+
+let API_OK = false;
+let researching = null;
+
+async function refreshStatus() {
+  try {
+    const s = await (await fetch("/api/status")).json();
+    API_OK = true;
+    document.getElementById("auto-wrap").style.display = "";
+    document.getElementById("spend").textContent = `($${s.spent.toFixed(2)} of $${s.cap.toFixed(2)})`;
+  } catch { API_OK = false; }
+}
+
+function mergeDelta(d) {
+  (d.new_nodes || []).forEach(n => {
+    if (nodeById[n.id]) return;
+    G.nodes.push(n);
+    nodeById[n.id] = n;
+    adj[n.id] = new Set();
+    searchIndex[n.label.toLowerCase()] = n.id;
+    (n.aliases || []).forEach(a => searchIndex[a.toLowerCase()] = n.id);
+    const o = document.createElement("option");
+    o.value = n.label;
+    document.getElementById("node-list").appendChild(o);
+  });
+  (d.new_edges || []).forEach(e => {
+    G.edges.push(e);
+    adj[e.source].add(e.target);
+    adj[e.target].add(e.source);
+  });
+  (d.articles || []).forEach(a => ARTICLES[a.id] = a);
+  if (d.metrics) {
+    G.nodes.forEach(n => { if (d.metrics[n.id]) n.metrics = d.metrics[n.id]; });
+    const order = [...G.nodes].sort((a, b) => (b.metrics?.betweenness || 0) - (a.metrics?.betweenness || 0));
+    order.forEach((n, i) => btwRank[n.id] = i + 1);
+  }
+  if (d.focus) Object.assign(nodeById[d.focus.id] || {}, { research: d.focus.research });
+}
+
+async function researchNode(id) {
+  if (!API_OK || researching) return;
+  researching = id;
+  showNode(id);
+  try {
+    const resp = await fetch("/api/research", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id })
+    });
+    const d = await resp.json();
+    researching = null;
+    if (d.error && !d.already) {
+      panel.insertAdjacentHTML("afterbegin",
+        `<p class="hint" style="color:var(--opp, #cf5f56)">${esc(d.error)}</p>`);
+      showNode(id);
+      return;
+    }
+    mergeDelta(d);
+    refreshStatus();
+    if (mode === "ego") render();
+    showNode(id);
+  } catch {
+    researching = null;
+    showNode(id);
+  }
+}
+
+function maybeAutoResearch(id) {
+  const n = nodeById[id];
+  if (API_OK && document.getElementById("auto-research").checked
+      && n && !(n.research && n.research.status) && !researching)
+    researchNode(id);
 }
 
 function showEdge(idx) {
@@ -233,6 +328,7 @@ function recenter(id) {
   centerId = id;
   if (mode === "ego") render();
   showNode(id);
+  maybeAutoResearch(id);
 }
 cy.on("tap", "node", evt => recenter(evt.target.id()));
 cy.on("tap", "edge", evt => showEdge(evt.target.data("idx")));
@@ -257,8 +353,15 @@ function setMode(m) {
 }
 
 // ---- init ----
+const autoBox = document.getElementById("auto-research");
+autoBox.checked = localStorage.getItem("cm-auto-research") === "1";
+autoBox.addEventListener("change", () => {
+  localStorage.setItem("cm-auto-research", autoBox.checked ? "1" : "0");
+  maybeAutoResearch(centerId);
+});
 render();
 showNode(centerId);
+refreshStatus().then(() => maybeAutoResearch(centerId));
 </script>
 </body>
 </html>

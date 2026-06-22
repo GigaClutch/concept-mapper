@@ -4,7 +4,7 @@
     {
       "name": "viewer",
       "runtimeExecutable": "venv\\Scripts\\python.exe",
-      "runtimeArgs": ["-m", "http.server", "8742", "--directory", "viewer"],
+      "runtimeArgs": ["pipeline\\serve.py", "--port", "8742", "--max-cost", "1.50"],
       "port": 8742
     }
   ]
