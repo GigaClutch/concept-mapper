@@ -338,7 +338,7 @@ let researching = null;
 
 async function refreshStatus() {
   try {
-    const s = await (await fetch("/api/status")).json();
+    const s = await (await fetch("api/status")).json();
     API_OK = true;
     document.getElementById("auto-wrap").style.display = "";
     document.getElementById("spend").textContent = `($${s.spent.toFixed(2)} of $${s.cap.toFixed(2)})`;
@@ -376,7 +376,7 @@ async function researchNode(id) {
   researching = id;
   showNode(id);
   try {
-    const resp = await fetch("/api/research", {
+    const resp = await fetch("api/research", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id })
