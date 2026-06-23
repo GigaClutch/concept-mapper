@@ -30,6 +30,10 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          # Enable Pages (build type = GitHub Actions) from the workflow itself,
+          # so no manual Settings > Pages > Source step is needed.
+          enablement: true
 
       - name: Upload viewer/ as Pages artifact
         uses: actions/upload-pages-artifact@v3
