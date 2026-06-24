@@ -29,6 +29,17 @@ def main() -> None:
     sample = load(DATA / "verification_sample.json", {"sample": []})
     pedges = load(DATA / "quarantine" / "proposed_edges.json", {"proposals": []})
     pnodes = load(DATA / "quarantine" / "proposed_nodes.json", {"proposed_nodes": []})
+    assist = load(DATA / "review_assist.json", {"items": {}}).get("items", {})
+
+    def with_assist(section, items, keyfn):
+        for it in items:
+            a = assist.get(f"{section}|{keyfn(it)}")
+            if a:
+                it["assist"] = {"verdict": a["verdict"], "quote_check": a["quote_check"],
+                                "reason": a["reason"], "model": a["model"]}
+        return items
+
+    ek = lambda it: f"{it['source']}|{it['type']}|{it['target']}"
 
     # browse-time research (D7) writes provisional content straight into the
     # graph so it shows live; surface it here so it is still governed by review.
@@ -50,11 +61,11 @@ def main() -> None:
                    for r in registry["nodes"]},
         "articles": {a["id"]: {"title": a["title"], "url": a["url"]}
                      for a in corpus["articles"]},
-        "sample": sample["sample"],
-        "proposed_edges": pedges["proposals"],
-        "proposed_nodes": pnodes["proposed_nodes"],
-        "researched_edges": researched_edges,
-        "researched_nodes": researched_nodes,
+        "sample": with_assist("sample", sample["sample"], ek),
+        "proposed_edges": with_assist("proposed_edges", pedges["proposals"], ek),
+        "proposed_nodes": with_assist("proposed_nodes", pnodes["proposed_nodes"], lambda it: it["label"]),
+        "researched_edges": with_assist("researched_edges", researched_edges, ek),
+        "researched_nodes": with_assist("researched_nodes", researched_nodes, lambda it: it["id"]),
     }
     out = ROOT / "viewer" / "review.data.js"
     out.write_text("window.REVIEW = " + json.dumps(bundle, indent=1, ensure_ascii=False)
