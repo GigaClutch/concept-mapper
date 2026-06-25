@@ -44,6 +44,14 @@
   .note { flex: 1; min-width: 180px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px;
           font-size: 12.5px; background: var(--bg); }
   .meta { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+  .assist { margin: 10px 0 2px; padding: 8px 10px; border-radius: 8px; font-size: 12.5px; line-height: 1.45; }
+  .assist .amodel { color: var(--muted); font-size: 11px; }
+  .assist.ok { background: #eaf5ee; border-left: 3px solid var(--ok); }
+  .assist.okish { background: #f1efe8; border-left: 3px solid var(--muted); }
+  .assist.warn { background: #fbf3e6; border-left: 3px solid #c08a2b; }
+  .assist.bad { background: #fbecea; border-left: 3px solid var(--no); }
+  .atten { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 5px; }
+  #accept-safe { background: var(--ok); color: #fff; border-color: var(--ok); }
   a { color: var(--accent); }
   kbd { background: var(--line); border-radius: 4px; padding: 1px 5px; font-size: 11px; }
 </style>
@@ -53,15 +61,20 @@
   <h1>Concept Mapper <span>· review queue</span></h1>
   <div id="bar"><div></div></div>
   <div id="progress"></div>
+  <label class="atten"><input type="checkbox" id="attention-only"> needs attention only</label>
+  <button id="accept-safe" title="Accept every undecided item the checker rates correct AND backs with a real supporting quote">✨ Accept the checked-and-sourced</button>
   <button id="reset">Start over</button>
   <button id="export">Export decisions</button>
 </header>
 <main>
   <p class="intro">
-    For each item: <b>Accept</b> if the claim is true and well supported, <b>Reject</b> if it is wrong,
-    or leave it undecided for later. Your choices save automatically in this browser.
-    When finished (or any time), press <b>Export decisions</b> — it downloads a file; save it as
-    <code>data/review_decisions.json</code> in the project and the pipeline applies it.
+    You don't need to be a philosophy expert. An independent checker has already read each item and
+    rated it — <b style="color:var(--ok)">✓ looks right</b>, <b style="color:var(--no)">✗ looks wrong</b>,
+    or <b>needs your eye</b> — with a plain-English reason. <b>Green items backed by a real Stanford
+    quote are safe to accept in bulk</b> (use the ✨ button). For the rest, read the one-line reason and
+    decide. The checker leans cautious, so a "looks wrong" is a prompt to look, not a verdict — trust the
+    quote and the reason. Choices save in this browser; <b>Export decisions</b> downloads a file to save
+    as <code>data/review_decisions.json</code>, which the pipeline applies.
   </p>
   <div id="sections"></div>
 </main>
@@ -122,10 +135,39 @@ function claimHtml(it, kind) {
   return html;
 }
 
+function assistInfo(it) {
+  const a = it.assist;
+  const isNode = !it.source;        // entries (nodes) have no source/target
+  if (!a) return { cls: "okish", label: "not checked", safe: false };
+  if (a.verdict === "correct" && a.quote_check === "yes")
+    return { cls: "ok", label: "✓ looks right — a Stanford quote backs it", safe: true };
+  if (a.verdict === "correct" && a.quote_check === "no_quote")
+    return isNode
+      ? { cls: "ok", label: "✓ looks right — a real, correctly described entry", safe: true }
+      : { cls: "okish", label: "✓ likely right (no source quote to confirm)", safe: false };
+  if (a.verdict === "correct")
+    return { cls: "warn", label: "⚠ probably true, but the shown quote doesn't actually back it", safe: false };
+  if (a.verdict === "unsure")
+    return { cls: "warn", label: "? needs your eye — the checker wasn't sure", safe: false };
+  return { cls: "bad", label: "✗ looks wrong — worth a close look", safe: false };
+}
+function assistHtml(it) {
+  if (!it.assist) return "";
+  const info = assistInfo(it);
+  return `<div class="assist ${info.cls}"><b>${info.label}.</b> ${esc(it.assist.reason)}
+          <span class="amodel">— independent check by ${esc(it.assist.model)}</span></div>`;
+}
+const isSafe = it => assistInfo(it).safe;
+
 function render() {
   const root = document.getElementById("sections");
   root.innerHTML = "";
+  const attenOnly = document.getElementById("attention-only").checked;
   for (const sec of SECTIONS) {
+    const visible = sec.items
+      .map((it, i) => ({ it, i }))
+      .filter(({ it, i }) => !(attenOnly && !state[sec.key][i]?.verdict && isSafe(it)));
+    if (!visible.length) continue;
     const h = document.createElement("h2");
     h.textContent = sec.title;
     root.appendChild(h);
@@ -133,11 +175,11 @@ function render() {
     blurb.className = "intro";
     blurb.textContent = sec.blurb;
     root.appendChild(blurb);
-    sec.items.forEach((it, i) => {
+    visible.forEach(({ it, i }) => {
       const d = state[sec.key][i] || {};
       const card = document.createElement("div");
       card.className = "card" + (d.verdict ? ` decided-${d.verdict}` : "");
-      card.innerHTML = claimHtml(it, sec.key) + `
+      card.innerHTML = claimHtml(it, sec.key) + assistHtml(it) + `
         <div class="row">
           <button class="acc">✓ Accept</button>
           <button class="rej">✗ Reject</button>
@@ -156,9 +198,27 @@ function render() {
   }
   const total = SECTIONS.reduce((n, s) => n + s.items.length, 0);
   const done = SECTIONS.reduce((n, s) => n + s.items.filter((_, i) => state[s.key][i]?.verdict).length, 0);
-  document.getElementById("progress").textContent = `${done} / ${total} decided`;
+  const safe = SECTIONS.reduce((n, s) => n + s.items.filter((it, i) => !state[s.key][i]?.verdict && isSafe(it)).length, 0);
+  document.getElementById("progress").textContent =
+    `${done} / ${total} decided` + (safe ? ` · ${safe} safe to bulk-accept` : "");
   document.querySelector("#bar div").style.width = total ? (100 * done / total) + "%" : "0%";
+  document.getElementById("accept-safe").style.display = safe ? "" : "none";
 }
+
+document.getElementById("attention-only").onchange = render;
+document.getElementById("accept-safe").onclick = () => {
+  let n = 0;
+  for (const sec of SECTIONS) sec.items.forEach((it, i) => {
+    if (!state[sec.key][i]?.verdict && isSafe(it)) {
+      state[sec.key][i] = { ...state[sec.key][i], verdict: "accept" }; n++;
+    }
+  });
+  save(); render();
+  alert(n
+    ? `Accepted ${n} item(s) the checker rated correct and a real Stanford quote backs. `
+      + `Now review the flagged ones below (tip: tick "needs attention only"), then Export.`
+    : "Nothing left to bulk-accept.");
+};
 
 document.getElementById("export").onclick = () => {
   const out = { exported: new Date().toISOString().slice(0, 10), decisions: {} };
