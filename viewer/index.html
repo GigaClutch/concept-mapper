@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Concept Mapper — Ethics</title>
+<meta name="description" content="An interactive, evidence-backed concept map of philosophy (Ethics): 139 concepts, philosophers, schools and works in a typed network, every connection sourced with verbatim quotes from the Stanford Encyclopedia of Philosophy.">
+<meta property="og:title" content="Concept Mapper — Ethics">
+<meta property="og:description" content="Search a concept — say, the categorical imperative — and see it situated in an evidence-backed network of related ideas, philosophers, schools and works.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14161b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -74,18 +79,44 @@
   .quote .src { display:block; font-style:normal; font-family:var(--ui); color:var(--muted); font-size:11px; margin-top:7px; }
   .hint { color:var(--muted); line-height:1.6; }
   a { color:var(--accent); }
+  button:focus-visible, input:focus-visible, select:focus-visible, .key.toggle:focus-visible {
+    outline:2px solid var(--accent); outline-offset:2px; }
+  #welcome { position:absolute; left:18px; bottom:18px; z-index:4; max-width:320px;
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    box-shadow:var(--shadow); padding:16px 18px; font-size:12.5px; line-height:1.6; }
+  #welcome h3 { font-family:var(--serif); font-size:15px; margin-bottom:6px; }
+  #welcome button { margin-top:8px; padding:6px 12px; border:1px solid var(--line);
+    border-radius:8px; background:var(--chip-bg); color:var(--ink); cursor:pointer; font-size:12px; }
+  @media (max-width: 720px) {
+    main { flex-direction:column; }
+    #cy { flex:none; height:50vh; min-height:280px; }
+    aside { width:100%; flex:1; border-left:none; border-top:1px solid var(--line); padding:18px; }
+    #search { width:100%; }
+    header { gap:8px; padding:9px 12px; }
+    #legend { margin-left:0; }
+    #welcome { left:10px; right:10px; bottom:auto; top:10px; max-width:none; }
+  }
 </style>
 </head>
 <body>
+<noscript>
+  <div style="max-width:560px;margin:60px auto;padding:0 20px;font-family:Georgia,serif;line-height:1.65">
+    <h1>Concept Mapper — Ethics</h1>
+    <p>An interactive, evidence-backed concept map of philosophy: 139 concepts, philosophers,
+    schools and works connected by typed, sourced relationships, with verbatim quotes from the
+    Stanford Encyclopedia of Philosophy. The map itself needs JavaScript — please enable it,
+    or visit the <a href="https://plato.stanford.edu/">Stanford Encyclopedia of Philosophy</a> directly.</p>
+  </div>
+</noscript>
 <header>
   <h1>Concept Mapper <span>· Ethics backbone</span></h1>
-  <input id="search" list="node-list" placeholder="Search a concept, philosopher, school…">
+  <input id="search" list="node-list" aria-label="Search for a concept, philosopher, school or work" placeholder="Search a concept, philosopher, school…">
   <datalist id="node-list"></datalist>
   <div class="ctl">Hops
     <select id="hops"><option value="1">1</option><option value="2" selected>2</option></select>
   </div>
   <div class="ctl" title="Trace the shortest chain of relationships from the current entry to another">Path to
-    <input id="path-input" list="node-list" placeholder="another entry…">
+    <input id="path-input" list="node-list" aria-label="Trace a path to another entry" placeholder="another entry…">
     <button class="mode-btn" id="path-clear" style="display:none">clear path</button>
   </div>
   <label class="ctl" id="auto-wrap" style="display:none" title="When you land on an entry that has not been researched yet, look it up in the Stanford Encyclopedia automatically (costs a few cents per entry)">
@@ -105,16 +136,23 @@
     <span class="key toggle" data-fam="bibliographic"><span class="swatch" style="background:var(--bib)"></span>bibliographic</span>
     <span class="key toggle" id="unrev-key" title="Show or hide unreviewed items (dashed / awaiting verdict)"><span class="swatch" style="background:#fff;border:1px dashed var(--muted)"></span>unreviewed</span>
   </div>
-  <button class="mode-btn" id="theme-btn" title="Toggle light / dark">☾</button>
+  <button class="mode-btn" id="theme-btn" title="Toggle light / dark" aria-label="Toggle light or dark theme">☾</button>
 </header>
-<main>
+<main style="position:relative">
   <div id="cy"></div>
-  <aside id="panel">
+  <aside id="panel" role="region" aria-label="Selected entry details" aria-live="polite">
     <p class="hint">Search above or click a node.<br><br>Ego view shows the selected node with its neighbourhood; click any node to re-centre on it. Click an edge (or an entry in the connections list) for the relationship and its evidence.</p>
   </aside>
 </main>
 
 <script>
+if (!window.GRAPH || !window.cytoscape) {
+  document.body.innerHTML = '<div style="max-width:520px;margin:80px auto;padding:0 20px;' +
+    'font-family:system-ui;line-height:1.65"><h1>Concept Mapper</h1><p>The map could not load — ' +
+    (window.GRAPH ? 'the graph library (loaded from a CDN) did not arrive. Check your internet connection and reload.'
+                  : 'the map data file (graph.data.js) is missing next to this page.') + '</p></div>';
+  throw new Error("missing " + (window.GRAPH ? "cytoscape" : "graph.data.js"));
+}
 document.documentElement.dataset.theme = localStorage.getItem("cm-theme") || "dark";
 const G = window.GRAPH;
 const FAMILY = {};
@@ -368,6 +406,24 @@ function clearPath(centerOn) {
 const panel = document.getElementById("panel");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+// plain-language forms of the pipeline vocabulary (visitors, not pipelines)
+const SENTENCE = {
+  IS_A: "is a kind of", PART_OF: "is part of", SUBCATEGORY_OF: "is a subcategory of",
+  DEVELOPED_BY: "was developed by", EXTENDED_BY: "was extended by",
+  DERIVED_FROM: "grew out of", INFLUENCED_BY: "was influenced by",
+  CONTRASTS_WITH: "contrasts with", CRITIQUES: "argues against",
+  RESPONDS_TO: "responds to", AUTHORED_BY: "was written by",
+  INTRODUCED_IN: "was introduced in",
+};
+const STATUS_LABEL = {
+  confirmed: "human-confirmed", grounded: "quote-backed, awaiting review",
+  unverified: "awaiting review",
+};
+const ORIGIN_LABEL = {
+  backbone: "from background knowledge", grounding: "found in the encyclopedia",
+  research: "added by live research",
+};
+
 function showNode(id) {
   const n = nodeById[id];
   const edges = G.edges.map((e, i) => ({ ...e, idx: i })).filter(e => e.source === id || e.target === id);
@@ -384,7 +440,9 @@ function showNode(id) {
       ${edges.map(e => {
         const out = e.source === id;
         const other = nodeById[out ? e.target : e.source];
-        return `<div class="edge-item" data-idx="${e.idx}">
+        const sentence = out ? `${n.label} ${SENTENCE[e.type] || e.type} ${other.label}`
+                             : `${other.label} ${SENTENCE[e.type] || e.type} ${n.label}`;
+        return `<div class="edge-item" data-idx="${e.idx}" title="${esc(sentence)}">
           <span class="rel" style="color:${FAM_COLOR[FAMILY[e.type]]}">${SYM.has(e.type) ? "&harr; " : (out ? "" : "&larr; ")}${e.type}${!SYM.has(e.type) && out ? " &rarr;" : ""}</span>
           ${esc(other.label)}${e.evidence.length ? " &nbsp;📄" : ""}</div>`;
       }).join("")}
@@ -397,19 +455,22 @@ function showNode(id) {
 
 function researchHtml(n) {
   const r = n.research || {};
+  const err = researchError[n.id]
+    ? `<dd style="color:var(--opp)">⚠ ${esc(researchError[n.id])}</dd>` : "";
   if (researching === n.id)
-    return `<dl><dt>Research</dt><dd>⏳ reading the Stanford Encyclopedia…</dd></dl>`;
+    return `<dl><dt>Research</dt><dd>⏳ reading the Stanford Encyclopedia… (up to a minute)</dd></dl>`;
   if (r.status === "researched")
     return `<dl><dt>Research</dt><dd>✓ researched ${esc(r.date)} (${esc((r.sources || []).join(", "))})</dd></dl>`;
   if (r.status === "no_source")
     return `<dl><dt>Research</dt><dd>no encyclopedia entry found (${esc(r.date)})</dd></dl>`;
-  return `<dl><dt>Research</dt><dd>not yet researched ${API_OK
+  return `<dl><dt>Research</dt>${err}<dd>not yet researched ${API_OK
     ? `&nbsp;<button class="mode-btn" id="research-btn">Research now</button>`
     : `<span style="color:var(--muted)">(run pipeline/serve.py to enable)</span>`}</dd></dl>`;
 }
 
 let API_OK = false;
 let researching = null;
+const researchError = {};   // node id -> last error, shown until a retry succeeds
 
 async function refreshStatus() {
   try {
@@ -459,17 +520,18 @@ async function researchNode(id) {
     const d = await resp.json();
     researching = null;
     if (d.error && !d.already) {
-      panel.insertAdjacentHTML("afterbegin",
-        `<p class="hint" style="color:var(--opp, #cf5f56)">${esc(d.error)}</p>`);
+      researchError[id] = d.error;   // survives the re-render (was destroyed before)
       showNode(id);
       return;
     }
+    delete researchError[id];
     mergeDelta(d);
     refreshStatus();
     if (mode === "ego") render();
     showNode(id);
   } catch {
     researching = null;
+    researchError[id] = "research failed — is pipeline/serve.py still running?";
     showNode(id);
   }
 }
@@ -487,8 +549,8 @@ function showEdge(idx) {
   const fam = FAMILY[e.type];
   panel.innerHTML = `
     <span class="badge" style="background:${FAM_CSS[fam]}">${fam}</span>
-    <h2 style="margin-top:8px;font-size:15px">${esc(s.label)} <span style="color:${FAM_CSS[fam]}">${e.type}</span> ${esc(t.label)}</h2>
-    <div class="sub">weight ${e.weight} · origin: ${e.origin} · ${e.status}</div>
+    <h2 style="margin-top:8px;font-size:16px">${esc(s.label)} <span style="color:${FAM_CSS[fam]};font-style:italic">${SENTENCE[e.type] || e.type}</span> ${esc(t.label)}</h2>
+    <div class="sub">${STATUS_LABEL[e.status] || esc(e.status)} · ${ORIGIN_LABEL[e.origin] || esc(e.origin)} · confidence ${e.weight}</div>
     ${e.disputed ? `<div class="quote" style="border-left-color:#c08a2b">⚠ <b>Disputed:</b> an automated
       check questions this claim — it is awaiting human review. ${esc(e.disputed)}</div>` : ""}
     ${e.evidence.length
@@ -501,7 +563,7 @@ function showEdge(idx) {
             }“${esc(ev.quote)}”
             <span class="src">${a ? `<a href="${a.url}" target="_blank">${esc(a.title)}</a> (SEP)` : esc(ev.article_id)}</span></div>`;
         }).join("") + "</div>"
-      : `<p class="hint" style="margin-top:12px">No source evidence yet — backbone assertion awaiting grounding (Phase 4).</p>`}
+      : `<p class="hint" style="margin-top:12px">No source quote yet — this connection comes from the model's background knowledge and has not been grounded in the encyclopedia. Treat it as a lead, not a fact.</p>`}
     <div class="edge-list" style="margin-top:16px">
       <div class="edge-item" data-id="${e.source}">&larr; back to ${esc(s.label)}</div>
       <div class="edge-item" data-id="${e.target}">&larr; back to ${esc(t.label)}</div>
@@ -557,13 +619,33 @@ G.nodes.forEach(n => {
   const o = document.createElement("option"); o.value = n.label; dl.appendChild(o);
   (n.aliases || []).forEach(a => { const oa = document.createElement("option"); oa.value = a; dl.appendChild(oa); });
 });
+function resolveQuery(raw) {
+  // exact label/alias, then prefix, then substring — a near-miss should never
+  // dead-end silently
+  const q = raw.trim().toLowerCase();
+  if (!q) return null;
+  if (searchIndex[q]) return searchIndex[q];
+  const names = Object.keys(searchIndex);
+  for (const test of [n => n.startsWith(q), n => n.includes(q)]) {
+    const hits = names.filter(test);
+    if (hits.length) return searchIndex[hits.sort((a, b) => a.length - b.length)[0]];
+  }
+  return null;
+}
 document.getElementById("search").addEventListener("change", e => {
-  const id = searchIndex[e.target.value.trim().toLowerCase()];
+  const v = e.target.value;
+  if (!v.trim()) return;
+  const id = resolveQuery(v);
   if (id) { recenter(id); e.target.select(); }
+  else panel.innerHTML = `<p class="hint">No entry matches “${esc(v.trim())}”. The map currently
+    covers Ethics — try the suggestions that appear as you type, or a broader term
+    (e.g. “utilitarianism”, “Kant”, “virtue”).</p>`;
 });
 document.getElementById("path-input").addEventListener("change", e => {
-  const tid = searchIndex[e.target.value.trim().toLowerCase()];
-  if (!tid) return;
+  const v = e.target.value;
+  if (!v.trim()) return;
+  const tid = resolveQuery(v);
+  if (!tid) { panel.innerHTML = `<p class="hint">No entry matches “${esc(v.trim())}” — try the suggestions that appear as you type.</p>`; return; }
   if (tid === centerId) { panel.innerHTML = `<p class="hint">That is the current entry — pick a different one.</p>`; return; }
   const ids = findPath(centerId, tid);
   if (ids) showPath(ids);
@@ -590,12 +672,23 @@ function applyLegendUI() {
     el.classList.toggle("off", !on);
   });
 }
-document.querySelectorAll(".key.toggle").forEach(el => el.addEventListener("click", () => {
-  if (el.dataset.type) toggleIn(filt.types, el.dataset.type);
-  else if (el.dataset.fam) toggleIn(filt.fams, el.dataset.fam);
-  else filt.hideUnreviewed = !filt.hideUnreviewed;
-  saveFilters(); applyLegendUI(); if (!pathIds) render();
-}));
+document.querySelectorAll(".key.toggle").forEach(el => {
+  el.setAttribute("role", "button");
+  el.setAttribute("tabindex", "0");
+  el.setAttribute("aria-pressed", !el.classList.contains("off"));
+  const flip = () => {
+    if (el.dataset.type) toggleIn(filt.types, el.dataset.type);
+    else if (el.dataset.fam) toggleIn(filt.fams, el.dataset.fam);
+    else filt.hideUnreviewed = !filt.hideUnreviewed;
+    saveFilters(); applyLegendUI();
+    el.setAttribute("aria-pressed", !el.classList.contains("off"));
+    if (!pathIds) render();
+  };
+  el.addEventListener("click", flip);
+  el.addEventListener("keydown", e => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); }
+  });
+});
 
 // ---- keyboard ----
 document.addEventListener("keydown", e => {
@@ -621,7 +714,28 @@ const themeBtn = document.getElementById("theme-btn");
 themeBtn.textContent = themeIcon(document.documentElement.dataset.theme);
 themeBtn.addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
 if (!applyHash()) { render(); showNode(centerId); syncURL(false); }
-refreshStatus().then(() => maybeAutoResearch(centerId));
+refreshStatus().then(() => {
+  // the first panel rendered before the health check resolved: repaint it so
+  // the Research button appears without having to re-select the node
+  if (API_OK && !pathIds) showNode(centerId);
+  maybeAutoResearch(centerId);
+});
+
+// ---- first-visit welcome ----
+if (!localStorage.getItem("cm-welcomed")) {
+  const w = document.createElement("div");
+  w.id = "welcome";
+  w.innerHTML = `<h3>Welcome — a map of Ethics</h3>
+    Every circle is an idea, thinker, school or book; every line is a sourced
+    relationship. <b>Click anything</b> to explore, press <kbd>/</kbd> to search,
+    and click a line to read the encyclopedia quote behind it.
+    <br><button id="welcome-ok">Got it</button>`;
+  document.querySelector("main").appendChild(w);
+  w.querySelector("#welcome-ok").onclick = () => {
+    localStorage.setItem("cm-welcomed", "1");
+    w.remove();
+  };
+}
 </script>
 </body>
 </html>
