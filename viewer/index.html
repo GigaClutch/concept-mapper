@@ -495,7 +495,10 @@ function showEdge(idx) {
       ? `<div class="edge-list"><h3>Evidence (${e.evidence.length})</h3>` +
         e.evidence.map(ev => {
           const a = ARTICLES[ev.article_id];
-          return `<div class="quote">“${esc(ev.quote)}”
+          const ctx = ev.support === "no";
+          return `<div class="quote"${ctx ? ' style="border-left-color:var(--muted);opacity:.8"' : ""}>${
+              ctx ? '<span class="src" style="margin:0 0 5px">contextual — related passage, does not directly state this claim</span>' : ""
+            }“${esc(ev.quote)}”
             <span class="src">${a ? `<a href="${a.url}" target="_blank">${esc(a.title)}</a> (SEP)` : esc(ev.article_id)}</span></div>`;
         }).join("") + "</div>"
       : `<p class="hint" style="margin-top:12px">No source evidence yet — backbone assertion awaiting grounding (Phase 4).</p>`}

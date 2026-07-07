@@ -24,8 +24,11 @@ PRICES = {  # USD per million tokens (input, output)
 
 
 def edge_weight(edge: dict) -> float:
-    """D4: w = 1 - 0.5^n, n = backbone assertion + evidence items, min 1."""
-    n = (1 if edge.get("origin") == "backbone" else 0) + len(edge.get("evidence", []))
+    """D4: w = 1 - 0.5^n, n = backbone assertion + supporting evidence items,
+    min 1. Evidence the semantic check rejected (support == "no") stays
+    attached as context but no longer counts toward the weight (Phase 9)."""
+    n = (1 if edge.get("origin") == "backbone" else 0) + \
+        sum(1 for ev in edge.get("evidence", []) if ev.get("support") != "no")
     return 1 - 0.5 ** max(n, 1)
 
 

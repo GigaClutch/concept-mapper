@@ -576,9 +576,7 @@
       "id": "contractualism",
       "label": "Contractualism",
       "type": "concept",
-      "aliases": [
-        "social contract theory"
-      ],
+      "aliases": [],
       "domain": "Ethics",
       "time_period": "",
       "wikidata_qid": "Q3782613",
@@ -2061,7 +2059,7 @@
     },
     {
       "id": "utilitarianism_mill",
-      "label": "Utilitarianism",
+      "label": "Utilitarianism (Mill, 1861)",
       "type": "work",
       "aliases": [],
       "domain": "Ethics",

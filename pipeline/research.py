@@ -239,7 +239,7 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
             return row["id"]
         return slugify(str(raw_id)) if slugify(str(raw_id)) in {r["id"] for r in accepted_nodes.values()} else None
 
-    new_edges, used_new = [], set()
+    new_edges, used_new, new_evidence = [], set(), []
     for kind in ("grounded_edges", "new_edges"):
         for e in raw.get(kind, []):
             etype = e.get("type")
@@ -261,13 +261,16 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
                 edge = next(x for x in graph["edges"]
                             if edge_key(x["source"], x["target"], x["type"]) == k)
                 if not any(ev["article_id"] == art["id"] for ev in edge["evidence"]):
-                    edge["evidence"].append({"article_id": art["id"], "quote": vq})
+                    item = {"article_id": art["id"], "quote": vq}
+                    edge["evidence"].append(item)
+                    new_evidence.append((edge, item))
                 continue
             existing_keys.add(k)
             new_edges.append({"source": s, "target": t, "type": etype, "weight": 0.5,
                               "origin": "research", "extractor": extractor,
                               "evidence": [{"article_id": art["id"], "quote": vq}],
                               "status": "unverified"})
+            new_evidence.append((new_edges[-1], new_edges[-1]["evidence"][0]))
             used_new.update(x for x in (s, t) if any(r["id"] == x for r in accepted_nodes.values()))
 
     kept_rows = [r for r in accepted_nodes.values() if r["id"] in used_new]
@@ -285,6 +288,17 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
     new_edges = [e for e in new_edges
                  if e["source"] in node_ids_in_graph and e["target"] in node_ids_in_graph]
     graph["edges"].extend(new_edges)
+
+    # semantic gate (Phase 9): label every quote this pass attached, so
+    # unsupportive ones never count toward weights or read as proof
+    import quote_check
+    labels = {n["id"]: n["label"] for n in graph["nodes"]}
+    qc_cache = quote_check.load_cache()
+    kept_ids = {n["id"] for n in graph["nodes"]}
+    for edge, ev in new_evidence:
+        if edge["source"] in kept_ids and edge["target"] in kept_ids:
+            cost += quote_check.check_one(edge, ev, labels, client, qc_cache)
+            LAST_COST = cost
 
     recompute_weights(graph["edges"])
 

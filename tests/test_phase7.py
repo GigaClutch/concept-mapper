@@ -46,6 +46,13 @@ class TestWeightParity(unittest.TestCase):
             self.assertEqual(common.edge_weight(e), expected,
                              f"origin={origin!r} evidence={n_ev}")
 
+    def test_contextual_evidence_does_not_count(self):
+        e = {"origin": "backbone", "evidence": [
+            {"article_id": "a", "quote": "q", "support": "yes"},
+            {"article_id": "b", "quote": "q", "support": "no"},
+            {"article_id": "c", "quote": "q"}]}  # unchecked counts
+        self.assertEqual(common.edge_weight(e), 1 - 0.5 ** 3)  # backbone + a + c
+
     def test_recompute_in_place(self):
         edges = [{"origin": "backbone", "evidence": [], "weight": -1}]
         out = common.recompute_weights(edges)
@@ -108,7 +115,8 @@ class TestGroundApplyIdempotent(PatchedDirsMixin, unittest.TestCase):
         write(d / "ground" / "responses" / "art1.json", {
             "meta": {"article_id": "art1", "date": "2026-01-03"},
             "groundings": [{"source": "a", "type": "DEVELOPED_BY", "target": "b",
-                            "quote": "hello world"}],
+                            "quote": "the concept A was first developed and defended "
+                                     "at length by the philosopher B"}],
             "proposed_edges": [{"source": "a", "type": "CRITIQUES", "target": "c",
                                 "quote": "prop quote"}]})
         # an already-reviewed proposal whose status must survive re-apply

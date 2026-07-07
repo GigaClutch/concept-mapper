@@ -1,0 +1,550 @@
+{
+  "meta": {
+    "linked": 85,
+    "resolved": 133,
+    "related_total": 329,
+    "linked_pct": 63.9
+  },
+  "articles": [
+    {
+      "article_id": "aristotle-ethics",
+      "related_entries": 8,
+      "resolved": 3,
+      "linked": 3,
+      "unlinked": [],
+      "unresolved": [
+        "character, moral",
+        "egoism",
+        "friendship",
+        "pleasure",
+        "wisdom"
+      ]
+    },
+    {
+      "article_id": "bentham",
+      "related_entries": 11,
+      "resolved": 4,
+      "linked": 4,
+      "unlinked": [],
+      "unresolved": [
+        "economics: philosophy of",
+        "Foucault, Michel",
+        "Mill, James",
+        "Mill, John Stuart: moral and political philosophy",
+        "pleasure",
+        "punishment, legal",
+        "sovereignty"
+      ]
+    },
+    {
+      "article_id": "consequentialism",
+      "related_entries": 8,
+      "resolved": 6,
+      "linked": 6,
+      "unlinked": [],
+      "unresolved": [
+        "consequentializing",
+        "reasons for action: agent-neutral vs. agent-relative"
+      ]
+    },
+    {
+      "article_id": "contractarianism",
+      "related_entries": 8,
+      "resolved": 3,
+      "linked": 3,
+      "unlinked": [],
+      "unresolved": [
+        "authority",
+        "Hobbes, Thomas: moral and political philosophy",
+        "legitimacy, political",
+        "liberalism",
+        "original position"
+      ]
+    },
+    {
+      "article_id": "contractualism",
+      "related_entries": 18,
+      "resolved": 9,
+      "linked": 1,
+      "unlinked": [
+        "consequentialism",
+        "contractarianism",
+        "john_stuart_mill",
+        "moral_particularism",
+        "practical_reason",
+        "social_contract",
+        "utilitarianism"
+      ],
+      "unresolved": [
+        "action",
+        "animals, moral status of",
+        "impartiality",
+        "Kant, Immanuel: moral philosophy",
+        "Kant, Immanuel: social and political philosophy",
+        "liberalism",
+        "morality, definition of",
+        "political obligation",
+        "reasons for action: agent-neutral vs. agent-relative"
+      ]
+    },
+    {
+      "article_id": "double-effect",
+      "related_entries": 5,
+      "resolved": 2,
+      "linked": 1,
+      "unlinked": [
+        "consequentialism"
+      ],
+      "unresolved": [
+        "doing vs. allowing harm",
+        "euthanasia: voluntary",
+        "suicide"
+      ]
+    },
+    {
+      "article_id": "egoism",
+      "related_entries": 13,
+      "resolved": 7,
+      "linked": 1,
+      "unlinked": [
+        "david_hume",
+        "h_a_prichard",
+        "plato",
+        "stoicism",
+        "thomas_hobbes",
+        "well_being"
+      ],
+      "unresolved": [
+        "Aristotle, General Topics: ethics",
+        "Moore, George Edward: moral philosophy",
+        "moral psychology: empirical approaches",
+        "personal identity: and ethics",
+        "prisoner’s dilemma",
+        "Rand, Ayn"
+      ]
+    },
+    {
+      "article_id": "ethics-deontological",
+      "related_entries": 7,
+      "resolved": 3,
+      "linked": 3,
+      "unlinked": [],
+      "unresolved": [
+        "doing vs. allowing harm",
+        "Kant, Immanuel: moral philosophy",
+        "Moore, George Edward: moral philosophy",
+        "moral dilemmas Acknowledgements The authors would like to acknowledge the research of Robert James Vanderbeek in the preparation of the present edition of this entry."
+      ]
+    },
+    {
+      "article_id": "ethics-virtue",
+      "related_entries": 6,
+      "resolved": 3,
+      "linked": 3,
+      "unlinked": [],
+      "unresolved": [
+        "character, moral",
+        "character, moral: empirical approaches",
+        "moral dilemmas Acknowledgments Parts of the introductory material above repeat what was said in the Introduction and first chapter of On Virtue Ethics (Hursthouse 1999)."
+      ]
+    },
+    {
+      "article_id": "feminism-ethics",
+      "related_entries": 14,
+      "resolved": 0,
+      "linked": 0,
+      "unlinked": [],
+      "unresolved": [
+        "feminist philosophy",
+        "feminist philosophy, interventions: history of philosophy",
+        "feminist philosophy, interventions: moral psychology",
+        "feminist philosophy, interventions: political philosophy",
+        "feminist philosophy, topics: perspectives on autonomy",
+        "feminist philosophy, topics: perspectives on class and work",
+        "feminist philosophy, topics: perspectives on disability",
+        "feminist philosophy, topics: perspectives on globalization",
+        "feminist philosophy, topics: perspectives on objectification",
+        "feminist philosophy, topics: perspectives on power",
+        "feminist philosophy, topics: perspectives on rape",
+        "feminist philosophy, topics: perspectives on reproduction and the family",
+        "feminist philosophy, topics: perspectives on science",
+        "feminist philosophy, topics: perspectives on sex and gender Acknowledgments This entry exists thanks to the steady work of Research Assistant Collin Chepeka and the funds of the Kenneth Mark Drain Chair in Ethics at Trent University. Thanks to Noëlle McAfee for helpful comments on a first draft, and thanks to Anita Superson for extensive comments on every section of this entry."
+      ]
+    },
+    {
+      "article_id": "hedonism",
+      "related_entries": 14,
+      "resolved": 4,
+      "linked": 2,
+      "unlinked": [
+        "akrasia",
+        "well_being"
+      ],
+      "unresolved": [
+        "belief",
+        "consciousness",
+        "consciousness: and intentionality",
+        "desire",
+        "egoism",
+        "intention",
+        "intentionality",
+        "pleasure",
+        "qualia",
+        "value: intrinsic vs. extrinsic"
+      ]
+    },
+    {
+      "article_id": "hume-moral",
+      "related_entries": 2,
+      "resolved": 1,
+      "linked": 1,
+      "unlinked": [],
+      "unresolved": [
+        "property and ownership"
+      ]
+    },
+    {
+      "article_id": "intuitionism-ethics",
+      "related_entries": 9,
+      "resolved": 5,
+      "linked": 4,
+      "unlinked": [
+        "moral_realism"
+      ],
+      "unresolved": [
+        "a priori justification and knowledge",
+        "intuition",
+        "Moore, George Edward: moral philosophy",
+        "moral epistemology"
+      ]
+    },
+    {
+      "article_id": "kant-hume-morality",
+      "related_entries": 9,
+      "resolved": 2,
+      "linked": 1,
+      "unlinked": [
+        "justice"
+      ],
+      "unresolved": [
+        "Hume, David: moral philosophy",
+        "Hume, David: on religion",
+        "Kant, Immanuel: moral philosophy",
+        "Kant, Immanuel: philosophical development",
+        "Kant, Immanuel: philosophy of religion",
+        "Kant, Immanuel: social and political philosophy",
+        "Scottish Philosophy: in the 18th Century Scottish Philosophy: in the 18th Century"
+      ]
+    },
+    {
+      "article_id": "kant-moral",
+      "related_entries": 19,
+      "resolved": 8,
+      "linked": 8,
+      "unlinked": [],
+      "unresolved": [
+        "character, moral",
+        "constructivism: in metaethics",
+        "Kant, Immanuel: account of reason",
+        "Kant, Immanuel: aesthetics and teleology",
+        "Kant, Immanuel: and Hume on morality",
+        "Kant, Immanuel: philosophical development",
+        "Kant, Immanuel: philosophy of religion",
+        "Kant, Immanuel: social and political philosophy",
+        "Kant, Immanuel: transcendental idealism",
+        "morality, definition of",
+        "respect"
+      ]
+    },
+    {
+      "article_id": "metaethics",
+      "related_entries": 11,
+      "resolved": 6,
+      "linked": 3,
+      "unlinked": [
+        "free_will",
+        "moral_particularism",
+        "moral_relativism"
+      ],
+      "unresolved": [
+        "cognitivism vs. non-cognitivism, moral",
+        "moral epistemology",
+        "moral motivation",
+        "moral skepticism",
+        "religion: and morality in western philosophy"
+      ]
+    },
+    {
+      "article_id": "mill-moral-political",
+      "related_entries": 24,
+      "resolved": 8,
+      "linked": 4,
+      "unlinked": [
+        "autonomy",
+        "justice",
+        "rights",
+        "well_being"
+      ],
+      "unresolved": [
+        "Austin, John",
+        "democracy",
+        "egalitarianism",
+        "freedom: of speech",
+        "Green, Thomas Hill",
+        "happiness",
+        "liberalism",
+        "libertarianism",
+        "liberty: positive and negative",
+        "Mill, Harriet Taylor",
+        "Mill, James",
+        "paternalism",
+        "perfectionism, in moral and political philosophy",
+        "reasoning: moral",
+        "value theory",
+        "Whewell, William Acknowledgments I would like to thank the Academic Senate of the University of California, San Diego for two summer grants which supported valuable research assistance from Kory Schaff and Charlie Kurth. In writing this essay, I am conscious of especially significant debts to Richard Arneson, Stephen Darwall, David Lyons, and the editors of the Stanford Encyclopedia of Philosophy."
+      ]
+    },
+    {
+      "article_id": "moral-anti-realism",
+      "related_entries": 9,
+      "resolved": 5,
+      "linked": 5,
+      "unlinked": [],
+      "unresolved": [
+        "cognitivism vs. non-cognitivism, moral",
+        "constructivism: in metaethics",
+        "moral skepticism",
+        "realism"
+      ]
+    },
+    {
+      "article_id": "moral-cognitivism",
+      "related_entries": 18,
+      "resolved": 8,
+      "linked": 6,
+      "unlinked": [
+        "metaethics",
+        "moral_non_naturalism"
+      ],
+      "unresolved": [
+        "compositionality",
+        "fictionalism",
+        "Hume, David: moral philosophy",
+        "Moore, George Edward: moral philosophy",
+        "moral motivation",
+        "moral skepticism",
+        "realism",
+        "relativism",
+        "supervenience",
+        "truth: deflationism about Acknowledgments The author thanks Kent Bach, David Clemenson, David Copp, Mark Decker, Jamie Dreier, Jennifer Haley, Reina Hayaki, Leo Iacano, Mark Kalderon, Clayton Littlejohn, Joe Mendola, Michael Ridge, and Mark Schroeder as well as the SEP editors and referees for good advice, helpful discussion and other assistance in preparing and revising this entry. The editors would like to thank Gintautas Miliauskas for spotting several typographical errors in this entry."
+      ]
+    },
+    {
+      "article_id": "moral-luck",
+      "related_entries": 10,
+      "resolved": 4,
+      "linked": 0,
+      "unlinked": [
+        "compatibilism",
+        "determinism",
+        "free_will",
+        "moral_responsibility"
+      ],
+      "unresolved": [
+        "Aristotle, General Topics: ethics",
+        "causation: in the law",
+        "character, moral",
+        "egalitarianism",
+        "incompatibilism: (nondeterministic) theories of free will",
+        "punishment, legal Acknowledgments I am very grateful to David Brink, Nina Davis, Derk Pereboom, and Sam Rickless for their very helpful input and constructive suggestions on the initial entry. I also benefited greatly from participation in the University of San Diego Institute for Law and Philosophy Roundtable on Moral Luck in April 2003. Many thanks to an anonymous reviewer for very helpful comments on the 2025 version."
+      ]
+    },
+    {
+      "article_id": "moral-non-naturalism",
+      "related_entries": 3,
+      "resolved": 2,
+      "linked": 1,
+      "unlinked": [
+        "moral_particularism"
+      ],
+      "unresolved": [
+        "supervenience"
+      ]
+    },
+    {
+      "article_id": "moral-realism",
+      "related_entries": 9,
+      "resolved": 6,
+      "linked": 5,
+      "unlinked": [
+        "moral_particularism"
+      ],
+      "unresolved": [
+        "cognitivism vs. non-cognitivism, moral",
+        "moral epistemology",
+        "realism"
+      ]
+    },
+    {
+      "article_id": "moral-relativism",
+      "related_entries": 10,
+      "resolved": 3,
+      "linked": 3,
+      "unlinked": [],
+      "unresolved": [
+        "cognitivism vs. non-cognitivism, moral",
+        "moral epistemology",
+        "morality, definition of",
+        "moral skepticism",
+        "reasoning: moral",
+        "relativism",
+        "toleration"
+      ]
+    },
+    {
+      "article_id": "moral-responsibility",
+      "related_entries": 11,
+      "resolved": 6,
+      "linked": 4,
+      "unlinked": [
+        "moral_luck",
+        "moral_responsibility"
+      ],
+      "unresolved": [
+        "blame",
+        "incompatibilism: (nondeterministic) theories of free will",
+        "incompatibilism: arguments for",
+        "responsibility: collective",
+        "skepticism: about moral responsibility Acknowledgments I would like to thank Derk Pereboom and Daniel Miller for their helpful comments on drafts of this entry."
+      ]
+    },
+    {
+      "article_id": "moral-sentimentalism",
+      "related_entries": 11,
+      "resolved": 3,
+      "linked": 0,
+      "unlinked": [
+        "metaethics",
+        "moral_anti_realism",
+        "moral_naturalism"
+      ],
+      "unresolved": [
+        "cognitivism vs. non-cognitivism, moral",
+        "emotion",
+        "fitting attitude theories of value",
+        "Hume, David: moral philosophy",
+        "morality: and evolutionary biology",
+        "moral motivation",
+        "reasons for action: internal vs. external",
+        "Smith, Adam: moral and political philosophy Acknowledgments I want to thank Aino Lahdenranta, Lilian O’Brien, Michael Ridge, Ninni Suni, Valerie Tiberius, and Teemu Toppinen for helpful comments on the original and/or revised versions of this entry, and an anonymous SEP reviewer for exceptionally detailed feedback for revising it."
+      ]
+    },
+    {
+      "article_id": "natural-law-ethics",
+      "related_entries": 10,
+      "resolved": 5,
+      "linked": 4,
+      "unlinked": [
+        "stoicism"
+      ],
+      "unresolved": [
+        "Duns Scotus, John",
+        "Hooker, Richard",
+        "Locke, John",
+        "nature of law: natural law theories",
+        "Suárez, Francisco"
+      ]
+    },
+    {
+      "article_id": "naturalism-moral",
+      "related_entries": 14,
+      "resolved": 4,
+      "linked": 0,
+      "unlinked": [
+        "g_e_moore",
+        "moral_non_naturalism",
+        "moral_realism",
+        "moral_relativism"
+      ],
+      "unresolved": [
+        "Aristotle, General Topics: ethics",
+        "cognitivism vs. non-cognitivism, moral",
+        "constructivism: in political philosophy",
+        "functionalism",
+        "Hume, David: moral philosophy",
+        "moral epistemology",
+        "moral skepticism",
+        "naturalism",
+        "naturalism: in legal philosophy",
+        "supervenience Acknowledgments Many thanks to Spencer Case, Steve Finlay, Nick Laskowski, Tristram McPherson, Tim Perrine, Russ Shafer-Landau, and Pekka Väyrynen for helpful discussion and comments. The structure of this article was adapted from an earlier version by James Lenman."
+      ]
+    },
+    {
+      "article_id": "nietzsche",
+      "related_entries": 7,
+      "resolved": 0,
+      "linked": 0,
+      "unlinked": [],
+      "unresolved": [
+        "evil: concept of",
+        "existentialism",
+        "Lange, Friedrich Albert",
+        "Nietzsche, Friedrich: life and works",
+        "Nietzsche, Friedrich: moral and political philosophy",
+        "relativism",
+        "Schopenhauer, Arthur Acknowledgments I am grateful to Rachel Cristy for exchanges that helped me work out basic ideas for the structure and contents of this entry. Joshua Landy, Andrew Huddleston, Christopher Janaway, and Elijah Millgram provided helpful feedback on a late draft, and each saved me from several errors."
+      ]
+    },
+    {
+      "article_id": "practical-reason",
+      "related_entries": 16,
+      "resolved": 3,
+      "linked": 1,
+      "unlinked": [
+        "moral_particularism",
+        "practical_reason"
+      ],
+      "unresolved": [
+        "agency",
+        "cognitivism vs. non-cognitivism, moral",
+        "constructivism: in metaethics",
+        "decision theory: causal",
+        "intention",
+        "metaethics, normativity in",
+        "rationality: instrumental",
+        "rationality: structural",
+        "reasons for action: agent-neutral vs. agent-relative",
+        "reasons for action: internal vs. external",
+        "value: incommensurable",
+        "value theory",
+        "weakness of will Acknowledgments Benjamin Kiesewetter gratefully acknowledges funding by the European Union (ERC Grant 101040439, REASONS F1RST). Views and opinions expressed are however those of the authors only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them."
+      ]
+    },
+    {
+      "article_id": "supererogation",
+      "related_entries": 5,
+      "resolved": 3,
+      "linked": 1,
+      "unlinked": [
+        "consequentialism",
+        "virtue_ethics"
+      ],
+      "unresolved": [
+        "Chisholm, Roderick",
+        "forgiveness"
+      ]
+    },
+    {
+      "article_id": "utilitarianism-history",
+      "related_entries": 10,
+      "resolved": 7,
+      "linked": 7,
+      "unlinked": [],
+      "unresolved": [
+        "Scottish Philosophy: in the 18th Century",
+        "Shaftesbury, Lord [Anthony Ashley Cooper, 3rd Earl of]",
+        "well-being Acknowledgments The editors would like to thank Gintautas Miliauskas (Vilnius University) for notifying us about several typographical errors in this entry."
+      ]
+    }
+  ]
+}

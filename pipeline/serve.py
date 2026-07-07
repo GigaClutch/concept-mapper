@@ -145,11 +145,14 @@ class Handler(SimpleHTTPRequestHandler):
         if delta.get("error"):
             self._json(200, {**delta, "spent": round(state["spent"], 4)})
             return
-        cp = run_script("validate.py")
-        if cp.returncode != 0:
-            tail = "\n".join(cp.stdout.strip().splitlines()[-4:])
-            rollback(f"validation rejected the update (rolled back):\n{tail}")
-            return
+        # research output faces the same gates as every batch stage: mechanical
+        # validation AND the gold set (canonical recall + adversarial traps)
+        for name, gate_args in (("validate.py", ()), ("evaluate.py", ("--graph",))):
+            cp = run_script(name, *gate_args)
+            if cp.returncode != 0:
+                tail = "\n".join(cp.stdout.strip().splitlines()[-4:])
+                rollback(f"{name} rejected the update (rolled back):\n{tail}")
+                return
         rebuild_bundles()
         self._json(200, {**delta, "spent": round(state["spent"], 4)})
 

@@ -78,7 +78,7 @@ def check_edge_list(edges: list[dict], registry_ids: set[str], ctx: str) -> set[
     return keys
 
 
-def check_graph(registry_ids: set[str]) -> None:
+def check_graph(registry_ids: set[str], registry_qids: dict[str, str]) -> None:
     g = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
     nodes, edges = g["nodes"], g["edges"]
     articles = {a["id"] for a in g.get("articles", [])}
@@ -92,6 +92,10 @@ def check_graph(registry_ids: set[str]) -> None:
             err(f"graph node {n['id']}: bad type '{n['type']}'")
         if n["id"] not in registry_ids:
             err(f"graph node {n['id']}: not in registry (closed world violated)")
+        rq = registry_qids.get(n["id"], "")
+        if rq and n.get("wikidata_qid") != rq:
+            err(f"graph node {n['id']}: wikidata_qid '{n.get('wikidata_qid')}' "
+                f"!= registry '{rq}' (identity drift)")
 
     id_set = set(ids)
     degree = {i: 0 for i in id_set}
@@ -105,7 +109,8 @@ def check_graph(registry_ids: set[str]) -> None:
     for e in edges:
         if e["source"] not in id_set or e["target"] not in id_set:
             err(f"graph edge {e['source']}->{e['target']}: endpoint missing from graph nodes")
-        n = (1 if e.get("origin") == "backbone" else 0) + len(e.get("evidence", []))
+        n = (1 if e.get("origin") == "backbone" else 0) + \
+            sum(1 for ev in e.get("evidence", []) if ev.get("support") != "no")
         expected = 1 - 0.5 ** max(n, 1)
         if not math.isclose(e.get("weight", -1), expected, abs_tol=1e-9):
             err(f"graph edge {e['source']}-{e['type']}->{e['target']}: "
@@ -153,6 +158,9 @@ def check_gold(registry_ids: set[str]) -> None:
     print(f"gold: {len(canon['edges'])} canonical edges, {len(adv['traps'])} traps checked")
 
 
+REGISTRY_REQUIRED = ("id", "label", "type", "aliases", "domain", "status")
+
+
 def main() -> None:
     global ALLOW_MISSING_CACHE
     import argparse
@@ -165,6 +173,30 @@ def main() -> None:
     registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
     registry_ids = {r["id"] for r in registry["nodes"]}
     print(f"registry: {len(registry_ids)} rows")
+
+    # row schema + search identity: labels unique, no alias claimed twice or
+    # shadowing another row's label — an ambiguous name breaks search and the
+    # closed-world resolve map (utilitarianism_mill's old label did exactly this)
+    labels: dict[str, str] = {}
+    for r in registry["nodes"]:
+        for f in REGISTRY_REQUIRED:
+            if f not in r:
+                err(f"registry {r.get('id', '?')}: missing field '{f}'")
+        if r.get("type") not in NODE_TYPES:
+            err(f"registry {r.get('id', '?')}: bad type '{r.get('type')}'")
+        lk = r["label"].casefold()
+        if lk in labels:
+            err(f"registry: label '{r['label']}' on both {labels[lk]} and {r['id']}")
+        labels[lk] = r["id"]
+    alias_owner: dict[str, str] = {}
+    for r in registry["nodes"]:
+        for a in r.get("aliases", []):
+            ak = a.casefold()
+            if ak in labels and labels[ak] != r["id"]:
+                err(f"registry {r['id']}: alias '{a}' is the label of {labels[ak]}")
+            if ak in alias_owner and alias_owner[ak] != r["id"]:
+                err(f"registry: alias '{a}' on both {alias_owner[ak]} and {r['id']}")
+            alias_owner.setdefault(ak, r["id"])
 
     by_qid: dict[str, list[str]] = {}
     for r in registry["nodes"]:
@@ -179,7 +211,8 @@ def main() -> None:
         warn(f"registry: {len(unreviewed)} rows with unresolved QID "
              f"(not yet human-reviewed): {unreviewed}")
 
-    check_graph(registry_ids)
+    check_graph(registry_ids,
+                {r["id"]: r.get("wikidata_qid", "") for r in registry["nodes"]})
     check_gold(registry_ids)
 
     for w in warnings:

@@ -494,7 +494,7 @@ window.REVIEW = {
    "type": "work"
   },
   "utilitarianism_mill": {
-   "label": "Utilitarianism",
+   "label": "Utilitarianism (Mill, 1861)",
    "type": "work"
   },
   "on_liberty": {
@@ -1763,8 +1763,8 @@ window.REVIEW = {
    "source": "friedrich_nietzsche",
    "type": "CRITIQUES",
    "target": "utilitarianism",
-   "quote": "He is famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas and social and political pieties associated with modernity",
-   "article_id": "nietzsche",
+   "quote": "",
+   "article_id": "",
    "assist": {
     "verdict": "correct",
     "quote_check": "no",
@@ -1777,8 +1777,8 @@ window.REVIEW = {
    "source": "friedrich_nietzsche",
    "type": "CRITIQUES",
    "target": "divine_command_theory",
-   "quote": "famous for uncompromising criticisms of traditional European morality and religion, as well as of conventional philosophical ideas",
-   "article_id": "nietzsche",
+   "quote": "",
+   "article_id": "",
    "assist": {
     "verdict": "unsure",
     "quote_check": "no",
@@ -1791,8 +1791,8 @@ window.REVIEW = {
    "source": "master_morality",
    "type": "CONTRASTS_WITH",
    "target": "slave_revolt_in_morality",
-   "quote": "The contrast, together with the prior dominance of good/bad structured moralities, raises a straightforward historical question: what happened? How did we get from the widespread acceptance of good/bad valuation to the near universal dominance of good/evil thinking?",
-   "article_id": "nietzsche",
+   "quote": "",
+   "article_id": "",
    "assist": {
     "verdict": "correct",
     "quote_check": "no",

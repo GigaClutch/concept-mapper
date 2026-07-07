@@ -103,11 +103,35 @@ def find_verbatim(quote: str, text: str) -> str | None:
     return None
 
 
+def _name_pattern(name: str) -> str:
+    """Word-boundary pattern tolerant of morphological variants: 'deontology'
+    must also hit 'deontologists', 'utilitarianism' hit 'utilitarians'."""
+    words = []
+    for w in name.split():
+        if len(w) >= 6:
+            words.append(re.escape(w[:-3]) + r"\w{0,6}")
+        else:
+            words.append(re.escape(w))
+    return r"\b" + r"\s+".join(words) + r"\b"
+
+
 def mentions(node: dict, text: str) -> bool:
     names = [node["label"]] + [a for a in node.get("aliases", []) if len(a) >= 4]
     if node["type"] == "person":
         names.append(node["label"].split()[-1])
-    return any(re.search(rf"\b{re.escape(n)}\b", text, re.IGNORECASE) for n in names)
+    return any(re.search(_name_pattern(n), text, re.IGNORECASE) for n in names)
+
+
+MIN_QUOTE_CHARS = 40
+
+
+def quote_ok(quote: str, edge: dict, nodes: dict) -> bool:
+    """Mechanical evidence gate (Phase 9): a quote that is a bare citation
+    fragment, or that names neither endpoint of its edge, is not evidence."""
+    if len(norm(quote)) < MIN_QUOTE_CHARS:
+        return False
+    s, t = nodes.get(edge["source"]), nodes.get(edge["target"])
+    return bool((s and mentions(s, quote)) or (t and mentions(t, quote)))
 
 
 def candidate_edges(graph: dict, nodes: dict, text: str) -> list[dict]:
@@ -283,6 +307,9 @@ def cmd_apply(_args) -> None:
                 continue
             if any(ev["article_id"] == aid for ev in e["evidence"]):
                 continue  # one quote per (edge, article): weight counts articles
+            if not quote_ok(g["quote"], e, reg_by_id):
+                continue  # citation fragments / neither-endpoint quotes are
+                # not evidence — they inflated weights until Phase 9
             e["evidence"].append({"article_id": aid, "quote": g["quote"]})
             if e.get("status") == "unverified":
                 e["status"] = "grounded"
@@ -306,6 +333,20 @@ def cmd_apply(_args) -> None:
             proposals.append({**p, "article_id": aid, "status": "quarantined",
                               **({"flipped": True} if flipped else {})})
             proposed_per_article[aid] = proposed_per_article.get(aid, 0) + 1
+
+    # the same mechanical filter over evidence already in the graph (earlier
+    # passes attached citation fragments like "Rawls 1971"); a grounded edge
+    # losing its last quote goes honestly back to unverified
+    dropped_ev = 0
+    for e in graph["edges"]:
+        kept = [ev for ev in e["evidence"] if quote_ok(ev["quote"], e, reg_by_id)]
+        dropped_ev += len(e["evidence"]) - len(kept)
+        e["evidence"] = kept
+        if e.get("status") == "grounded" and not kept:
+            e["status"] = "unverified"
+    if dropped_ev:
+        print(f"dropped {dropped_ev} evidence quotes that were under "
+              f"{MIN_QUOTE_CHARS} chars or named neither endpoint")
 
     recompute_weights(graph["edges"])
 

@@ -42,7 +42,10 @@ def time_period(etype: str, enr: dict, seed: dict) -> str:
 
 
 def merge_aliases(seed: dict, enr: dict) -> list[str]:
-    seen = {seed["label"].casefold()}
+    # alias_exclude: aliases a seed row explicitly disowns (e.g. a Wikidata
+    # alias that belongs to a different registry row and breaks search)
+    seen = {seed["label"].casefold()} | \
+        {a.casefold() for a in seed.get("alias_exclude", [])}
     out: list[str] = []
     for a in seed.get("aliases", []) + enr.get("wd_aliases", []):
         if a.casefold() not in seen:

@@ -1,0 +1,401 @@
+{
+  "practical_reason": {
+    "definition": "Practical reason is the mental capacity humans use to think through and decide what actions to perform by weighing reasons and considering different options.",
+    "article_id": "practical-reason",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "contractualism": {
+    "definition": "A moral theory holding that an action is wrong if it violates principles that rational people could not reasonably reject as a fair basis for governing everyone's behavior.",
+    "article_id": "contractualism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "hedonism": {
+    "definition": "A philosophical view holding that pleasure and pain are the fundamental forces governing human behavior and determining what has value.",
+    "article_id": "hedonism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_realism": {
+    "definition": "Moral realism is the philosophical view that moral claims, such as statements about right and wrong, describe actual facts about the world in the same way that factual claims describe other aspects of reality, and that at least some of these moral claims are genuinely true.",
+    "article_id": "moral-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_anti_realism": {
+    "definition": "Moral anti-realism is the philosophical view that moral properties, facts, or values do not exist independently of human minds and judgments.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_non_naturalism": {
+    "definition": "Moral non-naturalism is the philosophical view that moral properties—such as goodness or rightness—exist as real features of the world but are fundamentally different from and cannot be reduced to natural properties studied by science.",
+    "article_id": "moral-non-naturalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_intuitionism": {
+    "definition": "Moral intuitionism is a philosophical view that holds we can directly grasp certain basic moral truths without reasoning or argument, and that moral properties belong to a non-natural realm distinct from physical facts about the world.",
+    "article_id": "intuitionism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_sentimentalism": {
+    "definition": "A philosophical view holding that emotions, feelings, and desires are fundamental to how we understand and judge morality, rather than reason alone.",
+    "article_id": "moral-sentimentalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "contractarianism": {
+    "definition": "Contractarianism is a political and moral theory asserting that governmental authority and ethical norms derive their legitimacy from the agreement or mutual consent of the people involved, rather than from divine authority or human nature.",
+    "article_id": "contractarianism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "friedrich_nietzsche": {
+    "definition": "Friedrich Nietzsche was a 19th-century German philosopher and cultural critic who fundamentally challenged traditional European morality, religion, and conventional thought through psychological analysis, while proposing alternative values aimed at cultural transformation and human flourishing.",
+    "article_id": "nietzsche",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "thomas_hobbes": {
+    "definition": "Thomas Hobbes was an English philosopher (1588-1679) best known for his political philosophy and theories about human nature and the social contract. His ideas profoundly influenced subsequent philosophical thought across multiple disciplines.",
+    "article_id": "kant-hume-morality",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "moral_luck": {
+    "definition": "A situation where a person can be held morally responsible or judged for things that are partly influenced by circumstances beyond their control, creating tension with the principle that morality should only assess what we can control.",
+    "article_id": "moral-luck",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "bernard_williams": {
+    "definition": "A British philosopher who explored the tension between moral responsibility and factors beyond individual control, demonstrating through his work that people are often held morally accountable for outcomes influenced by chance or circumstances rather than purely by their choices and intentions.",
+    "article_id": "moral-luck",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "eudaimonia": {
+    "definition": "Eudaimonia is an ancient Greek concept referring to the highest human good, often understood as happiness, flourishing, or living well through the development and exercise of virtue and excellence of character.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "peter_singer": {
+    "definition": "Peter Singer is a contemporary Australian-American philosopher and ethicist known for applying consequentialist reasoning to practical moral issues, particularly regarding animal welfare, global poverty, and bioethics.",
+    "article_id": "consequentialism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "a_j_ayer": {
+    "definition": "A. J. Ayer was a British philosopher known for developing and defending emotivism, a non-cognitivist theory of ethics that interprets moral statements as expressions of emotional attitudes rather than factual claims about the world.",
+    "article_id": "moral-cognitivism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "charles_stevenson": {
+    "definition": "Charles Stevenson was a philosopher known for developing emotivism, a non-cognitivist theory of ethics that argues moral statements express emotional attitudes rather than factual claims about moral properties.",
+    "article_id": "moral-cognitivism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "r_m_hare": {
+    "definition": "R. M. Hare was a British moral philosopher known for developing prescriptivism, a theory that moral judgments function as universal prescriptions or commands rather than factual statements about objective properties.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "simon_blackburn": {
+    "definition": "A British philosopher known for developing quasi-realism, an approach to moral philosophy that explains how moral language can function meaningfully and appear truth-based even though moral statements do not express straightforward factual claims about objective moral properties.",
+    "article_id": "moral-cognitivism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "quasi_realism": {
+    "definition": "A philosophical approach that attempts to preserve the language and structure of moral realism while rejecting the claim that moral properties exist independently of human attitudes, seeking to show how moral statements can be meaningful and truth-apt without requiring objective moral facts.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "error_theory": {
+    "definition": "Error theory is the position that moral judgments make claims about objective facts in the world, but these claims are systematically false because no objective moral properties or facts actually exist.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "j_l_mackie": {
+    "definition": "J. L. Mackie was a philosopher known for developing the error theory of morality, which argues that our moral judgments attempt to describe objective moral facts, but such facts do not actually exist in the world.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "ethics_inventing_right_and_wrong": {
+    "definition": "A 1977 philosophical work by J.L. Mackie arguing that moral values and duties do not exist as objective features of reality, but are human inventions or projections without independent factual basis.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "g_e_moore": {
+    "definition": "G.E. Moore was an influential British philosopher whose ethical theory in his work Principia Ethica became the foundational model for understanding moral non-naturalism, the view that moral properties exist independently of physical or natural properties.",
+    "article_id": "moral-non-naturalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "prima_facie_duty": {
+    "definition": "A principle that identifies morally relevant considerations favoring or opposing a particular action, without determining what one ought to do overall.",
+    "article_id": "intuitionism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "francis_hutcheson": {
+    "definition": "An 18th-century Irish-Scottish philosopher who developed early theories of moral sentimentalism, arguing that human emotions and feelings are fundamental to understanding morality rather than reason alone.",
+    "article_id": "moral-sentimentalism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "act_utilitarianism": {
+    "definition": "A moral theory holding that an action is right when it produces consequences at least as beneficial for overall human well-being as any other action available to the agent, making it the most direct approach to evaluating individual acts through their utility-maximizing outcomes.",
+    "article_id": "mill-moral-political",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "henry_sidgwick": {
+    "definition": "A 19th-century British philosopher known for his significant contributions to utilitarian ethical theory, which evaluates actions based on their consequences and the overall happiness they produce.",
+    "article_id": "utilitarianism-history",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "greatest_happiness_principle": {
+    "definition": "A principle stating that moral and legal decisions should aim to maximize the total happiness of all members of a community rather than merely the greatest number, ensuring that minority interests are not sacrificed for majority benefit.",
+    "article_id": "bentham",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "good_will": {
+    "definition": "A disposition or intention to act in accordance with moral duties and principles rather than consequences; the quality of being motivated by what one believes to be ethically right regardless of outcomes.",
+    "article_id": "ethics-deontological",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "rosalind_hursthouse": {
+    "definition": "A contemporary philosopher specializing in virtue ethics, the approach to morality that centers on character and virtues rather than duties or consequences. Hursthouse has made significant contributions to developing and defending virtue ethical theory as a major framework in normative ethics.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "alasdair_macintyre": {
+    "definition": "Alasdair MacIntyre is a philosopher who appears in discussions of virtue ethics, particularly regarding how moral character and virtues function as foundational concepts in ethical theory rather than being defined through other moral frameworks.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "elizabeth_anscombe": {
+    "definition": "Elizabeth Anscombe was a philosopher who revitalized virtue ethics in Western philosophy through her influential 1958 article \"Modern Moral Philosophy,\" which challenged prevailing ethical theories and restored focus to character, virtues, and how people should live.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "golden_mean": {
+    "definition": "The golden mean is the ethical principle that virtue lies between two extremes—one of excess and one of deficiency.",
+    "article_id": "aristotle-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "t_m_scanlon": {
+    "definition": "T. M. Scanlon is a contemporary philosopher who represents the Kantian strain of social contract thought, known as contractualism, which emphasizes that moral and political principles must be justifiable to all individuals based on respect for persons rather than self-interest.",
+    "article_id": "contractarianism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "john_rawls": {
+    "definition": "A nineteenth-century British philosopher who made major contributions to utilitarian and liberal philosophy, particularly through his works on ethics and political theory that emphasized human happiness and individual freedom as foundational principles for evaluating actions and institutions.",
+    "article_id": "mill-moral-political",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "epicurus": {
+    "definition": "An ancient Greek philosopher who advocated that pleasure and the absence of pain constitute the highest good, and whose ideas significantly influenced philosophical debates about the nature of human motivation and what makes life worth living.",
+    "article_id": "hedonism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "care_ethics": {
+    "definition": "An ethical approach emphasizing relationships, interdependence, and attentiveness to the concrete needs of individuals within their specific contexts, rather than abstract universal rules or principles.",
+    "article_id": "feminism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "nel_noddings": {
+    "definition": "Nel Noddings is a philosopher who developed an influential ethical framework centered on caring relationships and interpersonal responsibility, arguing that morality should prioritize responding to the needs of those we are connected to rather than following abstract universal rules.",
+    "article_id": "feminism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "feminist_ethics": {
+    "definition": "Feminist ethics is a philosophical approach that examines how gender shapes moral beliefs, practices, and ethical theory, while working to identify and correct gendered oppression and the ways gender hierarchies harm people, particularly women and marginalized groups.",
+    "article_id": "feminism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "arthur_schopenhauer": {
+    "definition": "A 19th-century German philosopher and cultural critic known for his radical attacks on traditional morality, religion, and conventional thinking, who developed psychological theories to expose hidden assumptions in established values and proposed alternative frameworks for human flourishing and…",
+    "article_id": "nietzsche",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "derek_parfit": {
+    "definition": "Derek Parfit was a British philosopher known for his contributions to ethics, metaphysics, and practical reason, particularly his work on personal identity, rationality, and what makes actions worth performing.",
+    "article_id": "practical-reason",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "plato": {
+    "definition": "Plato was an ancient Greek philosopher and one of the founding figures of virtue ethics in Western philosophy, who emphasized moral character and virtuous excellence as central to ethical life.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "joseph_butler": {
+    "definition": "Joseph Butler was an 18th-century English philosopher known for his influential critique of psychological egoism—the theory that people are motivated solely by self-interest.",
+    "article_id": "egoism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "critique_of_pure_reason": {
+    "definition": "A foundational work of modern philosophy by Immanuel Kant that examines how human knowledge is constructed and what we can actually know about the world.",
+    "article_id": "kant-hume-morality",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "nicomachean_ethics": {
+    "definition": "A philosophical treatise by Aristotle examining human flourishing, virtue, and the qualities needed for living well, which treats ethics as a practical discipline focused on developing character through habit and deliberation rather than abstract theoretical knowledge.",
+    "article_id": "aristotle-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "leviathan": {
+    "definition": "A philosophical work by Thomas Hobbes presenting a theory of ethics and politics grounded in natural law, which argues that self-preservation is the fundamental human good and that divine laws of nature guide human behavior toward this end.",
+    "article_id": "natural-law-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "treatise_of_human_nature": {
+    "definition": "A philosophical work by David Hume examining the foundations of human nature, particularly focusing on how moral judgments arise from sentiments and emotions rather than reason alone, and exploring the distinction between natural and artificial virtues.",
+    "article_id": "hume-moral",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "enquiry_principles_of_morals": {
+    "definition": "An 18th-century philosophical work by David Hume that presents his theory of morality, arguing that moral judgments arise from human sentiment and feeling rather than reason alone, and examining how virtues and vices develop in society through sympathy and social convention.",
+    "article_id": "hume-moral",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "utilitarianism_mill": {
+    "definition": "A philosophical work by John Stuart Mill published in 1861 that examines the ethical theory that actions and policies should be judged by whether they maximize overall happiness or well-being, arguing that pleasure and the absence of pain are the primary measures of what is good.",
+    "article_id": "hedonism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "on_liberty": {
+    "definition": "A philosophical work by John Stuart Mill that examines the principles governing individual liberty and the limits of social authority, arguing that personal freedom should be maximized except when one's actions directly harm others.",
+    "article_id": "utilitarianism-history",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "methods_of_ethics": {
+    "definition": "A philosophical work by Henry Sidgwick published in 1874 that develops an intuitional utilitarian ethical theory, examining how moral principles and concepts of utility can guide human conduct and decision-making.",
+    "article_id": "bentham",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "principia_ethica": {
+    "definition": "A foundational 1903 philosophical work by G.E. Moore that argues moral properties like goodness are non-natural and self-evident, knowable through intuition rather than empirical observation or logical proof.",
+    "article_id": "intuitionism-ethics",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "after_virtue": {
+    "definition": "A influential 1981 philosophical work by Alasdair MacIntyre that critiques modern ethics and argues that moral reasoning lacks objective foundations because it has become disconnected from its historical contexts and the virtues that once grounded it.",
+    "article_id": "moral-anti-realism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "reasons_and_persons": {
+    "definition": "A major philosophical work by Derek Parfit examining how reasons, moral facts, and personal identity shape our obligations to ourselves and others, particularly regarding population ethics and future generations.",
+    "article_id": "practical-reason",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "what_we_owe_to_each_other": {
+    "definition": "A philosophical work by Harvard philosopher T. M. Scanlon that develops a theory of morality based on principles that no one could reasonably reject as a basis for mutual agreement.",
+    "article_id": "contractualism",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  },
+  "modern_moral_philosophy": {
+    "definition": "A philosophical work by Elizabeth Anscombe published in 1958 that challenged prevailing approaches to ethics by arguing for renewed attention to virtue and moral character, catalyzing a major revival of virtue ethics as a central framework in Western moral philosophy.",
+    "article_id": "ethics-virtue",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df-v1",
+    "date": "2026-07-07"
+  }
+}

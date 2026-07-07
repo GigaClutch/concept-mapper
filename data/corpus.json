@@ -19,7 +19,7 @@
       "url": "https://plato.stanford.edu/entries/ethics-deontological/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 12,
+      "grounded_edges": 10,
       "proposed_edges": 2
     },
     {
@@ -28,7 +28,7 @@
       "url": "https://plato.stanford.edu/entries/consequentialism/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 14,
+      "grounded_edges": 9,
       "proposed_edges": 0
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://plato.stanford.edu/entries/ethics-virtue/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 25,
+      "grounded_edges": 22,
       "proposed_edges": 1
     },
     {
@@ -73,7 +73,7 @@
       "url": "https://plato.stanford.edu/entries/mill-moral-political/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 10,
+      "grounded_edges": 6,
       "proposed_edges": 0
     },
     {
@@ -82,7 +82,7 @@
       "url": "https://plato.stanford.edu/entries/bentham/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 7,
+      "grounded_edges": 6,
       "proposed_edges": 1
     },
     {
@@ -91,7 +91,7 @@
       "url": "https://plato.stanford.edu/entries/metaethics/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 12,
+      "grounded_edges": 5,
       "proposed_edges": 1
     },
     {
@@ -100,7 +100,7 @@
       "url": "https://plato.stanford.edu/entries/moral-realism/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 10,
+      "grounded_edges": 8,
       "proposed_edges": 3
     },
     {
@@ -109,7 +109,7 @@
       "url": "https://plato.stanford.edu/entries/moral-anti-realism/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 16,
+      "grounded_edges": 14,
       "proposed_edges": 3
     },
     {
@@ -118,7 +118,7 @@
       "url": "https://plato.stanford.edu/entries/moral-relativism/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 6,
+      "grounded_edges": 3,
       "proposed_edges": 1
     },
     {
@@ -127,7 +127,7 @@
       "url": "https://plato.stanford.edu/entries/moral-cognitivism/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 11,
+      "grounded_edges": 9,
       "proposed_edges": 2
     },
     {
@@ -136,7 +136,7 @@
       "url": "https://plato.stanford.edu/entries/naturalism-moral/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 4,
+      "grounded_edges": 0,
       "proposed_edges": 1
     },
     {
@@ -145,7 +145,7 @@
       "url": "https://plato.stanford.edu/entries/moral-non-naturalism/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 13,
+      "grounded_edges": 11,
       "proposed_edges": 1
     },
     {
@@ -154,7 +154,7 @@
       "url": "https://plato.stanford.edu/entries/contractualism/",
       "priority": 1,
       "retrieved": "2026-06-12",
-      "grounded_edges": 2,
+      "grounded_edges": 1,
       "proposed_edges": 1
     },
     {
@@ -172,7 +172,7 @@
       "url": "https://plato.stanford.edu/entries/egoism/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 5,
+      "grounded_edges": 2,
       "proposed_edges": 1
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://plato.stanford.edu/entries/moral-luck/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 4,
+      "grounded_edges": 3,
       "proposed_edges": 1
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://plato.stanford.edu/entries/moral-responsibility/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 5,
+      "grounded_edges": 4,
       "proposed_edges": 0
     },
     {
@@ -235,7 +235,7 @@
       "url": "https://plato.stanford.edu/entries/intuitionism-ethics/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 11,
+      "grounded_edges": 7,
       "proposed_edges": 1
     },
     {
@@ -253,7 +253,7 @@
       "url": "https://plato.stanford.edu/entries/feminism-ethics/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 3,
+      "grounded_edges": 4,
       "proposed_edges": 0
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://plato.stanford.edu/entries/kant-hume-morality/",
       "priority": 2,
       "retrieved": "2026-06-12",
-      "grounded_edges": 10,
+      "grounded_edges": 9,
       "proposed_edges": 4
     },
     {

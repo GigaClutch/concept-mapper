@@ -1,0 +1,1160 @@
+{
+  "afa789b82628afba0ddc2cb2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "9c807394d43732bc0bd5744f": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7ba4374b688efc8b2fe13d8b": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "56aeb1c643f5b1851ae6bf95": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "73e411cc79a3d081ad3ba122": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6b5e25e31070f5bc9bbfb66d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "469257e639aaa30aff0ecd38": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "419b690dec272de2d5f908f2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "51d7db32b00f38b620675311": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "48a75a6b950403eda9b9567e": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3097b60b88517b96c9f7239b": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "65a101d2b2ad22c4342ff1df": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3cf83d6a65561be1ee39c84b": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b1c1af0d54647063279a2f72": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "39350d206dcd386273eea5d3": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f7293f26549e3d9bd3bd6e79": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "06db9342348d504ffcd6a974": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a4412af7554b4da8304c7437": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0d42c31e4cad8144c4d67c53": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "5c76628c4278e271f2b66290": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "4f7a42ba3dae143cc4ca4f1c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3be3a5263ffadaef838b2330": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c955fb2078d65498b57b2b21": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "35d8ec6c5fdb5e2c36fd3a5b": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "bcf4fc572beb125a6da6433d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "835074d5f42d795838955cc0": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ae87c81dbdd677978dbd9fe9": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b31a371c7b94c691315cd97e": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "425400897d51ecff85614043": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6c97784ca07f670510e23321": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2ba1861b854033a6a26e9236": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "855339c97ba572254e5e9a3b": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6f3f65b983b652b7b035d251": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "82232198109d32605475c448": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "deaaed5227029ebf165848bb": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "61253e37238c2b517dd14a50": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b7a392a84b12e50443a93d1f": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f8552aba92294583ebf76261": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e91dd70e43e978c7c0be220d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "75584ef4782791fea2b8c38c": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "851c9f8d3d14cded216bd8e5": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "bc89941f9bdfa1a0645d5b51": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "9fa543b475b09d8f4c64638c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "cb4cd1d539c5b4ed1fe0e9d7": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f1e5564c5006cbbe331b2afd": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "75ca9f003310fe4dd764b6ea": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "53392285fe10d70a7cb21d2d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a2dfda717a366604674337f2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "399b2ed80d78f3bf7e751fe6": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d1ef8611c890a79fcbdf7d48": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f4e7b67e468605ef8e095c34": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "30a74bd87be42b993b51bd66": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "dd12205b872fbb319d09022a": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7a3ae31dde0542fba298bacf": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "73a1323bd4a17ff49b37ece9": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a0f1e7469b319508f3b86fd2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a2f6f7a8919c6f89b10ff3e0": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "fb63f8f91ef3209097d03610": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e9b7993433243cd2981fae36": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b1070872a4ef0d4613575ce5": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "79453f932238f07537ba1469": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "acc028bc63b064b04599b0dd": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1ae61b4f14931c5daa85d0b8": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "423648673d7dfd2bba6bf7c2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e3d00b6beebad2319f03a3af": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3d261e0c35366e04e3572b95": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2535e1a2653960385e41e2e2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "84cc4c1c9b69dbdd043789a2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1ec1ae470ccb5234f6cf0b9c": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "02a01e3e919b558f3a89e13d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2a08f54d423fc58c47dff2f4": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6eedbcb07901a112baae94fb": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c947959ccac801ca8227eb26": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3529762bd2b99b1580efd96e": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e83a9cf0e3f9e5fbfe18f53e": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "8dcd16d3616f438b13956e92": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e84b0d54506172885eead36f": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "15f26dbc11b8308937e5f185": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e3dc2a79a5438438bc377348": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "440adce79b5a95ad0ce5a011": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7823d9cc28dbdde10408e56c": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "158cb9b96c38b85beef2f9a9": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "aebaeac913c3a357fd96531b": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "9e9ad3e4621a4338aba1980d": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e76bb3866aa6fce00710ab52": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0d58529648ec9c9545ea9747": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2d1eb71f538ea74ddccb0337": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "8882562ab24d41fe4d31e6e9": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "5d5df913635856008aa8d5fa": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "fd4cc8ac9de2fceaed76fe01": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d4ffa291830328e4bc703870": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e7ea5a8e75669647da3063fc": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ba62b4fc507b7b5b06cec66b": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "537865c55dc4a2b2cc67e007": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1cb7e350a8a66bdb79d6dff5": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "45be8ebf6ba32a4c6eb3f3be": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1e97744c941fbe35a3132257": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "79d6587314e907ef2265f430": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7f0dc7b2ee73867bcc01256a": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "24b20903815cbad459b742d9": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a521f5f326ecb2ae6b22ae05": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6d0da68f727e524787a10ae7": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f8841163dd22544cfa2f842c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ccc86f6938474f6bee89b41d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d641da9c4bc4a0a87d509a0d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a13c2d2adfa315b8d243ff4e": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c015020f1003708c4556925c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3d3c2e56ed67b33f80417f6f": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d63b795041f77084d626f3c2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6a1e05fc0da36e1adcefd5c2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1526cc3ee3663eef4798b7a2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2ef5bb259ba12baee132ad29": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2cf4d97319d3449e0222be37": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ad135b04556c332f00987266": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "635973fb5cd55f58ab5f7e0a": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7582e33e7f873d08c813a77c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e38e29a1360cbe4d33f0a0d0": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "941a4807ae2128a51c72e706": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6bca502c06967346fdaedcec": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f89c91b5d85b5aca2ed77650": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "39f5125126042912a5ccfc24": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0106c28cc56590acb0a28243": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "55e5475171ccffa8765f1bb6": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e07e5ae462015db44b7ca927": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "fd824df029a03131fc59c1a4": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0623f0c124cdf2106edec7ee": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ccde70ae02310748ac7a9cb5": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d16cae16ee5262d2b19e3140": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d0b5881a03303c6a999a6f8e": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3565b898c010216bfbc1c08e": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "36c66f41ef12696d92007480": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "92089b575afe7380dab77fb5": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "3ac88398658824cd6706e37e": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a336858fbc333e7019afe5db": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "20845f2abe609340e28a3ac2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c625b0cf261ac3ce9f1831ac": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c2adcdd0a2ed8a550bbdb896": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a95726218db14cf3f1b95adb": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "256c6f7a6ea70782e4612a93": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "5763050d9f98ae53874c3254": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "4af01a0a066a6a2b2c737498": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c1482814f546b86dd3c1b63d": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6792324d1ba5e53ef9dea44b": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f0b7508104e772244317f32a": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a6518e09458d4ae2395e27c6": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "57fbfc584f221a5b049776d2": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "87fffa241dbfafbb246f3603": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b066ae8eabb06363b9358015": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "4c6fe2d7d70d45ff36c7f793": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b318541131fa6b76b6eacf92": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0f7e2cc1efbd191466e91cd1": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "8952375e6cac8b223e1c546e": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "4d032d64230b0e9d11119916": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "52682f5a991ccdf23e74d0e4": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c8e40f62b3575ae1453c600c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "d3ed6530f2826eed8948f6fc": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7642dcf9c673c8ffe840d634": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2d78a435c3cf3ccc931a810f": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "f3f032af112f7d4b796f64ff": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "2b53b9dc96c8bcc7ebf252a0": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "4f7cb82ab7aea5c0bfeff609": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b1a15531bf1042a1e3364a79": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "307b14cf23e04417c5862fa2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "9b3bd537c54829206eb37543": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e24c3be4f65e1cac103e1c80": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a85b491016a38abd69c456d8": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1b5ff187b5bbe6b3e4d64de4": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7b65bb9726f171ca823bbb1b": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b55e207cd3d7757145ad5bc4": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "e74b059fb493d8284da1a47d": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "42ff9befd0a3972a747b4d17": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1fd078a84408b02a9acee96b": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "48dba9a2bca124a329e934a6": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "6dec71fdccd998532c3991b3": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "45bc27075c805f67710e4c98": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "a25e30134343db60fd95d6b2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "dcdc5e62a7f2202bce15b0fa": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7aa853fb05792b5953d6f674": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "dc5eb25c0cf376a9ba4e587d": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "bd3e4eef5fe3a3d11b77d04c": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "78339c725a99dcf66c3188b1": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "b8a3e5e3a6b001d4e603f455": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ff66f488a7b569c57d1eccf1": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "7a01edff42ffca29f6beebda": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "78a8f0b1f9550309b4ef2cdd": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "0bfe410ebe67216eeb91d3e8": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "720712fca40fcde5a2448594": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "5d89482b7c8f2c45a74609c2": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "587a371b566bde67ab8b2b4a": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "c4e36dc6b3d9e674c71212a4": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ec317a17faf7239f4d1e2546": {
+    "support": "no",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "1a34dcb1229e2fc48486310f": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  },
+  "ac24c0439fe32e1f00bf6d9c": {
+    "support": "yes",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "qc-v1",
+    "date": "2026-07-07"
+  }
+}
