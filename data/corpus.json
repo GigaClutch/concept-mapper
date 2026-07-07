@@ -56,7 +56,7 @@
       "priority": 1,
       "retrieved": "2026-06-12",
       "grounded_edges": 4,
-      "proposed_edges": 1
+      "proposed_edges": 0
     },
     {
       "id": "hume-moral",
@@ -65,7 +65,7 @@
       "priority": 1,
       "retrieved": "2026-06-12",
       "grounded_edges": 4,
-      "proposed_edges": 1
+      "proposed_edges": 0
     },
     {
       "id": "mill-moral-political",
@@ -92,7 +92,7 @@
       "priority": 1,
       "retrieved": "2026-06-12",
       "grounded_edges": 12,
-      "proposed_edges": 2
+      "proposed_edges": 1
     },
     {
       "id": "moral-realism",
@@ -119,7 +119,7 @@
       "priority": 2,
       "retrieved": "2026-06-12",
       "grounded_edges": 6,
-      "proposed_edges": 2
+      "proposed_edges": 1
     },
     {
       "id": "moral-cognitivism",
@@ -164,7 +164,7 @@
       "priority": 2,
       "retrieved": "2026-06-12",
       "grounded_edges": 3,
-      "proposed_edges": 3
+      "proposed_edges": 2
     },
     {
       "id": "egoism",
@@ -182,7 +182,7 @@
       "priority": 2,
       "retrieved": "2026-06-12",
       "grounded_edges": 6,
-      "proposed_edges": 3
+      "proposed_edges": 1
     },
     {
       "id": "moral-luck",
@@ -245,7 +245,7 @@
       "priority": 2,
       "retrieved": "2026-06-12",
       "grounded_edges": 5,
-      "proposed_edges": 3
+      "proposed_edges": 2
     },
     {
       "id": "feminism-ethics",

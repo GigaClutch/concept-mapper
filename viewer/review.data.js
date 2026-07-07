@@ -1,5 +1,5 @@
 window.REVIEW = {
- "fingerprint": "cc312d81ef076591",
+ "fingerprint": "4f393a30ac341937",
  "labels": {
   "normative_ethics": {
    "label": "Normative Ethics",
@@ -1059,21 +1059,6 @@ window.REVIEW = {
  ],
  "proposed_edges": [
   {
-   "source": "nicomachean_ethics",
-   "type": "INTRODUCED_IN",
-   "target": "golden_mean",
-   "quote": "every ethical virtue is a condition intermediate (a “golden mean” as it is popularly known) between two other states, one involving excess, and the other deficiency",
-   "article_id": "aristotle-ethics",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The Golden Mean concept comes from the Nicomachean Ethics, not the other way around; the NE introduced the doctrine, it wasn't introduced in it by something called 'Golden Mean'.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "nicomachean_ethics|INTRODUCED_IN|golden_mean|aristotle-ethics"
-  },
-  {
    "source": "jeremy_bentham",
    "type": "INFLUENCED_BY",
    "target": "david_hume",
@@ -1104,34 +1089,20 @@ window.REVIEW = {
    "key": "contractarianism|DERIVED_FROM|contractualism|contractarianism"
   },
   {
-   "source": "john_rawls",
+   "source": "social_contract",
    "type": "DEVELOPED_BY",
-   "target": "social_contract",
+   "target": "john_rawls",
    "quote": "The most important contemporary political social contract theorist is John Rawls, who effectively resurrected social contract theory in the second half of the 20th century",
    "article_id": "contractarianism",
    "status": "quarantined",
+   "flipped": true,
    "assist": {
     "verdict": "incorrect",
     "quote_check": "no",
-    "reason": "The relationship is reversed: Rawls developed (revived) social contract theory, not the other way around. The quote confirms this but the claim states the wrong direction.",
+    "reason": "Social contract theory originated with Hobbes, Locke, and Rousseau in the 17th–18th centuries; Rawls revived it but did not develop it.",
     "model": "claude-sonnet-4-6"
    },
-   "key": "john_rawls|DEVELOPED_BY|social_contract|contractarianism"
-  },
-  {
-   "source": "t_m_scanlon",
-   "type": "DEVELOPED_BY",
-   "target": "contractualism",
-   "quote": "Where Gauthier, Narveson, or economist James Buchanan are the paradigm Hobbesian contractarians, Rawls or Thomas Scanlon would be the paradigm Kantian contractualists.",
-   "article_id": "contractarianism",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The claim reverses the relationship: Scanlon developed contractualism, not the other way around. The quote confirms Scanlon as a contractualist thinker, not that contractualism developed him.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "t_m_scanlon|DEVELOPED_BY|contractualism|contractarianism"
+   "key": "social_contract|DEVELOPED_BY|john_rawls|contractarianism"
   },
   {
    "source": "contractualism",
@@ -1269,36 +1240,6 @@ window.REVIEW = {
    "key": "justice|PART_OF|virtue|ethics-virtue"
   },
   {
-   "source": "jeremy_bentham",
-   "type": "AUTHORED_BY",
-   "target": "principles_of_morals_and_legislation",
-   "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation",
-   "article_id": "hedonism",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The claim reverses the relationship: Bentham wrote the book, not the other way around. The quote correctly states Bentham wrote it, contradicting the claim.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "jeremy_bentham|AUTHORED_BY|principles_of_morals_and_legislation|hedonism"
-  },
-  {
-   "source": "john_stuart_mill",
-   "type": "AUTHORED_BY",
-   "target": "utilitarianism_mill",
-   "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure, and its value is irreducibly a matter of its quality as well as its quantity.",
-   "article_id": "hedonism",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The claim reverses author and work: Mill wrote Utilitarianism, not the other way around. The quote does not address this authorship claim.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "john_stuart_mill|AUTHORED_BY|utilitarianism_mill|hedonism"
-  },
-  {
    "source": "hedonism",
    "type": "PART_OF",
    "target": "consequentialism",
@@ -1312,21 +1253,6 @@ window.REVIEW = {
     "model": "claude-sonnet-4-6"
    },
    "key": "hedonism|PART_OF|consequentialism|hedonism"
-  },
-  {
-   "source": "david_hume",
-   "type": "DEVELOPED_BY",
-   "target": "moral_sentimentalism",
-   "quote": "Hume sides with the moral sense theorists: we gain awareness of moral good and evil by experiencing the pleasure of approval and the uneasiness of disapproval when we contemplate a character trait or action",
-   "article_id": "hume-moral",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The relationship is reversed: Hume was a key developer of Moral Sentimentalism, not developed by it. The quote also doesn't support this directional claim.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "david_hume|DEVELOPED_BY|moral_sentimentalism|hume-moral"
   },
   {
    "source": "moral_intuitionism",
@@ -1389,19 +1315,20 @@ window.REVIEW = {
    "key": "immanuel_kant|CRITIQUES|moral_sentimentalism|kant-hume-morality"
   },
   {
-   "source": "david_hume",
+   "source": "compatibilism",
    "type": "DEVELOPED_BY",
-   "target": "compatibilism",
+   "target": "david_hume",
    "quote": "Hume defends compatibilism in section eight of Enquiry concerning Human Understanding and Book Two of the Treatise (2.3.1–2).",
    "article_id": "kant-hume-morality",
    "status": "quarantined",
+   "flipped": true,
    "assist": {
     "verdict": "incorrect",
     "quote_check": "no",
-    "reason": "The quote says Hume *defends* compatibilism, not that he was *developed by* it. The claim reverses the relationship entirely.",
+    "reason": "Compatibilism predates Hume; Hobbes and others defended it earlier. Hume argued for it but did not 'develop' it. The quote only says Hume 'defends' it, not that he developed it.",
     "model": "claude-sonnet-4-6"
    },
-   "key": "david_hume|DEVELOPED_BY|compatibilism|kant-hume-morality"
+   "key": "compatibilism|DEVELOPED_BY|david_hume|kant-hume-morality"
   },
   {
    "source": "duty",
@@ -1449,21 +1376,6 @@ window.REVIEW = {
    "key": "expressivism|CONTRASTS_WITH|moral_cognitivism|metaethics"
   },
   {
-   "source": "g_e_moore",
-   "type": "DEVELOPED_BY",
-   "target": "open_question_argument",
-   "quote": "G. E. Moore argued (at the beginning of the twentieth century) that no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments",
-   "article_id": "metaethics",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The relationship is reversed: Moore developed the Open Question Argument, not the other way around.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "g_e_moore|DEVELOPED_BY|open_question_argument|metaethics"
-  },
-  {
    "source": "moral_cognitivism",
    "type": "CONTRASTS_WITH",
    "target": "moral_anti_realism",
@@ -1479,19 +1391,20 @@ window.REVIEW = {
    "key": "moral_cognitivism|CONTRASTS_WITH|moral_anti_realism|moral-anti-realism"
   },
   {
-   "source": "simon_blackburn",
+   "source": "quasi_realism",
    "type": "EXTENDED_BY",
-   "target": "quasi_realism",
+   "target": "simon_blackburn",
    "quote": "Simon Blackburn, for example, has pursued what he calls a “quasi-realist” program (Blackburn 1984, 1993, 1998).",
    "article_id": "moral-anti-realism",
    "status": "quarantined",
+   "flipped": true,
    "assist": {
     "verdict": "incorrect",
     "quote_check": "no",
-    "reason": "Blackburn developed quasi-realism; he was not 'extended by' it. The direction is reversed: he is the creator, not the recipient of extension.",
+    "reason": "Blackburn originated quasi-realism (Blackburn 1984); he didn't merely extend it. The claim implies someone else created it first, which is wrong.",
     "model": "claude-sonnet-4-6"
    },
-   "key": "simon_blackburn|EXTENDED_BY|quasi_realism|moral-anti-realism"
+   "key": "quasi_realism|EXTENDED_BY|simon_blackburn|moral-anti-realism"
   },
   {
    "source": "error_theory",
@@ -1627,36 +1540,6 @@ window.REVIEW = {
     "model": "claude-sonnet-4-6"
    },
    "key": "moral_relativism|PART_OF|metaethics|moral-relativism"
-  },
-  {
-   "source": "david_hume",
-   "type": "AUTHORED_BY",
-   "target": "enquiry_principles_of_morals",
-   "quote": "in the dialogue David Hume attached to An Enquiry Concerning the Principles of Morals",
-   "article_id": "moral-relativism",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The claim reverses the relationship: David Hume wrote An Enquiry Concerning the Principles of Morals, not the other way around.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "david_hume|AUTHORED_BY|enquiry_principles_of_morals|moral-relativism"
-  },
-  {
-   "source": "thomas_aquinas",
-   "type": "DEVELOPED_BY",
-   "target": "natural_law",
-   "quote": "If any moral theory is a theory of natural law, it is Aquinas’s. (Every introductory ethics anthology that includes material on natural law theory includes material by or about Aquinas; every encyclopedia article on natural law thought refers to Aquinas.)",
-   "article_id": "natural-law-ethics",
-   "status": "quarantined",
-   "assist": {
-    "verdict": "incorrect",
-    "quote_check": "no",
-    "reason": "The relationship is reversed: Aquinas developed Natural Law theory, he was not 'developed by' it. The quote confirms Aquinas as the key figure, not a product of the tradition.",
-    "model": "claude-sonnet-4-6"
-   },
-   "key": "thomas_aquinas|DEVELOPED_BY|natural_law|natural-law-ethics"
   },
   {
    "source": "alasdair_macintyre",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "built": "2026-06-23",
+    "built": "2026-07-07",
     "model": "claude-sonnet-4-6",
-    "checked": 85,
+    "checked": 88,
     "note": "independent verifier verdicts for the review queue; verdict in {correct,incorrect,unsure}"
   },
   "items": {
@@ -600,6 +600,27 @@
       "reason": "Nagel co-launched the moral luck debate with Bernard Williams in 1976; his paper 'Moral Luck' named and defined the central problem.",
       "model": "claude-sonnet-4-6",
       "date": "2026-06-23"
+    },
+    "proposed_edges|social_contract|DEVELOPED_BY|john_rawls": {
+      "verdict": "incorrect",
+      "quote_check": "no",
+      "reason": "Social contract theory originated with Hobbes, Locke, and Rousseau in the 17th–18th centuries; Rawls revived it but did not develop it.",
+      "model": "claude-sonnet-4-6",
+      "date": "2026-07-07"
+    },
+    "proposed_edges|compatibilism|DEVELOPED_BY|david_hume": {
+      "verdict": "incorrect",
+      "quote_check": "no",
+      "reason": "Compatibilism predates Hume; Hobbes and others defended it earlier. Hume argued for it but did not 'develop' it. The quote only says Hume 'defends' it, not that he developed it.",
+      "model": "claude-sonnet-4-6",
+      "date": "2026-07-07"
+    },
+    "proposed_edges|quasi_realism|EXTENDED_BY|simon_blackburn": {
+      "verdict": "incorrect",
+      "quote_check": "no",
+      "reason": "Blackburn originated quasi-realism (Blackburn 1984); he didn't merely extend it. The claim implies someone else created it first, which is wrong.",
+      "model": "claude-sonnet-4-6",
+      "date": "2026-07-07"
     }
   }
 }

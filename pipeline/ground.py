@@ -26,7 +26,8 @@ import sys
 import time
 from pathlib import Path
 
-from common import (PRICES, atomic_write, call_cost, load_key,
+from backbone import DOMAIN_RANGE
+from common import (PRICES, atomic_write, call_cost, load_key, load_registry,
                     recompute_weights, retry_messages_create)
 from validate import EDGE_TYPES, edge_key, norm
 
@@ -263,6 +264,7 @@ def cmd_extract(args) -> None:
 def cmd_apply(_args) -> None:
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
     corpus = json.loads((DATA / "corpus.json").read_text(encoding="utf-8"))
+    _, _, reg_by_id, _ = load_registry(DATA / "registry.json")
     by_key = {edge_key(e["source"], e["target"], e["type"]): e for e in graph["edges"]}
     grounded_per_article: dict[str, int] = {}
     proposed_per_article: dict[str, int] = {}
@@ -288,9 +290,21 @@ def cmd_apply(_args) -> None:
             grounded_per_article[aid] += 1
         existing = {edge_key(e["source"], e["target"], e["type"]) for e in graph["edges"]}
         for p in doc["proposed_edges"]:
+            # D4 domain/range gate with auto-flip: a proposal that is invalid
+            # as stated but valid reversed (e.g. person DEVELOPED_BY concept)
+            # is a mechanical direction error — correct it and badge it so the
+            # reviewer sees what happened; ~30% of the queue was this
+            flipped = False
+            s_t = (reg_by_id.get(p["source"]) or {}).get("type")
+            t_t = (reg_by_id.get(p["target"]) or {}).get("type")
+            dom, rng = DOMAIN_RANGE[p["type"]]
+            if (s_t not in dom or t_t not in rng) and t_t in dom and s_t in rng:
+                p = {**p, "source": p["target"], "target": p["source"]}
+                flipped = True
             if edge_key(p["source"], p["target"], p["type"]) in existing:
                 continue
-            proposals.append({**p, "article_id": aid, "status": "quarantined"})
+            proposals.append({**p, "article_id": aid, "status": "quarantined",
+                              **({"flipped": True} if flipped else {})})
             proposed_per_article[aid] = proposed_per_article.get(aid, 0) + 1
 
     recompute_weights(graph["edges"])

@@ -39,6 +39,7 @@ def recompute_weights(edges: list[dict]) -> list[dict]:
 def atomic_write(path: Path, doc) -> None:
     """Write JSON (dict/list) or raw text via tmp + replace; never a torn file."""
     path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     text = doc if isinstance(doc, str) else \
         json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
     tmp = path.with_suffix(".tmp")

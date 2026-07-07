@@ -12,7 +12,9 @@ Safety: a per-session budget cap; graph.json/registry.json are snapshotted
 before every research call, validate.py runs after it, and any failure (or
 red validation) restores the snapshot byte-for-byte. Viewer data bundles are
 rebuilt after every successful change so the static build never goes stale.
-Single-threaded on purpose — requests serialize, so file writes never race.
+Static requests are served concurrently (a browser's idle preconnect socket
+would deadlock a single-threaded server); the two MUTATING endpoints share
+one lock, so file writes still never race.
 """
 
 from __future__ import annotations
@@ -21,21 +23,34 @@ import argparse
 import json
 import subprocess
 import sys
+import threading
 from functools import partial
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 PIPELINE = ROOT / "pipeline"
 SNAPSHOT_FILES = (DATA / "graph.json", DATA / "registry.json")
+# applying review decisions touches all five review-governed files
+DECISION_FILES = SNAPSHOT_FILES + (DATA / "verification_sample.json",
+                                   DATA / "quarantine" / "proposed_edges.json",
+                                   DATA / "quarantine" / "proposed_nodes.json")
 
 state = {"spent": 0.0, "cap": 1.50}
+MUTEX = threading.Lock()  # serializes the endpoints that write data files
 
 
-def run_script(name: str) -> subprocess.CompletedProcess:
-    return subprocess.run([sys.executable, str(PIPELINE / name)],
+def run_script(name: str, *args: str) -> subprocess.CompletedProcess:
+    return subprocess.run([sys.executable, str(PIPELINE / name), *args],
                           capture_output=True, text=True, cwd=ROOT)
+
+
+def restore(snapshots: dict) -> None:
+    for p, b in snapshots.items():
+        tmp = p.with_suffix(".tmp")
+        tmp.write_bytes(b)
+        tmp.replace(p)
 
 
 def rebuild_bundles() -> None:
@@ -60,27 +75,46 @@ class Handler(SimpleHTTPRequestHandler):
             return
         super().do_GET()
 
-    def do_POST(self):
-        if self.path != "/api/research":
-            self._json(404, {"error": "unknown endpoint"})
-            return
-        # this endpoint spends API money: reject cross-site requests (a page in
-        # the owner's browser can fire simple POSTs at localhost without CORS)
+    def _read_guarded(self, max_len: int) -> bytes | None:
+        """Cross-site and size guard shared by the POST endpoints (they mutate
+        data and spend money; a page in the owner's browser can fire simple
+        POSTs at localhost without CORS). Returns the body, or None with the
+        error response already sent."""
         host = (self.headers.get("Host") or "").split(":")[0].casefold()
         origin = (self.headers.get("Origin") or "").rstrip("/")
         allowed_origins = {f"http://localhost:{self.server.server_port}",
                            f"http://127.0.0.1:{self.server.server_port}"}
         if host not in ("localhost", "127.0.0.1") or \
                 (origin and origin not in allowed_origins):
-            self._json(403, {"error": "forbidden: research is local-only"})
-            return
+            self._json(403, {"error": "forbidden: this endpoint is local-only"})
+            return None
         try:
             length = int(self.headers.get("Content-Length", "0"))
-            if length > 4096:
-                self._json(413, {"error": "request body too large"})
-                return
-            node_id = json.loads(self.rfile.read(length) or b"{}").get("id", "")
-        except (ValueError, json.JSONDecodeError):
+        except ValueError:
+            self._json(400, {"error": "bad request body"})
+            return None
+        if length > max_len:
+            self._json(413, {"error": "request body too large"})
+            return None
+        return self.rfile.read(length)
+
+    def do_POST(self):
+        if self.path == "/api/research":
+            with MUTEX:
+                self._post_research()
+        elif self.path == "/api/decisions":
+            with MUTEX:
+                self._post_decisions()
+        else:
+            self._json(404, {"error": "unknown endpoint"})
+
+    def _post_research(self):
+        body = self._read_guarded(4096)
+        if body is None:
+            return
+        try:
+            node_id = json.loads(body or b"{}").get("id", "")
+        except json.JSONDecodeError:
             self._json(400, {"error": "bad request body"})
             return
         if state["spent"] >= state["cap"]:
@@ -92,10 +126,7 @@ class Handler(SimpleHTTPRequestHandler):
         snapshots = {p: p.read_bytes() for p in SNAPSHOT_FILES}
 
         def rollback(msg: str, code: int = 500):
-            for p, b in snapshots.items():
-                tmp = p.with_suffix(".tmp")
-                tmp.write_bytes(b)
-                tmp.replace(p)
+            restore(snapshots)
             rebuild_bundles()
             self._json(code, {"error": msg})
 
@@ -122,6 +153,47 @@ class Handler(SimpleHTTPRequestHandler):
         rebuild_bundles()
         self._json(200, {**delta, "spent": round(state["spent"], 4)})
 
+    def _post_decisions(self):
+        """One-click review: save the export, run the whole apply chain
+        (apply_review -> metrics -> validate -> evaluate --graph), roll back
+        every review-governed file on any failure, rebuild bundles."""
+        body = self._read_guarded(512 * 1024)
+        if body is None:
+            return
+        try:
+            doc = json.loads(body or b"{}")
+            decided = sum(1 for sec in doc.get("decisions", {}).values()
+                          for d in sec if d.get("verdict"))
+        except (json.JSONDecodeError, AttributeError, TypeError):
+            self._json(400, {"error": "bad request body"})
+            return
+        if not decided:
+            self._json(400, {"error": "the export contains no decisions"})
+            return
+
+        snapshots = {p: p.read_bytes() for p in DECISION_FILES if p.exists()}
+        dec_file = DATA / "review_decisions.json"
+        tmp = dec_file.with_suffix(".tmp")
+        tmp.write_bytes(body)
+        tmp.replace(dec_file)
+
+        summary = ""
+        for name, args in (("apply_review.py", ()), ("metrics.py", ()),
+                           ("validate.py", ()), ("evaluate.py", ("--graph",))):
+            cp = run_script(name, *args)
+            if name == "apply_review.py":
+                summary = "\n".join(cp.stdout.strip().splitlines()[-3:])
+            if cp.returncode != 0:
+                restore(snapshots)
+                rebuild_bundles()
+                tail = "\n".join((cp.stdout + cp.stderr).strip().splitlines()[-4:])
+                self._json(500, {"error": f"{name} failed — nothing was applied "
+                                          f"(rolled back):\n{tail}"})
+                return
+        rebuild_bundles()
+        print(f"applied {decided} review decision(s)")
+        self._json(200, {"ok": True, "applied": decided, "summary": summary})
+
     def log_message(self, fmt, *args):
         if "/api/" in (args[0] if args else ""):
             super().log_message(fmt, *args)
@@ -137,7 +209,7 @@ def main() -> None:
     handler = partial(Handler, directory=str(ROOT / "viewer"))
     print(f"Concept Mapper at http://localhost:{args.port}/ "
           f"(research budget cap ${args.max_cost:.2f})")
-    HTTPServer(("127.0.0.1", args.port), handler).serve_forever()
+    ThreadingHTTPServer(("127.0.0.1", args.port), handler).serve_forever()
 
 
 if __name__ == "__main__":

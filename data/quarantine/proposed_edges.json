@@ -2,18 +2,10 @@
   "meta": {
     "built": "2026-06-12",
     "source": "ground gr-v2",
-    "count": 44,
+    "count": 36,
     "note": "evidence-backed edges proposed by the grounding pass; await Phase 5 human review, never merged directly (D3)"
   },
   "proposals": [
-    {
-      "source": "nicomachean_ethics",
-      "type": "INTRODUCED_IN",
-      "target": "golden_mean",
-      "quote": "every ethical virtue is a condition intermediate (a “golden mean” as it is popularly known) between two other states, one involving excess, and the other deficiency",
-      "article_id": "aristotle-ethics",
-      "status": "quarantined"
-    },
     {
       "source": "jeremy_bentham",
       "type": "INFLUENCED_BY",
@@ -31,20 +23,13 @@
       "status": "quarantined"
     },
     {
-      "source": "john_rawls",
+      "source": "social_contract",
       "type": "DEVELOPED_BY",
-      "target": "social_contract",
+      "target": "john_rawls",
       "quote": "The most important contemporary political social contract theorist is John Rawls, who effectively resurrected social contract theory in the second half of the 20th century",
       "article_id": "contractarianism",
-      "status": "quarantined"
-    },
-    {
-      "source": "t_m_scanlon",
-      "type": "DEVELOPED_BY",
-      "target": "contractualism",
-      "quote": "Where Gauthier, Narveson, or economist James Buchanan are the paradigm Hobbesian contractarians, Rawls or Thomas Scanlon would be the paradigm Kantian contractualists.",
-      "article_id": "contractarianism",
-      "status": "quarantined"
+      "status": "quarantined",
+      "flipped": true
     },
     {
       "source": "contractualism",
@@ -119,35 +104,11 @@
       "status": "quarantined"
     },
     {
-      "source": "jeremy_bentham",
-      "type": "AUTHORED_BY",
-      "target": "principles_of_morals_and_legislation",
-      "quote": "Jeremy Bentham asserted both psychological and ethical hedonism with the first two sentences of his book An Introduction to the Principles of Morals and Legislation",
-      "article_id": "hedonism",
-      "status": "quarantined"
-    },
-    {
-      "source": "john_stuart_mill",
-      "type": "AUTHORED_BY",
-      "target": "utilitarianism_mill",
-      "quote": "J.S. Mill (ch. 2) developed an alternative approach according to which there is ‘higher’ and ‘lower’ pleasure, and its value is irreducibly a matter of its quality as well as its quantity.",
-      "article_id": "hedonism",
-      "status": "quarantined"
-    },
-    {
       "source": "hedonism",
       "type": "PART_OF",
       "target": "consequentialism",
       "quote": "Each also has broader philosophical significance, especially but not only in utilitarian and egoist traditions of ethical thought",
       "article_id": "hedonism",
-      "status": "quarantined"
-    },
-    {
-      "source": "david_hume",
-      "type": "DEVELOPED_BY",
-      "target": "moral_sentimentalism",
-      "quote": "Hume sides with the moral sense theorists: we gain awareness of moral good and evil by experiencing the pleasure of approval and the uneasiness of disapproval when we contemplate a character trait or action",
-      "article_id": "hume-moral",
       "status": "quarantined"
     },
     {
@@ -183,12 +144,13 @@
       "status": "quarantined"
     },
     {
-      "source": "david_hume",
+      "source": "compatibilism",
       "type": "DEVELOPED_BY",
-      "target": "compatibilism",
+      "target": "david_hume",
       "quote": "Hume defends compatibilism in section eight of Enquiry concerning Human Understanding and Book Two of the Treatise (2.3.1–2).",
       "article_id": "kant-hume-morality",
-      "status": "quarantined"
+      "status": "quarantined",
+      "flipped": true
     },
     {
       "source": "duty",
@@ -215,14 +177,6 @@
       "status": "quarantined"
     },
     {
-      "source": "g_e_moore",
-      "type": "DEVELOPED_BY",
-      "target": "open_question_argument",
-      "quote": "G. E. Moore argued (at the beginning of the twentieth century) that no naturalist account of morality could do justice to what we are actually thinking and claiming when we make moral judgments",
-      "article_id": "metaethics",
-      "status": "quarantined"
-    },
-    {
       "source": "moral_cognitivism",
       "type": "CONTRASTS_WITH",
       "target": "moral_anti_realism",
@@ -231,12 +185,13 @@
       "status": "quarantined"
     },
     {
-      "source": "simon_blackburn",
+      "source": "quasi_realism",
       "type": "EXTENDED_BY",
-      "target": "quasi_realism",
+      "target": "simon_blackburn",
       "quote": "Simon Blackburn, for example, has pursued what he calls a “quasi-realist” program (Blackburn 1984, 1993, 1998).",
       "article_id": "moral-anti-realism",
-      "status": "quarantined"
+      "status": "quarantined",
+      "flipped": true
     },
     {
       "source": "error_theory",
@@ -308,22 +263,6 @@
       "target": "metaethics",
       "quote": "Moral relativism is an important topic in metaethics.",
       "article_id": "moral-relativism",
-      "status": "quarantined"
-    },
-    {
-      "source": "david_hume",
-      "type": "AUTHORED_BY",
-      "target": "enquiry_principles_of_morals",
-      "quote": "in the dialogue David Hume attached to An Enquiry Concerning the Principles of Morals",
-      "article_id": "moral-relativism",
-      "status": "quarantined"
-    },
-    {
-      "source": "thomas_aquinas",
-      "type": "DEVELOPED_BY",
-      "target": "natural_law",
-      "quote": "If any moral theory is a theory of natural law, it is Aquinas’s. (Every introductory ethics anthology that includes material on natural law theory includes material by or about Aquinas; every encyclopedia article on natural law thought refers to Aquinas.)",
-      "article_id": "natural-law-ethics",
       "status": "quarantined"
     },
     {

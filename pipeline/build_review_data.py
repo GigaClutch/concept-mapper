@@ -57,10 +57,18 @@ def main() -> None:
          "reason": n.get("definition", "")}
         for n in graph["nodes"] if n.get("status") == "provisional"]
 
+    # decided items leave the queue: applied sample verdicts, accepted/rejected
+    # proposals, and ruled-on node suggestions stay in their data files as the
+    # audit trail but are no longer review work
     sections = {
-        "sample": with_assist("sample", sample["sample"], ek),
-        "proposed_edges": with_assist("proposed_edges", pedges["proposals"], ek),
-        "proposed_nodes": with_assist("proposed_nodes", pnodes["proposed_nodes"], lambda it: it["label"]),
+        "sample": with_assist("sample", [s for s in sample["sample"]
+                                         if not s.get("verdict")], ek),
+        "proposed_edges": with_assist("proposed_edges", [
+            p for p in pedges["proposals"]
+            if p.get("status", "quarantined") == "quarantined"], ek),
+        "proposed_nodes": with_assist("proposed_nodes", [
+            p for p in pnodes["proposed_nodes"] if not p.get("status")],
+            lambda it: it["label"]),
         "researched_edges": with_assist("researched_edges", researched_edges, ek),
         "researched_nodes": with_assist("researched_nodes", researched_nodes, lambda it: it["id"]),
     }

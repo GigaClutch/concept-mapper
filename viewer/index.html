@@ -489,6 +489,8 @@ function showEdge(idx) {
     <span class="badge" style="background:${FAM_CSS[fam]}">${fam}</span>
     <h2 style="margin-top:8px;font-size:15px">${esc(s.label)} <span style="color:${FAM_CSS[fam]}">${e.type}</span> ${esc(t.label)}</h2>
     <div class="sub">weight ${e.weight} · origin: ${e.origin} · ${e.status}</div>
+    ${e.disputed ? `<div class="quote" style="border-left-color:#c08a2b">⚠ <b>Disputed:</b> an automated
+      check questions this claim — it is awaiting human review. ${esc(e.disputed)}</div>` : ""}
     ${e.evidence.length
       ? `<div class="edge-list"><h3>Evidence (${e.evidence.length})</h3>` +
         e.evidence.map(ev => {

@@ -23,12 +23,15 @@
            font-size: 12.5px; cursor: pointer; color: var(--ink); }
   button:hover { border-color: var(--accent); }
   #export { background: var(--accent); color: #fff; border-color: var(--accent); margin-left: auto; }
+  #apply { background: var(--accent); color: #fff; border-color: var(--accent); }
+  button:disabled { opacity: .6; cursor: default; }
   main { max-width: 860px; margin: 0 auto; padding: 18px; }
   .intro { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 6px 0 18px; }
   h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 26px 0 10px; }
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
   .card.decided-accept { border-left: 4px solid var(--ok); border-radius: 0 10px 10px 0; }
   .card.decided-reject { border-left: 4px solid var(--no); border-radius: 0 10px 10px 0; opacity: .75; }
+  .card.selected { outline: 2px solid var(--accent); outline-offset: 2px; }
   .claim { font-size: 15px; line-height: 1.4; }
   .claim b { font-weight: 600; }
   .rel { font-size: 10.5px; font-weight: 600; letter-spacing: .04em; color: var(--accent); }
@@ -62,8 +65,10 @@
   <div id="bar"><div></div></div>
   <div id="progress"></div>
   <label class="atten"><input type="checkbox" id="attention-only"> needs attention only</label>
+  <label class="atten"><input type="checkbox" id="hide-decided"> hide decided</label>
   <button id="accept-safe" title="Accept every undecided item the checker rates correct AND backs with a real supporting quote">✨ Accept the checked-and-sourced</button>
   <button id="reset">Start over</button>
+  <button id="apply" style="display:none" title="Send your decisions to the local app server, which updates the data files and rebuilds the map">⚡ Apply decisions to the map</button>
   <button id="export">Export decisions</button>
 </header>
 <main>
@@ -76,6 +81,7 @@
     quote and the reason. Choices save in this browser; <b>Export decisions</b> downloads a file to save
     as <code>data/review_decisions.json</code>, which the pipeline applies.
   </p>
+  <p class="intro"><kbd>j</kbd>/<kbd>k</kbd> move · <kbd>y</kbd> accept · <kbd>n</kbd> reject · <kbd>u</kbd> undo</p>
   <div id="sections"></div>
 </main>
 
@@ -104,6 +110,9 @@ if (!state._fp) state._fp = R.fingerprint;
 const save = () => localStorage.setItem(KEY, JSON.stringify(state));
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const lab = id => (R.labels[id] || { label: id }).label;
+let sel = null;            // { sec, key } of the keyboard-selected card
+let serverUp = false;      // set true when the local app server answers api/status
+const cardEls = () => [...document.querySelectorAll("#sections .card")];
 
 const SENTENCE = {
   IS_A: "is a kind of", PART_OF: "is part of", SUBCATEGORY_OF: "is a subcategory of",
@@ -135,19 +144,23 @@ const SECTIONS = [
 ];
 
 function claimHtml(it, kind) {
-  if (NODE_KINDS.has(kind))
-    return `<div class="claim"><b>${esc(it.label)}</b> <span class="rel">${esc(it.type || "?")}</span></div>
+  if (NODE_KINDS.has(kind)) {
+    let html = `<div class="claim"><b>${esc(it.label)}</b> <span class="rel">${esc(it.type || "?")}</span></div>
             <div class="meta">${esc(it.reason || it.definition || "")}</div>`;
+    if (kind === "proposed_nodes")
+      html += `<div class="meta"><a href="https://plato.stanford.edu/search/searcher.py?query=${
+        encodeURIComponent(it.label)}" target="_blank">search the Stanford Encyclopedia</a></div>`;
+    return html;
+  }
   const verb = SENTENCE[it.type] || it.type;
-  let html = `<div class="claim"><b>${esc(lab(it.source))}</b> ${esc(verb)} <b>${esc(lab(it.target))}</b>
+  const node = id => `<b><a href="index.html#/${encodeURIComponent(id)}" target="_blank">${esc(lab(id))}</a></b>`;
+  let html = `<div class="claim">${node(it.source)} ${esc(verb)} ${node(it.target)}
               &nbsp;<span class="rel">${esc(it.type)}</span></div>`;
   if (it.rationale) html += `<div class="why">${esc(it.rationale)}</div>`;
-  if (it.quote) {
-    const a = R.articles[it.article_id];
-    html += `<div class="why">“${esc(it.quote)}”<span class="src">${
-      a ? `<a href="${a.url}" target="_blank">${esc(a.title)}</a> (Stanford Encyclopedia of Philosophy)` : esc(it.article_id || "")
-    }</span></div>`;
-  }
+  const a = R.articles[it.article_id];
+  const src = a ? `<a href="${a.url}" target="_blank">${esc(a.title)}</a> (Stanford Encyclopedia of Philosophy)` : esc(it.article_id || "");
+  if (it.quote) html += `<div class="why">“${esc(it.quote)}”<span class="src">${src}</span></div>`;
+  else if (it.article_id) html += `<div class="why"><span class="src">read the source article: ${src}</span></div>`;
   return html;
 }
 
@@ -174,6 +187,9 @@ function assistHtml(it) {
           <span class="amodel">— independent check by ${esc(it.assist.model)}</span></div>`;
 }
 const isSafe = it => assistInfo(it).safe;
+const flippedHtml = it => it.flipped === true
+  ? `<div class="assist okish">↺ direction auto-corrected — the model proposed this relationship backwards; shown here the right way round.</div>`
+  : "";
 
 function staleKeys() {
   // saved decisions whose item is no longer in the queue (identity-keyed, so
@@ -204,9 +220,11 @@ function render() {
     };
   }
   const attenOnly = document.getElementById("attention-only").checked;
+  const hideDecided = document.getElementById("hide-decided").checked;
   for (const sec of SECTIONS) {
     const visible = sec.items
-      .filter(it => !(attenOnly && !state[sec.key][it.key]?.verdict && isSafe(it)));
+      .filter(it => !(attenOnly && !state[sec.key][it.key]?.verdict && isSafe(it)))
+      .filter(it => !(hideDecided && state[sec.key][it.key]?.verdict));
     if (!visible.length) continue;
     const h = document.createElement("h2");
     h.textContent = sec.title;
@@ -219,7 +237,8 @@ function render() {
       const d = state[sec.key][it.key] || {};
       const card = document.createElement("div");
       card.className = "card" + (d.verdict ? ` decided-${d.verdict}` : "");
-      card.innerHTML = claimHtml(it, sec.key) + assistHtml(it) + `
+      card.dataset.sec = sec.key; card.dataset.key = it.key;
+      card.innerHTML = claimHtml(it, sec.key) + flippedHtml(it) + assistHtml(it) + `
         <div class="row">
           <button class="acc">✓ Accept</button>
           <button class="rej">✗ Reject</button>
@@ -246,9 +265,46 @@ function render() {
     `${done} / ${total} decided` + (safe ? ` · ${safe} safe to bulk-accept` : "");
   document.querySelector("#bar div").style.width = total ? (100 * done / total) + "%" : "0%";
   document.getElementById("accept-safe").style.display = safe ? "" : "none";
+  document.getElementById("apply").style.display = serverUp && done ? "" : "none";
+  if (sel) {
+    const c = cardEls().find(c => c.dataset.sec === sel.sec && c.dataset.key === sel.key);
+    if (c) c.classList.add("selected");
+  }
 }
 
 document.getElementById("attention-only").onchange = render;
+document.getElementById("hide-decided").onchange = render;
+
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+  if (!["j", "k", "y", "n", "u"].includes(e.key)) return;
+  const cards = cardEls();
+  if (!cards.length) return;
+  const idx = sel ? cards.findIndex(c => c.dataset.sec === sel.sec && c.dataset.key === sel.key) : -1;
+  if (e.key === "j" || e.key === "k") {
+    const next = idx === -1 ? (e.key === "j" ? 0 : cards.length - 1)
+      : Math.min(Math.max(idx + (e.key === "j" ? 1 : -1), 0), cards.length - 1);
+    if (idx !== -1) cards[idx].classList.remove("selected");
+    sel = { sec: cards[next].dataset.sec, key: cards[next].dataset.key };
+    cards[next].classList.add("selected");
+    cards[next].scrollIntoView({ block: "center" });
+    return;
+  }
+  if (idx === -1) return;
+  if (e.key === "y" || e.key === "n") {
+    state[sel.sec][sel.key] = { ...state[sel.sec][sel.key], verdict: e.key === "y" ? "accept" : "reject" };
+    save();
+    const next = cards.slice(idx + 1).find(c => !state[c.dataset.sec][c.dataset.key]?.verdict);
+    if (next) sel = { sec: next.dataset.sec, key: next.dataset.key };
+    render();  // re-applies .selected by key
+    const c = cardEls().find(c => c.dataset.sec === sel.sec && c.dataset.key === sel.key);
+    if (c) c.scrollIntoView({ block: "center" });
+  } else if (e.key === "u") {
+    if (state[sel.sec][sel.key]) { delete state[sel.sec][sel.key].verdict; save(); }
+    render();
+  }
+});
 document.getElementById("accept-safe").onclick = () => {
   let n = 0;
   for (const sec of SECTIONS) sec.items.forEach(it => {
@@ -263,7 +319,7 @@ document.getElementById("accept-safe").onclick = () => {
     : "Nothing left to bulk-accept.");
 };
 
-document.getElementById("export").onclick = () => {
+function buildExport() {
   const out = { exported: new Date().toISOString().slice(0, 10), decisions: {} };
   for (const sec of SECTIONS) {
     out.decisions[sec.key] = sec.items.map(it => {
@@ -274,12 +330,38 @@ document.getElementById("export").onclick = () => {
       return { ...id, verdict: d.verdict || "", note: d.note || "" };
     });
   }
-  const blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
+  return out;
+}
+
+document.getElementById("export").onclick = () => {
+  const blob = new Blob([JSON.stringify(buildExport(), null, 2)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
   a.download = "review_decisions.json";
   a.click();
 };
+
+document.getElementById("apply").onclick = async () => {
+  const n = SECTIONS.reduce((c, s) => c + s.items.filter(it => state[s.key][it.key]?.verdict).length, 0);
+  if (!confirm(`Apply ${n} decision(s) to the map? This updates the data files; validation runs and everything rolls back if it fails.`)) return;
+  const btn = document.getElementById("apply");
+  btn.disabled = true; btn.textContent = "applying…";
+  try {
+    const r = await fetch("api/decisions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(buildExport()),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && j.ok) { alert("Applied.\n\n" + (j.summary || "")); location.reload(); return; }
+    alert("Not applied: " + (j.error || `the server responded with status ${r.status}`));
+  } catch (err) {
+    alert("Not applied: " + err.message);
+  }
+  btn.disabled = false; btn.textContent = "⚡ Apply decisions to the map";
+};
+
+fetch("api/status").then(r => { if (r.ok) { serverUp = true; render(); } }).catch(() => {});
 
 document.getElementById("reset").onclick = () => {
   if (confirm("Clear all decisions saved in this browser?")) {

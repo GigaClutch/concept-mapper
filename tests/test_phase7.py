@@ -96,6 +96,10 @@ class TestGroundApplyIdempotent(PatchedDirsMixin, unittest.TestCase):
                           "retrieved": "2026-01-02", "grounded_edges": 1,
                           "proposed_edges": 0}],
         })
+        write(d / "registry.json", {"nodes": [
+            {"id": "a", "label": "A", "type": "concept"},
+            {"id": "b", "label": "B", "type": "person"},
+            {"id": "c", "label": "C", "type": "concept"}]})
         write(d / "corpus.json", {
             "meta": {"built": "2026-01-01", "count": 1},
             "articles": [{"id": "art1", "title": "Article One", "url": "u1",
