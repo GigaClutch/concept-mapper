@@ -10,9 +10,11 @@ Re-run after any of the inputs change.
 
 from __future__ import annotations
 
+import hashlib
 import json
-import time
 from pathlib import Path
+
+from common import atomic_write
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -55,21 +57,39 @@ def main() -> None:
          "reason": n.get("definition", "")}
         for n in graph["nodes"] if n.get("status") == "provisional"]
 
-    bundle = {
-        "built": time.strftime("%Y-%m-%d"),
-        "labels": {r["id"]: {"label": r["label"], "type": r["type"]}
-                   for r in registry["nodes"]},
-        "articles": {a["id"]: {"title": a["title"], "url": a["url"]}
-                     for a in corpus["articles"]},
+    sections = {
         "sample": with_assist("sample", sample["sample"], ek),
         "proposed_edges": with_assist("proposed_edges", pedges["proposals"], ek),
         "proposed_nodes": with_assist("proposed_nodes", pnodes["proposed_nodes"], lambda it: it["label"]),
         "researched_edges": with_assist("researched_edges", researched_edges, ek),
         "researched_nodes": with_assist("researched_nodes", researched_nodes, lambda it: it["id"]),
     }
+    # every item carries a stable identity key: review.html stores verdicts by
+    # it (never by array position, which shifts whenever the queue is rebuilt);
+    # proposed_edges include the article because one triple can be proposed by
+    # several articles
+    for name, items in sections.items():
+        for it in items:
+            it["key"] = (it["label"] if name == "proposed_nodes"
+                         else it["id"] if name == "researched_nodes"
+                         else ek(it) + (f"|{it.get('article_id', '')}"
+                                        if name == "proposed_edges" else ""))
+
+    bundle = {
+        # deterministic: same queue -> same bundle bytes (no wall-clock stamp);
+        # the page uses this to detect that saved decisions predate a rebuild
+        "fingerprint": hashlib.sha256(json.dumps(
+            {n: [it["key"] for it in items] for n, items in sections.items()},
+            sort_keys=True).encode("utf-8")).hexdigest()[:16],
+        "labels": {r["id"]: {"label": r["label"], "type": r["type"]}
+                   for r in registry["nodes"]},
+        "articles": {a["id"]: {"title": a["title"], "url": a["url"]}
+                     for a in corpus["articles"]},
+        **sections,
+    }
     out = ROOT / "viewer" / "review.data.js"
-    out.write_text("window.REVIEW = " + json.dumps(bundle, indent=1, ensure_ascii=False)
-                   + ";\n", encoding="utf-8")
+    atomic_write(out, "window.REVIEW = " + json.dumps(bundle, indent=1, ensure_ascii=False)
+                 + ";\n")
     print(f"wrote {out.relative_to(ROOT)}: {len(bundle['sample'])} sampled edges, "
           f"{len(bundle['proposed_edges'])} proposed edges, "
           f"{len(bundle['proposed_nodes'])} proposed nodes, "

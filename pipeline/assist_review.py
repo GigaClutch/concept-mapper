@@ -11,8 +11,9 @@ The verifier returns, in plain English:
     claim (right entities, right direction)? yes | no | no_quote
   - reason: one short sentence a non-expert can sanity-check
 
-Results are written to data/review_assist.json, keyed per item and cached, so
-re-runs are free and only new items cost anything. A cost meter + --max-cost
+Results are written to data/review_assist.json after every item (an
+interrupted run keeps everything already paid for), keyed per item and cached,
+so re-runs are free and only new items cost anything. A cost meter + --max-cost
 hard stop bounds spend. build_review_data.py folds these verdicts into the
 review page, which uses them to bulk-accept the clearly-correct items and flag
 the rest. The human still makes the final call — this only triages the work.
@@ -26,7 +27,7 @@ import sys
 import time
 from pathlib import Path
 
-from ground import PRICES, load_key
+from common import PRICES, atomic_write, call_cost, load_key, retry_messages_create
 from validate import edge_key
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -166,13 +167,23 @@ def main() -> None:
     ap.add_argument("--max-cost", type=float, default=1.50)
     args = ap.parse_args()
 
+    try:
+        key = load_key()
+    except RuntimeError as e:
+        sys.exit(f"error: {e}")
     import anthropic
-    client = anthropic.Anthropic(api_key=load_key())
-    in_p, out_p = PRICES[args.model]
+    client = anthropic.Anthropic(api_key=key)
 
     done = {}
     if ASSIST.exists():
         done = json.loads(ASSIST.read_text(encoding="utf-8")).get("items", {})
+
+    def save():
+        atomic_write(ASSIST, {
+            "meta": {"built": time.strftime("%Y-%m-%d"), "model": args.model,
+                     "checked": len(done), "note": "independent verifier verdicts for the "
+                     "review queue; verdict in {correct,incorrect,unsure}"},
+            "items": done})
 
     items = collect_items()
     if args.sections:
@@ -188,24 +199,24 @@ def main() -> None:
         if spent >= args.max_cost:
             print(f"STOP: cost ${spent:.3f} >= cap ${args.max_cost:.2f}")
             break
-        resp = client.messages.create(
-            model=args.model, max_tokens=400,
+        resp = retry_messages_create(
+            client, model=args.model, max_tokens=400,
             messages=[{"role": "user", "content": build_prompt(it)}],
             output_config={"format": {"type": "json_schema", "schema": SCHEMA}})
+        if resp is None:
+            print(f"  [{i}/{len(todo)}] still rate-limited after retries, stopping run")
+            break
         raw = json.loads(next(b.text for b in resp.content if b.type == "text"))
-        spent += (resp.usage.input_tokens * in_p + resp.usage.output_tokens * out_p) / 1e6
+        spent += call_cost(args.model, resp.usage)
         done[f"{it['section']}|{it['key']}"] = {
             "verdict": raw["verdict"], "quote_check": raw["quote_check"],
             "reason": raw["reason"], "model": args.model, "date": time.strftime("%Y-%m-%d")}
+        save()
         flag = {"correct": "OK ", "incorrect": "BAD", "unsure": "?? "}[raw["verdict"]]
         print(f"  [{i}/{len(todo)}] {flag} {it['claim'][:64]}")
         print(f"          quote_supports={raw['quote_check']} | {raw['reason'][:90]}")
 
-    ASSIST.write_text(json.dumps({
-        "meta": {"built": time.strftime("%Y-%m-%d"), "model": args.model,
-                 "checked": len(done), "note": "independent verifier verdicts for the "
-                 "review queue; verdict in {correct,incorrect,unsure}"},
-        "items": done}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    save()
     tally = {}
     for v in done.values():
         tally[v["verdict"]] = tally.get(v["verdict"], 0) + 1

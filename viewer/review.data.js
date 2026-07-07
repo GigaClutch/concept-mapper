@@ -1,5 +1,5 @@
 window.REVIEW = {
- "built": "2026-06-24",
+ "fingerprint": "cc312d81ef076591",
  "labels": {
   "normative_ethics": {
    "label": "Normative Ethics",
@@ -693,7 +693,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Principia Ethica (1903) was indeed written by G. E. Moore, but the quote only mentions Moore arguing against ethical egoism, not Principia Ethica.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "principia_ethica|AUTHORED_BY|g_e_moore"
   },
   {
    "source": "virtue_ethics",
@@ -707,7 +708,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Hursthouse is a well-known contemporary philosopher who extended virtue ethics, but the quote only mentions Anscombe and does not reference Hursthouse at all.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "virtue_ethics|EXTENDED_BY|rosalind_hursthouse"
   },
   {
    "source": "henry_sidgwick",
@@ -721,7 +723,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly states Sidgwick's views developed out of and in response to Mill's, confirming his influence.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "henry_sidgwick|INFLUENCED_BY|john_stuart_mill"
   },
   {
    "source": "moral_status",
@@ -735,7 +738,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Moral status—who or what deserves moral consideration—is a standard topic in applied ethics, discussed in bioethics, animal ethics, and AI ethics.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_status|PART_OF|applied_ethics"
   },
   {
    "source": "practical_reason",
@@ -749,7 +753,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Aristotle developed the concept of practical reason (phronesis/practical wisdom) in the Nicomachean Ethics, distinguishing it from theoretical reason.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "practical_reason|DEVELOPED_BY|aristotle"
   },
   {
    "source": "what_we_owe_to_each_other",
@@ -763,7 +768,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "What We Owe to Each Other (1998) was indeed written by T. M. Scanlon, but the quote doesn't mention the book title, only Scanlon's contractualism generally.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "what_we_owe_to_each_other|AUTHORED_BY|t_m_scanlon"
   },
   {
    "source": "rights",
@@ -777,7 +783,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Rights-based theories are a standard subtype of deontological ethics, but the quote discusses the Right vs. Good priority, not rights as a component of deontology.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "rights|PART_OF|deontology"
   },
   {
    "source": "free_will",
@@ -791,7 +798,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "In mainstream philosophy the relationship is reversed: moral responsibility requires or presupposes free will, not the other way around.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "free_will|PART_OF|moral_responsibility"
   },
   {
    "source": "deontology",
@@ -805,7 +813,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "W. D. Ross extended Kantian deontology by introducing prima facie duties in his 1930 book 'The Right and the Good'.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "deontology|EXTENDED_BY|w_d_ross"
   },
   {
    "source": "social_contract",
@@ -819,7 +828,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "The social contract tradition includes Hobbes, Locke, and Rousseau; Hobbes alone didn't 'develop' it—Rousseau coined the term and Locke shaped the modern concept.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "social_contract|DEVELOPED_BY|thomas_hobbes"
   },
   {
    "source": "supererogation",
@@ -833,7 +843,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Supererogation (going beyond duty) is standardly contrasted with duty in ethics, but the quote discusses deontology vs consequentialism, not supererogation vs duty.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "supererogation|CONTRASTS_WITH|duty"
   },
   {
    "source": "emotivism",
@@ -847,7 +858,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Emotivism was developed primarily by C.L. Stevenson and others; Ayer advocated a related but distinct view often called the 'boo-hurrah theory' or simple expressivism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "emotivism|DEVELOPED_BY|a_j_ayer"
   },
   {
    "source": "a_theory_of_justice",
@@ -861,7 +873,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Rawls explicitly wrote A Theory of Justice (1971) partly as a sustained critique of utilitarianism, but the quote 'Sidgwick 1907' does not mention either work or their relationship.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "a_theory_of_justice|RESPONDS_TO|utilitarianism"
   },
   {
    "source": "applied_ethics",
@@ -875,7 +888,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Applied ethics as a field predates Singer, rooted in 1960s-70s bioethics movements; Singer is a major contributor but not its sole developer.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "applied_ethics|DEVELOPED_BY|peter_singer"
   },
   {
    "source": "bernard_williams",
@@ -889,7 +903,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Williams did argue against utilitarianism (e.g., in 'Utilitarianism: For and Against'), but the quote is about Glaucon in Plato's Republic and doesn't mention Williams or utilitarianism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "bernard_williams|CRITIQUES|utilitarianism"
   },
   {
    "source": "naturalistic_fallacy",
@@ -903,7 +918,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The naturalistic fallacy (Moore) is standardly used to argue against moral naturalism, but the quote never mentions 'naturalistic fallacy' specifically, so it doesn't directly support the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "naturalistic_fallacy|CRITIQUES|moral_naturalism"
   },
   {
    "source": "after_virtue",
@@ -917,7 +933,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote cites 'MacIntyre, A., 1984. After Virtue,' confirming MacIntyre authored After Virtue.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "after_virtue|AUTHORED_BY|alasdair_macintyre"
   },
   {
    "source": "expressivism",
@@ -931,7 +948,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly describes expressivism as working on 'non-cognitivist foundations', confirming expressivism is a subcategory of non-cognitivism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "expressivism|SUBCATEGORY_OF|non_cognitivism"
   },
   {
    "source": "open_question_argument",
@@ -945,7 +963,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Moore introduced the Open Question Argument in Principia Ethica (1903). The quote mentions the argument but not where it was introduced.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "open_question_argument|INTRODUCED_IN|principia_ethica"
   },
   {
    "source": "natural_law",
@@ -959,7 +978,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Natural law theory predates Aquinas, originating with ancient Greek and Roman thinkers like Aristotle and Cicero; Aquinas systematized and extended it, not developed it from scratch.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "natural_law|DEVELOPED_BY|thomas_aquinas"
   },
   {
    "source": "practical_wisdom",
@@ -973,7 +993,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Aristotle did develop practical wisdom (phronesis) in the Nicomachean Ethics, but the quote discusses virtue and continence, not practical wisdom specifically.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "practical_wisdom|DEVELOPED_BY|aristotle"
   },
   {
    "source": "is_ought_problem",
@@ -987,7 +1008,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Hume introduced the is-ought problem in A Treatise of Human Nature (1739), noting you can't derive 'ought' from 'is' statements alone.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "is_ought_problem|DEVELOPED_BY|david_hume"
   },
   {
    "source": "metaethics",
@@ -1001,7 +1023,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Metaethics does contrast with normative ethics as a standard distinction in academic philosophy, but the quote discusses realism vs. anti-realism, not this contrast.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "metaethics|CONTRASTS_WITH|normative_ethics"
   },
   {
    "source": "quasi_realism",
@@ -1015,7 +1038,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly names Simon Blackburn as pursuing the quasi-realist program, directly confirming the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "quasi_realism|DEVELOPED_BY|simon_blackburn"
   },
   {
    "source": "john_rawls",
@@ -1029,7 +1053,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Rawls explicitly called his theory of justice a 'Kantian interpretation' and drew heavily on Kant's ethics, but the quote mentions neither Rawls nor Kant.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "john_rawls|INFLUENCED_BY|immanuel_kant"
   }
  ],
  "proposed_edges": [
@@ -1045,7 +1070,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The Golden Mean concept comes from the Nicomachean Ethics, not the other way around; the NE introduced the doctrine, it wasn't introduced in it by something called 'Golden Mean'.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "nicomachean_ethics|INTRODUCED_IN|golden_mean|aristotle-ethics"
   },
   {
    "source": "jeremy_bentham",
@@ -1059,7 +1085,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote names Hume's Treatise and Bentham's reaction, directly confirming Hume influenced Bentham.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "jeremy_bentham|INFLUENCED_BY|david_hume|bentham"
   },
   {
    "source": "contractarianism",
@@ -1073,7 +1100,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Contractarianism and contractualism are two distinct strains that developed in parallel; contractarianism did not grow out of contractualism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "contractarianism|DERIVED_FROM|contractualism|contractarianism"
   },
   {
    "source": "john_rawls",
@@ -1087,7 +1115,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The relationship is reversed: Rawls developed (revived) social contract theory, not the other way around. The quote confirms this but the claim states the wrong direction.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "john_rawls|DEVELOPED_BY|social_contract|contractarianism"
   },
   {
    "source": "t_m_scanlon",
@@ -1101,7 +1130,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The claim reverses the relationship: Scanlon developed contractualism, not the other way around. The quote confirms Scanlon as a contractualist thinker, not that contractualism developed him.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "t_m_scanlon|DEVELOPED_BY|contractualism|contractarianism"
   },
   {
    "source": "contractualism",
@@ -1115,7 +1145,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP quote explicitly frames contractualism as responding to utilitarianism as its 'main rival among impartial accounts of morality.'",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "contractualism|RESPONDS_TO|utilitarianism|contractualism"
   },
   {
    "source": "trolley_problem",
@@ -1129,7 +1160,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The Trolley Problem as a named thought experiment was introduced by Judith Jarvis Thomson (1985), building on Foot's 1967 trolley scenario, so credit goes to Thomson, not Foot.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "trolley_problem|INTRODUCED_IN|philippa_foot|double-effect"
   },
   {
    "source": "doctrine_of_double_effect",
@@ -1143,7 +1175,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly states that if only consequences mattered (consequentialism), DDE's distinction would lose moral significance, directly contrasting the two.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "doctrine_of_double_effect|CONTRASTS_WITH|consequentialism|double-effect"
   },
   {
    "source": "doctrine_of_double_effect",
@@ -1157,7 +1190,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP quote explicitly credits Aquinas with introducing the doctrine of double effect in the Summa Theologica, directly supporting the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "doctrine_of_double_effect|PART_OF|thomas_aquinas|double-effect"
   },
   {
    "source": "trolley_problem",
@@ -1171,7 +1205,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The Trolley Problem and Doctrine of Double Effect are related/compared, not contrasted; DDE is often used to explain trolley cases, not oppose them.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "trolley_problem|CONTRASTS_WITH|doctrine_of_double_effect|double-effect"
   },
   {
    "source": "g_e_moore",
@@ -1185,7 +1220,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP quote explicitly states Moore argued ethical egoism is self-contradictory, which supports the claim he argued against it.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "g_e_moore|CRITIQUES|ethical_egoism|egoism"
   },
   {
    "source": "supererogation",
@@ -1199,7 +1235,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "Deontological theories do leave room for supererogation (acts beyond duty), and the quote explicitly links deontological morality with the supererogatory.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "supererogation|PART_OF|deontology|ethics-deontological"
   },
   {
    "source": "contractualism",
@@ -1213,7 +1250,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP entry on deontological ethics explicitly places contractualist theories within deontology, directly supporting the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "contractualism|IS_A|deontology|ethics-deontological"
   },
   {
    "source": "justice",
@@ -1227,7 +1265,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP entry lists justice as one of several virtues, confirming justice is part of (i.e., an instance of) virtue.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "justice|PART_OF|virtue|ethics-virtue"
   },
   {
    "source": "jeremy_bentham",
@@ -1241,7 +1280,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The claim reverses the relationship: Bentham wrote the book, not the other way around. The quote correctly states Bentham wrote it, contradicting the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "jeremy_bentham|AUTHORED_BY|principles_of_morals_and_legislation|hedonism"
   },
   {
    "source": "john_stuart_mill",
@@ -1255,7 +1295,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The claim reverses author and work: Mill wrote Utilitarianism, not the other way around. The quote does not address this authorship claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "john_stuart_mill|AUTHORED_BY|utilitarianism_mill|hedonism"
   },
   {
    "source": "hedonism",
@@ -1269,7 +1310,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Hedonism is a theory of value, not part of consequentialism; it can combine with consequentialism but is logically independent and also appears in non-consequentialist theories.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "hedonism|PART_OF|consequentialism|hedonism"
   },
   {
    "source": "david_hume",
@@ -1283,7 +1325,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The relationship is reversed: Hume was a key developer of Moral Sentimentalism, not developed by it. The quote also doesn't support this directional claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "david_hume|DEVELOPED_BY|moral_sentimentalism|hume-moral"
   },
   {
    "source": "moral_intuitionism",
@@ -1297,7 +1340,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote says intuitionism involves 'non-naturalist realism,' confirming it is a form of moral realism, making it a subcategory thereof.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_intuitionism|SUBCATEGORY_OF|moral_realism|intuitionism-ethics"
   },
   {
    "source": "immanuel_kant",
@@ -1311,7 +1355,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly states Kant was directly influenced by the sentimentalist tradition, especially Hutcheson's version, confirming the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "immanuel_kant|INFLUENCED_BY|francis_hutcheson|kant-hume-morality"
   },
   {
    "source": "moral_sentimentalism",
@@ -1325,7 +1370,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "Hutcheson is a founding figure of moral sentimentalism, and the quote explicitly names him as part of the sentimentalist tradition that influenced others.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_sentimentalism|INFLUENCED_BY|francis_hutcheson|kant-hume-morality"
   },
   {
    "source": "immanuel_kant",
@@ -1339,7 +1385,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote directly states Kant's objections to sentimentalism, supporting that he argues against Moral Sentimentalism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "immanuel_kant|CRITIQUES|moral_sentimentalism|kant-hume-morality"
   },
   {
    "source": "david_hume",
@@ -1353,7 +1400,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The quote says Hume *defends* compatibilism, not that he was *developed by* it. The claim reverses the relationship entirely.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "david_hume|DEVELOPED_BY|compatibilism|kant-hume-morality"
   },
   {
    "source": "duty",
@@ -1367,7 +1415,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The Categorical Imperative is Kant's fundamental moral principle; duty is a separate concept grounded in it, not a part of it. The quote mentions neither term explicitly.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "duty|PART_OF|categorical_imperative|kant-moral"
   },
   {
    "source": "good_will",
@@ -1381,7 +1430,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "In Kant, Good Will and the Categorical Imperative are distinct concepts; Good Will is not a part of the Categorical Imperative but a separate foundational idea in his ethics.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "good_will|PART_OF|categorical_imperative|kant-moral"
   },
   {
    "source": "expressivism",
@@ -1395,7 +1445,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Expressivism (a form of non-cognitivism) does contrast with moral cognitivism — this is standard metaethics — but the quote mentions non-cognitivism vs. Moore, not expressivism vs. cognitivism directly.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "expressivism|CONTRASTS_WITH|moral_cognitivism|metaethics"
   },
   {
    "source": "g_e_moore",
@@ -1409,7 +1460,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The relationship is reversed: Moore developed the Open Question Argument, not the other way around.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "g_e_moore|DEVELOPED_BY|open_question_argument|metaethics"
   },
   {
    "source": "moral_cognitivism",
@@ -1423,7 +1475,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Cognitivism contrasts with non-cognitivism (a metaethical distinction); moral anti-realism is a separate axis. The quote discusses cognitivism vs. noncognitivism, not anti-realism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_cognitivism|CONTRASTS_WITH|moral_anti_realism|moral-anti-realism"
   },
   {
    "source": "simon_blackburn",
@@ -1437,7 +1490,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Blackburn developed quasi-realism; he was not 'extended by' it. The direction is reversed: he is the creator, not the recipient of extension.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "simon_blackburn|EXTENDED_BY|quasi_realism|moral-anti-realism"
   },
   {
    "source": "error_theory",
@@ -1451,7 +1505,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Error Theory is a form of moral cognitivism, not a contrast to it; the quote explicitly says the error theorist IS a cognitivist.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "error_theory|CONTRASTS_WITH|moral_cognitivism|moral-anti-realism"
   },
   {
    "source": "moral_realism",
@@ -1465,7 +1520,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote explicitly states moral realists are cognitivists, confirming moral realism falls within moral cognitivism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_realism|PART_OF|moral_cognitivism|moral-cognitivism"
   },
   {
    "source": "expressivism",
@@ -1479,7 +1535,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Expressivism is indeed contrasted with moral realism in mainstream philosophy, but the quote only mentions 'realist-seeming features' without explicitly naming or contrasting expressivism with moral realism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "expressivism|CONTRASTS_WITH|moral_realism|moral-cognitivism"
   },
   {
    "source": "virtue",
@@ -1493,7 +1550,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Virtue as a concept predates Aristotle (Socrates, Plato discussed it); Aristotle developed virtue ethics as a systematic theory, but didn't invent virtue itself.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "virtue|DEVELOPED_BY|aristotle|moral-luck"
   },
   {
    "source": "moral_realism",
@@ -1507,7 +1565,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Non-naturalism is a TYPE of moral realism, not a contrast to it; the quote itself confirms this, directly contradicting the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_realism|CONTRASTS_WITH|moral_non_naturalism|moral-non-naturalism"
   },
   {
    "source": "moral_realism",
@@ -1521,7 +1580,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP quote explicitly contrasts moral realists and error theorists by their different answers to the two key metaethical questions, confirming the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_realism|CONTRASTS_WITH|error_theory|moral-realism"
   },
   {
    "source": "moral_realism",
@@ -1535,7 +1595,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Moral realism does contrast with non-cognitivism, but the quote only describes moral realism and never mentions non-cognitivism or the contrast between them.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_realism|CONTRASTS_WITH|non_cognitivism|moral-realism"
   },
   {
    "source": "moral_cognitivism",
@@ -1549,7 +1610,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote states moral realists are united in their cognitivism, confirming cognitivism is a component of moral realism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_cognitivism|PART_OF|moral_realism|moral-realism"
   },
   {
    "source": "moral_relativism",
@@ -1563,7 +1625,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP entry explicitly states moral relativism is an important topic in metaethics, directly confirming the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_relativism|PART_OF|metaethics|moral-relativism"
   },
   {
    "source": "david_hume",
@@ -1577,7 +1640,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The claim reverses the relationship: David Hume wrote An Enquiry Concerning the Principles of Morals, not the other way around.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "david_hume|AUTHORED_BY|enquiry_principles_of_morals|moral-relativism"
   },
   {
    "source": "thomas_aquinas",
@@ -1591,7 +1655,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "The relationship is reversed: Aquinas developed Natural Law theory, he was not 'developed by' it. The quote confirms Aquinas as the key figure, not a product of the tradition.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "thomas_aquinas|DEVELOPED_BY|natural_law|natural-law-ethics"
   },
   {
    "source": "alasdair_macintyre",
@@ -1605,7 +1670,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The SEP quote explicitly lists MacIntyre 1999 among writers who trace their views to Aquinas as a major influence, directly supporting the claim.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "alasdair_macintyre|INFLUENCED_BY|thomas_aquinas|natural-law-ethics"
   },
   {
    "source": "virtue",
@@ -1619,7 +1685,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Aristotle's view is that practical wisdom (phronesis) is a virtue, not that virtue is a kind of practical wisdom — the direction is reversed.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "virtue|IS_A|practical_wisdom|natural-law-ethics"
   },
   {
    "source": "moral_naturalism",
@@ -1633,7 +1700,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Moore's Principia Ethica critiqued and named the naturalistic fallacy, attacking moral naturalism—it did not introduce moral naturalism as a positive doctrine.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "moral_naturalism|INTRODUCED_IN|principia_ethica|naturalism-moral"
   },
   {
    "source": "john_stuart_mill",
@@ -1647,7 +1715,8 @@ window.REVIEW = {
     "quote_check": "yes",
     "reason": "The quote states Sidgwick's views developed out of and in response to Mill's, confirming he extended Mill's utilitarian framework.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "john_stuart_mill|EXTENDED_BY|henry_sidgwick|utilitarianism-history"
   }
  ],
  "proposed_nodes": [
@@ -1662,7 +1731,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Charles Stevenson published 'Ethics and Language' in 1944, and it is the key systematic defense of emotivism in metaethics.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Ethics and Language"
   },
   {
    "label": "Fifteen Sermons",
@@ -1675,7 +1745,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Butler's Fifteen Sermons Preached at the Rolls Chapel was published in 1726 and is famous for its refutation of psychological egoism.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Fifteen Sermons"
   },
   {
    "label": "G. W. F. Hegel",
@@ -1688,7 +1759,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Hegel is indeed a central German Idealist and the key figure in post-Kantian idealism, making this description accurate.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "G. W. F. Hegel"
   },
   {
    "label": "In a Different Voice",
@@ -1701,7 +1773,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Carol Gilligan's 1982 'In a Different Voice' is indeed the founding text of care ethics.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "In a Different Voice"
   },
   {
    "label": "Jean-Jacques Rousseau",
@@ -1714,7 +1787,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Rousseau is indeed a canonical social contract theorist and The Social Contract was published in 1762.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Jean-Jacques Rousseau"
   },
   {
    "label": "John Locke",
@@ -1727,7 +1801,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "John Locke is a canonical social contract theorist, correctly placed between Hobbes and Rousseau in the standard lineage.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "John Locke"
   },
   {
    "label": "Jonathan Dancy",
@@ -1740,7 +1815,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Jonathan Dancy is indeed the principal developer of moral particularism and wrote 'Ethics Without Principles' (2004).",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Jonathan Dancy"
   },
   {
    "label": "Judith Jarvis Thomson",
@@ -1753,7 +1829,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "The trolley problem was coined by Philippa Foot (1967); Thomson popularized variants like footbridge, but didn't originate the problem.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Judith Jarvis Thomson"
   },
   {
    "label": "Practical Ethics",
@@ -1766,7 +1843,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Peter Singer's 'Practical Ethics' was published in 1979 and is indeed the standard applied-ethics text anchoring his utilitarian positions.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Practical Ethics"
   },
   {
    "label": "The Language of Morals",
@@ -1779,7 +1857,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "The Language of Morals (1952) introduced prescriptivism, but 'universal prescriptivism' was developed later, mainly in Freedom and Reason (1963).",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "The Language of Morals"
   },
   {
    "label": "Thomas Nagel",
@@ -1792,7 +1871,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Nagel co-launched the moral luck debate with Bernard Williams in 1976; his paper 'Moral Luck' named and defined the central problem.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "Thomas Nagel"
   }
  ],
  "researched_edges": [
@@ -1807,7 +1887,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Nietzsche did criticize utilitarianism (e.g., in On the Genealogy of Morality), but the quote only mentions general criticisms of morality without naming utilitarianism specifically.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "friedrich_nietzsche|CRITIQUES|utilitarianism"
   },
   {
    "source": "friedrich_nietzsche",
@@ -1820,7 +1901,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Nietzsche criticizes religion and morality broadly, but he rarely engages Divine Command Theory by name; the quote only mentions general criticisms, not DCT specifically.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "friedrich_nietzsche|CRITIQUES|divine_command_theory"
   },
   {
    "source": "master_morality",
@@ -1833,7 +1915,8 @@ window.REVIEW = {
     "quote_check": "no",
     "reason": "Master morality (good/bad) vs slave morality's revolt (good/evil) is standard Nietzsche doctrine, but the quote doesn't explicitly name both 'master morality' and 'slave revolt in morality'.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "master_morality|CONTRASTS_WITH|slave_revolt_in_morality"
   }
  ],
  "researched_nodes": [
@@ -1848,7 +1931,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "This accurately describes Nietzsche's slave revolt in morality from On the Genealogy of Morality (1887), where ressentiment drives value inversion against noble/master traits.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "slave_revolt_in_morality"
   },
   {
    "id": "master_morality",
@@ -1861,7 +1945,8 @@ window.REVIEW = {
     "quote_check": "no_quote",
     "reason": "Nietzsche's concept in 'On the Genealogy of Morality': master morality arises from noble self-affirmation, valuing strength and excellence, contrasted with slave morality.",
     "model": "claude-sonnet-4-6"
-   }
+   },
+   "key": "master_morality"
   }
  ]
 };

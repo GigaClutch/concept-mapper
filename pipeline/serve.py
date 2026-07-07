@@ -64,8 +64,21 @@ class Handler(SimpleHTTPRequestHandler):
         if self.path != "/api/research":
             self._json(404, {"error": "unknown endpoint"})
             return
+        # this endpoint spends API money: reject cross-site requests (a page in
+        # the owner's browser can fire simple POSTs at localhost without CORS)
+        host = (self.headers.get("Host") or "").split(":")[0].casefold()
+        origin = (self.headers.get("Origin") or "").rstrip("/")
+        allowed_origins = {f"http://localhost:{self.server.server_port}",
+                           f"http://127.0.0.1:{self.server.server_port}"}
+        if host not in ("localhost", "127.0.0.1") or \
+                (origin and origin not in allowed_origins):
+            self._json(403, {"error": "forbidden: research is local-only"})
+            return
         try:
             length = int(self.headers.get("Content-Length", "0"))
+            if length > 4096:
+                self._json(413, {"error": "request body too large"})
+                return
             node_id = json.loads(self.rfile.read(length) or b"{}").get("id", "")
         except (ValueError, json.JSONDecodeError):
             self._json(400, {"error": "bad request body"})
@@ -80,14 +93,21 @@ class Handler(SimpleHTTPRequestHandler):
 
         def rollback(msg: str, code: int = 500):
             for p, b in snapshots.items():
-                p.write_bytes(b)
+                tmp = p.with_suffix(".tmp")
+                tmp.write_bytes(b)
+                tmp.replace(p)
             rebuild_bundles()
             self._json(code, {"error": msg})
 
         try:
             import research
             delta = research.research_node(node_id)
-        except Exception as exc:  # noqa: BLE001 — surface anything to the UI
+        except KeyboardInterrupt:
+            raise
+        except BaseException as exc:  # noqa: BLE001 — incl. SystemExit, which
+            # 'except Exception' misses and which would kill the whole server;
+            # count any spend the failed call already made
+            state["spent"] += getattr(sys.modules.get("research"), "LAST_COST", 0.0)
             rollback(f"research failed: {exc}")
             return
         state["spent"] += delta.get("cost", 0.0) or 0.0

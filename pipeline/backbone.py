@@ -25,6 +25,7 @@ import sys
 import time
 from pathlib import Path
 
+from common import atomic_write, load_registry, registry_index
 from validate import EDGE_TYPES, edge_key
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -234,29 +235,6 @@ Rules — read carefully:
 """
 
 
-def load_registry() -> tuple[list[dict], dict[str, dict], dict[str, str]]:
-    reg = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
-    rows = reg["nodes"]
-    by_id = {r["id"]: r for r in rows}
-    resolve: dict[str, str] = {}
-    for r in rows:
-        resolve[r["id"].casefold()] = r["id"]
-        resolve.setdefault(r["label"].casefold(), r["id"])
-        for a in r.get("aliases", []):
-            resolve.setdefault(a.casefold(), r["id"])
-    return rows, by_id, resolve
-
-
-def registry_index(rows: list[dict]) -> str:
-    lines = []
-    for r in sorted(rows, key=lambda r: (r["type"], r["id"])):
-        alias = f" — aka: {', '.join(r['aliases'])}" if r.get("aliases") else ""
-        desc = f" | {r['wd_description']}" if r.get("wd_description") else ""
-        when = f" ({r['time_period']})" if r.get("time_period") else ""
-        lines.append(f"{r['id']}  [{r['type']}]  {r['label']}{when}{alias}{desc}")
-    return "\n".join(lines)
-
-
 def build_prompt(pass_id: str, spec: dict, rows: list[dict], by_id: dict) -> str:
     focus = "\n".join(f"- {i}  ({by_id[i]['type']}) {by_id[i]['label']}"
                       for i in spec["focus"])
@@ -277,7 +255,7 @@ def build_prompt(pass_id: str, spec: dict, rows: list[dict], by_id: dict) -> str
 
 
 def cmd_prompts(_args) -> None:
-    rows, by_id, _ = load_registry()
+    _, rows, by_id, _ = load_registry()
     for pass_id, spec in PASSES.items():
         unknown = [i for i in spec["focus"] if i not in by_id]
         if unknown:
@@ -291,7 +269,7 @@ def cmd_prompts(_args) -> None:
 
 
 def cmd_ingest(_args) -> None:
-    _, by_id, resolve = load_registry()
+    _, _, by_id, resolve = load_registry()
     edges: list[dict] = []
     rejects: list[dict] = []
     warnings: list[str] = []
@@ -367,12 +345,12 @@ def cmd_ingest(_args) -> None:
                           "model": meta.get("model", ""), "date": meta.get("date", "")})
 
     CANDIDATES.parent.mkdir(parents=True, exist_ok=True)
-    CANDIDATES.write_text(json.dumps({
+    atomic_write(CANDIDATES, {
         "meta": {"built": time.strftime("%Y-%m-%d"), "prompt_version": PROMPT_VERSION,
                  "passes": passes_meta, "candidate_count": len(edges),
                  "reject_count": len(rejects), "rejects": rejects,
                  "warnings": warnings},
-        "edges": edges}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        "edges": edges})
     print(f"wrote {CANDIDATES.relative_to(ROOT)}: {len(edges)} candidates, "
           f"{len(rejects)} rejected, {len(warnings)} warnings")
     for w in warnings:
@@ -381,11 +359,10 @@ def cmd_ingest(_args) -> None:
         print(f"  REJECT  {r['source']} -{r['type']}-> {r['target']}: {r['reason']}")
 
     QUARANTINE.parent.mkdir(parents=True, exist_ok=True)
-    QUARANTINE.write_text(json.dumps({
+    atomic_write(QUARANTINE, {
         "meta": {"built": time.strftime("%Y-%m-%d"),
                  "source": f"backbone {PROMPT_VERSION}", "count": len(proposals)},
-        "proposed_nodes": sorted(proposals.values(), key=lambda p: p["label"])},
-        indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        "proposed_nodes": sorted(proposals.values(), key=lambda p: p["label"])})
     print(f"wrote {QUARANTINE.relative_to(ROOT)}: {len(proposals)} proposed nodes")
 
 
@@ -401,7 +378,7 @@ def node_from_registry(row: dict) -> dict:
 
 
 def cmd_merge(_args) -> None:
-    _, by_id, _ = load_registry()
+    _, _, by_id, _ = load_registry()
     cand = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
 
@@ -433,8 +410,7 @@ def cmd_merge(_args) -> None:
         "Phase 1 hand-built Kant cluster + Phase 3 backbone "
         f"({cand['meta']['prompt_version']}) over the full Ethics registry")
     out = DATA / "graph.json"
-    out.write_text(json.dumps(graph, indent=2, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+    atomic_write(out, graph)
     print(f"wrote {out.relative_to(ROOT)}: +{added_edges} edges, +{added_nodes} nodes "
           f"-> {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
     print("now run: validate.py, evaluate.py --graph, build_viewer_data.py")

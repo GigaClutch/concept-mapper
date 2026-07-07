@@ -23,6 +23,7 @@ import time
 from pathlib import Path
 
 from backbone import DOMAIN_RANGE, node_from_registry
+from common import atomic_write, recompute_weights
 from validate import edge_key
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -163,9 +164,7 @@ def main() -> None:
         flagged += d["verdict"] == "accept"
 
     # --- weights, orphans, write-out ---------------------------------------
-    for e in graph["edges"]:
-        n = (1 if e.get("origin") == "backbone" else 0) + len(e.get("evidence", []))
-        e["weight"] = 1 - 0.5 ** max(n, 1)
+    recompute_weights(graph["edges"])
     linked = set()
     for e in graph["edges"]:
         linked.add(e["source"])
@@ -191,16 +190,11 @@ def main() -> None:
     registry["meta"]["count"] = len(registry["nodes"])
 
     graph["meta"]["built"] = TODAY
-    (DATA / "graph.json").write_text(
-        json.dumps(graph, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (DATA / "registry.json").write_text(
-        json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    SAMPLE.write_text(
-        json.dumps(sample_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    QUAR_EDGES.write_text(
-        json.dumps(quar, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    QUAR_NODES.write_text(
-        json.dumps(qn, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    atomic_write(DATA / "graph.json", graph)
+    atomic_write(DATA / "registry.json", registry)
+    atomic_write(SAMPLE, sample_doc)
+    atomic_write(QUAR_EDGES, quar)
+    atomic_write(QUAR_NODES, qn)
     print(f"sample: {confirmed} confirmed, {removed} removed; "
           f"researched: {res_confirmed} confirmed, {res_removed} removed, "
           f"{res_kept} provisional entries kept; proposals: {merged} merged, "

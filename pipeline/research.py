@@ -33,7 +33,9 @@ from pathlib import Path
 import metrics as metrics_mod
 import networkx  # noqa: F401  (fail fast here, not mid-apply, if missing)
 from backbone import DOMAIN_RANGE, node_from_registry
-from ground import MAX_QUOTE_CHARS, PRICES, find_verbatim, load_key
+from common import (PRICES, atomic_write, call_cost, load_key, load_registry,
+                    recompute_weights, registry_index, retry_messages_create)
+from ground import MAX_QUOTE_CHARS, find_verbatim
 from scrape_sep import fetch_article
 from validate import EDGE_TYPES, edge_key
 
@@ -41,6 +43,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ARTICLE_CACHE = ROOT / "cache" / "sep" / "articles"
 SEP_BASE = "https://plato.stanford.edu/entries"
+
+# spend of the most recent research_node call, even when it later raised —
+# serve.py adds this to its session meter on the failure path
+LAST_COST = 0.0
 
 PROMPT_VERSION = "rs-v1"
 MODEL = "claude-haiku-4-5"
@@ -103,11 +109,6 @@ def find_sep_sources(node: dict, contents: list[dict], limit: int = 2) -> list[d
     return [e for _, e in scored[:limit]]
 
 
-def registry_index(rows: list[dict]) -> str:
-    return "\n".join(f"{r['id']}  [{r['type']}]  {r['label']}"
-                     for r in sorted(rows, key=lambda r: (r["type"], r["id"])))
-
-
 TYPE_GLOSS = """\
 IS_A: X is a kind of Y | PART_OF: X is a constituent of Y | SUBCATEGORY_OF: X is \
 the narrower category | DEVELOPED_BY: concept/school developed by person | \
@@ -145,7 +146,7 @@ def build_prompt(node: dict, rows: list[dict], article_id: str, text: str) -> st
         "Direction reminders: persons are never the source of DEVELOPED_BY/"
         "EXTENDED_BY/AUTHORED_BY; the earlier thinker is never INFLUENCED_BY "
         "the later.\n\n"
-        f"## Existing registry ids (closed world)\n\n{registry_index(rows)}\n\n"
+        f"## Existing registry ids (closed world)\n\n{registry_index(rows, rich=False)}\n\n"
         f"## Article text ({article_id})\n\n{text[:MAX_SOURCE_CHARS]}\n"
     )
 
@@ -154,16 +155,10 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
     """Run one research pass; returns the delta dict (also applied to disk)."""
     import anthropic
 
+    global LAST_COST
+    LAST_COST = 0.0
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
-    registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
-    rows = registry["nodes"]
-    by_id = {r["id"]: r for r in rows}
-    resolve = {}
-    for r in rows:
-        resolve[r["id"].casefold()] = r["id"]
-        resolve.setdefault(r["label"].casefold(), r["id"])
-        for a in r.get("aliases", []):
-            resolve.setdefault(a.casefold(), r["id"])
+    registry, rows, by_id, resolve = load_registry()
     gnode = next((n for n in graph["nodes"] if n["id"] == node_id), None)
     if gnode is None or node_id not in by_id:
         return {"error": f"unknown node '{node_id}'"}
@@ -187,27 +182,23 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
     text = txt_file.read_text(encoding="utf-8")
 
     client = anthropic.Anthropic(api_key=load_key())
-    in_p, out_p = PRICES[MODEL]
-    resp = None
-    for attempt in range(3):
-        try:
-            resp = client.messages.create(
-                model=MODEL, max_tokens=16000,
-                messages=[{"role": "user",
-                           "content": build_prompt(by_id[node_id], rows, art["id"], text)}],
-                output_config={"format": {"type": "json_schema", "schema": SCHEMA}},
-            )
-            break
-        except anthropic.RateLimitError as e:
-            wait = 60
-            if e.response is not None:
-                wait = max(int(e.response.headers.get("retry-after", "60")), 20)
-            time.sleep(wait)
+    prompt = build_prompt(by_id[node_id], rows, art["id"], text)
+    # enforce max_cost BEFORE spending: a conservative input-token estimate
+    # (~4 chars/token) already dominates the cost of one Haiku call
+    in_p, _ = PRICES[MODEL]
+    est = len(prompt) / 4 * in_p / 1e6
+    if est > max_cost:
+        return {"error": f"estimated call cost ${est:.2f} exceeds the "
+                         f"${max_cost:.2f} per-call cap"}
+    resp = retry_messages_create(
+        client, attempts=3, min_wait=20, model=MODEL, max_tokens=16000,
+        messages=[{"role": "user", "content": prompt}],
+        output_config={"format": {"type": "json_schema", "schema": SCHEMA}},
+    )
     if resp is None:
         return {"error": "rate-limited, try again in a minute"}
-    cost = (resp.usage.input_tokens * in_p + resp.usage.output_tokens * out_p) / 1e6
-    if cost > max_cost:
-        pass  # already spent; cap enforcement is the caller's session budget
+    cost = call_cost(MODEL, resp.usage)
+    LAST_COST = cost
     if resp.stop_reason == "max_tokens":
         return {"error": "model response truncated; try again", "cost": cost}
     raw = json.loads(next(b.text for b in resp.content if b.type == "text"))
@@ -295,9 +286,7 @@ def research_node(node_id: str, max_cost: float = 0.30) -> dict:
                  if e["source"] in node_ids_in_graph and e["target"] in node_ids_in_graph]
     graph["edges"].extend(new_edges)
 
-    for e in graph["edges"]:
-        n = (1 if e.get("origin") == "backbone" else 0) + len(e.get("evidence", []))
-        e["weight"] = 1 - 0.5 ** max(n, 1)
+    recompute_weights(graph["edges"])
 
     art_entry = None
     if not any(a["id"] == art["id"] for a in graph.get("articles", [])):
@@ -326,19 +315,20 @@ def _metrics_map() -> dict:
 
 
 def _write(graph: dict, registry: dict) -> None:
-    for path, doc in ((DATA / "graph.json", graph), (DATA / "registry.json", registry)):
-        tmp = path.with_suffix(".tmp")
-        tmp.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
-                       encoding="utf-8")
-        tmp.replace(path)
+    atomic_write(DATA / "graph.json", graph)
+    atomic_write(DATA / "registry.json", registry)
 
 
 if __name__ == "__main__":
     import argparse
+    import sys
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("node_id")
     ap.add_argument("--max-cost", type=float, default=0.30)
     args = ap.parse_args()
-    delta = research_node(args.node_id, args.max_cost)
+    try:
+        delta = research_node(args.node_id, args.max_cost)
+    except RuntimeError as e:
+        sys.exit(str(e))
     delta.pop("metrics", None)
     print(json.dumps(delta, indent=1, ensure_ascii=False))

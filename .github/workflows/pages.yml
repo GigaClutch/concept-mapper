@@ -19,7 +19,38 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Quality gate: a red or stale graph must fail the deploy, not ship silently.
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate graph (quotes need cache/, which is local-only)
+        run: python pipeline/validate.py --allow-missing-cache
+
+      - name: Gold-set evaluation
+        run: python pipeline/evaluate.py --graph
+
+      - name: Unit tests
+        run: python -m unittest discover tests
+
+      - name: Bundle freshness (committed viewer data matches data/)
+        run: |
+          python pipeline/build_viewer_data.py
+          python pipeline/build_review_data.py
+          git diff --exit-code viewer/
+
   deploy:
+    needs: check
     runs-on: ubuntu-latest
     environment:
       name: github-pages

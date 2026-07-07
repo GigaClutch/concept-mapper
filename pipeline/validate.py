@@ -26,6 +26,11 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 ARTICLE_CACHE = ROOT / "cache" / "sep" / "articles"
 
+# --allow-missing-cache (CI: cache/ is gitignored) downgrades a missing cached
+# article from error to a summary warning; the quote check still runs against
+# every cache file that IS present. Locally this stays a hard error.
+ALLOW_MISSING_CACHE = False
+
 NODE_TYPES = {"concept", "person", "school", "work"}
 EDGE_TYPES = {
     "IS_A", "PART_OF", "SUBCATEGORY_OF",                          # hierarchical
@@ -96,6 +101,7 @@ def check_graph(registry_ids: set[str]) -> None:
                 degree[e[end]] += 1
     check_edge_list(edges, registry_ids, "graph")
 
+    missing_cache: set[str] = set()
     for e in edges:
         if e["source"] not in id_set or e["target"] not in id_set:
             err(f"graph edge {e['source']}->{e['target']}: endpoint missing from graph nodes")
@@ -110,11 +116,17 @@ def check_graph(registry_ids: set[str]) -> None:
                     f"'{ev['article_id']}' not in graph articles list")
             cached = ARTICLE_CACHE / f"{ev['article_id']}.txt"
             if not cached.exists():
-                err(f"graph edge {e['source']}->{e['target']}: no cached source for "
-                    f"'{ev['article_id']}' — run pipeline/scrape_sep.py --article {ev['article_id']}")
+                if ALLOW_MISSING_CACHE:
+                    missing_cache.add(ev["article_id"])
+                else:
+                    err(f"graph edge {e['source']}->{e['target']}: no cached source for "
+                        f"'{ev['article_id']}' — run pipeline/scrape_sep.py --article {ev['article_id']}")
             elif norm(ev["quote"]) not in norm(cached.read_text(encoding="utf-8")):
                 err(f"graph edge {e['source']}->{e['target']}: quote is NOT a verbatim "
                     f"substring of cached '{ev['article_id']}'")
+    if missing_cache:
+        warn(f"quote verbatim check SKIPPED for {len(missing_cache)} uncached "
+             f"article(s) (--allow-missing-cache): {sorted(missing_cache)}")
 
     for i, d in degree.items():
         if d == 0:
@@ -142,6 +154,14 @@ def check_gold(registry_ids: set[str]) -> None:
 
 
 def main() -> None:
+    global ALLOW_MISSING_CACHE
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--allow-missing-cache", action="store_true",
+                    help="warn instead of fail when a cached article is absent "
+                         "(for CI, where cache/ is not checked out)")
+    ALLOW_MISSING_CACHE = ap.parse_args().allow_missing_cache
+
     registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
     registry_ids = {r["id"] for r in registry["nodes"]}
     print(f"registry: {len(registry_ids)} rows")

@@ -26,6 +26,8 @@ import sys
 import time
 from pathlib import Path
 
+from common import (PRICES, atomic_write, call_cost, load_key,
+                    recompute_weights, retry_messages_create)
 from validate import EDGE_TYPES, edge_key, norm
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,10 +38,6 @@ PROPOSED_EDGES = DATA / "quarantine" / "proposed_edges.json"
 
 PROMPT_VERSION = "gr-v2"
 DEFAULT_MODEL = "claude-haiku-4-5"
-PRICES = {  # USD per million tokens (input, output)
-    "claude-haiku-4-5": (1.00, 5.00),
-    "claude-sonnet-4-6": (3.00, 15.00),
-}
 MAX_QUOTE_CHARS = 300
 
 # straight/curly punctuation variants; 1:1 so indices survive translation and
@@ -88,19 +86,6 @@ SCHEMA = {
     "required": ["groundings", "proposed_edges"],
     "additionalProperties": False,
 }
-
-
-def load_key() -> str:
-    import os
-    key = os.environ.get("ANTHROPIC_API_KEY", "")
-    env_file = ROOT / ".env"
-    if not key and env_file.exists():
-        for line in env_file.read_text(encoding="utf-8").splitlines():
-            if line.startswith("ANTHROPIC_API_KEY="):
-                key = line.split("=", 1)[1].strip()
-    if not key:
-        sys.exit("no ANTHROPIC_API_KEY in environment or .env")
-    return key
 
 
 def find_verbatim(quote: str, text: str) -> str | None:
@@ -170,8 +155,10 @@ def build_prompt(article_id: str, text: str, cands: list[dict], nodes: dict) -> 
 def cmd_extract(args) -> None:
     import anthropic
 
-    client = anthropic.Anthropic(api_key=load_key())
-    in_price, out_price = PRICES[args.model]
+    try:
+        client = anthropic.Anthropic(api_key=load_key())
+    except RuntimeError as e:
+        sys.exit(str(e))
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
     registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
     nodes = {r["id"]: r for r in registry["nodes"]}
@@ -202,39 +189,27 @@ def cmd_extract(args) -> None:
         text = txt_file.read_text(encoding="utf-8")
         cands = candidate_edges(graph, nodes, text)
         if not cands:
-            out.write_text(json.dumps({
+            atomic_write(out, {
                 "meta": {"article_id": aid, "model": "", "prompt_version": PROMPT_VERSION,
                          "date": time.strftime("%Y-%m-%d"), "skipped": "no candidate edges",
                          "cost_usd": 0.0},
-                "groundings": [], "proposed_edges": []}, indent=2) + "\n",
-                encoding="utf-8")
+                "groundings": [], "proposed_edges": []})
             print(f"{aid}: no candidate edges, skipped (no API call)")
             continue
 
         # the org tier allows ~50K input tokens/minute and one article is most
         # of that, so pace calls and honor retry-after on 429s
-        for attempt in range(5):
-            try:
-                resp = client.messages.create(
-                    model=args.model,
-                    max_tokens=16000,
-                    messages=[{"role": "user",
-                               "content": build_prompt(aid, text, cands, nodes)}],
-                    output_config={"format": {"type": "json_schema", "schema": SCHEMA}},
-                )
-                break
-            except anthropic.RateLimitError as e:
-                wait = 60
-                if e.response is not None:
-                    wait = max(int(e.response.headers.get("retry-after", "60")), 30)
-                print(f"{aid}: rate-limited, waiting {wait}s (attempt {attempt + 1}/5)")
-                time.sleep(wait)
-        else:
+        resp = retry_messages_create(
+            client, model=args.model, max_tokens=16000,
+            messages=[{"role": "user",
+                       "content": build_prompt(aid, text, cands, nodes)}],
+            output_config={"format": {"type": "json_schema", "schema": SCHEMA}},
+        )
+        if resp is None:
             print(f"{aid}: still rate-limited after 5 attempts, stopping run")
             break
         last_call = time.monotonic()
-        cost = (resp.usage.input_tokens * in_price
-                + resp.usage.output_tokens * out_price) / 1e6
+        cost = call_cost(args.model, resp.usage)
         spent += cost
         if resp.stop_reason == "max_tokens":
             print(f"{aid}: response truncated at max_tokens — rerun later with a "
@@ -270,7 +245,7 @@ def cmd_extract(args) -> None:
             proposals.append({"source": p["source"], "type": p["type"],
                               "target": p["target"], "quote": vq})
 
-        out.write_text(json.dumps({
+        atomic_write(out, {
             "meta": {"article_id": aid, "model": args.model,
                      "prompt_version": PROMPT_VERSION,
                      "date": time.strftime("%Y-%m-%d"),
@@ -278,8 +253,7 @@ def cmd_extract(args) -> None:
                      "input_tokens": resp.usage.input_tokens,
                      "output_tokens": resp.usage.output_tokens,
                      "cost_usd": round(cost, 6), "dropped_unverifiable": dropped},
-            "groundings": groundings, "proposed_edges": proposals},
-            indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            "groundings": groundings, "proposed_edges": proposals})
         print(f"{aid}: {len(cands)} candidates -> {len(groundings)} verified quotes, "
               f"{len(proposals)} proposals, {dropped} dropped | ${cost:.4f} "
               f"(total ${spent:.4f})")
@@ -294,10 +268,12 @@ def cmd_apply(_args) -> None:
     proposed_per_article: dict[str, int] = {}
     proposals = []
     attached = 0
+    resp_dates = []
 
     for f in sorted(RESPONSE_DIR.glob("*.json")):
         doc = json.loads(f.read_text(encoding="utf-8"))
         aid = doc["meta"]["article_id"]
+        resp_dates.append(doc["meta"].get("date", ""))
         grounded_per_article.setdefault(aid, 0)
         for g in doc["groundings"]:
             e = by_key.get(edge_key(g["source"], g["target"], g["type"]))
@@ -317,33 +293,58 @@ def cmd_apply(_args) -> None:
             proposals.append({**p, "article_id": aid, "status": "quarantined"})
             proposed_per_article[aid] = proposed_per_article.get(aid, 0) + 1
 
-    for e in graph["edges"]:
-        n = 1 + len(e["evidence"])  # backbone assertion + distinct grounding articles
-        e["weight"] = 1 - 0.5 ** n
+    recompute_weights(graph["edges"])
 
+    # counters must reflect the graph state, not this run's delta: on a re-run
+    # every quote is already attached, so counting attachments would zero the
+    # bookkeeping and drop all articles below
+    resp_ids = set(grounded_per_article)
+    grounded_per_article = {aid: 0 for aid in resp_ids}
+    for e in graph["edges"]:
+        for ev in e["evidence"]:
+            if ev["article_id"] in resp_ids:
+                grounded_per_article[ev["article_id"]] += 1
+
+    # rebuild only the article entries this pass owns (those with a cached
+    # response), preserving their original retrieved dates; keep every other
+    # entry — e.g. articles added by browse-time research (D7) — untouched
+    prev = {a["id"]: a for a in graph.get("articles", [])}
     title_url = {a["id"]: a for a in corpus["articles"]}
     graph["articles"] = [
         {"id": aid, "title": title_url[aid]["title"], "url": title_url[aid]["url"],
-         "retrieved": time.strftime("%Y-%m-%d"),
+         "retrieved": prev.get(aid, {}).get("retrieved") or time.strftime("%Y-%m-%d"),
          "grounded_edges": cnt, "proposed_edges": proposed_per_article.get(aid, 0)}
         for aid, cnt in sorted(grounded_per_article.items()) if cnt > 0
-    ]
+    ] + [a for a in graph.get("articles", []) if a["id"] not in resp_ids]
     for a in corpus["articles"]:
-        if (ARTICLE_CACHE / f"{a['id']}.txt").exists():
+        if not a.get("retrieved") and (ARTICLE_CACHE / f"{a['id']}.txt").exists():
             a["retrieved"] = time.strftime("%Y-%m-%d")
         a["grounded_edges"] = grounded_per_article.get(a["id"], 0)
         a["proposed_edges"] = proposed_per_article.get(a["id"], 0)
 
-    (DATA / "graph.json").write_text(
-        json.dumps(graph, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (DATA / "corpus.json").write_text(
-        json.dumps(corpus, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    PROPOSED_EDGES.write_text(json.dumps({
-        "meta": {"built": time.strftime("%Y-%m-%d"), "source": f"ground {PROMPT_VERSION}",
+    # preserve review-written fields (status etc.) on unchanged proposals so a
+    # re-run never wipes the accept/reject audit trail apply_review.py records
+    if PROPOSED_EDGES.exists():
+        prev_q = {(p["source"], p["type"], p["target"], p.get("article_id", "")): p
+                  for p in json.loads(
+                      PROPOSED_EDGES.read_text(encoding="utf-8"))["proposals"]}
+        for p in proposals:
+            old = prev_q.get((p["source"], p["type"], p["target"], p["article_id"]))
+            if old:
+                p["status"] = old.get("status", p["status"])
+                for k, v in old.items():
+                    p.setdefault(k, v)
+
+    atomic_write(DATA / "graph.json", graph)
+    atomic_write(DATA / "corpus.json", corpus)
+    atomic_write(PROPOSED_EDGES, {
+        "meta": {"built": max((d for d in resp_dates if d),
+                              default=time.strftime("%Y-%m-%d")),
+                 "source": f"ground {PROMPT_VERSION}",
                  "count": len(proposals),
                  "note": "evidence-backed edges proposed by the grounding pass; "
                          "await Phase 5 human review, never merged directly (D3)"},
-        "proposals": proposals}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        "proposals": proposals})
 
     grounded_edges = sum(1 for e in graph["edges"] if e["evidence"])
     print(f"attached {attached} quotes -> {grounded_edges}/{len(graph['edges'])} edges "

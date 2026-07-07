@@ -37,9 +37,13 @@ REQUEST_DELAY_S = 3  # politeness gap between any two SEP requests
 
 
 def robots_allows(url: str) -> bool:
+    # fetched with a timeout: urllib's rp.read() has none and can hang the
+    # single-threaded app server (serve.py) indefinitely
+    resp = requests.get(f"{SEP_BASE}/robots.txt",
+                        headers={"User-Agent": USER_AGENT}, timeout=30)
+    resp.raise_for_status()
     rp = urllib.robotparser.RobotFileParser()
-    rp.set_url(f"{SEP_BASE}/robots.txt")
-    rp.read()
+    rp.parse(resp.text.splitlines())
     return rp.can_fetch(USER_AGENT, url)
 
 
@@ -131,7 +135,9 @@ def fetch_article(article_id: str, refresh: bool) -> None:
         html = html_file.read_text(encoding="utf-8")
     else:
         if not robots_allows(url):
-            sys.exit(f"robots.txt disallows {url}; aborting")
+            # raise, not sys.exit: SystemExit escapes serve.py's error handling
+            # and would kill the app server (library callers catch RuntimeError)
+            raise RuntimeError(f"robots.txt disallows {url}; aborting")
         time.sleep(REQUEST_DELAY_S)
         resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
         resp.raise_for_status()
@@ -152,7 +158,10 @@ def main() -> None:
     args = ap.parse_args()
 
     if args.article:
-        fetch_article(args.article, args.refresh)
+        try:
+            fetch_article(args.article, args.refresh)
+        except RuntimeError as e:
+            sys.exit(str(e))
         return
 
     html = fetch_contents(args.refresh)

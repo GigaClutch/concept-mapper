@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 
 import networkx as nx
+from common import atomic_write
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -42,8 +43,7 @@ def main() -> None:
         }
 
     out = DATA / "graph.json"
-    out.write_text(json.dumps(graph, indent=2, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+    atomic_write(out, graph)
     top = sorted(graph["nodes"], key=lambda n: -n["metrics"]["betweenness"])[:8]
     print(f"wrote {out.relative_to(ROOT)}: {len(communities)} communities; "
           f"most central: " + ", ".join(

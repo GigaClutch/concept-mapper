@@ -87,31 +87,21 @@ are there.
 
 ---
 
-## Step 4 — Turn on GitHub Pages
-
-All clicking, no commands.
-
-1. On your repo page (`https://github.com/<username>/concept-mapper`), click **Settings** (gear, top-right).
-2. Left menu → **Pages**.
-3. Under **Build and deployment**, open the **Source** dropdown.
-4. Choose **GitHub Actions**.
-
-There's no save button — selecting it is enough. The automated recipe already in your project
-(`.github/workflows/pages.yml`) takes over and publishes your map.
-
----
-
-## Step 5 — Wait for the green check
+## Step 4 — Wait for the green check
 
 1. Click the **Actions** tab on your repo.
 2. A job runs with a **yellow spinning dot** (~1–2 minutes).
 3. Refresh until it's a **green check** ✅ — your site is live.
 
-> A **red X** just means a hiccup — click in, then **Re-run jobs**. Usually green on the first try.
+> A **red X** can mean two things. A hiccup — click in, then **Re-run jobs** — or the built-in
+> quality check refusing to publish a broken or out-of-date map (that's it doing its job; the
+> error message says what's wrong). You do NOT need to touch Settings → Pages: the recipe turns
+> Pages on by itself. Only if the Actions tab shows nothing at all, go to **Settings → Pages**
+> and set **Source** to **GitHub Actions**.
 
 ---
 
-## Step 6 — Find your public link
+## Step 5 — Find your public link
 
 1. Back to **Settings → Pages**.
 2. At the top: **"Your site is live at"** with your link and a **Visit site** button.
@@ -130,9 +120,20 @@ tablets, and computers.
 ## Good to know
 
 - **The link is permanent** — bookmark and share freely.
+- **Before you change anything, sync first.** The copy on github.com and the copy on your
+  computer are the *same project* in two places. If you (or anyone) edited files on the GitHub
+  website, your computer doesn't have those changes yet — and pushing without syncing can tangle
+  the two. So always start a work session with:
+  ```powershell
+  cd "C:/Dev/Concept Mapper Fable"
+  git pull
+  ```
+  If it says `Already up to date.`, you're safe. (How to tell the site is behind your computer:
+  the repo page on github.com shows the date of the last change at the top of the file list.)
 - **To update the map later**, in PowerShell:
   ```powershell
   cd "C:/Dev/Concept Mapper Fable"
+  git pull
   git add -A
   git commit -m "Update the map"
   git push

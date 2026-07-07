@@ -4,6 +4,8 @@ The registry is the closed world (D3): every node in any generated graph must
 have a row here. Rows carry the curated label/aliases plus Wikidata QID,
 description, aliases and dates where resolved. corpus.json is the bounded
 Ethics article list (curated ids verified against the scraped SEP contents).
+Provisional rows added by browse-time research (D7) are carried forward from
+the existing registry; every check runs before anything is written.
 """
 
 from __future__ import annotations
@@ -12,6 +14,8 @@ import json
 import sys
 import time
 from pathlib import Path
+
+from common import atomic_write, preserve_built
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -81,6 +85,17 @@ def main() -> None:
     if dup:
         sys.exit(f"duplicate registry ids: {sorted(dup)}")
 
+    # carry forward provisional rows added by browse-time research (D7): they
+    # are absent from seeds.json but graph nodes depend on them (D3)
+    out = DATA / "registry.json"
+    ids = {r["id"] for r in rows}
+    if out.exists():
+        for r in json.loads(out.read_text(encoding="utf-8"))["nodes"]:
+            if r.get("status") == "provisional" and r["id"] not in ids:
+                rows.append(r)
+                ids.add(r["id"])
+                print(f"carried forward provisional row: {r['id']}")
+
     registry = {
         "meta": {
             "version": seeds["meta"]["version"],
@@ -93,34 +108,41 @@ def main() -> None:
         },
         "nodes": rows,
     }
-    out = DATA / "registry.json"
-    out.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
-    print(f"wrote {out.relative_to(ROOT)} ({len(rows)} rows)")
-    print(json.dumps(registry["meta"]["qid_sources"], indent=2))
 
+    # carry forward per-article bookkeeping (retrieved date, grounding counters)
+    # so a registry re-run never resets what ground.py apply recorded
+    out_corpus = DATA / "corpus.json"
+    prev_articles = {}
+    if out_corpus.exists():
+        prev_articles = {a["id"]: a for a in json.loads(
+            out_corpus.read_text(encoding="utf-8"))["articles"]}
     corpus_rows = []
     for c in seeds["sep_corpus"]:
         if c["id"] not in contents:
             sys.exit(f"corpus id {c['id']} not in SEP contents — fix seeds.json")
+        prev = prev_articles.get(c["id"], {})
         corpus_rows.append({
             "id": c["id"], "title": contents[c["id"]],
             "url": f"{SEP_BASE}/{c['id']}/", "priority": c["priority"],
-            "retrieved": "", "grounded_edges": 0, "proposed_edges": 0,
+            "retrieved": prev.get("retrieved", ""),
+            "grounded_edges": prev.get("grounded_edges", 0),
+            "proposed_edges": prev.get("proposed_edges", 0),
         })
-    out2 = DATA / "corpus.json"
-    out2.write_text(json.dumps(
-        {"meta": {"built": time.strftime("%Y-%m-%d"), "count": len(corpus_rows)},
-         "articles": corpus_rows}, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8")
-    print(f"wrote {out2.relative_to(ROOT)} ({len(corpus_rows)} articles)")
+    corpus = {"meta": {"built": time.strftime("%Y-%m-%d"), "count": len(corpus_rows)},
+              "articles": corpus_rows}
 
-    # closed-world check: every node already in the graph must be registered
+    # closed-world check (D3), BEFORE any write: every node already in the
+    # graph must be registered — on failure nothing on disk changes
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
-    ids = {r["id"] for r in rows}
     missing = [n["id"] for n in graph["nodes"] if n["id"] not in ids]
     if missing:
         sys.exit(f"graph nodes missing from registry: {missing}")
+
+    atomic_write(out, preserve_built(out, registry))
+    print(f"wrote {out.relative_to(ROOT)} ({len(rows)} rows)")
+    print(json.dumps(registry["meta"]["qid_sources"], indent=2))
+    atomic_write(out_corpus, preserve_built(out_corpus, corpus))
+    print(f"wrote {out_corpus.relative_to(ROOT)} ({len(corpus_rows)} articles)")
     print("all graph nodes covered by registry")
 
 

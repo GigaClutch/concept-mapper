@@ -1,14 +1,15 @@
 {
   "meta": {
     "version": "0.1.0",
-    "built": "2026-06-11",
+    "built": "2026-07-07",
     "domain": "Ethics",
     "count": 139,
     "qid_sources": {
       "auto-unverified": 61,
       "auto-verified": 49,
       "curated-none": 5,
-      "curated-verified": 22
+      "curated-verified": 22,
+      "unresolved": 2
     }
   },
   "nodes": [

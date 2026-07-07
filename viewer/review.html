@@ -81,10 +81,26 @@
 
 <script>
 const R = window.REVIEW;
-const KEY = "cm-review-v1";
+const KEY = "cm-review-v2";
+const OLD_KEY = "cm-review-v1";
+const SECTION_KEYS = ["sample", "proposed_edges", "proposed_nodes", "researched_edges", "researched_nodes"];
 const state = JSON.parse(localStorage.getItem(KEY) || "{}");
-for (const k of ["sample", "proposed_edges", "proposed_nodes", "researched_edges", "researched_nodes"])
-  if (!state[k]) state[k] = {};
+for (const k of SECTION_KEYS) if (!state[k]) state[k] = {};
+// migrate v1 (verdicts stored by array position — unsafe once the queue is
+// rebuilt) to identity keys, using the current bundle order; v1 predates any
+// bundle regeneration, so positions still line up here and only here
+const old = JSON.parse(localStorage.getItem(OLD_KEY) || "null");
+if (old) {
+  for (const k of SECTION_KEYS) {
+    const items = R[k] || [];
+    for (const [i, d] of Object.entries(old[k] || {}))
+      if (items[+i] && !state[k][items[+i].key]) state[k][items[+i].key] = d;
+  }
+  state._fp = R.fingerprint;
+  localStorage.setItem(KEY, JSON.stringify(state));
+  localStorage.removeItem(OLD_KEY);
+}
+if (!state._fp) state._fp = R.fingerprint;
 const save = () => localStorage.setItem(KEY, JSON.stringify(state));
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const lab = id => (R.labels[id] || { label: id }).label;
@@ -159,14 +175,38 @@ function assistHtml(it) {
 }
 const isSafe = it => assistInfo(it).safe;
 
+function staleKeys() {
+  // saved decisions whose item is no longer in the queue (identity-keyed, so
+  // they never mis-attach — they just stop rendering)
+  const live = new Set(SECTIONS.flatMap(s => s.items.map(it => it.key)));
+  const out = [];
+  for (const k of SECTION_KEYS)
+    for (const key of Object.keys(state[k]))
+      if (!live.has(key)) out.push([k, key]);
+  return out;
+}
+
 function render() {
   const root = document.getElementById("sections");
   root.innerHTML = "";
+  if (state._fp !== R.fingerprint) {
+    const stale = staleKeys();
+    const banner = document.createElement("p");
+    banner.className = "intro";
+    banner.style.cssText = "background:#fbf3e6;border-left:3px solid #c08a2b;padding:10px 12px;border-radius:0 8px 8px 0;color:var(--ink)";
+    banner.innerHTML = `The queue has changed since you last saved decisions. Your saved verdicts still
+      attach to the right items${stale.length ? `, but <b>${stale.length}</b> of them are for items no longer in the queue` : ""}.
+      <button id="ack-fp" style="margin-left:8px">OK${stale.length ? " — drop the stale ones" : ""}</button>`;
+    root.appendChild(banner);
+    banner.querySelector("#ack-fp").onclick = () => {
+      for (const [sec, key] of staleKeys()) delete state[sec][key];
+      state._fp = R.fingerprint; save(); render();
+    };
+  }
   const attenOnly = document.getElementById("attention-only").checked;
   for (const sec of SECTIONS) {
     const visible = sec.items
-      .map((it, i) => ({ it, i }))
-      .filter(({ it, i }) => !(attenOnly && !state[sec.key][i]?.verdict && isSafe(it)));
+      .filter(it => !(attenOnly && !state[sec.key][it.key]?.verdict && isSafe(it)));
     if (!visible.length) continue;
     const h = document.createElement("h2");
     h.textContent = sec.title;
@@ -175,8 +215,8 @@ function render() {
     blurb.className = "intro";
     blurb.textContent = sec.blurb;
     root.appendChild(blurb);
-    visible.forEach(({ it, i }) => {
-      const d = state[sec.key][i] || {};
+    visible.forEach(it => {
+      const d = state[sec.key][it.key] || {};
       const card = document.createElement("div");
       card.className = "card" + (d.verdict ? ` decided-${d.verdict}` : "");
       card.innerHTML = claimHtml(it, sec.key) + assistHtml(it) + `
@@ -186,19 +226,22 @@ function render() {
           <button class="clr">Undecided</button>
           <input class="note" placeholder="optional note" value="${esc(d.note || "")}">
         </div>`;
-      const set = v => { state[sec.key][i] = { ...state[sec.key][i], verdict: v }; save(); render(); };
+      const set = v => { state[sec.key][it.key] = { ...state[sec.key][it.key], verdict: v }; save(); render(); };
       card.querySelector(".acc").onclick = () => set("accept");
       card.querySelector(".rej").onclick = () => set("reject");
-      card.querySelector(".clr").onclick = () => { delete (state[sec.key][i] || {}).verdict; save(); render(); };
+      card.querySelector(".clr").onclick = () => {
+        if (state[sec.key][it.key]) { delete state[sec.key][it.key].verdict; save(); }
+        render();
+      };
       card.querySelector(".note").onchange = e => {
-        state[sec.key][i] = { ...state[sec.key][i], note: e.target.value }; save();
+        state[sec.key][it.key] = { ...state[sec.key][it.key], note: e.target.value }; save();
       };
       root.appendChild(card);
     });
   }
   const total = SECTIONS.reduce((n, s) => n + s.items.length, 0);
-  const done = SECTIONS.reduce((n, s) => n + s.items.filter((_, i) => state[s.key][i]?.verdict).length, 0);
-  const safe = SECTIONS.reduce((n, s) => n + s.items.filter((it, i) => !state[s.key][i]?.verdict && isSafe(it)).length, 0);
+  const done = SECTIONS.reduce((n, s) => n + s.items.filter(it => state[s.key][it.key]?.verdict).length, 0);
+  const safe = SECTIONS.reduce((n, s) => n + s.items.filter(it => !state[s.key][it.key]?.verdict && isSafe(it)).length, 0);
   document.getElementById("progress").textContent =
     `${done} / ${total} decided` + (safe ? ` · ${safe} safe to bulk-accept` : "");
   document.querySelector("#bar div").style.width = total ? (100 * done / total) + "%" : "0%";
@@ -208,9 +251,9 @@ function render() {
 document.getElementById("attention-only").onchange = render;
 document.getElementById("accept-safe").onclick = () => {
   let n = 0;
-  for (const sec of SECTIONS) sec.items.forEach((it, i) => {
-    if (!state[sec.key][i]?.verdict && isSafe(it)) {
-      state[sec.key][i] = { ...state[sec.key][i], verdict: "accept" }; n++;
+  for (const sec of SECTIONS) sec.items.forEach(it => {
+    if (!state[sec.key][it.key]?.verdict && isSafe(it)) {
+      state[sec.key][it.key] = { ...state[sec.key][it.key], verdict: "accept" }; n++;
     }
   });
   save(); render();
@@ -223,8 +266,8 @@ document.getElementById("accept-safe").onclick = () => {
 document.getElementById("export").onclick = () => {
   const out = { exported: new Date().toISOString().slice(0, 10), decisions: {} };
   for (const sec of SECTIONS) {
-    out.decisions[sec.key] = sec.items.map((it, i) => {
-      const d = state[sec.key][i] || {};
+    out.decisions[sec.key] = sec.items.map(it => {
+      const d = state[sec.key][it.key] || {};
       const id = sec.key === "researched_nodes" ? { id: it.id, label: it.label }
         : sec.key === "proposed_nodes" ? { label: it.label }
         : { source: it.source, type: it.type, target: it.target, article_id: it.article_id };
@@ -241,6 +284,7 @@ document.getElementById("export").onclick = () => {
 document.getElementById("reset").onclick = () => {
   if (confirm("Clear all decisions saved in this browser?")) {
     localStorage.removeItem(KEY);
+    localStorage.removeItem(OLD_KEY);
     location.reload();
   }
 };
