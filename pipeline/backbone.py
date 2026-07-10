@@ -58,128 +58,20 @@ DOMAIN_RANGE = {
     "INTRODUCED_IN":  ({"concept"}, {"work"}),
 }
 
-PASSES = {
-    "normative_theories": {
-        "title": "Normative ethical theories",
-        "guidance": (
-            "Map the normative-ethics families: the consequentialism/utilitarianism "
-            "tree, deontology and the Kantian apparatus (imperatives, autonomy, maxims, "
-            "good will, kingdom of ends), the virtue-ethics tree and its Aristotelian "
-            "concepts, contract theories, egoisms, hedonism, divine command, natural "
-            "law, and care/feminist ethics. Assert the taxonomy (SUBCATEGORY_OF), the "
-            "classic oppositions (CONTRASTS_WITH), and developer/extender attributions."),
-        "focus": [
-            "normative_ethics", "consequentialism", "utilitarianism",
-            "act_utilitarianism", "rule_utilitarianism", "greatest_happiness_principle",
-            "deontology", "duty", "categorical_imperative", "hypothetical_imperative",
-            "autonomy", "heteronomy", "good_will", "maxim", "kingdom_of_ends",
-            "universalizability", "virtue_ethics", "virtue", "eudaimonia",
-            "golden_mean", "practical_wisdom", "akrasia", "contractarianism",
-            "contractualism", "social_contract", "ethical_egoism",
-            "psychological_egoism", "hedonism", "divine_command_theory", "natural_law",
-            "care_ethics", "feminist_ethics", "altruism",
-        ],
-    },
-    "metaethics": {
-        "title": "Metaethical positions",
-        "guidance": (
-            "Map the metaethics tree: realism vs anti-realism, cognitivism vs "
-            "non-cognitivism, the non-cognitivisms (emotivism, prescriptivism, "
-            "expressivism, quasi-realism), error theory, naturalism vs non-naturalism, "
-            "intuitionism, relativism/subjectivism/nihilism, sentimentalism, and the "
-            "classic arguments (open question, naturalistic fallacy, is/ought). Take "
-            "special care to attribute each doctrine to its actual proponent and each "
-            "argument to the work that actually introduced it."),
-        "focus": [
-            "metaethics", "moral_realism", "moral_anti_realism", "moral_cognitivism",
-            "non_cognitivism", "emotivism", "prescriptivism", "expressivism",
-            "quasi_realism", "error_theory", "moral_naturalism", "moral_non_naturalism",
-            "moral_intuitionism", "moral_relativism", "moral_subjectivism",
-            "moral_nihilism", "moral_sentimentalism", "open_question_argument",
-            "naturalistic_fallacy", "is_ought_problem", "prima_facie_duty",
-            "moral_particularism",
-        ],
-    },
-    "agency_value": {
-        "title": "Moral agency, freedom, and value",
-        "guidance": (
-            "Map moral psychology and value concepts: free will / determinism / "
-            "compatibilism, moral responsibility and moral luck, moral agency and "
-            "moral status, dilemmas and the trolley problem, double effect, "
-            "supererogation, practical reason, well-being, justice and rights, "
-            "and applied ethics."),
-        "focus": [
-            "free_will", "determinism", "compatibilism", "moral_responsibility",
-            "moral_luck", "moral_agency", "moral_status", "moral_dilemma",
-            "trolley_problem", "doctrine_of_double_effect", "supererogation",
-            "practical_reason", "well_being", "justice", "rights", "applied_ethics",
-            "altruism", "psychological_egoism", "eudaimonia",
-        ],
-    },
-    "works_bibliography": {
-        "title": "Works: authorship and first introductions",
-        "guidance": (
-            "For every work in the registry, assert AUTHORED_BY (direction: work -> "
-            "person). Add INTRODUCED_IN edges (concept -> work) only where a concept "
-            "was genuinely first introduced or canonically stated in that work — "
-            "getting the right work matters more than coverage; many famous "
-            "attributions name the wrong book. Add work-level CRITIQUES / RESPONDS_TO "
-            "where a work's central target is itself a registry node."),
-        "focus": [
-            "a_theory_of_justice", "after_virtue", "critique_of_practical_reason",
-            "critique_of_pure_reason", "enquiry_principles_of_morals",
-            "ethics_inventing_right_and_wrong", "groundwork_metaphysics_of_morals",
-            "language_truth_and_logic", "leviathan", "metaphysics_of_morals",
-            "methods_of_ethics", "modern_moral_philosophy", "nicomachean_ethics",
-            "on_liberty", "on_the_genealogy_of_morality", "principia_ethica",
-            "principles_of_morals_and_legislation", "reasons_and_persons",
-            "republic_plato", "the_right_and_the_good", "treatise_of_human_nature",
-            "utilitarianism_mill", "what_we_owe_to_each_other",
-        ],
-    },
-    "persons_schools": {
-        "title": "Influence network and schools",
-        "guidance": (
-            "Map INFLUENCED_BY among persons (direction: the later thinker is "
-            "INFLUENCED_BY the earlier; check the dates), person <-> school links, "
-            "school founders (school DEVELOPED_BY person), school oppositions, and "
-            "famous person-level CRITIQUES of registry doctrines. Only assert "
-            "influence that is standard, documented intellectual history."),
-        "focus": [
-            "a_j_ayer", "alasdair_macintyre", "allan_gibbard", "aristotle",
-            "arthur_schopenhauer", "bernard_williams", "carol_gilligan",
-            "charles_stevenson", "christine_korsgaard", "david_hume", "derek_parfit",
-            "elizabeth_anscombe", "epicurus", "francis_hutcheson",
-            "friedrich_nietzsche", "g_e_moore", "h_a_prichard", "henry_sidgwick",
-            "immanuel_kant", "j_l_mackie", "jeremy_bentham", "john_rawls",
-            "john_stuart_mill", "joseph_butler", "nel_noddings", "peter_singer",
-            "philippa_foot", "plato", "r_m_hare", "rosalind_hursthouse",
-            "simon_blackburn", "socrates", "t_m_scanlon", "thomas_aquinas",
-            "thomas_hobbes", "w_d_ross", "zeno_of_citium", "empiricism",
-            "epicureanism", "german_idealism", "rationalism", "scholasticism",
-            "stoicism",
-        ],
-    },
-    "cross_boundary": {
-        "title": "Cross-cluster boundary concepts",
-        "guidance": (
-            "Explicit cross-domain pass: connect concepts that bridge the clusters "
-            "covered by the other passes — branch-level distinctions (metaethics vs "
-            "normative ethics), arguments that target doctrines in another cluster, "
-            "concepts that are constituents of theories mapped elsewhere, and "
-            "oppositions that cross family lines. Do not repeat edges that obviously "
-            "belong inside a single cluster; look for the seams."),
-        "focus": [
-            "metaethics", "normative_ethics", "applied_ethics", "is_ought_problem",
-            "naturalistic_fallacy", "universalizability", "maxim", "kingdom_of_ends",
-            "duty", "virtue", "justice", "rights", "well_being", "eudaimonia",
-            "practical_reason", "moral_sentimentalism", "moral_particularism",
-            "prima_facie_duty", "contractualism", "consequentialism",
-            "moral_dilemma", "trolley_problem", "akrasia", "free_will",
-            "moral_responsibility",
-        ],
-    },
-}
+def load_passes(domain: str) -> tuple[dict, dict]:
+    """Pass definitions are data (Phase 11): data/passes/<domain>.json holds
+    {meta: {domain, ...}, passes: {...}} — adding a domain is a JSON file,
+    not a code change."""
+    f = DATA / "passes" / f"{domain}.json"
+    if not f.exists():
+        sys.exit(f"no pass definitions for domain '{domain}' — create "
+                 f"{f.relative_to(ROOT)} (see data/passes/ethics.json)")
+    doc = json.loads(f.read_text(encoding="utf-8"))
+    return doc["meta"], doc["passes"]
+
+
+# default domain, also what the test suite exercises
+PASSES_META, PASSES = load_passes("ethics")
 
 EDGE_DIRECTION_GUIDE = """\
 | type | direction reads as | example |
@@ -235,14 +127,15 @@ Rules — read carefully:
 """
 
 
-def build_prompt(pass_id: str, spec: dict, rows: list[dict], by_id: dict) -> str:
+def build_prompt(pass_id: str, spec: dict, rows: list[dict], by_id: dict,
+                 domain_label: str) -> str:
     focus = "\n".join(f"- {i}  ({by_id[i]['type']}) {by_id[i]['label']}"
                       for i in spec["focus"])
     return (
         f"# Concept Mapper backbone pass: {spec['title']}\n\n"
         f"pass_id: {pass_id}\nprompt_version: {PROMPT_VERSION}\n\n"
         "You are building the backbone of a typed knowledge graph of academic\n"
-        "philosophy (domain: Ethics) from your own knowledge. Output edges between\n"
+        f"philosophy (domain: {domain_label}) from your own knowledge. Output edges between\n"
         "registry nodes only; evidence quotes are attached in a later stage.\n\n"
         f"## Edge types\n\n{EDGE_DIRECTION_GUIDE}\n"
         f"## {spec['title']}\n\n{spec['guidance']}\n\n"
@@ -254,21 +147,24 @@ def build_prompt(pass_id: str, spec: dict, rows: list[dict], by_id: dict) -> str
     )
 
 
-def cmd_prompts(_args) -> None:
+def cmd_prompts(args) -> None:
+    meta, passes = load_passes(args.domain)
     _, rows, by_id, _ = load_registry()
-    for pass_id, spec in PASSES.items():
+    for pass_id, spec in passes.items():
         unknown = [i for i in spec["focus"] if i not in by_id]
         if unknown:
             sys.exit(f"pass {pass_id}: focus ids not in registry: {unknown}")
     PROMPT_DIR.mkdir(parents=True, exist_ok=True)
-    for pass_id, spec in PASSES.items():
+    for pass_id, spec in passes.items():
         out = PROMPT_DIR / f"{pass_id}.md"
-        out.write_text(build_prompt(pass_id, spec, rows, by_id), encoding="utf-8")
+        out.write_text(build_prompt(pass_id, spec, rows, by_id, meta["domain"]),
+                       encoding="utf-8")
         print(f"wrote {out.relative_to(ROOT)}")
-    print(f"{len(PASSES)} prompts, prompt_version {PROMPT_VERSION}")
+    print(f"{len(passes)} prompts, prompt_version {PROMPT_VERSION}")
 
 
-def cmd_ingest(_args) -> None:
+def cmd_ingest(args) -> None:
+    _, passes = load_passes(args.domain)
     _, _, by_id, resolve = load_registry()
     edges: list[dict] = []
     rejects: list[dict] = []
@@ -287,7 +183,7 @@ def cmd_ingest(_args) -> None:
         pass_id = meta.get("pass_id", f.stem)
         if pass_id != f.stem:
             warnings.append(f"{f.name}: meta.pass_id '{pass_id}' != filename")
-        if pass_id not in PASSES:
+        if pass_id not in passes:
             warnings.append(f"{f.name}: unknown pass_id '{pass_id}'")
         if meta.get("prompt_version") != PROMPT_VERSION:
             warnings.append(f"{f.name}: prompt_version {meta.get('prompt_version')} "
@@ -377,7 +273,7 @@ def node_from_registry(row: dict) -> dict:
     }
 
 
-def cmd_merge(_args) -> None:
+def cmd_merge(args) -> None:
     _, _, by_id, _ = load_registry()
     cand = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
@@ -406,9 +302,11 @@ def cmd_merge(_args) -> None:
                 added_nodes += 1
 
     graph["meta"]["built"] = time.strftime("%Y-%m-%d")
+    domains = sorted({n.get("domain", "") for n in graph["nodes"]} - {""})
     graph["meta"]["description"] = (
-        "Phase 1 hand-built Kant cluster + Phase 3 backbone "
-        f"({cand['meta']['prompt_version']}) over the full Ethics registry")
+        "hand-built seed cluster + backbone "
+        f"({cand['meta']['prompt_version']}) over the "
+        f"{' + '.join(domains) or 'full'} registry")
     out = DATA / "graph.json"
     atomic_write(out, graph)
     print(f"wrote {out.relative_to(ROOT)}: +{added_edges} edges, +{added_nodes} nodes "
@@ -445,10 +343,16 @@ def cmd_sample(args) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
+    dom = argparse.ArgumentParser(add_help=False)
+    dom.add_argument("--domain", default="ethics",
+                     help="pass definitions to use: data/passes/<domain>.json")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("prompts", help="emit per-pass prompts to cache/backbone/prompts/")
-    sub.add_parser("ingest", help="validate responses -> candidates + quarantine")
-    sub.add_parser("merge", help="merge candidates into data/graph.json")
+    sub.add_parser("prompts", parents=[dom],
+                   help="emit per-pass prompts to cache/backbone/prompts/")
+    sub.add_parser("ingest", parents=[dom],
+                   help="validate responses -> candidates + quarantine")
+    sub.add_parser("merge", parents=[dom],
+                   help="merge candidates into data/graph.json")
     sp = sub.add_parser("sample", help="draw verification sample from merged edges")
     sp.add_argument("-n", type=int, default=25)
     sp.add_argument("--seed", type=int, default=20260611)

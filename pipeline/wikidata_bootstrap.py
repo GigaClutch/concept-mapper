@@ -50,10 +50,15 @@ BAD_CLASSES = {
     "Q5398426",   # television series
     "Q482994",    # album
 }
-CONCEPT_KEYWORDS = re.compile(
-    r"philosoph|ethic|moral|kant|aristot|hume|virtue|normative|metaethic|"
-    r"epistemolog|metaphys|doctrine|theory|principle|school of|concept",
-    re.I)
+# disambiguation stems: a candidate whose Wikidata description matches gets a
+# score boost. Seed files may override per domain via meta.concept_keywords
+# (a list of stems) — this default covers philosophy broadly.
+DEFAULT_CONCEPT_KEYWORDS = [
+    "philosoph", "ethic", "moral", "kant", "aristot", "hume", "virtue",
+    "normative", "metaethic", "epistemolog", "metaphys", "doctrine", "theory",
+    "principle", "school of", "concept",
+]
+CONCEPT_KEYWORDS = re.compile("|".join(DEFAULT_CONCEPT_KEYWORDS), re.I)
 
 session = requests.Session()
 session.headers["User-Agent"] = USER_AGENT
@@ -249,8 +254,20 @@ def enrich(entry: dict, etype: str, qid: str, source: str, ents: dict) -> dict:
 
 
 def main() -> None:
+    global CONCEPT_KEYWORDS
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--domain", default="ethics",
+                    help="seed file to bootstrap: data/seeds_<domain>.json")
+    args = ap.parse_args()
+
     load_cache()
-    seeds = json.loads((DATA / "seeds.json").read_text(encoding="utf-8"))
+    seeds_file = DATA / f"seeds_{args.domain}.json"
+    if not seeds_file.exists():
+        sys.exit(f"no seed file for domain '{args.domain}'")
+    seeds = json.loads(seeds_file.read_text(encoding="utf-8"))
+    stems = seeds["meta"].get("concept_keywords") or DEFAULT_CONCEPT_KEYWORDS
+    CONCEPT_KEYWORDS = re.compile("|".join(stems), re.I)
     groups = [("person", seeds["persons"]), ("concept", seeds["concepts"]),
               ("school", seeds["schools"]), ("work", seeds["works"])]
 

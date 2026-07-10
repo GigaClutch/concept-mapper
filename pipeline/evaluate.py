@@ -1,8 +1,8 @@
 """Score an edge set against the gold sets (Phase 3+, CLAUDE.md D6).
 
-Metrics:
-  - canonical recall: fraction of data/gold/canonical_edges.json recovered
-  - adversarial hits: traps from data/gold/adversarial.json that were asserted
+Metrics (gold sets live per domain in data/gold/<domain>/):
+  - canonical recall: fraction of canonical_edges.json recovered
+  - adversarial hits: traps from adversarial.json that were asserted
     (each one is a precision failure)
   - reversed canonicals: directed gold edges asserted backwards
 
@@ -43,6 +43,9 @@ def main() -> None:
                     help="score data/graph.json instead of the backbone candidates")
     ap.add_argument("--edges", type=Path, default=None,
                     help="explicit edges file (any JSON with an 'edges' list)")
+    ap.add_argument("--domain", default=None,
+                    help="score against one domain's gold set (data/gold/<domain>/); "
+                         "default: every domain found there")
     ap.add_argument("--min-recall", type=float, default=0.8)
     ap.add_argument("--max-traps", type=int, default=0)
     ap.add_argument("--max-reversed", type=int, default=0)
@@ -52,9 +55,19 @@ def main() -> None:
               else DATA / "graph.json" if args.graph
               else DATA / "backbone" / "candidates.json")
     keys, _ = load_keys(target, "edges")
-    _, canon = load_keys(DATA / "gold" / "canonical_edges.json", "edges")
-    _, traps = load_keys(DATA / "gold" / "adversarial.json", "traps")
-    print(f"scoring {target.relative_to(ROOT)} ({len(keys)} edges) against gold\n")
+
+    # gold sets live per domain (Phase 11): data/gold/<domain>/{canonical_edges,adversarial}.json
+    domains = ([args.domain] if args.domain else
+               sorted(d.name for d in (DATA / "gold").iterdir()
+                      if (d / "canonical_edges.json").exists()))
+    if not domains:
+        sys.exit("no gold sets under data/gold/<domain>/")
+    canon, traps = [], []
+    for d in domains:
+        canon += load_keys(DATA / "gold" / d / "canonical_edges.json", "edges")[1]
+        traps += load_keys(DATA / "gold" / d / "adversarial.json", "traps")[1]
+    print(f"scoring {target.relative_to(ROOT)} ({len(keys)} edges) against gold "
+          f"[{', '.join(domains)}]\n")
 
     hit, missed = [], []
     for e in canon:

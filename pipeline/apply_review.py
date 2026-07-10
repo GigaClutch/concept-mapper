@@ -156,8 +156,8 @@ def main() -> None:
         p = pn_by_label.get(d["label"].casefold())
         if p is None:
             continue
-        p["status"] = ("approved — add to seeds.json at next registry expansion"
-                       if d["verdict"] == "accept" else "rejected")
+        p["status"] = ("approved — add to the domain seed file at next registry "
+                       "expansion" if d["verdict"] == "accept" else "rejected")
         p["decided"] = TODAY
         if d.get("note"):
             p["note"] = d["note"]

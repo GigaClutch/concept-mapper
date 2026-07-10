@@ -158,7 +158,7 @@ class TestMergePreservesProvisional(PatchedDirsMixin, unittest.TestCase):
     def setUp(self):
         super().setUp()
         d = self.tmp / "data"
-        write(d / "seeds.json", {
+        write(d / "seeds_ethics.json", {
             "meta": {"version": "t", "domain": "Ethics"},
             "concepts": [{"id": "a", "label": "A"}],
             "persons": [], "schools": [], "works": [],
@@ -180,13 +180,13 @@ class TestMergePreservesProvisional(PatchedDirsMixin, unittest.TestCase):
         write(d / "graph.json", {"nodes": [{"id": "a"}, {"id": "prov1"}], "edges": []})
 
     def test_provisional_rows_and_bookkeeping_survive_reruns(self):
-        merge.main()
+        merge.main([])
         reg1 = (self.tmp / "data" / "registry.json").read_text(encoding="utf-8")
         cor1 = (self.tmp / "data" / "corpus.json").read_text(encoding="utf-8")
         self.assertIn("prov1", {r["id"] for r in json.loads(reg1)["nodes"]})
         art = json.loads(cor1)["articles"][0]
         self.assertEqual((art["retrieved"], art["grounded_edges"]), ("2026-01-05", 7))
-        merge.main()
+        merge.main([])
         self.assertEqual((self.tmp / "data" / "registry.json").read_text(encoding="utf-8"), reg1)
         self.assertEqual((self.tmp / "data" / "corpus.json").read_text(encoding="utf-8"), cor1)
 
@@ -197,7 +197,7 @@ class TestMergePreservesProvisional(PatchedDirsMixin, unittest.TestCase):
         before_reg = (d / "registry.json").read_text(encoding="utf-8")
         before_cor = (d / "corpus.json").read_text(encoding="utf-8")
         with self.assertRaises(SystemExit):
-            merge.main()
+            merge.main([])
         self.assertEqual((d / "registry.json").read_text(encoding="utf-8"), before_reg)
         self.assertEqual((d / "corpus.json").read_text(encoding="utf-8"), before_cor)
 

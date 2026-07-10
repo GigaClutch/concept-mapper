@@ -155,6 +155,14 @@ if (!window.GRAPH || !window.cytoscape) {
 }
 document.documentElement.dataset.theme = localStorage.getItem("cm-theme") || "dark";
 const G = window.GRAPH;
+// title and masthead follow the data: one map, however many domains it covers
+{
+  const domains = (G.meta.domains && G.meta.domains.filter(Boolean)) ||
+    [...new Set(G.nodes.map(n => n.domain).filter(Boolean))].sort();
+  const label = domains.join(" + ") || "Philosophy";
+  document.title = `Concept Mapper — ${label}`;
+  document.querySelector("header h1 span").textContent = `· ${label}`;
+}
 const FAMILY = {};
 for (const [fam, types] of Object.entries(G.meta.edge_families))
   for (const t of types) FAMILY[t] = fam;

@@ -179,13 +179,16 @@ def main() -> None:
         encoding="utf-8")
     print(f"wrote {out.relative_to(ROOT)} ({len(entries)} entries)")
 
-    seeds = json.loads((DATA / "seeds.json").read_text(encoding="utf-8"))
     known = set(parser.entries)
-    missing = [c["id"] for c in seeds["sep_corpus"] if c["id"] not in known]
-    if missing:
-        print(f"WARNING: {len(missing)} curated corpus ids not in SEP contents: {missing}")
-    else:
-        print(f"all {len(seeds['sep_corpus'])} curated corpus ids verified against SEP contents")
+    for seeds_file in sorted(DATA.glob("seeds_*.json")):
+        seeds = json.loads(seeds_file.read_text(encoding="utf-8"))
+        missing = [c["id"] for c in seeds.get("sep_corpus", []) if c["id"] not in known]
+        if missing:
+            print(f"WARNING: {seeds_file.name}: {len(missing)} curated corpus ids "
+                  f"not in SEP contents: {missing}")
+        else:
+            print(f"{seeds_file.name}: all {len(seeds['sep_corpus'])} curated corpus "
+                  f"ids verified against SEP contents")
 
 
 if __name__ == "__main__":

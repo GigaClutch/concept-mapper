@@ -140,22 +140,32 @@ def check_graph(registry_ids: set[str], registry_qids: dict[str, str]) -> None:
 
 
 def check_gold(registry_ids: set[str]) -> None:
-    canon = json.loads((DATA / "gold" / "canonical_edges.json").read_text(encoding="utf-8"))
-    adv = json.loads((DATA / "gold" / "adversarial.json").read_text(encoding="utf-8"))
-    ck = check_edge_list(canon["edges"], registry_ids, "gold/canonical")
-    ak = check_edge_list(adv["traps"], registry_ids, "gold/adversarial")
-    for k in ck & ak:
-        err(f"gold: edge {k} appears in BOTH canonical and adversarial sets")
-    if canon["meta"].get("edge_count") != len(canon["edges"]):
-        warn(f"gold/canonical meta edge_count {canon['meta'].get('edge_count')} "
-             f"!= actual {len(canon['edges'])}")
-    if adv["meta"].get("trap_count") != len(adv["traps"]):
-        warn(f"gold/adversarial meta trap_count {adv['meta'].get('trap_count')} "
-             f"!= actual {len(adv['traps'])}")
-    for t in adv["traps"]:
-        if t.get("trap_type") not in {"direction_error", "polysemy", "plausible_but_false"}:
-            err(f"gold/adversarial {t['source']}->{t['target']}: bad trap_type")
-    print(f"gold: {len(canon['edges'])} canonical edges, {len(adv['traps'])} traps checked")
+    total_c = total_t = 0
+    domains = sorted(d for d in (DATA / "gold").iterdir()
+                     if (d / "canonical_edges.json").exists())
+    if not domains:
+        err("gold: no domain directories under data/gold/")
+        return
+    for d in domains:
+        canon = json.loads((d / "canonical_edges.json").read_text(encoding="utf-8"))
+        adv = json.loads((d / "adversarial.json").read_text(encoding="utf-8"))
+        ck = check_edge_list(canon["edges"], registry_ids, f"gold/{d.name}/canonical")
+        ak = check_edge_list(adv["traps"], registry_ids, f"gold/{d.name}/adversarial")
+        for k in ck & ak:
+            err(f"gold/{d.name}: edge {k} appears in BOTH canonical and adversarial sets")
+        if canon["meta"].get("edge_count") != len(canon["edges"]):
+            warn(f"gold/{d.name}/canonical meta edge_count {canon['meta'].get('edge_count')} "
+                 f"!= actual {len(canon['edges'])}")
+        if adv["meta"].get("trap_count") != len(adv["traps"]):
+            warn(f"gold/{d.name}/adversarial meta trap_count {adv['meta'].get('trap_count')} "
+                 f"!= actual {len(adv['traps'])}")
+        for t in adv["traps"]:
+            if t.get("trap_type") not in {"direction_error", "polysemy", "plausible_but_false"}:
+                err(f"gold/{d.name}/adversarial {t['source']}->{t['target']}: bad trap_type")
+        total_c += len(canon["edges"])
+        total_t += len(adv["traps"])
+    print(f"gold: {total_c} canonical edges, {total_t} traps checked "
+          f"({', '.join(d.name for d in domains)})")
 
 
 REGISTRY_REQUIRED = ("id", "label", "type", "aliases", "domain", "status")

@@ -1,8 +1,10 @@
 {
   "meta": {
     "version": "0.1.0",
-    "built": "2026-07-07",
-    "domain": "Ethics",
+    "built": "2026-07-10",
+    "domains": [
+      "Ethics"
+    ],
     "count": 139,
     "qid_sources": {
       "auto-unverified": 61,

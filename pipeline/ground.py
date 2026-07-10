@@ -197,6 +197,9 @@ def cmd_extract(args) -> None:
         aid = art["id"]
         if only and aid not in only:
             continue
+        if args.domain and art.get("domain") \
+                and art["domain"].casefold() != args.domain.casefold():
+            continue
         out = RESPONSE_DIR / f"{aid}.json"
         if out.exists():
             print(f"{aid}: cached, skipping")
@@ -412,6 +415,7 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
     ex = sub.add_parser("extract", help="one grounding LLM call per cached article")
     ex.add_argument("--articles", help="comma-separated article ids (default: all)")
+    ex.add_argument("--domain", help="only articles of this corpus domain (default: all)")
     ex.add_argument("--model", default=DEFAULT_MODEL, choices=sorted(PRICES))
     ex.add_argument("--max-cost", type=float, default=2.00,
                     help="hard stop for this run's estimated spend in USD")

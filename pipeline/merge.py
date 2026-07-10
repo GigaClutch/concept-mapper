@@ -54,8 +54,20 @@ def merge_aliases(seed: dict, enr: dict) -> list[str]:
     return out
 
 
-def main() -> None:
-    seeds = json.loads((DATA / "seeds.json").read_text(encoding="utf-8"))
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--domain", default="ethics",
+                    help="seed file to merge: data/seeds_<domain>.json — other "
+                         "domains' registry rows and corpus articles are kept")
+    args = ap.parse_args(argv)
+
+    seeds_file = DATA / f"seeds_{args.domain}.json"
+    if not seeds_file.exists():
+        sys.exit(f"no seed file for domain '{args.domain}' — create "
+                 f"{seeds_file.relative_to(DATA.parent)}")
+    seeds = json.loads(seeds_file.read_text(encoding="utf-8"))
+    domain_label = seeds["meta"]["domain"]
     enrichment = {e["id"]: e for e in json.loads(
         (DATA / "wikidata_enrichment.json").read_text(encoding="utf-8"))["entries"]}
     contents = {e["id"]: e["title"] for e in json.loads(
@@ -88,22 +100,28 @@ def main() -> None:
     if dup:
         sys.exit(f"duplicate registry ids: {sorted(dup)}")
 
-    # carry forward provisional rows added by browse-time research (D7): they
-    # are absent from seeds.json but graph nodes depend on them (D3)
+    # carry forward rows this merge does not own: provisional rows added by
+    # browse-time research (D7), and every row belonging to a DIFFERENT domain
+    # — merging one domain's seeds must never destroy another's registry
     out = DATA / "registry.json"
     ids = {r["id"] for r in rows}
     if out.exists():
         for r in json.loads(out.read_text(encoding="utf-8"))["nodes"]:
-            if r.get("status") == "provisional" and r["id"] not in ids:
+            if r["id"] in ids:
+                continue
+            if r.get("status") == "provisional":
                 rows.append(r)
                 ids.add(r["id"])
                 print(f"carried forward provisional row: {r['id']}")
+            elif r.get("domain") and r["domain"] != domain_label:
+                rows.append(r)
+                ids.add(r["id"])
 
     registry = {
         "meta": {
             "version": seeds["meta"]["version"],
             "built": time.strftime("%Y-%m-%d"),
-            "domain": seeds["meta"]["domain"],
+            "domains": sorted({r.get("domain", "") for r in rows} - {""}),
             "count": len(rows),
             "qid_sources": {
                 s: sum(1 for r in rows if r["qid_source"] == s)
@@ -122,15 +140,21 @@ def main() -> None:
     corpus_rows = []
     for c in seeds["sep_corpus"]:
         if c["id"] not in contents:
-            sys.exit(f"corpus id {c['id']} not in SEP contents — fix seeds.json")
+            sys.exit(f"corpus id {c['id']} not in SEP contents — fix the seed file")
         prev = prev_articles.get(c["id"], {})
         corpus_rows.append({
             "id": c["id"], "title": contents[c["id"]],
             "url": f"{SEP_BASE}/{c['id']}/", "priority": c["priority"],
+            "domain": domain_label,
             "retrieved": prev.get("retrieved", ""),
             "grounded_edges": prev.get("grounded_edges", 0),
             "proposed_edges": prev.get("proposed_edges", 0),
         })
+    # keep other domains' articles untouched
+    own_ids = {c["id"] for c in corpus_rows}
+    for a in prev_articles.values():
+        if a["id"] not in own_ids and a.get("domain") and a["domain"] != domain_label:
+            corpus_rows.append(a)
     corpus = {"meta": {"built": time.strftime("%Y-%m-%d"), "count": len(corpus_rows)},
               "articles": corpus_rows}
 

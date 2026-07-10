@@ -27,7 +27,10 @@ window.GRAPH = {
     "AUTHORED_BY",
     "INTRODUCED_IN"
    ]
-  }
+  },
+  "domains": [
+   "Ethics"
+  ]
  },
  "nodes": [
   {
@@ -208,7 +211,7 @@ window.GRAPH = {
    "aliases": [
     "Hume"
    ],
-   "domain": "Epistemology",
+   "domain": "Ethics",
    "tradition": "Empiricism",
    "time_period": "1711–1776",
    "status": "curated",
@@ -281,7 +284,7 @@ window.GRAPH = {
    "type": "school",
    "definition": "The philosophical movement (c. 1781–1840) emerging from Kant's critical philosophy, developed by Fichte, Schelling, and Hegel.",
    "aliases": [],
-   "domain": "Metaphysics",
+   "domain": "Ethics",
    "tradition": "Continental",
    "time_period": "1781–1840",
    "status": "curated",

@@ -20,6 +20,12 @@ def load(path, fallback):
 
 graph = json.loads((DATA / "graph.json").read_text(encoding="utf-8"))
 
+# the registry knows which domains the map covers; the viewer titles itself
+# from this (never from per-node subject fields)
+registry_meta = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))["meta"]
+graph["meta"]["domains"] = registry_meta.get(
+    "domains", [registry_meta.get("domain", "")])
+
 assist = load(DATA / "review_assist.json", {"items": {}}).get("items", {})
 sample = load(DATA / "verification_sample.json", {"sample": []})["sample"]
 undecided = {(s["source"], s["type"], s["target"])

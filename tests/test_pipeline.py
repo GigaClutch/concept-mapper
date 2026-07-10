@@ -72,13 +72,17 @@ class TestBackboneDomainRange(unittest.TestCase):
     def test_gold_canonical_edges_satisfy_domain_range(self):
         registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
         types = {r["id"]: r["type"] for r in registry["nodes"]}
-        canon = json.loads(
-            (DATA / "gold" / "canonical_edges.json").read_text(encoding="utf-8"))
-        for e in canon["edges"]:
-            dom, rng = backbone.DOMAIN_RANGE[e["type"]]
-            tag = f"{e['source']} -{e['type']}-> {e['target']}"
-            self.assertIn(types[e["source"]], dom, tag)
-            self.assertIn(types[e["target"]], rng, tag)
+        gold_dirs = [d for d in (DATA / "gold").iterdir()
+                     if (d / "canonical_edges.json").exists()]
+        self.assertTrue(gold_dirs, "no per-domain gold sets under data/gold/")
+        for d in gold_dirs:
+            canon = json.loads(
+                (d / "canonical_edges.json").read_text(encoding="utf-8"))
+            for e in canon["edges"]:
+                dom, rng = backbone.DOMAIN_RANGE[e["type"]]
+                tag = f"{d.name}: {e['source']} -{e['type']}-> {e['target']}"
+                self.assertIn(types[e["source"]], dom, tag)
+                self.assertIn(types[e["target"]], rng, tag)
 
     def test_pass_focus_ids_exist_in_registry(self):
         registry = json.loads((DATA / "registry.json").read_text(encoding="utf-8"))
