@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "created": "2026-07-10",
+    "description": "Gold canonical seed for the Epistemology domain: hand-written, uncontroversially correct edges over registry ids (draft awaiting owner sign-off). Several deliberately cross the Ethics/Epistemology boundary (hume, plato, rationalism/empiricism). verdict is always 'accept'.",
+    "edge_count": 32
+  },
+  "edges": [
+    {
+      "source": "gettier_problem",
+      "type": "RESPONDS_TO",
+      "target": "justified_true_belief",
+      "note": "Gettier cases target the JTB analysis"
+    },
+    {
+      "source": "gettier_problem",
+      "type": "INTRODUCED_IN",
+      "target": "is_justified_true_belief_knowledge",
+      "note": "the 1963 three-page paper"
+    },
+    {
+      "source": "is_justified_true_belief_knowledge",
+      "type": "AUTHORED_BY",
+      "target": "edmund_gettier",
+      "note": "core attribution"
+    },
+    {
+      "source": "foundationalism",
+      "type": "CONTRASTS_WITH",
+      "target": "coherentism",
+      "note": "the classic structure-of-justification opposition"
+    },
+    {
+      "source": "foundationalism",
+      "type": "RESPONDS_TO",
+      "target": "regress_problem",
+      "note": "basic beliefs stop the regress"
+    },
+    {
+      "source": "reliabilism",
+      "type": "DEVELOPED_BY",
+      "target": "alvin_goldman",
+      "note": "process reliabilism is Goldman's"
+    },
+    {
+      "source": "epistemic_internalism",
+      "type": "CONTRASTS_WITH",
+      "target": "epistemic_externalism",
+      "note": "standard opposition"
+    },
+    {
+      "source": "meditations_on_first_philosophy",
+      "type": "AUTHORED_BY",
+      "target": "rene_descartes",
+      "note": "core attribution"
+    },
+    {
+      "source": "evil_demon",
+      "type": "INTRODUCED_IN",
+      "target": "meditations_on_first_philosophy",
+      "note": "First Meditation"
+    },
+    {
+      "source": "cartesian_skepticism",
+      "type": "DEVELOPED_BY",
+      "target": "rene_descartes",
+      "note": "external-world skepticism from the First Meditation scenarios"
+    },
+    {
+      "source": "essay_concerning_human_understanding",
+      "type": "AUTHORED_BY",
+      "target": "john_locke",
+      "note": "core attribution"
+    },
+    {
+      "source": "tabula_rasa",
+      "type": "DEVELOPED_BY",
+      "target": "john_locke",
+      "note": "the mind as white paper, Essay II.i"
+    },
+    {
+      "source": "innate_ideas",
+      "type": "CONTRASTS_WITH",
+      "target": "tabula_rasa",
+      "note": "nativism vs the blank slate"
+    },
+    {
+      "source": "subjective_idealism",
+      "type": "DEVELOPED_BY",
+      "target": "george_berkeley",
+      "note": "esse est percipi"
+    },
+    {
+      "source": "principles_of_human_knowledge",
+      "type": "AUTHORED_BY",
+      "target": "george_berkeley",
+      "note": "core attribution"
+    },
+    {
+      "source": "problem_of_induction",
+      "type": "DEVELOPED_BY",
+      "target": "david_hume",
+      "note": "boundary edge: Hume owns the problem (Enquiry IV)"
+    },
+    {
+      "source": "enquiry_human_understanding",
+      "type": "AUTHORED_BY",
+      "target": "david_hume",
+      "note": "boundary edge: the first Enquiry"
+    },
+    {
+      "source": "naturalized_epistemology",
+      "type": "DEVELOPED_BY",
+      "target": "w_v_o_quine",
+      "note": "Quine 1969"
+    },
+    {
+      "source": "two_dogmas_of_empiricism",
+      "type": "AUTHORED_BY",
+      "target": "w_v_o_quine",
+      "note": "core attribution"
+    },
+    {
+      "source": "two_dogmas_of_empiricism",
+      "type": "CRITIQUES",
+      "target": "analytic_synthetic_distinction",
+      "note": "the first dogma"
+    },
+    {
+      "source": "rationalism",
+      "type": "CONTRASTS_WITH",
+      "target": "empiricism",
+      "note": "boundary edge over existing school rows"
+    },
+    {
+      "source": "outlines_of_pyrrhonism",
+      "type": "AUTHORED_BY",
+      "target": "sextus_empiricus",
+      "note": "core attribution"
+    },
+    {
+      "source": "pyrrhonism",
+      "type": "DEVELOPED_BY",
+      "target": "pyrrho",
+      "note": "eponymous founder"
+    },
+    {
+      "source": "virtue_epistemology",
+      "type": "DEVELOPED_BY",
+      "target": "ernest_sosa",
+      "note": "Sosa 1980 launched the program"
+    },
+    {
+      "source": "epistemic_injustice",
+      "type": "DEVELOPED_BY",
+      "target": "miranda_fricker",
+      "note": "Fricker 2007 coined and systematized it"
+    },
+    {
+      "source": "epistemic_injustice_fricker",
+      "type": "AUTHORED_BY",
+      "target": "miranda_fricker",
+      "note": "core attribution"
+    },
+    {
+      "source": "epistemic_contextualism",
+      "type": "RESPONDS_TO",
+      "target": "philosophical_skepticism",
+      "note": "contextualism's standard motivation"
+    },
+    {
+      "source": "a_priori_knowledge",
+      "type": "CONTRASTS_WITH",
+      "target": "a_posteriori_knowledge",
+      "note": "standard opposition"
+    },
+    {
+      "source": "scottish_common_sense",
+      "type": "DEVELOPED_BY",
+      "target": "thomas_reid",
+      "note": "Reid founded the school"
+    },
+    {
+      "source": "knowledge_and_its_limits",
+      "type": "AUTHORED_BY",
+      "target": "timothy_williamson",
+      "note": "core attribution"
+    },
+    {
+      "source": "inquiry_into_the_human_mind",
+      "type": "AUTHORED_BY",
+      "target": "thomas_reid",
+      "note": "core attribution"
+    },
+    {
+      "source": "theaetetus",
+      "type": "AUTHORED_BY",
+      "target": "plato",
+      "note": "boundary edge over the existing plato row"
+    }
+  ]
+}

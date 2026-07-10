@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "domain": "Epistemology",
+    "note": "backbone pass definitions for the Epistemology domain (Phase 12 pilot, draft awaiting owner sign-off). Five in-domain passes plus the explicit Ethics/Epistemology boundary pass over shared registry rows, per the Phase 3 cross-boundary precedent."
+  },
+  "passes": {
+    "core_analysis": {
+      "title": "The analysis of knowledge",
+      "guidance": "Map the analysis-of-knowledge cluster: knowledge and its species (knowledge-how, acquaintance), the JTB analysis and the Gettier problem with its aftermath (epistemic luck, causal theory, defeaters, warrant), justification/belief/truth/evidence as constituents, and the value-of-knowledge debate. Attribute each response to its actual proponent.",
+      "focus": [
+        "knowledge", "knowledge_how", "knowledge_by_acquaintance", "belief",
+        "epistemic_justification", "truth", "evidence", "justified_true_belief",
+        "gettier_problem", "epistemic_luck", "causal_theory_of_knowledge",
+        "warrant", "defeaters", "value_of_knowledge", "edmund_gettier",
+        "alvin_goldman", "duncan_pritchard", "timothy_williamson",
+        "knowledge_and_its_limits", "is_justified_true_belief_knowledge"
+      ]
+    },
+    "structure_of_justification": {
+      "title": "The structure and nature of justification",
+      "guidance": "Map the structure-of-justification debate: the regress problem and its three exits (foundationalism, coherentism, infinitism), internalism vs externalism, reliabilism, evidentialism, and virtue epistemology with its notion of epistemic virtue. Attribute programs to their developers (Goldman, BonJour, Sosa, Zagzebski, Chisholm, Alston, Plantinga) and works.",
+      "focus": [
+        "epistemic_justification", "regress_problem", "foundationalism",
+        "coherentism", "infinitism", "epistemic_internalism",
+        "epistemic_externalism", "reliabilism", "evidentialism",
+        "virtue_epistemology", "epistemic_virtue", "warrant",
+        "alvin_goldman", "laurence_bonjour", "ernest_sosa", "linda_zagzebski",
+        "roderick_chisholm", "william_alston", "alvin_plantinga",
+        "structure_of_empirical_knowledge", "virtues_of_the_mind",
+        "theory_of_knowledge_chisholm"
+      ]
+    },
+    "skepticism_and_perception": {
+      "title": "Skepticism, certainty, and perception",
+      "guidance": "Map the skepticisms (philosophical/Cartesian, Pyrrhonian and Academic schools) and the classic scenarios (evil demon, brain in a vat), certainty and fallibilism, the anti-skeptical strategies (epistemic contextualism, closure denial, common sense), and the epistemology of perception (sense data, direct and indirect realism, Berkeley's subjective idealism). Mind the ancients: Pyrrho, Sextus Empiricus.",
+      "focus": [
+        "philosophical_skepticism", "cartesian_skepticism", "evil_demon",
+        "brain_in_a_vat", "certainty", "fallibilism", "epistemic_closure",
+        "epistemic_contextualism", "epistemic_relativism", "perception",
+        "sense_data", "direct_realism", "indirect_realism",
+        "subjective_idealism", "pyrrhonism", "academic_skepticism",
+        "scottish_common_sense", "pyrrho", "sextus_empiricus",
+        "rene_descartes", "george_berkeley", "thomas_reid", "david_lewis",
+        "keith_derose", "fred_dretske", "robert_nozick",
+        "outlines_of_pyrrhonism", "meditations_on_first_philosophy",
+        "principles_of_human_knowledge", "inquiry_into_the_human_mind"
+      ]
+    },
+    "sources_and_methods": {
+      "title": "Sources of knowledge and the rationalism/empiricism debate",
+      "guidance": "Map the sources of knowledge (perception, memory, introspection, intuition, testimony, self-knowledge) and the inference kinds (induction, deduction, abduction) with Hume's problem of induction; the a priori / a posteriori and analytic/synthetic distinctions with Quine's critique; innate ideas vs the tabula rasa; and the rationalism vs empiricism opposition, using the EXISTING registry rows for rationalism, empiricism, david_hume, and immanuel_kant.",
+      "focus": [
+        "perception", "memory", "introspection", "intuition", "testimony",
+        "self_knowledge", "induction", "deduction", "abduction",
+        "problem_of_induction", "a_priori_knowledge", "a_posteriori_knowledge",
+        "analytic_synthetic_distinction", "innate_ideas", "tabula_rasa",
+        "rationalism", "empiricism", "rene_descartes", "john_locke",
+        "david_hume", "logical_positivism", "w_v_o_quine",
+        "two_dogmas_of_empiricism", "essay_concerning_human_understanding",
+        "enquiry_human_understanding", "epistemology_naturalized",
+        "naturalized_epistemology", "bayesian_epistemology",
+        "social_epistemology", "peer_disagreement", "epistemic_injustice",
+        "miranda_fricker", "karl_popper", "epistemic_injustice_fricker"
+      ]
+    },
+    "persons_works_epistemology": {
+      "title": "Epistemologists: works, influence, and schools",
+      "guidance": "For every Epistemology-domain work in the registry, assert AUTHORED_BY (direction: work -> person). Add INTRODUCED_IN edges (concept -> work) only where the concept was genuinely first or canonically stated there — the Gettier paper, the Meditations, the Essay, Two Dogmas, Fricker's book. Map INFLUENCED_BY among the epistemologists (check dates; the later thinker is influenced by the earlier), person <-> school links for Pyrrhonism, Academic Skepticism, Logical Positivism, Scottish Common Sense, and famous person-level CRITIQUES of registry doctrines.",
+      "focus": [
+        "rene_descartes", "john_locke", "george_berkeley", "thomas_reid",
+        "bertrand_russell", "karl_popper", "w_v_o_quine", "edmund_gettier",
+        "roderick_chisholm", "alvin_goldman", "laurence_bonjour", "ernest_sosa",
+        "linda_zagzebski", "timothy_williamson", "fred_dretske", "robert_nozick",
+        "william_alston", "alvin_plantinga", "sextus_empiricus", "pyrrho",
+        "david_lewis", "keith_derose", "miranda_fricker", "duncan_pritchard",
+        "pyrrhonism", "academic_skepticism", "logical_positivism",
+        "scottish_common_sense", "meditations_on_first_philosophy",
+        "essay_concerning_human_understanding", "enquiry_human_understanding",
+        "theaetetus", "outlines_of_pyrrhonism",
+        "is_justified_true_belief_knowledge", "problems_of_philosophy",
+        "epistemology_naturalized", "inquiry_into_the_human_mind",
+        "two_dogmas_of_empiricism", "principles_of_human_knowledge",
+        "knowledge_and_its_limits", "epistemic_injustice_fricker",
+        "structure_of_empirical_knowledge", "virtues_of_the_mind",
+        "theory_of_knowledge_chisholm"
+      ]
+    },
+    "ethics_epistemology_boundary": {
+      "title": "Ethics/Epistemology boundary",
+      "guidance": "Explicit cross-domain pass: connect the epistemology cluster to the EXISTING Ethics-domain rows. Moral epistemology and its relation to metaethics and moral intuitionism; Moore and Ayer as figures in both debates; the is/ought problem and naturalistic fallacy as boundary arguments; Hume and Kant as thinkers whose epistemology and ethics interlock (first Enquiry vs the moral works, Critique of Pure Reason vs practical reason); virtue epistemology's debt to virtue ethics; Fricker's epistemic injustice as ethics of knowing; error theory's epistemological argument. Do not repeat edges internal to either domain; look for the seams.",
+      "focus": [
+        "moral_epistemology", "epistemology", "metaethics", "moral_intuitionism",
+        "intuition", "g_e_moore", "a_j_ayer", "emotivism", "error_theory",
+        "is_ought_problem", "naturalistic_fallacy", "moral_realism",
+        "practical_reason", "david_hume", "immanuel_kant",
+        "critique_of_pure_reason", "treatise_of_human_nature",
+        "enquiry_human_understanding", "virtue_epistemology", "virtue_ethics",
+        "epistemic_virtue", "epistemic_injustice", "feminist_ethics",
+        "epistemic_relativism", "moral_relativism", "logical_positivism",
+        "naturalized_epistemology", "moral_naturalism", "theaetetus", "plato",
+        "socrates", "aristotle"
+      ]
+    }
+  }
+}

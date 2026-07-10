@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "created": "2026-07-10",
+    "description": "Gold adversarial set for the Epistemology domain: superficially plausible edges a correct pipeline must NOT assert (draft awaiting owner sign-off). trap_type in {direction_error, polysemy, plausible_but_false}; several are Ethics/Epistemology boundary confusions.",
+    "trap_count": 20
+  },
+  "traps": [
+    {
+      "source": "edmund_gettier",
+      "type": "DEVELOPED_BY",
+      "target": "gettier_problem",
+      "trap_type": "direction_error",
+      "reason": "reversed: concepts are developed by persons"
+    },
+    {
+      "source": "rene_descartes",
+      "type": "AUTHORED_BY",
+      "target": "meditations_on_first_philosophy",
+      "trap_type": "direction_error",
+      "reason": "reversed: works are authored by persons"
+    },
+    {
+      "source": "justified_true_belief",
+      "type": "RESPONDS_TO",
+      "target": "gettier_problem",
+      "trap_type": "direction_error",
+      "reason": "reversed: JTB came first; Gettier responds to it"
+    },
+    {
+      "source": "david_hume",
+      "type": "INFLUENCED_BY",
+      "target": "immanuel_kant",
+      "trap_type": "direction_error",
+      "reason": "anachronistic: Kant was woken by Hume, not vice versa (boundary trap)"
+    },
+    {
+      "source": "john_locke",
+      "type": "INFLUENCED_BY",
+      "target": "george_berkeley",
+      "trap_type": "direction_error",
+      "reason": "anachronistic: Berkeley wrote after Locke died"
+    },
+    {
+      "source": "alvin_goldman",
+      "type": "DEVELOPED_BY",
+      "target": "reliabilism",
+      "trap_type": "direction_error",
+      "reason": "reversed person/concept"
+    },
+    {
+      "source": "tabula_rasa",
+      "type": "DEVELOPED_BY",
+      "target": "rene_descartes",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong philosopher: the blank slate is Locke's, and Descartes defended innate ideas"
+    },
+    {
+      "source": "innate_ideas",
+      "type": "DEVELOPED_BY",
+      "target": "john_locke",
+      "trap_type": "plausible_but_false",
+      "reason": "Locke ATTACKED innate ideas (Essay Book I)"
+    },
+    {
+      "source": "gettier_problem",
+      "type": "INTRODUCED_IN",
+      "target": "meditations_on_first_philosophy",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong work by three centuries"
+    },
+    {
+      "source": "evil_demon",
+      "type": "INTRODUCED_IN",
+      "target": "essay_concerning_human_understanding",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong work: the demon is Descartes', not Locke's"
+    },
+    {
+      "source": "problem_of_induction",
+      "type": "DEVELOPED_BY",
+      "target": "john_locke",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong empiricist: the problem is Hume's"
+    },
+    {
+      "source": "naturalized_epistemology",
+      "type": "DEVELOPED_BY",
+      "target": "rene_descartes",
+      "trap_type": "plausible_but_false",
+      "reason": "Quine's program is defined AGAINST Cartesian foundationalism"
+    },
+    {
+      "source": "two_dogmas_of_empiricism",
+      "type": "AUTHORED_BY",
+      "target": "a_j_ayer",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong empiricist: Quine's paper, not Ayer's (boundary trap)"
+    },
+    {
+      "source": "epistemic_injustice",
+      "type": "DEVELOPED_BY",
+      "target": "carol_gilligan",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong feminist philosopher: Fricker, not Gilligan (boundary trap)"
+    },
+    {
+      "source": "virtue_epistemology",
+      "type": "DEVELOPED_BY",
+      "target": "aristotle",
+      "trap_type": "polysemy",
+      "reason": "virtue ETHICS is Aristotelian; virtue EPISTEMOLOGY is a 20th-century program (boundary trap)"
+    },
+    {
+      "source": "epistemic_contextualism",
+      "type": "SUBCATEGORY_OF",
+      "target": "moral_relativism",
+      "trap_type": "polysemy",
+      "reason": "epistemic contextualism is not a moral doctrine (boundary trap)"
+    },
+    {
+      "source": "subjective_idealism",
+      "type": "IS_A",
+      "target": "german_idealism",
+      "trap_type": "polysemy",
+      "reason": "Berkeley's idealism predates and differs from the German tradition (boundary trap)"
+    },
+    {
+      "source": "knowledge_how",
+      "type": "IS_A",
+      "target": "justified_true_belief",
+      "trap_type": "plausible_but_false",
+      "reason": "Ryle's point: know-how is not propositional knowledge"
+    },
+    {
+      "source": "epistemic_closure",
+      "type": "DEVELOPED_BY",
+      "target": "edmund_gettier",
+      "trap_type": "plausible_but_false",
+      "reason": "wrong attribution: closure debates are Dretske/Nozick territory"
+    },
+    {
+      "source": "moral_epistemology",
+      "type": "SUBCATEGORY_OF",
+      "target": "virtue_ethics",
+      "trap_type": "polysemy",
+      "reason": "moral epistemology is a branch of epistemology/metaethics, not of virtue ethics (boundary trap)"
+    }
+  ]
+}

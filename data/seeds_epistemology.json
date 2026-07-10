@@ -1,0 +1,1041 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "domain": "Epistemology",
+    "created": "2026-07-10",
+    "description": "Hand-curated seed lists for the Epistemology domain (Phase 12 pilot). Same conventions as seeds_ethics.json: 'qid' hand-curated where certain ('' = resolve via Wikidata search, verified by claims); 'expect_birth' and 'author_id' are verification hints. Boundary entities already owned by the Ethics seeds (david_hume, immanuel_kant, plato, g_e_moore, a_j_ayer, empiricism, rationalism, critique_of_pure_reason, republic_plato) are deliberately ABSENT here — epistemology edges reference their existing registry rows; a seed id must belong to exactly one domain. EXTENDED 2026-07-10: analytic-synthetic cluster, perception realisms, sources (memory/introspection/intuition/induction/deduction/abduction), warrant/defeaters, disagreement, epistemic injustice, value of knowledge, moral epistemology (boundary), Bayesian epistemology; Fricker/Lewis/DeRose/Pritchard; Scottish Common Sense; four works; twelve corpus articles.",
+    "concept_keywords": [
+      "philosoph",
+      "epistem",
+      "knowledge",
+      "belief",
+      "justif",
+      "skeptic",
+      "truth",
+      "perception",
+      "induction",
+      "priori",
+      "doctrine",
+      "theory",
+      "principle",
+      "school of",
+      "concept",
+      "logic"
+    ],
+    "status": "DRAFT - awaiting owner sign-off before wikidata_bootstrap/merge"
+  },
+  "concepts": [
+    {
+      "id": "epistemology",
+      "label": "Epistemology",
+      "aliases": [
+        "theory of knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge",
+      "aliases": [
+        "propositional knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "knowledge_how",
+      "label": "Knowledge-How",
+      "aliases": [
+        "procedural knowledge",
+        "know-how"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "knowledge_by_acquaintance",
+      "label": "Knowledge by Acquaintance",
+      "aliases": [
+        "acquaintance knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "belief",
+      "label": "Belief",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_justification",
+      "label": "Epistemic Justification",
+      "aliases": [
+        "justification"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "truth",
+      "label": "Truth",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "justified_true_belief",
+      "label": "Justified True Belief",
+      "aliases": [
+        "JTB",
+        "tripartite analysis of knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "gettier_problem",
+      "label": "Gettier Problem",
+      "aliases": [
+        "Gettier cases",
+        "Gettier counterexamples"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_luck",
+      "label": "Epistemic Luck",
+      "aliases": [
+        "veritic luck"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "foundationalism",
+      "label": "Foundationalism",
+      "aliases": [
+        "foundationalist justification"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "coherentism",
+      "label": "Coherentism",
+      "aliases": [
+        "coherence theory of justification"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "infinitism",
+      "label": "Infinitism",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "regress_problem",
+      "label": "Regress Problem",
+      "aliases": [
+        "epistemic regress",
+        "Agrippa's trilemma",
+        "Münchhausen trilemma"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "reliabilism",
+      "label": "Reliabilism",
+      "aliases": [
+        "process reliabilism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "evidentialism",
+      "label": "Evidentialism",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_internalism",
+      "label": "Epistemic Internalism",
+      "aliases": [
+        "internalism about justification"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_externalism",
+      "label": "Epistemic Externalism",
+      "aliases": [
+        "externalism about justification"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "virtue_epistemology",
+      "label": "Virtue Epistemology",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_virtue",
+      "label": "Epistemic Virtue",
+      "aliases": [
+        "intellectual virtue"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "philosophical_skepticism",
+      "label": "Philosophical Skepticism",
+      "aliases": [
+        "epistemological skepticism",
+        "scepticism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "cartesian_skepticism",
+      "label": "Cartesian Skepticism",
+      "aliases": [
+        "radical skepticism",
+        "external-world skepticism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "brain_in_a_vat",
+      "label": "Brain in a Vat",
+      "aliases": [
+        "BIV scenario"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "evil_demon",
+      "label": "Evil Demon",
+      "aliases": [
+        "evil genius",
+        "deus deceptor"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "problem_of_induction",
+      "label": "Problem of Induction",
+      "aliases": [
+        "Hume's problem",
+        "inductive skepticism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "a_priori_knowledge",
+      "label": "A Priori Knowledge",
+      "aliases": [
+        "a priori justification",
+        "apriority"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "a_posteriori_knowledge",
+      "label": "A Posteriori Knowledge",
+      "aliases": [
+        "empirical knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "innate_ideas",
+      "label": "Innate Ideas",
+      "aliases": [
+        "innatism",
+        "nativism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "perception",
+      "label": "Perception",
+      "aliases": [
+        "perceptual knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "sense_data",
+      "label": "Sense Data",
+      "aliases": [
+        "sensa"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "testimony",
+      "label": "Testimony",
+      "aliases": [
+        "testimonial knowledge"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_closure",
+      "label": "Epistemic Closure",
+      "aliases": [
+        "closure principle"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_contextualism",
+      "label": "Epistemic Contextualism",
+      "aliases": [
+        "contextualism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "fallibilism",
+      "label": "Fallibilism",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "certainty",
+      "label": "Certainty",
+      "aliases": [
+        "epistemic certainty"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "self_knowledge",
+      "label": "Self-Knowledge",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "naturalized_epistemology",
+      "label": "Naturalized Epistemology",
+      "aliases": [
+        "epistemology naturalized",
+        "naturalism in epistemology"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "social_epistemology",
+      "label": "Social Epistemology",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "causal_theory_of_knowledge",
+      "label": "Causal Theory of Knowledge",
+      "aliases": [
+        "causal theory of knowing"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_relativism",
+      "label": "Epistemic Relativism",
+      "aliases": [
+        "cognitive relativism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "analytic_synthetic_distinction",
+      "label": "Analytic-Synthetic Distinction",
+      "aliases": [
+        "analytic/synthetic distinction",
+        "analyticity"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "tabula_rasa",
+      "label": "Tabula Rasa",
+      "aliases": [
+        "blank slate"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "subjective_idealism",
+      "label": "Subjective Idealism",
+      "aliases": [
+        "immaterialism",
+        "Berkeleyan idealism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "direct_realism",
+      "label": "Direct Realism",
+      "aliases": [
+        "naive realism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "indirect_realism",
+      "label": "Indirect Realism",
+      "aliases": [
+        "representative realism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "memory",
+      "label": "Memory",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "introspection",
+      "label": "Introspection",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "intuition",
+      "label": "Intuition",
+      "aliases": [
+        "philosophical intuition"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "induction",
+      "label": "Induction",
+      "aliases": [
+        "inductive inference",
+        "inductive reasoning"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "deduction",
+      "label": "Deduction",
+      "aliases": [
+        "deductive inference",
+        "deductive reasoning"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "abduction",
+      "label": "Abduction",
+      "aliases": [
+        "inference to the best explanation",
+        "IBE"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "warrant",
+      "label": "Warrant",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "defeaters",
+      "label": "Defeaters",
+      "aliases": [
+        "defeasibility",
+        "epistemic defeat"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "peer_disagreement",
+      "label": "Peer Disagreement",
+      "aliases": [
+        "epistemology of disagreement",
+        "epistemic peers"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "epistemic_injustice",
+      "label": "Epistemic Injustice",
+      "aliases": [
+        "testimonial injustice",
+        "hermeneutical injustice"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "value_of_knowledge",
+      "label": "Value of Knowledge",
+      "aliases": [
+        "Meno problem",
+        "swamping problem"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "moral_epistemology",
+      "label": "Moral Epistemology",
+      "aliases": [],
+      "qid": ""
+    },
+    {
+      "id": "bayesian_epistemology",
+      "label": "Bayesian Epistemology",
+      "aliases": [
+        "formal epistemology"
+      ],
+      "qid": ""
+    }
+  ],
+  "persons": [
+    {
+      "id": "rene_descartes",
+      "label": "René Descartes",
+      "aliases": [
+        "Descartes"
+      ],
+      "qid": "Q9191",
+      "expect_birth": 1596
+    },
+    {
+      "id": "john_locke",
+      "label": "John Locke",
+      "aliases": [
+        "Locke"
+      ],
+      "qid": "",
+      "expect_birth": 1632
+    },
+    {
+      "id": "george_berkeley",
+      "label": "George Berkeley",
+      "aliases": [
+        "Berkeley",
+        "Bishop Berkeley"
+      ],
+      "qid": "",
+      "expect_birth": 1685
+    },
+    {
+      "id": "thomas_reid",
+      "label": "Thomas Reid",
+      "aliases": [
+        "Reid"
+      ],
+      "qid": "",
+      "expect_birth": 1710
+    },
+    {
+      "id": "bertrand_russell",
+      "label": "Bertrand Russell",
+      "aliases": [
+        "Russell"
+      ],
+      "qid": "Q33760",
+      "expect_birth": 1872
+    },
+    {
+      "id": "karl_popper",
+      "label": "Karl Popper",
+      "aliases": [
+        "Popper"
+      ],
+      "qid": "Q81244",
+      "expect_birth": 1902
+    },
+    {
+      "id": "w_v_o_quine",
+      "label": "W. V. O. Quine",
+      "aliases": [
+        "Quine",
+        "Willard Van Orman Quine"
+      ],
+      "qid": "",
+      "search": "Willard Van Orman Quine",
+      "expect_birth": 1908
+    },
+    {
+      "id": "edmund_gettier",
+      "label": "Edmund Gettier",
+      "aliases": [
+        "Gettier"
+      ],
+      "qid": "",
+      "expect_birth": 1927
+    },
+    {
+      "id": "alvin_goldman",
+      "label": "Alvin Goldman",
+      "aliases": [
+        "Goldman"
+      ],
+      "qid": "",
+      "expect_birth": 1938
+    },
+    {
+      "id": "roderick_chisholm",
+      "label": "Roderick Chisholm",
+      "aliases": [
+        "Chisholm"
+      ],
+      "qid": "",
+      "expect_birth": 1916
+    },
+    {
+      "id": "laurence_bonjour",
+      "label": "Laurence BonJour",
+      "aliases": [
+        "BonJour"
+      ],
+      "qid": "",
+      "expect_birth": 1943
+    },
+    {
+      "id": "ernest_sosa",
+      "label": "Ernest Sosa",
+      "aliases": [
+        "Sosa"
+      ],
+      "qid": "",
+      "expect_birth": 1940
+    },
+    {
+      "id": "linda_zagzebski",
+      "label": "Linda Zagzebski",
+      "aliases": [
+        "Zagzebski"
+      ],
+      "qid": "",
+      "expect_birth": 1946
+    },
+    {
+      "id": "timothy_williamson",
+      "label": "Timothy Williamson",
+      "aliases": [
+        "Williamson"
+      ],
+      "qid": "",
+      "expect_birth": 1955
+    },
+    {
+      "id": "fred_dretske",
+      "label": "Fred Dretske",
+      "aliases": [
+        "Dretske"
+      ],
+      "qid": "",
+      "expect_birth": 1932
+    },
+    {
+      "id": "robert_nozick",
+      "label": "Robert Nozick",
+      "aliases": [
+        "Nozick"
+      ],
+      "qid": "",
+      "expect_birth": 1938
+    },
+    {
+      "id": "william_alston",
+      "label": "William Alston",
+      "aliases": [
+        "Alston"
+      ],
+      "qid": "",
+      "expect_birth": 1921
+    },
+    {
+      "id": "alvin_plantinga",
+      "label": "Alvin Plantinga",
+      "aliases": [
+        "Plantinga"
+      ],
+      "qid": "",
+      "expect_birth": 1932
+    },
+    {
+      "id": "sextus_empiricus",
+      "label": "Sextus Empiricus",
+      "aliases": [],
+      "qid": "",
+      "expect_birth": 160
+    },
+    {
+      "id": "pyrrho",
+      "label": "Pyrrho",
+      "aliases": [
+        "Pyrrho of Elis"
+      ],
+      "qid": "",
+      "expect_birth": -360
+    },
+    {
+      "id": "miranda_fricker",
+      "label": "Miranda Fricker",
+      "aliases": [
+        "Fricker"
+      ],
+      "qid": "",
+      "expect_birth": 1966
+    },
+    {
+      "id": "david_lewis",
+      "label": "David Lewis",
+      "aliases": [
+        "David K. Lewis"
+      ],
+      "qid": "",
+      "expect_birth": 1941
+    },
+    {
+      "id": "keith_derose",
+      "label": "Keith DeRose",
+      "aliases": [
+        "DeRose"
+      ],
+      "qid": "",
+      "expect_birth": 1962
+    },
+    {
+      "id": "duncan_pritchard",
+      "label": "Duncan Pritchard",
+      "aliases": [
+        "Pritchard"
+      ],
+      "qid": "",
+      "expect_birth": 1974
+    }
+  ],
+  "schools": [
+    {
+      "id": "pyrrhonism",
+      "label": "Pyrrhonism",
+      "aliases": [
+        "Pyrrhonian skepticism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "academic_skepticism",
+      "label": "Academic Skepticism",
+      "aliases": [
+        "Academic scepticism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "logical_positivism",
+      "label": "Logical Positivism",
+      "aliases": [
+        "logical empiricism",
+        "neopositivism"
+      ],
+      "qid": ""
+    },
+    {
+      "id": "scottish_common_sense",
+      "label": "Scottish Common Sense Realism",
+      "aliases": [
+        "common sense philosophy",
+        "Scottish School"
+      ],
+      "qid": ""
+    }
+  ],
+  "works": [
+    {
+      "id": "meditations_on_first_philosophy",
+      "label": "Meditations on First Philosophy",
+      "aliases": [
+        "Meditations",
+        "Meditationes de prima philosophia"
+      ],
+      "qid": "",
+      "author_id": "rene_descartes",
+      "year": 1641
+    },
+    {
+      "id": "essay_concerning_human_understanding",
+      "label": "An Essay Concerning Human Understanding",
+      "aliases": [
+        "Essay Concerning Human Understanding"
+      ],
+      "qid": "",
+      "author_id": "john_locke",
+      "year": 1689
+    },
+    {
+      "id": "enquiry_human_understanding",
+      "label": "An Enquiry Concerning Human Understanding",
+      "aliases": [
+        "First Enquiry"
+      ],
+      "qid": "",
+      "author_id": "david_hume",
+      "year": 1748
+    },
+    {
+      "id": "theaetetus",
+      "label": "Theaetetus",
+      "aliases": [],
+      "qid": "",
+      "author_id": "plato",
+      "year": -369
+    },
+    {
+      "id": "outlines_of_pyrrhonism",
+      "label": "Outlines of Pyrrhonism",
+      "aliases": [
+        "Outlines of Scepticism",
+        "Pyrrhōneioi hypotypōseis"
+      ],
+      "qid": "",
+      "author_id": "sextus_empiricus",
+      "year": 200
+    },
+    {
+      "id": "is_justified_true_belief_knowledge",
+      "label": "Is Justified True Belief Knowledge?",
+      "aliases": [
+        "Gettier 1963"
+      ],
+      "qid": "",
+      "author_id": "edmund_gettier",
+      "year": 1963
+    },
+    {
+      "id": "problems_of_philosophy",
+      "label": "The Problems of Philosophy",
+      "aliases": [],
+      "qid": "",
+      "author_id": "bertrand_russell",
+      "year": 1912
+    },
+    {
+      "id": "epistemology_naturalized",
+      "label": "Epistemology Naturalized (Quine, 1969)",
+      "aliases": [],
+      "qid": "",
+      "author_id": "w_v_o_quine",
+      "year": 1969
+    },
+    {
+      "id": "inquiry_into_the_human_mind",
+      "label": "An Inquiry into the Human Mind on the Principles of Common Sense",
+      "aliases": [
+        "Inquiry into the Human Mind"
+      ],
+      "qid": "",
+      "author_id": "thomas_reid",
+      "year": 1764
+    },
+    {
+      "id": "two_dogmas_of_empiricism",
+      "label": "Two Dogmas of Empiricism",
+      "aliases": [
+        "Two Dogmas"
+      ],
+      "qid": "",
+      "author_id": "w_v_o_quine",
+      "year": 1951
+    },
+    {
+      "id": "principles_of_human_knowledge",
+      "label": "A Treatise Concerning the Principles of Human Knowledge",
+      "aliases": [
+        "Principles of Human Knowledge"
+      ],
+      "qid": "",
+      "author_id": "george_berkeley",
+      "year": 1710
+    },
+    {
+      "id": "knowledge_and_its_limits",
+      "label": "Knowledge and Its Limits",
+      "aliases": [],
+      "qid": "",
+      "author_id": "timothy_williamson",
+      "year": 2000
+    },
+    {
+      "id": "epistemic_injustice_fricker",
+      "label": "Epistemic Injustice: Power and the Ethics of Knowing",
+      "aliases": [],
+      "qid": "",
+      "author_id": "miranda_fricker",
+      "year": 2007
+    },
+    {
+      "id": "structure_of_empirical_knowledge",
+      "label": "The Structure of Empirical Knowledge",
+      "aliases": [],
+      "qid": "",
+      "author_id": "laurence_bonjour",
+      "year": 1985
+    },
+    {
+      "id": "virtues_of_the_mind",
+      "label": "Virtues of the Mind",
+      "aliases": [],
+      "qid": "",
+      "author_id": "linda_zagzebski",
+      "year": 1996
+    },
+    {
+      "id": "theory_of_knowledge_chisholm",
+      "label": "Theory of Knowledge (Chisholm, 1966)",
+      "aliases": [],
+      "qid": "",
+      "author_id": "roderick_chisholm",
+      "year": 1966
+    }
+  ],
+  "sep_corpus": [
+    {
+      "id": "epistemology",
+      "priority": 1
+    },
+    {
+      "id": "knowledge-analysis",
+      "priority": 1
+    },
+    {
+      "id": "justep-foundational",
+      "priority": 1
+    },
+    {
+      "id": "justep-coherence",
+      "priority": 1
+    },
+    {
+      "id": "justep-intext",
+      "priority": 1
+    },
+    {
+      "id": "reliabilism",
+      "priority": 1
+    },
+    {
+      "id": "skepticism",
+      "priority": 1
+    },
+    {
+      "id": "induction-problem",
+      "priority": 1
+    },
+    {
+      "id": "apriori",
+      "priority": 1
+    },
+    {
+      "id": "epistemology-virtue",
+      "priority": 1
+    },
+    {
+      "id": "epistemology-naturalized",
+      "priority": 1
+    },
+    {
+      "id": "certainty",
+      "priority": 2
+    },
+    {
+      "id": "truth",
+      "priority": 2
+    },
+    {
+      "id": "evidence",
+      "priority": 2
+    },
+    {
+      "id": "perception-episprob",
+      "priority": 2
+    },
+    {
+      "id": "testimony-episprob",
+      "priority": 2
+    },
+    {
+      "id": "self-knowledge",
+      "priority": 2
+    },
+    {
+      "id": "contextualism-epistemology",
+      "priority": 2
+    },
+    {
+      "id": "skepticism-ancient",
+      "priority": 2
+    },
+    {
+      "id": "epistemology-social",
+      "priority": 2
+    },
+    {
+      "id": "rationalism-empiricism",
+      "priority": 2
+    },
+    {
+      "id": "descartes-epistemology",
+      "priority": 2
+    },
+    {
+      "id": "closure-epistemic",
+      "priority": 2
+    },
+    {
+      "id": "analytic-synthetic",
+      "priority": 2
+    },
+    {
+      "id": "abduction",
+      "priority": 2
+    },
+    {
+      "id": "memory-episprob",
+      "priority": 2
+    },
+    {
+      "id": "epistemology-bayesian",
+      "priority": 2
+    },
+    {
+      "id": "locke",
+      "priority": 1
+    },
+    {
+      "id": "berkeley",
+      "priority": 2
+    },
+    {
+      "id": "reid",
+      "priority": 2
+    },
+    {
+      "id": "disagreement",
+      "priority": 2
+    },
+    {
+      "id": "knowledge-value",
+      "priority": 2
+    },
+    {
+      "id": "belief",
+      "priority": 2
+    },
+    {
+      "id": "feminist-social-epistemology",
+      "priority": 2
+    },
+    {
+      "id": "moral-epistemology",
+      "priority": 1
+    }
+  ]
+}
